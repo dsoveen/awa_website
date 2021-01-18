@@ -1,0 +1,22 @@
+{
+  "schema": {
+ 	"version": "2019-5.1",
+    "groups": [
+      {
+        "legend": "Desinvesteringsbijtelling",
+        "fields": [
+          {
+            "type": "currency",
+            "currency": "EUR",
+            "help": "Vermeld het totale bedrag van de <a href='https://www.belastingdienst.nl/data/online_aangifte/ih2019/contextafhankelijkehelp/nlw/wa/desinvesteringsbijtelling.htm'>desinvesteringsbijtelling</a> in dit boekjaar",
+            "model": "wdestot",
+            "refid": "wdestot",
+            "postKey": "520511",
+            "validator": ["verplicht","bedrag_pos13"],
+            "label": "Desinvesteringsbijtelling"
+          }        
+        ]
+      }
+    ]
+  }
+}

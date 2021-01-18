@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<TestCases>
+		<TestCase omschrijving="TC01 - {fmwpontautnaamg5jr} ongelijk aan Ja">
+			<Input type="fiscaalmodel">		
+					<list refid="ondernemingList">
+						<item>
+							<TestValue key="fmwondgegstamin" type="Boolean">False</TestValue>
+							<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+								<item>
+									<TestValue key="fmwpontautstandcata" type="Integer">10000</TestValue>
+									<TestValue key="fmwpontautpercbijtel" type="Double">10</TestValue>
+									<TestValue key="fmwpontautaantdag" type="Integer">50</TestValue>
+									<TestValue key="fmwpontautaantdaginbeljr" type="Integer">BDRGDAGENJAAR</TestValue>
+									<TestValue key="fmwpontautnaamg5jr" type="Boolean">false</TestValue>
+								</item>
+							</list>
+						</item>
+						<item>
+							<TestValue key="fmwondgegstamin" type="Boolean">False</TestValue>
+							<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+								<item>
+									<TestValue key="fmwpontautstandcata" type="Integer">11500</TestValue>
+									<TestValue key="fmwpontautpercbijtel" type="Double">10</TestValue>
+									<TestValue key="fmwpontautaantdag" type="Integer">50</TestValue>
+									<TestValue key="fmwpontautaantdaginbeljr" type="Integer">BDRGDAGENJAAR</TestValue>
+									<TestValue key="fmwpontautnaamg5jr" type="Boolean">false</TestValue>
+								</item>
+							</list>
+						</item>
+					</list>
+			</Input>
+			<Output type="berekendfiscaalmodel">
+				<list refid="onderneminglist">
+					<item>
+						<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+							<item>
+								<TestValue key="fmwpontautberprivg" type="Integer">136</TestValue>
+							</item>
+						</list>
+					</item>
+					<item>
+						<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+							<item>
+								<TestValue key="fmwpontautberprivg" type="Integer">157</TestValue>
+							</item>
+						</list>
+					</item>
+				</list>
+			</Output>
+		</TestCase>
+
+		<TestCase omschrijving="TC02 - {fmwpontautnaambegin60mnd} = 12">
+			<Input type="fiscaalmodel">
+				<list refid="ondernemingList">
+					<item>
+						<TestValue key="fmwondgegstamin" type="Boolean">False</TestValue>
+						<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+							<item>
+								<TestValue key="fmwpontautstandcata" type="Integer">10000</TestValue>
+								<TestValue key="fmwpontautpercbijtel" type="Double">10</TestValue>
+								<TestValue key="fmwpontautperiodetot5jr" type="Integer">50</TestValue>
+								<TestValue key="fmwpontautperiodevanaf5jr" type="Integer">60</TestValue>
+								<TestValue key="fmwpontautaantdag" type="Integer">50</TestValue>
+								<TestValue key="fmwpontautaantdaginbeljr" type="Integer">BDRGDAGENJAAR</TestValue>
+								<TestValue key="fmwpontautpercbijtvanaf5jr" type="Double">4</TestValue>
+								<TestValue key="fmwpontautnaambegin60mnd" type="Integer">12</TestValue>
+							</item>
+						</list>
+					</item>
+					<item>
+						<TestValue key="fmwondgegstamin" type="Boolean">False</TestValue>
+						<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+							<item>
+								<TestValue key="fmwpontautstandcata" type="Integer">11500</TestValue>
+								<TestValue key="fmwpontautpercbijtel" type="Double">10</TestValue>
+								<TestValue key="fmwpontautperiodetot5jr" type="Integer">50</TestValue>
+								<TestValue key="fmwpontautperiodevanaf5jr" type="Integer">60</TestValue>
+								<TestValue key="fmwpontautaantdag" type="Integer">50</TestValue>
+								<TestValue key="fmwpontautaantdaginbeljr" type="Integer">BDRGDAGENJAAR</TestValue>
+								<TestValue key="fmwpontautpercbijtvanaf5jr" type="Double">4</TestValue>
+								<TestValue key="fmwpontautnaambegin60mnd" type="Integer">12</TestValue>
+							</item>
+						</list>
+					</item>
+				</list>
+			</Input>
+			<Output type="berekendfiscaalmodel">
+				<list refid="onderneminglist">
+					<item>
+						<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+							<item>
+								<TestValue key="fmwpontautberprivg" type="Integer">136</TestValue>
+							</item>
+						</list>
+					</item>
+					<item>
+						<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+							<item>
+								<TestValue key="fmwpontautberprivg" type="Integer">157</TestValue>
+							</item>
+						</list>
+					</item>
+				</list>
+			</Output>
+		</TestCase>
+		
+		<TestCase omschrijving="TC03 - 0 + {fmwpontautnaamg5jr} = Ja en {fmwpontautnaambegin60mnd} ongelijk aan 12">
+			<Input type="fiscaalmodel">		
+					<list refid="ondernemingList">
+						<item>
+							<TestValue key="fmwondgegstamin" type="Boolean">False</TestValue>
+							<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+								<item>
+									<TestValue key="fmwpontautstandcata" type="Integer">1000</TestValue>
+									<TestValue key="fmwpontautpercbijt" type="Double">10</TestValue>
+									<TestValue key="fmwpontautperiodetot5jr" type="Integer">50</TestValue>
+									<TestValue key="fmwpontautaantdaginbeljr" type="Integer">BDRGDAGENJAAR</TestValue>
+									<TestValue key="fmwpontautperiodevanaf5jr" type="Integer">100</TestValue>
+									<TestValue key="fmwpontautnaamg5jr" type="Boolean">false</TestValue>
+									<TestValue key="fmwpontautnaambegin60mnd" type="Integer">10</TestValue>
+								</item>
+							</list>
+						</item>
+						<item>
+							<TestValue key="fmwondgegstamin" type="Boolean">False</TestValue>
+							<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+								<item>
+									<TestValue key="fmwpontautstandcata" type="Integer">1000</TestValue>
+									<TestValue key="fmwpontautpercbijt" type="Double">10</TestValue>
+									<TestValue key="fmwpontautperiodetot5jr" type="Integer">50</TestValue>
+									<TestValue key="fmwpontautaantdaginbeljr" type="Integer">BDRGDAGENJAAR</TestValue>
+									<TestValue key="fmwpontautperiodevanaf5jr" type="Integer">100</TestValue>
+									<TestValue key="fmwpontautpercbijtvanaf5jr" type="Double">22</TestValue>
+									<TestValue key="fmwpontautnaamg5jr" type="Boolean">true</TestValue>
+									<TestValue key="fmwpontautnaambegin60mnd" type="Integer">10</TestValue>
+								</item>
+							</list>
+						</item>
+						<item>
+							<TestValue key="fmwondgegstamin" type="Boolean">False</TestValue>
+							<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+								<item>
+									<TestValue key="fmwpontautstandcata" type="Integer">1000</TestValue>
+									<TestValue key="fmwpontautpercbijt" type="Double">10</TestValue>
+									<TestValue key="fmwpontautperiodetot5jr" type="Integer">50</TestValue>
+									<TestValue key="fmwpontautaantdaginbeljr" type="Integer">BDRGDAGENJAAR</TestValue>
+									<TestValue key="fmwpontautperiodevanaf5jr" type="Integer">100</TestValue>
+									<TestValue key="fmwpontautpercbijtvanaf5jr" type="Double">22</TestValue>
+									<TestValue key="fmwpontautnaambegin60mnd" type="Integer">10</TestValue>
+									<TestValue key="fmwpontautnaamg5jr" type="Boolean">true</TestValue>
+									<TestValue key="fmwpontautozeroemissie" type="Boolean">true</TestValue>
+								</item>
+							</list>
+						</item>
+					</list>
+			</Input>
+			<Output type="berekendfiscaalmodel">
+				<list refid="onderneminglist">
+					<item>
+						<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+							<item>
+								<TestValue key="fmwpontautberprivg" type="Integer">0</TestValue>
+							</item>
+						</list>
+					</item>
+					<item>
+						<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+							<item>
+								<TestValue key="fmwpontautberprivg" type="Integer">73</TestValue>
+							</item>
+						</list>
+					</item>
+					<item>
+						<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+							<item>
+								<TestValue key="fmwpontautberprivg" type="Integer">65</TestValue>
+							</item>
+						</list>
+					</item>
+				</list>
+			</Output>
+		</TestCase>
+</TestCases>

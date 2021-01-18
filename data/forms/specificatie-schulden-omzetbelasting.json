@@ -1,0 +1,77 @@
+{
+  "schema": {
+    "version": "2019-5.1",
+    "groups": [
+      {
+        "legend": "Er zijn extra gegevens nodig voor de aangifte",
+        "fields": [
+          {
+            "type": "label",
+            "label": "Controleer de ingevulde waarden of vul deze in. Het totaal van de ingevulde waarden moet overeenkomen met de totale boekwaarde schuld omzetbelasting (<strong>€ #{119443-EBRounded}</strong>)."
+          }
+        ]
+      },
+      {
+        "legend": "Specificatie schuld omzetbelasting",
+        "fields": [
+          {
+            "type": "currency",
+            "currency": "EUR",
+            "label": "Schuld omzetbelasting over dit boekjaar",
+            "model": "wpaskortspecboek",
+            "refid": "wpaskortspecboek",
+            "postKey": "1767920",
+            "validator": ["verplicht", "bedrag13"]
+          },
+          {
+            "type": "currency",
+            "currency": "EUR",
+            "label": "Schuld omzetbelasting over het vorige boekjaar",
+            "model": "wpaskortspecvor",
+            "refid": "wpaskortspecvor",
+            "postKey": "1767921",
+            "validator": ["verplicht", "bedrag13"]
+          },
+          {
+            "type": "currency",
+            "currency": "EUR",
+            "label": "Schuld omzetbelasting over oudere boekjaren",
+            "model": "wpaskortspecoud",
+            "refid": "wpaskortspecoud",
+            "postKey": "1767922",
+            "validator": ["verplicht", "bedrag13"]
+          },
+          {
+            "type": "currency",
+            "currency": "EUR",
+            "disabled": true,
+            "total": true,
+            "totalSymbol": "+",
+            "label": "Totaal specificatie schuld omzetbelasting",
+            "model": "wpaskortspectot",
+            "refid": "wpaskortspectot",
+            "doNotPost": true,
+            "customValue": {
+              "formula": "sumOfFields",
+              "parameters": {
+                "fieldModels": [
+                  "wpaskortspecboek",
+                  "wpaskortspecvor",
+                  "wpaskortspecoud"
+                ]
+              }
+            }
+          },
+          {
+            "type": "label",
+            "label": "Het totaalbedrag komt niet overeen met het verwachte bedrag #{119443-EBRounded}",
+            "customExpectedName": {
+              "model": "wpaskortspectot",
+              "static": "119443-EBRounded"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

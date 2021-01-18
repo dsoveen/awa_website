@@ -1,0 +1,97 @@
+{
+  "schema": {
+ 	"version": "2019-5.2",
+    "groups": [
+      {
+        "legend": "Algemene vragen en gegevens",
+        "fields": [
+          {
+            "type": "input",
+            "inputType": "text",
+            "label": "Naam onderneming",
+            "model": "wondnaam",
+            "refid": "wondnaam",
+            "postKey": "119034",
+            "validator": ["verplicht"]
+
+          }, 
+          {
+            "type": "radios",
+            "label": "Is de naam van de onderneming in #{BDRGJAAR} gewijzigd?",
+            "model": "wondgew",
+            "refid": "wondgew",
+            "validator": ["verplicht"],
+            "values": [ { "name": "Ja", "value": true }, { "name": "Nee", "value": false } ]
+          },
+          {
+            "type": "input",
+            "inputType": "text",
+            "label": "Oude naam van de onderneming",
+            "model": "wondoud",
+            "refid": "wondoud",
+            "postKey": "119036",
+            "validator": ["verplicht"],
+            "customVisible": [
+              {
+                "formula": "equalsValue",
+                "parameters": {
+                  "fieldModels": ["wondgew"],
+                  "value": true
+                }
+              }
+            ]
+          },
+          {
+            "type": "input",
+            "inputType": "text",
+            "label": "Omschrijving van de activiteiten",
+            "model": "wondoms",
+            "refid": "wondoms",
+            "postKey": "507367"
+          },
+          {
+            "type": "radios",
+            "validator": ["verplicht"],
+            "label": "Is deze onderneming in dit boekjaar gestart?",
+            "model": "wondstart",
+            "refid": "wondstart",
+            "values": [ { "name": "Ja", "value": true }, { "name": "Nee", "value": false } ]
+          },
+          {
+            "type": "radios",
+            "label": "Waren er in #{BDRGJAAR} een of meer bestelauto's of personenauto's in uw onderneming (bijv in eigendom, lease of huur)?",
+            "model": "wondgegautoaanw",
+            "refid": "wondgegautoaanw",
+            "validator": ["verplicht"],
+            "values": [ { "name": "Ja", "value": true }, { "name": "Nee", "value": false } ]
+          },
+          {
+            "type": "radios",
+            "label": "Hebt u een fiscale partner die heeft meegewerkt in de onderneming?",
+            "validator": ["verplicht"],
+            "model": "wondgegmee",
+            "refid": "wondgegmee",
+            "postKey": "1764209",
+            "values": [ { "name": "Ja", "value": "J" }, { "name": "Nee", "value": "N" } ]
+          },
+          {
+            "type": "radios",
+            "validator": ["verplicht"],
+            "label": "Hebt u recht op research-en-developmentaftrek (RDA)?",
+            "model": "wondgeginvrda",
+            "refid": "wondgeginvrda",
+            "values": [ { "name": "Ja", "value": true }, { "name": "Nee", "value": false } ]
+          },
+          {
+            "type": "radios",
+            "validator": ["verplicht"],
+            "label": "Moet u een desinvesteringsbijtelling aangeven?",
+            "model": "wondgeginvdesinv",
+            "refid": "wondgeginvdesinv",
+            "values": [ { "name": "Ja", "value": true }, { "name": "Nee", "value": false } ]
+          }	
+        ]
+      }
+    ]
+  }
+}

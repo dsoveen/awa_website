@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCases>
+	<TestCase omschrijving="TC01 - {fmwpontautpercbijt} in overige gevallen">
+		<Input type="fiscaalmodel">
+			<list refid="ondernemingList">
+				<item>
+					<TestValue key="fmwondgegstamin" type="Boolean">false</TestValue>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontaut500meer" type="Boolean">true</TestValue>
+							<TestValue key="fmwpontautpercbijt" type="Double">2.0</TestValue>
+						</item>
+					</list>
+				</item>
+				<item>
+					<TestValue key="fmwondgegstamin" type="Boolean">false</TestValue>
+					<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontaut500meer" type="Boolean">true</TestValue>
+							<TestValue key="fmwpontautpercbijt" type="Double">2.0</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Input>
+		<Output type="berekendfiscaalmodel">
+			<list refid="onderneminglist">
+				<item>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautpercbijtel" type="Double">2.0</TestValue>
+						</item>
+					</list>
+				</item>
+				<item>
+					<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautpercbijtel" type="Double">2.0</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Output>
+	</TestCase>
+	<TestCase omschrijving="TC02 - 0 obv {fmwpontaut500meer} = Nee">
+		<Input type="fiscaalmodel">
+			<list refid="ondernemingList">
+				<item>
+					<TestValue key="fmwondgegstamin" type="Boolean">false</TestValue>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontaut500meer" type="Boolean">false</TestValue>
+						</item>
+					</list>
+				</item>
+				<item>
+					<TestValue key="fmwondgegstamin" type="Boolean">false</TestValue>
+					<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontaut500meer" type="Boolean">false</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Input>
+		<Output type="berekendfiscaalmodel">
+			<list refid="onderneminglist">
+				<item>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautpercbijtel" type="Double">0.0</TestValue>
+						</item>
+					</list>
+				</item>
+				<item>
+					<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautpercbijtel" type="Double">0.0</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Output>
+	</TestCase>
+	<TestCase omschrijving="TC03 - 4 obv {fmwpontautwaterstof} = Ja - {fmwpontautstandcata} lager dan {BDRGBIJTAUTOMAXEMISSIE}">
+		<Input type="fiscaalmodel">
+			<list refid="ondernemingList">
+				<item>
+					<TestValue key="fmwondgegstamin" type="Boolean">false</TestValue>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautwaterstof" type="Boolean">true</TestValue>
+							<TestValue key="fmwpontautstandcata" type="Integer">49000</TestValue>
+						</item>
+					</list>
+				</item>
+				<item>
+					<TestValue key="fmwondgegstamin" type="Boolean">false</TestValue>
+					<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautwaterstof" type="Boolean">true</TestValue>
+							<TestValue key="fmwpontautstandcata" type="Integer">49000</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Input>
+		<Output type="berekendfiscaalmodel">
+			<list refid="onderneminglist">
+				<item>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautpercbijtel" type="Double">4.0</TestValue>
+						</item>
+					</list>
+				</item>
+				<item>
+					<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautpercbijtel" type="Double">4.0</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Output>
+	</TestCase>
+	<TestCase omschrijving="TC04 - 4 obv {fmwpontautwaterstof} = Ja - {fmwpontautstandcata} groter dan {BDRGBIJTAUTOMAXEMISSIE}">
+		<Input type="fiscaalmodel">
+			<list refid="ondernemingList">
+				<item>
+					<TestValue key="fmwondgegstamin" type="Boolean">false</TestValue>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautwaterstof" type="Boolean">true</TestValue>
+							<TestValue key="fmwpontautstandcata" type="Integer">53000</TestValue>
+						</item>
+					</list>
+				</item>
+				<item>
+					<TestValue key="fmwondgegstamin" type="Boolean">false</TestValue>
+					<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautwaterstof" type="Boolean">true</TestValue>
+							<TestValue key="fmwpontautstandcata" type="Integer">53000</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Input>
+		<Output type="berekendfiscaalmodel">
+			<list refid="onderneminglist">
+				<item>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautpercbijtel" type="Double">4.0</TestValue>
+						</item>
+					</list>
+				</item>
+				<item>
+					<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautpercbijtel" type="Double">4.0</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Output>
+	</TestCase>
+	<TestCase omschrijving="TC05 - 4 op {fmwpontautozeroemissie} = Ja en {fmwpontautwaterstof} = Leeg">
+		<Input type="fiscaalmodel">
+			<list refid="ondernemingList">
+				<item>
+					<TestValue key="fmwondgegstamin" type="Boolean">false</TestValue>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautozeroemissie" type="Boolean">true</TestValue>
+							<TestValue key="fmwpontautwaterstof" type="Boolean">leeg</TestValue>
+						</item>
+					</list>
+				</item>
+				<item>
+					<TestValue key="fmwondgegstamin" type="Boolean">false</TestValue>
+					<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautozeroemissie" type="Boolean">true</TestValue>
+							<TestValue key="fmwpontautwaterstof" type="Boolean">leeg</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Input>
+		<Output type="berekendfiscaalmodel">
+			<list refid="onderneminglist">
+				<item>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautpercbijtel" type="Double">4.0</TestValue>
+						</item>
+					</list>
+				</item>
+				<item>
+					<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautpercbijtel" type="Double">4.0</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Output>
+	</TestCase>
+	<TestCase
+			omschrijving="TC06 - 4 op {fmwpontautwaterstof} = Nee EN {fmwpontautstandcata} lager of gelijk aan {BDRGBIJTAUTOMAXEMISSIE}">
+		<Input type="fiscaalmodel">
+			<list refid="ondernemingList">
+				<item>
+					<TestValue key="fmwondgegstamin" type="Boolean">false</TestValue>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautwaterstof" type="Boolean">false</TestValue>
+							<TestValue key="fmwpontautstandcata" type="Integer">50000</TestValue>
+						</item>
+					</list>
+				</item>
+				<item>
+					<TestValue key="fmwondgegstamin" type="Boolean">false</TestValue>
+					<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautwaterstof" type="Boolean">false</TestValue>
+							<TestValue key="fmwpontautstandcata" type="Integer">50000</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Input>
+		<Output type="berekendfiscaalmodel">
+			<list refid="onderneminglist">
+				<item>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautpercbijtel" type="Double">4.0</TestValue>
+						</item>
+					</list>
+				</item>
+				<item>
+					<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautpercbijtel" type="Double">4.0</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Output>
+	</TestCase>
+	<TestCase omschrijving="TC07 - 22 op {fmwponautzeroemissie} = Nee">
+		<Input type="fiscaalmodel">
+			<list refid="ondernemingList">
+				<item>
+					<TestValue key="fmwondgegstamin" type="Boolean">false</TestValue>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautozeroemissie" type="Boolean">false</TestValue>
+						</item>
+					</list>
+				</item>
+				<item>
+					<TestValue key="fmwondgegstamin" type="Boolean">false</TestValue>
+					<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautozeroemissie" type="Boolean">false</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Input>
+		<Output type="berekendfiscaalmodel">
+			<list refid="onderneminglist">
+				<item>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautpercbijtel" type="Double">22.0</TestValue>
+						</item>
+					</list>
+				</item>
+				<item>
+					<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautpercbijtel" type="Double">22.0</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Output>
+	</TestCase>
+	<TestCase
+			omschrijving="TC08 - bijtelling berekenen op {fmwpontautwaterstof} = Nee EN {fmwpontautstandcata} groter dan {BDRGBIJTAUTOMAXEMISSIE}">
+		<Input type="fiscaalmodel">
+			<list refid="ondernemingList">
+				<item>
+					<TestValue key="fmwondgegstamin" type="Boolean">false</TestValue>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautwaterstof" type="Boolean">false</TestValue>
+							<TestValue key="fmwpontautstandcata" type="Integer">65000</TestValue>
+						</item>
+					</list>
+				</item>
+				<item>
+					<TestValue key="fmwondgegstamin" type="Boolean">false</TestValue>
+					<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautwaterstof" type="Boolean">false</TestValue>
+							<TestValue key="fmwpontautstandcata" type="Integer">53000</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Input>
+		<Output type="berekendfiscaalmodel">
+			<list refid="onderneminglist">
+				<item>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautpercbijtel" type="Double">8.153846153846153</TestValue>
+						</item>
+					</list>
+				</item>
+				<item>
+					<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautpercbijtel" type="Double">5.018867924528302</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Output>
+	</TestCase>
+	<TestCase
+			omschrijving="TC09 - bijtelling berekenen op {fmwpontautnaamg5jrplus} = Ja EN {fmwpontautpercbijt} = 4% EN {fmwpontautstandcata} groter aan {BDRGBIJTAUTOMAXEMISSIE}">
+		<Input type="fiscaalmodel">
+			<list refid="ondernemingList">
+				<item>
+					<TestValue key="fmwondgegstamin" type="Boolean">false</TestValue>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautnaamg5jrplus" type="Boolean">true</TestValue>
+							<TestValue key="fmwpontautpercbijt" type="Double">4.0</TestValue>
+							<TestValue key="fmwpontautstandcata" type="Integer">65000</TestValue>
+						</item>
+					</list>
+				</item>
+				<item>
+					<TestValue key="fmwondgegstamin" type="Boolean">false</TestValue>
+					<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautnaamg5jrplus" type="Boolean">true</TestValue>
+							<TestValue key="fmwpontautpercbijt" type="Double">4.0</TestValue>
+							<TestValue key="fmwpontautstandcata" type="Integer">70000</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Input>
+		<Output type="berekendfiscaalmodel">
+			<list refid="onderneminglist">
+				<item>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautpercbijtel" type="Double">8.846153846153847</TestValue>
+						</item>
+					</list>
+				</item>
+				<item>
+					<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautpercbijtel" type="Double">10.0</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Output>
+	</TestCase>
+	<TestCase
+			omschrijving="TC10 - {fmwpontautpercbijt} op {fmwpontautnaamg5jrplus} = Nee EN {fmwpontautpercbijt} = 4% EN {fmwpontautstandcata} groter aan {BDRGBIJTAUTOMAXEMISSIE}">
+		<Input type="fiscaalmodel">
+			<list refid="ondernemingList">
+				<item>
+					<TestValue key="fmwondgegstamin" type="Boolean">false</TestValue>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautnaamg5jrplus" type="Boolean">false</TestValue>
+							<TestValue key="fmwpontautpercbijt" type="Double">4.0</TestValue>
+							<TestValue key="fmwpontautstandcata" type="Integer">65000</TestValue>
+						</item>
+					</list>
+				</item>
+				<item>
+					<TestValue key="fmwondgegstamin" type="Boolean">false</TestValue>
+					<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautnaamg5jrplus" type="Boolean">false</TestValue>
+							<TestValue key="fmwpontautpercbijt" type="Double">4.0</TestValue>
+							<TestValue key="fmwpontautstandcata" type="Integer">70000</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Input>
+		<Output type="berekendfiscaalmodel">
+			<list refid="onderneminglist">
+				<item>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautpercbijtel" type="Double">4.0</TestValue>
+						</item>
+					</list>
+				</item>
+				<item>
+					<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautpercbijtel" type="Double">4.0</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Output>
+	</TestCase>
+	<TestCase
+			omschrijving="TC11 - {fmwpontautpercbijt} op {fmwpontautnaamg5jrplus} = Ja EN {fmwpontautpercbijt} = 2% EN {fmwpontautstandcata} groter aan {BDRGBIJTAUTOMAXEMISSIE}">
+		<Input type="fiscaalmodel">
+			<list refid="ondernemingList">
+				<item>
+					<TestValue key="fmwondgegstamin" type="Boolean">false</TestValue>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautnaamg5jrplus" type="Boolean">false</TestValue>
+							<TestValue key="fmwpontautpercbijt" type="Double">2.0</TestValue>
+							<TestValue key="fmwpontautstandcata" type="Integer">65000</TestValue>
+						</item>
+					</list>
+				</item>
+				<item>
+					<TestValue key="fmwondgegstamin" type="Boolean">false</TestValue>
+					<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautnaamg5jrplus" type="Boolean">false</TestValue>
+							<TestValue key="fmwpontautpercbijt" type="Double">2.0</TestValue>
+							<TestValue key="fmwpontautstandcata" type="Integer">70000</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Input>
+		<Output type="berekendfiscaalmodel">
+			<list refid="onderneminglist">
+				<item>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautpercbijtel" type="Double">2.0</TestValue>
+						</item>
+					</list>
+				</item>
+				<item>
+					<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautpercbijtel" type="Double">2.0</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Output>
+	</TestCase>
+	<TestCase
+			omschrijving="TC12 - {fmwpontautpercbijt} op {fmwpontautnaamg5jrplus} = Ja EN {fmwpontautpercbijt} = 4% EN {fmwpontautstandcata} kleiner of gelijk aan {BDRGBIJTAUTOMAXEMISSIE}">
+		<Input type="fiscaalmodel">
+			<list refid="ondernemingList">
+				<item>
+					<TestValue key="fmwondgegstamin" type="Boolean">false</TestValue>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautnaamg5jrplus" type="Boolean">false</TestValue>
+							<TestValue key="fmwpontautpercbijt" type="Double">4.0</TestValue>
+							<TestValue key="fmwpontautstandcata" type="Integer">49000</TestValue>
+						</item>
+					</list>
+				</item>
+				<item>
+					<TestValue key="fmwondgegstamin" type="Boolean">false</TestValue>
+					<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautnaamg5jrplus" type="Boolean">false</TestValue>
+							<TestValue key="fmwpontautpercbijt" type="Double">20.0</TestValue>
+							<TestValue key="fmwpontautstandcata" type="Integer">48000</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Input>
+		<Output type="berekendfiscaalmodel">
+			<list refid="onderneminglist">
+				<item>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautpercbijtel" type="Double">4.0</TestValue>
+						</item>
+					</list>
+				</item>
+				<item>
+					<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautpercbijtel" type="Double">20.0</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Output>
+	</TestCase>
+</TestCases>

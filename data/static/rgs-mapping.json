@@ -1,0 +1,1622 @@
+{
+    "118315": {
+        "name": "mutaties/onttrekkingen kapitaal in het boekjaar",
+        "rules": [
+            {
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BEivKapProPok"
+            },
+            {
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BEivKapProPok"
+            }
+        ]
+    },
+    "118320": {
+        "name": "overdrachtsprijs prive-onttrekking natura/goederen",
+        "rules": [
+            {
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BEivKapProPmv"
+            },
+            {
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BEivKapProPmv"
+            },
+            {
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BEivKapProPrg"
+            },
+            {
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BEivKapProPrg"
+            }
+        ]
+    },
+    "118340": {
+        "name": "stortingen van kapitaal cq vermogenssprong in boekjaar",
+        "rules": [
+            {
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "BEivKapPrs"
+            },
+            {
+                "factor": 1,
+                "source": "OpeningBalance",
+                "rgsCode": "BEivKapPrs"
+            }
+        ]
+    },
+    "118387": {
+        "name": "toevoeging FOR",
+        "rules": [
+            {
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "BEivFirFor",
+                "conditionTag": "map_decrease",
+                "conditionTagDescription": "Alleen mappen als BEivFirFor_ClosingBalance < BEivFirFor_OpeningBalance"
+            },
+            {
+                "factor": 1,
+                "source": "OpeningBalance",
+                "rgsCode": "BEivFirFor",
+                "conditionTag": "map_decrease",
+                "conditionTagDescription": "Alleen mappen als BEivFirFor_ClosingBalance < BEivFirFor_OpeningBalance\r\nGaat om toevoeging FOR (SB->EB) vandaar saldo SB tegenboeken"
+            }
+        ]
+    },
+    "118388": {
+        "name": "onttrekking FOR",
+        "rules": [
+            {
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BEivFirFor",
+                "conditionTag": "map_increase",
+                "conditionTagDescription": "Alleen mappen als BEivFirFor_ClosingBalance > BEivFirFor_OpeningBalance"
+            },
+            {
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BEivFirFor",
+                "conditionTag": "map_increase",
+                "conditionTagDescription": "Alleen mappen als BEivFirFor_ClosingBalance > BEivFirFor_OpeningBalance\r\nGaat om toevoeging FOR (SB->EB) vandaar saldo SB tegenboeken"
+            }
+        ]
+    },
+    "119091": {
+        "name": "goodwill fisc",
+        "rules": [
+            {
+                "target": "EB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BIvaGoo"
+            },
+            {
+                "target": "SB",
+                "factor": 1,
+                "source": "OpeningBalance",
+                "rgsCode": "BIvaGoo"
+            }
+        ]
+    },
+    "119092": {
+        "name": "kosten aanschaf goodwill fisc",
+        "rules": [
+            {
+                "target": "EB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BIvaGooVvp"
+            }
+        ]
+    },
+    "119105": {
+        "name": "overige immateriele vaste activa fisc",
+        "rules": [
+            {
+                "target": "EB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BIvaOiv"
+            },
+            {
+                "target": "SB",
+                "factor": 1,
+                "source": "OpeningBalance",
+                "rgsCode": "BIvaOiv"
+            }
+        ]
+    },
+    "119106": {
+        "name": "aansch/voortbr overige imm vaste activa fisc",
+        "rules": [
+            {
+                "target": "EB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BIvaOivVvp"
+            }
+        ]
+    },
+    "119129": {
+        "name": "machines fisc",
+        "rules": [
+            {
+                "target": "EB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BMvaMei"
+            },
+            {
+                "target": "SB",
+                "factor": 1,
+                "source": "OpeningBalance",
+                "rgsCode": "BMvaMei"
+            }
+        ]
+    },
+    "119130": {
+        "name": "kosten aanschaf machines fisc",
+        "rules": [
+            {
+                "target": "EB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BMvaMeiVvp"
+            }
+        ]
+    },
+    "119211": {
+        "name": "onderhanden werk fisc",
+        "rules": [
+            {
+                "target": "EB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BVrdOwe"
+            },
+            {
+                "target": "SB",
+                "factor": 1,
+                "source": "OpeningBalance",
+                "rgsCode": "BVrdOwe"
+            }
+        ]
+    },
+    "119232": {
+        "name": "handelsdebiteuren fisc",
+        "rules": [
+            {
+                "target": "EB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BVorDeb"
+            },
+            {
+                "target": "SB",
+                "factor": 1,
+                "source": "OpeningBalance",
+                "rgsCode": "BVorDeb"
+            }
+        ]
+    },
+    "119233": {
+        "name": "nominaal handelsdebiteuren fisc",
+        "rules": [
+            {
+                "target": "EB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BVorDebHad"
+            }
+        ]
+    },
+    "119242": {
+        "name": "vorderingen omzetbelasting fisc",
+        "rules": [
+            {
+                "target": "EB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BVorVbkTvo"
+            },
+            {
+                "target": "SB",
+                "factor": 1,
+                "source": "OpeningBalance",
+                "rgsCode": "BVorVbkTvo"
+            }
+        ]
+    },
+    "119271": {
+        "name": "overige vorderingen kortlopend fisc",
+        "rules": [
+            {
+                "target": "EB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BVorLbv"
+            },
+            {
+                "target": "SB",
+                "factor": 1,
+                "source": "OpeningBalance",
+                "rgsCode": "BVorLbv"
+            },
+            {
+                "target": "EB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BVorOva"
+            },
+            {
+                "target": "SB",
+                "factor": 1,
+                "source": "OpeningBalance",
+                "rgsCode": "BVorOva"
+            },
+            {
+                "target": "EB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BVorOvr"
+            },
+            {
+                "target": "SB",
+                "factor": 1,
+                "source": "OpeningBalance",
+                "rgsCode": "BVorOvr"
+            },
+            {
+                "target": "EB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BVorTsk"
+            },
+            {
+                "target": "SB",
+                "factor": 1,
+                "source": "OpeningBalance",
+                "rgsCode": "BVorTsk"
+            },
+            {
+                "target": "EB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BVorTus"
+            },
+            {
+                "target": "SB",
+                "factor": 1,
+                "source": "OpeningBalance",
+                "rgsCode": "BVorTus"
+            },
+            {
+                "target": "EB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BVorVbkTtb"
+            },
+            {
+                "target": "SB",
+                "factor": 1,
+                "source": "OpeningBalance",
+                "rgsCode": "BVorVbkTtb"
+            },
+            {
+                "target": "EB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BVorVbkVbk"
+            },
+            {
+                "target": "SB",
+                "factor": 1,
+                "source": "OpeningBalance",
+                "rgsCode": "BVorVbkVbk"
+            }
+        ]
+    },
+    "119286": {
+        "name": "liquide middelen fisc",
+        "rules": [
+            {
+                "target": "EB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BLim"
+            },
+            {
+                "target": "SB",
+                "factor": 1,
+                "source": "OpeningBalance",
+                "rgsCode": "BLim"
+            }
+        ]
+    },
+    "119343": {
+        "name": "fiscale oudedagsreserve fisc",
+        "rules": [
+            {
+                "target": "EB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "BEivFirFor"
+            },
+            {
+                "target": "SB",
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BEivFirFor"
+            }
+        ]
+    },
+    "119356": {
+        "name": "ondernemingsvermogen excl fiscale reserves fisc",
+        "rules": [
+            {
+                "target": "EB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "BEivKap"
+            },
+            {
+                "target": "SB",
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BEivKap"
+            }
+        ]
+    },
+    "119411": {
+        "name": "schulden kredietinstellingen fisc",
+        "rules": [
+            {
+                "target": "EB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "BLasSak"
+            },
+            {
+                "target": "SB",
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BLasSak"
+            }
+        ]
+    },
+    "119415": {
+        "name": "schulden aan leveranciers etc fisc",
+        "rules": [
+            {
+                "target": "EB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "BSchCreHac"
+            },
+            {
+                "target": "SB",
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BSchCreHac"
+            }
+        ]
+    },
+    "119443": {
+        "name": "schulden omzetbelasting fisc",
+        "rules": [
+            {
+                "target": "EB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "BSchBepBtw"
+            },
+            {
+                "target": "SB",
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BSchBepBtw"
+            }
+        ]
+    },
+    "119474": {
+        "name": "netto omzet fisc",
+        "rules": [
+            {
+                "target": "DB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "WOmz"
+            }
+        ]
+    },
+    "119502": {
+        "name": "overige opbrengsten fisc",
+        "rules": [
+            {
+                "target": "DB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "WOvb"
+            }
+        ]
+    },
+    "119509": {
+        "name": "kosten grond/hulpstof cq inkooppr verkopen fisc",
+        "rules": [
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WKprBtk"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WKprGrp"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WKprInh"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WKprInp"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WKprKvg"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WKprLeb"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WKprMuo"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WKprPrd"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WKprPrg"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WKprVom"
+            }
+        ]
+    },
+    "119513": {
+        "name": "kosten uitbesteed werk etc fisc",
+        "rules": [
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WKprKuw"
+            }
+        ]
+    },
+    "119531": {
+        "name": "arbeidsbeloning fiscale partner fisc",
+        "rules": [
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedWkrWkvMpi"
+            }
+        ]
+    },
+    "119562": {
+        "name": "afschr machines en installaties fisc",
+        "rules": [
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WAfsAmvMei"
+            }
+        ]
+    },
+    "119581": {
+        "name": "auto- en transportkosten fisc",
+        "rules": [
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedAut"
+            }
+        ]
+    },
+    "119585": {
+        "name": "huisvestingskosten fisc",
+        "rules": [
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedHui"
+            }
+        ]
+    },
+    "119589": {
+        "name": "onderhoud ov materiele vaste activa fisc",
+        "rules": [
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedEem"
+            }
+        ]
+    },
+    "119593": {
+        "name": "verkoopkosten fisc",
+        "rules": [
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedVkkBeu"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedVkkCom"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedVkkDbv"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedVkkDvd"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedVkkEta"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedVkkFra"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedVkkInc"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedVkkKer"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedVkkKmw"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedVkkKmz"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedVkkKos"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedVkkObs"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedVkkOvr"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedVkkRea"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedVkkRel"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedVkkRep"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedVkkRev"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedVkkVkp"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedVkkVrk"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedVkkWeb"
+            }
+        ]
+    },
+    "119603": {
+        "name": "andere kosten fisc",
+        "rules": [
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedAdlBan"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedAdlBev"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedAdlBov"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedAdlDal"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedAdlHef"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedAdlKav"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedAdlNao"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedAdlNbo"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedAdlOad"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedAdlOpr"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedAdlOvb"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedAdlVal"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedAea"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedAlk"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedAss"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedDvv"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedKan"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedKof"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedOrg"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedTra"
+            }
+        ]
+    },
+    "119615": {
+        "name": "opbrengst banktegoeden fisc",
+        "rules": [
+            {
+                "target": "DB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "WFbeRlm"
+            }
+        ]
+    },
+    "119619": {
+        "name": "opbrengst overige vorderingen fisc",
+        "rules": [
+            {
+                "target": "DB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "WOvt"
+            }
+        ]
+    },
+    "119635": {
+        "name": "kosten schulden en rentelasten etc fisc",
+        "rules": [
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WFbeOrl"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WFbeRls"
+            }
+        ]
+    },
+    "119663": {
+        "name": "boekwinst op activa fisc",
+        "rules": [
+            {
+                "target": "DB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "WAfsRvi",
+                "conditionTag": "map_lower_zero",
+                "conditionTagDescription": "Alleen mappen als WAfsRvi < 0 (dus een credit saldo heeft)"
+            },
+            {
+                "target": "DB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "WAfsRvm",
+                "conditionTag": "map_lower_zero",
+                "conditionTagDescription": "Alleen mappen als WAfsRvm < 0 (dus een credit saldo heeft)"
+            }
+        ]
+    },
+    "119674": {
+        "name": "overige buitengewone baten fisc",
+        "rules": [
+            {
+                "target": "DB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedAdlBet",
+                "conditionTag": "map_lower_zero",
+                "conditionTagDescription": "Alleen mappen als WBedAdlBet < 0 (dus een credit saldo heeft)"
+            },
+            {
+                "target": "DB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedAdlBtk"
+            }
+        ]
+    },
+    "119706": {
+        "name": "overige buitengewone lasten fisc",
+        "rules": [
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedAdlBet",
+                "conditionTag": "map_higher_zero",
+                "conditionTagDescription": "Alleen mappen als WBedAdlBet > 0 (dus een debet saldo heeft)"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedVkkAdd"
+            }
+        ]
+    },
+    "119780": {
+        "name": "bedrag van aftrek uitgesloten boeten",
+        "rules": [
+            {
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedAdlBev"
+            },
+            {
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WBedAutBeb"
+            }
+        ],
+        "conditionTag": "delete_zero",
+        "conditionTagDescription": "Alleen invullen als na mapping 119780 <> 0 (anders leegmaken)"
+    },
+    "119788": {
+        "name": "bedrag overige prive onttrekkingen",
+        "rules": [
+            {
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BEivKapProOvp"
+            },
+            {
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BEivKapProOvp"
+            },
+            {
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BEivKapProPer"
+            },
+            {
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BEivKapProPer"
+            },
+            {
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BEivKapProPiz"
+            },
+            {
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BEivKapProPiz"
+            },
+            {
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BEivKapProPpr"
+            },
+            {
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BEivKapProPpr"
+            },
+            {
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BEivKapProPri"
+            },
+            {
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BEivKapProPri"
+            },
+            {
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BEivKapProPrk"
+            },
+            {
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BEivKapProPrk"
+            }
+        ]
+    },
+    "520479": {
+        "name": "goodwill afschrijvingen fisc",
+        "rules": [
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WAfsAivGoo"
+            }
+        ]
+    },
+    "520480": {
+        "name": "overige immateriele vaste activa afschrijvingen fisc",
+        "rules": [
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WAfsAivCev"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WAfsAivKoe"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WAfsAivOek"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WAfsAivOiv"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WAfsAivViv"
+            }
+        ]
+    },
+    "520482": {
+        "name": "andere vaste bedrijfsmiddelen afschrijvingen fisc",
+        "rules": [
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WAfsAmvBei"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WAfsAmvHuu"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WAfsAmvObe"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WAfsAmvTev"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WAfsAmvVbi"
+            }
+        ]
+    },
+    "520495": {
+        "name": "langlopende schulden overige",
+        "rules": [
+            {
+                "target": "EB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "BLasAcl"
+            },
+            {
+                "target": "SB",
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BLasAcl"
+            },
+            {
+                "target": "EB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "BLasAoe"
+            },
+            {
+                "target": "SB",
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BLasAoe"
+            },
+            {
+                "target": "EB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "BLasFlv"
+            },
+            {
+                "target": "SB",
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BLasFlv"
+            },
+            {
+                "target": "EB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "BLasNeg"
+            },
+            {
+                "target": "SB",
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BLasNeg"
+            },
+            {
+                "target": "EB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "BLasOls"
+            },
+            {
+                "target": "SB",
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BLasOls"
+            },
+            {
+                "target": "EB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "BLasOvp"
+            },
+            {
+                "target": "SB",
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BLasOvp"
+            },
+            {
+                "target": "EB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "BLasSal"
+            },
+            {
+                "target": "SB",
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BLasSal"
+            },
+            {
+                "target": "EB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "BLasSoh"
+            },
+            {
+                "target": "SB",
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BLasSoh"
+            },
+            {
+                "target": "EB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "BLasSuh"
+            },
+            {
+                "target": "SB",
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BLasSuh"
+            },
+            {
+                "target": "EB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "BLasTbw"
+            },
+            {
+                "target": "SB",
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BLasTbw"
+            },
+            {
+                "target": "EB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "BLasVob"
+            },
+            {
+                "target": "SB",
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BLasVob"
+            }
+        ]
+    },
+    "520500": {
+        "name": "kortlopende schulden overige",
+        "rules": [
+            {
+                "target": "EB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "BSchAos"
+            },
+            {
+                "target": "SB",
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BSchAos"
+            },
+            {
+                "target": "EB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "BSchBepOvb"
+            },
+            {
+                "target": "SB",
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BSchBepOvb"
+            },
+            {
+                "target": "EB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "BSchCreKcr"
+            },
+            {
+                "target": "SB",
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BSchCreKcr"
+            },
+            {
+                "target": "EB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "BschCreTtf"
+            },
+            {
+                "target": "SB",
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BschCreTtf"
+            },
+            {
+                "target": "EB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "BSchCreTus"
+            },
+            {
+                "target": "SB",
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BSchCreTus"
+            },
+            {
+                "target": "EB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "BSchCreVbk"
+            },
+            {
+                "target": "SB",
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BSchCreVbk"
+            },
+            {
+                "target": "EB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "BSchFlk"
+            },
+            {
+                "target": "SB",
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BSchFlk"
+            },
+            {
+                "target": "EB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "BSchKol"
+            },
+            {
+                "target": "SB",
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BSchKol"
+            },
+            {
+                "target": "EB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "BSchOpa"
+            },
+            {
+                "target": "SB",
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BSchOpa"
+            },
+            {
+                "target": "EB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "BSchOvs"
+            },
+            {
+                "target": "SB",
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BSchOvs"
+            },
+            {
+                "target": "EB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "BSchSak"
+            },
+            {
+                "target": "SB",
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BSchSak"
+            },
+            {
+                "target": "EB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "BSchShb"
+            },
+            {
+                "target": "SB",
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BSchShb"
+            },
+            {
+                "target": "EB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "BSchSoh"
+            },
+            {
+                "target": "SB",
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BSchSoh"
+            },
+            {
+                "target": "EB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "BSchTbw"
+            },
+            {
+                "target": "SB",
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BSchTbw"
+            },
+            {
+                "target": "EB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "BSchTus"
+            },
+            {
+                "target": "SB",
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BSchTus"
+            },
+            {
+                "target": "EB",
+                "factor": -1,
+                "source": "ClosingBalance",
+                "rgsCode": "BSchVob"
+            },
+            {
+                "target": "SB",
+                "factor": -1,
+                "source": "OpeningBalance",
+                "rgsCode": "BSchVob"
+            }
+        ]
+    },
+    "520509": {
+        "name": "voorraden excl onderhanden werk",
+        "rules": [
+            {
+                "target": "EB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BVrdEmb"
+            },
+            {
+                "target": "SB",
+                "factor": 1,
+                "source": "OpeningBalance",
+                "rgsCode": "BVrdEmb"
+            },
+            {
+                "target": "EB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BVrdGeh"
+            },
+            {
+                "target": "SB",
+                "factor": 1,
+                "source": "OpeningBalance",
+                "rgsCode": "BVrdGeh"
+            },
+            {
+                "target": "EB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BVrdGep"
+            },
+            {
+                "target": "SB",
+                "factor": 1,
+                "source": "OpeningBalance",
+                "rgsCode": "BVrdGep"
+            },
+            {
+                "target": "EB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BVrdHal"
+            },
+            {
+                "target": "SB",
+                "factor": 1,
+                "source": "OpeningBalance",
+                "rgsCode": "BVrdHal"
+            },
+            {
+                "target": "EB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BVrdHan"
+            },
+            {
+                "target": "SB",
+                "factor": 1,
+                "source": "OpeningBalance",
+                "rgsCode": "BVrdHan"
+            },
+            {
+                "target": "EB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BVrdVoo"
+            },
+            {
+                "target": "SB",
+                "factor": 1,
+                "source": "OpeningBalance",
+                "rgsCode": "BVrdVoo"
+            },
+            {
+                "target": "EB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BVrdVrv"
+            },
+            {
+                "target": "SB",
+                "factor": 1,
+                "source": "OpeningBalance",
+                "rgsCode": "BVrdVrv"
+            }
+        ]
+    },
+    "520515": {
+        "name": "andere vaste bedrijfsmiddelen",
+        "rules": [
+            {
+                "target": "EB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BMvaBei"
+            },
+            {
+                "target": "SB",
+                "factor": 1,
+                "source": "OpeningBalance",
+                "rgsCode": "BMvaBei"
+            },
+            {
+                "target": "EB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BMvaHuu"
+            },
+            {
+                "target": "SB",
+                "factor": 1,
+                "source": "OpeningBalance",
+                "rgsCode": "BMvaHuu"
+            },
+            {
+                "target": "EB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BMvaObe"
+            },
+            {
+                "target": "SB",
+                "factor": 1,
+                "source": "OpeningBalance",
+                "rgsCode": "BMvaObe"
+            },
+            {
+                "target": "EB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BMvaTev"
+            },
+            {
+                "target": "SB",
+                "factor": 1,
+                "source": "OpeningBalance",
+                "rgsCode": "BMvaTev"
+            }
+        ]
+    },
+    "520516": {
+        "name": "kosten aanschaf/voortbr andere vaste bedrijfsmiddelen",
+        "rules": [
+            {
+                "target": "EB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BMvaBeiVvp"
+            },
+            {
+                "target": "EB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BMvaHuuVvp"
+            },
+            {
+                "target": "EB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BMvaObeVvp"
+            },
+            {
+                "target": "EB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "BMvaTevVvp"
+            }
+        ]
+    },
+    "1762319": {
+        "name": "boekverlies op activa fisc",
+        "rules": [
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WAfsRvi",
+                "conditionTag": "map_higher_zero",
+                "conditionTagDescription": "Alleen mappen als WAfsRvi > 0 (dus een debet saldo heeft)"
+            },
+            {
+                "target": "DB",
+                "factor": 1,
+                "source": "ClosingBalance",
+                "rgsCode": "WAfsRvm",
+                "conditionTag": "map_higher_zero",
+                "conditionTagDescription": "Alleen mappen als WAfsRvm > 0 (dus een debet saldo heeft)"
+            }
+        ]
+    }
+}

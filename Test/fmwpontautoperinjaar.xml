@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<TestCases>
+	
+		<TestCase omschrijving="TC01">
+			<Input type="fiscaalmodel">		
+					<list refid="ondernemingList">
+						<item>
+							<TestValue key="fmwondgegstamin" type="Boolean">False</TestValue>
+							<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+								<item>
+									<TestValue key="fmwpontautstandperb" type="Date">EEN_JANUARI_BDRGJAAR</TestValue>
+									<TestValue key="fmwpontautnaamg5jr" type="Boolean">True</TestValue>
+								</item>
+							</list>
+						</item>
+						<item>
+							<TestValue key="fmwondgegstamin" type="Boolean">False</TestValue>
+							<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+								<item>
+									<TestValue key="fmwpontautstandperb" type="Date">EEN_JANUARI_BDRGJAAR</TestValue>
+									<TestValue key="fmwpontautnaamg5jr" type="Boolean">True</TestValue>
+								</item>
+							</list>
+						</item>
+					</list>
+			</Input>
+			<Output type="berekendfiscaalmodel">
+				<list refid="onderneminglist">
+					<item>
+						<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+							<item>
+								<TestValue key="fmwpontautoperinjaar" type="Boolean">True</TestValue>
+							</item>
+						</list>
+					</item>
+					<item>
+						<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+							<item>
+								<TestValue key="fmwpontautoperinjaar" type="Boolean">True</TestValue>
+							</item>
+						</list>
+					</item>
+				</list>
+			</Output>
+		</TestCase>
+		
+		<TestCase omschrijving="TC02">
+			<Input type="fiscaalmodel">		
+					<list refid="ondernemingList">
+						<item>
+							<TestValue key="fmwondgegstamin" type="Boolean">False</TestValue>
+							<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+								<item>
+									<TestValue key="fmwpontautstandperb" type="Date">01-01-2014</TestValue>
+									<TestValue key="fmwpontautnaamg5jr" type="Boolean">True</TestValue>
+								</item>
+							</list>
+						</item>
+						<item>
+							<TestValue key="fmwondgegstamin" type="Boolean">False</TestValue>
+							<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+								<item>
+									<TestValue key="fmwpontautstandperb" type="Date">01-01-2014</TestValue>
+									<TestValue key="fmwpontautnaamg5jr" type="Boolean">True</TestValue>
+								</item>
+							</list>
+						</item>
+					</list>
+			</Input>
+			<Output type="berekendfiscaalmodel">
+				<list refid="onderneminglist">
+					<item>
+						<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+							<item>
+								<TestValue key="fmwpontautoperinjaar" type="Boolean">False</TestValue>
+							</item>
+						</list>
+					</item>
+					<item>
+						<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+							<item>
+								<TestValue key="fmwpontautoperinjaar" type="Boolean">False</TestValue>
+							</item>
+						</list>
+					</item>
+				</list>
+			</Output>
+		</TestCase>	
+			
+	</TestCases>

@@ -1,0 +1,103 @@
+{
+    "schema": {
+        "version": "2019-5.2",
+        "groups": [
+            {
+                "legend": "Er zijn extra gegevens nodig voor de aangifte",
+                "fields": [
+                    {
+                        "type": "label",
+                        "label": "Controleer de ingevulde waarden of vul deze in. Het totaal van de ingevulde waarden moet overeenkomen met de totale boekwaarde Overige privéonttrekkingen uit uw boekhouding (<strong>€ #{119788Rounded}</strong>)"
+                    }
+                ]
+            },
+            {
+                "legend": "Specificatie overige privéonttrekkingen",
+                "styleClasses": ["multiple-fields-50", "repeatModel-header", "hide-border-bottom"],
+                "fields": [
+                    {
+                        "type": "label",
+                        "refid": "wpontoverigoms",
+                        "label": "Omschrijving privéonttrekkingen"
+                    },
+                    {
+                        "type": "label",
+                        "refid": "wpontoverigaang",
+                        "label": "Bedrag"
+                    }
+                ]
+            },
+            {
+                "legend": "",
+                "styleClasses": ["multiple-fields-50", "hide-border-top", "hide-border-bottom"],
+                "repeatModel": "108728",
+                "repeatModelId": "overige-priveontrekkingen",
+                "addLink": "Voeg nog een privéonttrekking toe",
+                "removeLink": "bucket",
+                "fields": [
+                    {
+                        "type": "input",
+                        "inputType": "text",
+                        "model": "wpontoverigoms",
+                        "postKey": "119789",
+                        "noRefHelpText": true,
+                        "validator": ["verplicht"],
+                        "validatorParameters": {
+                            "label": "Omschrijving"
+                        }
+                    },
+                    {
+                        "type": "currency",
+                        "currency": "EUR",
+                        "model": "wpontoverigaang",
+                        "postKey": "119788",
+                        "noRefHelpText": true,
+                        "validator": ["verplicht", "bedrag_pos13"],
+                        "validatorParameters": {
+                            "label": "Bedrag"
+                        }
+                    }
+                ]
+            },
+            {
+                "legend": "",
+                "styleClasses": ["multiple-fields-25", "repeatModel-footer", "hide-border-top"],
+                "fields": [
+                    {
+                        "type": "label",
+                        "label": " "
+                    },
+                    {
+                        "type": "label",
+                        "label": " "
+                    },
+                    {
+                        "type": "currency",
+                        "currency": "EUR",
+                        "model": "wpontoverigomstot",
+                        "refid": "wpontoverigomstot",
+                        "doNotPost": true,
+                        "total": true,
+                        "totalSymbol": "+",
+                        "disabled": true,
+                        "customValue": {
+                            "formula": "sumOfGroupFields",
+                            "parameters": {
+                                "fieldModels": ["108728", "wpontoverigaang"]
+                            }
+                        }
+                    },
+
+                    {
+                        "type": "label",
+                        "label": "Het totaalbedrag komt niet overeen met het verwachte bedrag € #{119788Rounded}",
+                        "customExpectedName": {
+                            "model": "wpontoverigomstot",
+                            "static": "119788Rounded"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

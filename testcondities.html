@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Expires" content="0">		
+		<meta charset=utf-8> 
+		<meta http-equiv=X-UA-Compatible content="IE=edge">
+		<meta name=viewport content="width=device-width,initial-scale=1">
+ 		<meta name="author" content="Belastingdienst/InteractieWerf">
+		<meta name="description" content="Testcondities versie 1.0">
+		<title>Testcondities</title>
+		<link href=css/app.css rel=preload as=style>
+		<link href=js/app.js rel=preload as=script>
+		<link href=css/app.css rel=stylesheet>
+		<style>
+			.helpText {text-align: left!important;}
+			.currency-symbol {margin-left: 10px;}
+			legend {font-weight: bold;}
+			table { text-align: left; margin-top: 0px;}
+			tr { padding-bottom: 20px;}
+			td { vertical-align: top; padding: 5px;}
+			hr { margin: 50px 0 20px 0;}
+			h2 { margin: 10px 0 0 0;}
+		</style>
+	</head>
+  <body>
+    <noscript>
+      <strong>We're sorry but bd-forms doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <bd-forms></bd-forms>
+		<script>
+			window.bdForms = {};
+			window.bdForms.config = {
+				postRequestEndpoint: 'bd-test',
+				getRequestEndpoint: 'data/testcondities.json',
+				redirectLocation: 'http://google.com',
+                submitButtonText: "Opslaan en verder",
+                // helpBaseUrl: "https://www.belastingdienst.nl/data/online_aangifte/ih2019/contextafhankelijkehelp/nlw",
+				// pathToHelpTexts: 'help',
+                // showAllFields: true,
+                // overruleDoNotPost: true,
+			};
+			window.bdForms.model = {
+				InputveldDatum1: "01-12-2018",
+				InputveldDatum2: "31-12-2019",
+				KentekenBestelauto: "jgpv81",
+				DagenGewerkt: 123,
+				PrijsKiloAppels: 8,
+				PrijsKiloPeren: 4,
+				PrijsKiloBananen: 4,
+				InputveldText1: "Hallo Wereld",
+				InputveldText2: "Hier staat iets",
+				radioMeedoen: true,
+				radioGeslacht: true,
+				radioWijn: true,
+                DropDownLijst: 3,
+                showValidationGroup: false,
+                verplichtInputVeld: "ingevuld",
+                verplichtCustomLabelInputVeld: "ingevuld",
+				bedrag13InputVeld: 10,
+				bedragPos13InputVeld: 10,
+				datumInputVeld: "10-11-1990",
+				datumDateBeforeInputVeld: "10-11-1990",
+				datumDateAfterInputVeld: "10-11-1990",
+				datumDateBeforeAfterInputVeld: "10-11-1990",
+                datumDateBeforeAfterStaticInputVeld: "10-11-1990",
+                datumDateBeforeModelInputVeld: "09-11-1990",
+				jaarInputVeld: 2020,
+				jaarAfterInputVeld: 2021,
+				jaarBeforeInputVeld: 2019,
+				jaarBeforeAfterInputVeld: 2005,
+				jaarBeforeAfterStaticInputVeld: 2005,
+				jaarBeforeModelInputVeld: 2004,
+				meldNrEInputVeld: "E123456789",
+				meldNrMInputVeld: "M123456789",
+                percentageInputVeld: 80,
+                kentekenInputVeld: "30-jzp-2",
+                inkomenKinderenPrefilled: [
+                    {
+                        kinderenPlus18: true,
+                        kindNaam: "Henk Henker",
+                        kindInkomen: 3200
+                    },
+                    {
+                        kinderenPlus18: true,
+                        kindNaam: "Otto Otter",
+                        kindInkomen: 1800
+                    },
+                    {
+                        kinderenPlus18: false
+                    },
+                    {
+                        kinderenPlus18: true,
+                        kindNaam: "Lotje Lotter",
+                        kindInkomen: 4500
+                    },
+                ]
+			}
+			// Let op! De var namen in staticblok hebben NIET een suffix static. In de JSON plak je dit er wel achter!
+			window.bdForms.static = {
+				NaamBedrijf: "JSON VOF",
+				BrutoOmzet2018: "8000",
+                BrutoOmzet2019: "19000",
+                datumDateBefore: "10-12-1990",
+                datumDateAfter: "10-10-1990",
+                jaarYearBefore: 2020,
+                jaarYearAfter: 2000
+            }
+
+            // Add custom validation errors (optional)
+            window.bdForms.validatorErrors = {
+                // incorrect_characters: "U heeft onjuiste karakters ingevoerd, voer alleen cijfers in.",
+                // no_decimals: "U hebt cijfers achter de komma ingevuld. Vul alleen hele getallen in. U mag afronden in uw voordeel.",
+                // bedrag_pos13_greater_than_zero: "Bedrag mag niet negatief zijn.",
+                // date_invalid_notation: "U hebt een ongeldige datum ingevuld. Vul de datum in op de volgende manier: dd-mm-jjjj.",
+                // date_after_before_date:
+                //     "U hebt een datum ingevuld die na {beforeDate} ligt. Vul een datum in die vóór of op {beforeDate} ligt.",
+                // date_before_after_date: "Vul een datum in die op of ná {afterDate} ligt.",
+                // license_plate_invalid: "Dit is geen geldig kenteken, voer een geldig kenteken in.",
+                // percentage_three_greater_than_100: "U hebt een verkeerde waarde ingevuld, vul maximaal 100 in.",
+                // percentage_three_less_than_0: "U hebt een verkeerde waarde ingevuld, vul minimaal 0 in.",
+                // report_number_invalid:
+                //     "U hebt een onjuist meldnummer ingevuld. Een meldnummer bestaat uit een {character} met 9 cijfers zonder spaties.",
+                // required_empty: "U heeft {fieldLabel} nog niet ingevuld.",
+                // year_invalid_notation: "U hebt een ongeldig jaar ingevuld. Vul het jaar in op de volgende manier: jjjj.",
+                // year_after_before_date:
+                //     "U hebt een jaar ingevuld die na {beforeYear} ligt. Vul een jaar in die vóór of op {beforeYear} ligt.",
+                // year_before_after_date: "Vul een jaar in die op of ná {afterYear} ligt.",
+                // alpha_numerical_invalid_max_length:
+                //     "U heeft een onjuiste waarde ingevoerd, voer maximaal {lenght} {requiredValue} in.",
+                // alpha_numerical_invalid_required_length:
+                //     "U heeft een onjuiste waarde ingevoerd, voer exact {lenght} {requiredValue} in.",
+
+                // // the messages below are specific for rules, if not set, incorrect_characters will be used
+                // bedrag_pos13_incorrect_characters: "Specific message",
+                // bedrag13_incorrect_characters: "Specific message",
+                // hours_of_cooperation_partner_incorrect_characters: "Specific message",
+                // percentage_three_incorrect_characters: "Specific message",
+
+                // // the messages below are specific for rules, if not set, no_decimals will be used
+                // bedrag_pos13_no_decimals: "Specific message",
+                // bedrag13_no_decimals: "Specific message",
+            }
+    </script>
+
+    <script src=js/app.js></script>
+  </body>
+</html>

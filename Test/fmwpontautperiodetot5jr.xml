@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCases>
+	<TestCase omschrijving="TC01">
+		<Input type="fiscaalmodel">
+			<list refid="ondernemingList">
+				<item>
+					<TestValue key="fmwondgegstamin" type="Boolean">False</TestValue>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautstandperb" type="Date">01-01-2018</TestValue>
+							<TestValue key="fmwpontautstandpere" type="Date">31-12-2018</TestValue>
+							<TestValue key="fmwpontautdatum5jr" type="Date">01-02-2018</TestValue>
+						</item>
+					</list>
+				</item>
+				<item>
+					<TestValue key="fmwondgegstamin" type="Boolean">False</TestValue>
+					<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautstandperb" type="Date">01-01-2015</TestValue>
+							<TestValue key="fmwpontautstandpere" type="Date">01-03-2015</TestValue>
+							<TestValue key="fmwpontautdatum5jr" type="Date">30-01-2015</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Input>
+		<Output type="berekendfiscaalmodel">
+			<list refid="onderneminglist">
+				<item>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautperiodetot5jr" type="Integer">31</TestValue>
+						</item>
+					</list>
+				</item>
+				<item>
+					<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautperiodetot5jr" type="Integer">29</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Output>
+	</TestCase>
+	<TestCase omschrijving="TC02">
+		<Input type="fiscaalmodel">
+			<list refid="ondernemingList">
+				<item>
+					<TestValue key="fmwondgegstamin" type="Boolean">False</TestValue>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautstandperb" type="Date">01-01-2018</TestValue>
+							<TestValue key="fmwpontautstandpere" type="Date">01-02-2018</TestValue>
+							<TestValue key="fmwpontautdatum5jr" type="Date">01-04-2018</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Input>
+		<Output type="berekendfiscaalmodel">
+			<list refid="onderneminglist">
+				<item>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautperiodetot5jr" type="Integer">31</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Output>
+	</TestCase>
+	<TestCase omschrijving="TC03">
+		<Input type="fiscaalmodel">
+			<list refid="ondernemingList">
+				<item>
+					<TestValue key="fmwondgegstamin" type="Boolean">False</TestValue>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautstandperb" type="Date">01-04-2018</TestValue>
+							<TestValue key="fmwpontautstandpere" type="Date">31-12-2018</TestValue>
+							<TestValue key="fmwpontautdatum5jr" type="Date">31-01-2018</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Input>
+		<Output type="berekendfiscaalmodel">
+			<list refid="onderneminglist">
+				<item>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautperiodetot5jr" type="Integer">0</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Output>
+	</TestCase>
+	<TestCase omschrijving="TC04">
+		<Input type="fiscaalmodel">
+			<list refid="ondernemingList">
+				<item>
+					<TestValue key="fmwondgegstamin" type="Boolean">False</TestValue>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautstandperb" type="Date">01-04-2018</TestValue>
+							<TestValue key="fmwpontautstandpere" type="Date">31-12-2018</TestValue>
+							<TestValue key="fmwpontautdatum5jr" type="Date">01-04-2018</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Input>
+		<Output type="berekendfiscaalmodel">
+			<list refid="onderneminglist">
+				<item>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautperiodetot5jr" type="Integer">0</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Output>
+	</TestCase>
+</TestCases>

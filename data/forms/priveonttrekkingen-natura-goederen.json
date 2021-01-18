@@ -1,0 +1,156 @@
+{
+    "schema": {
+        "version": "2019-5.1",
+        "groups": [
+            {
+                "legend": "Privéonttrekkingen in natura en in goederen.",
+                "styleClasses": ["hide-border-bottom"],
+                "fields": [
+                    {
+                        "type": "label",
+                        "label": "Het totaal van de overdrachtsprijs hieronder <strong>moet</strong> overeenkomen met de totale boekwaarde uit de boekhouding: <strong>€ #{118320Rounded}</strong>."
+                    }
+                ]
+            },
+            {
+                "styleClasses": ["multiple-fields-25", "hide-border-bottom", "hide-border-top", "repeatModel-header"],
+                "legend": "",
+                "fields": [
+                    {
+                        "type": "label",
+                        "label": "<strong>Omschrijving</strong>",
+                        "refid": "wpontnatgoedoms"
+                    },
+                    {
+                        "type": "label",
+                        "refid": "wpontnatgoedbw",
+                        "label": "<strong>Boekwaarde</strong>"
+                    },
+                    {
+                        "type": "label",
+                        "label": "<strong>Bepaling overdrachtsprijs</strong>",
+                        "refid": "wpontnatgoedovpoms"
+                    },
+                    {
+                        "type": "label",
+                        "refid": "wpontnatgoedovpaang",
+                        "label": "<strong>Overdrachtsprijs</strong>"
+                    }
+                ]
+            },
+            {
+                "styleClasses": ["multiple-fields-25", "hide-border-bottom", "hide-border-top"],
+                "legend": " ",
+                "repeatModel": "108073",
+                "addLink": "Voeg nog een privéonttrekking toe",
+                "removeLink": "bucket",
+                "fields": [
+                    {
+                        "type": "input",
+                        "inputType": "text",
+                        "model": "wpontnatgoedoms",
+                        "postKey": "118318",
+                        "validator": ["verplicht"],
+                        "noRefHelpText": true,
+                        "validatorParameters": {
+                            "label": "omschrijving"
+                        }
+                    },
+                    {
+                        "type": "currency",
+                        "currency": "EUR",
+                        "model": "wpontnatgoedbw",
+                        "postKey": "118319",
+                        "noRefHelpText": true,
+                        "validator": ["verplicht", "bedrag13"],
+                        "validatorParameters": {
+                            "label": "boekwaarde"
+                        }
+                    },
+                    {
+                        "model": "wpontnatgoedovpoms",
+                        "postKey": "118321",
+                        "type": "select",
+                        "values": [
+                            { "name": "Inkoopprijs", "id": "Inkoopprijs" },
+                            { "name": "Verkoopprijs", "id": "Verkoopprijs" },
+                            { "name": "Taxatie", "id": "Taxatie" },
+                            { "name": "Anders", "id": "Anders" }
+                        ],
+                        "selectOptions": {
+                            "noneSelectedText": "Maak een keuze"
+                        },
+                        "validator": ["verplicht"],
+                        "validatorParameters": {
+                            "label": "Bepaling overdrachtsprijs"
+                        }
+                    },
+                    {
+                        "type": "currency",
+                        "currency": "EUR",
+                        "model": "wpontnatgoedovpaang",
+                        "postKey": "118320",
+                        "validator": ["verplicht", "bedrag_pos13"],
+                        "validatorParameters": {
+                            "label": "Overdrachtsprijs"
+                        }
+                    }
+                ]
+            },
+            {
+                "//": "Totaal",
+                "styleClasses": ["multiple-fields-25", "hide-border-bottom", "hide-border-top", "repeatModel-footer"],
+                "fields": [
+                    {
+                        "type": "label",
+                        "label": " "
+                    },
+                    {
+                        "type": "label",
+                        "label": " "
+                    },
+                    {
+                        "type": "label",
+                        "label": "Totaal Overdrachtsprijs"
+                    },
+                    {
+                        "type": "currency",
+                        "currency": "EUR",
+                        "disabled": true,
+                        "total": true,
+                        "totalSymbol": "+",
+                        "model": "wpontnatgoedovpaangtot",
+                        "refid": "wpontnatgoedovpaangtot",
+                        "doNotPost": true,
+                        "customValue": {
+                            "formula": "sumOfGroupFields",
+                            "parameters": {
+                                "fieldModels": ["108073", "wpontnatgoedovpaang"]
+                            }
+                        }
+                    },
+                    {
+                        "type": "label",
+                        "label": " "
+                    },
+                    {
+                        "type": "label",
+                        "label": " "
+                    },
+                    {
+                        "type": "label",
+                        "label": " "
+                    },
+                    {
+                        "type": "label",
+                        "label": "Het totaalbedrag komt niet overeen met het verwachte bedrag €#{118320Rounded}",
+                        "customExpectedName": {
+                            "model": "wpontnatgoedovpaangtot",
+                            "static": "118320Rounded"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

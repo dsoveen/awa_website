@@ -1,0 +1,21 @@
+{
+  "schema": {
+ 	"version": "2019-5.1",
+    "groups": [
+      {
+        "legend": "Research-en-developmentaftrek",
+        "fields": [
+          {
+            "type": "currency",
+            "currency": "EUR",
+            "model": "wrdtot",
+            "refid": "wrdtot",
+            "postKey": "627879",
+            "validator": ["verplicht","bedrag13"],
+            "label": "Research-en-developmentaftrek"
+          }
+        ]
+      }
+    ]
+  }
+}

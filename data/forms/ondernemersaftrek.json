@@ -1,0 +1,662 @@
+{
+    "schema": {
+        "version": "2019-5.3",
+        "blockVisibleConditions": {
+            "//": "Hieronder worden de gebruikte blockcondities beschreven. Namen conform IDO",
+            "wondaftwaoblok": [
+                {
+                    "formula": "equalsValue",
+                    "parameters": {
+                        "condition": "and",
+                        "fieldModels": ["wondaftuur"],
+                        "value": false
+                    }
+                }
+            ]
+        },
+        "groups": [
+            {
+                "legend": "Ondernemersaftrek",
+                "fields": [
+                    {
+                        "type": "hidden",
+                        "label": "Ondernemers vermogen excl fisc van brugstaat",
+                        "model": "ondernVermExclFiscResFiscaalEB",
+                        "doNotPost": true,
+                        "customValue": {
+                            "formula": "sumOfStatics",
+                            "parameters": {
+                                "fieldModels": ["119356-EB"]
+                            }
+                        }
+                    },
+                    {
+                        "type": "hidden",
+                        "label": "Optellen van Resultaat bij het Eigen Vermogen mutatie",
+                        "model": "119356-EB",
+                        "postKey": "119356-EB",
+                        "customValue": {
+                            "formula": "sumOfFieldAndResult",
+                            "parameters": {
+                                "fieldModels": ["ondernVermExclFiscResFiscaalEB"]
+                            }
+                        }
+                    },
+                    {
+                        "label": "Werkte u minimaal 1.225 uur in de onderneming?",
+                        "type": "radios",
+                        "values": [
+                            { "name": "Ja", "value": true },
+                            { "name": "Nee", "value": false }
+                        ],
+                        "validator": ["verplicht"],
+                        "model": "wondaftuur",
+                        "refid": "wondaftuur"
+                    },
+                    {
+                        "//": "DIT VELD LATEN ZIEN ALS DE OMZET <10.000 AND WONDAFTUUR=TRUE",
+                        "label": "<em>De omzet is lager dan € 10.000. Waarschijnlijk hebt u minder dan 1.225 uur in de onderneming gewerkt. Controleer de urenberekening en pas zo nodig uw antwoord aan.</em>",
+                        "type": "label",
+                        "model": "wondaftuur_w01",
+                        "refid": "wondaftuur_w01",
+                        "doNotPost": true,
+                        "customVisible": [
+                            {
+                                "formula": "equalsValue",
+                                "condition": "and",
+                                "parameters": {
+                                    "fieldModels": ["wondaftuur"],
+                                    "value": true
+                                }
+                            },
+                            {
+                                "formula": "compareValues",
+                                "condition": "and",
+                                "parameters": {
+                                    "less": "119474-DB",
+                                    "than": 10000
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Was u in de periode #{BDRGJAARMIN5} tot en met #{BDRGJAARMIN1} elk jaar ondernemer voor de inkomstenbelasting?",
+                        "type": "radios",
+                        "values": [
+                            { "name": "Ja", "value": true },
+                            { "name": "Nee", "value": false }
+                        ],
+                        "validator": ["verplicht"],
+                        "model": "wondaftpergeen",
+                        "refid": "wondaftpergeen",
+                        "customVisible": [
+                            {
+                                "formula": "equalsValue",
+                                "parameters": {
+                                    "fieldModels": ["wondaftuur"],
+                                    "value": true
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Is meer dan 50% van uw werktijd besteed aan de onderneming?",
+                        "type": "radios",
+                        "values": [
+                            { "name": "Ja", "value": true },
+                            { "name": "Nee", "value": false }
+                        ],
+                        "validator": ["verplicht"],
+                        "model": "wondaftmeer",
+                        "refid": "wondaftmeer",
+                        "customVisible": [
+                            {
+                                "formula": "equalsValue",
+                                "parameters": {
+                                    "fieldModels": ["wondaftpergeen"],
+                                    "value": true
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "legend": "Zelfstandigenaftrek",
+                "customVisible": [
+                    {
+                        "formula": "equalsValue",
+                        "condition": "or",
+                        "parameters": {
+                            "fieldModels": ["wondaftuur"],
+                            "value": false
+                        }
+                    },
+                    {
+                        "formula": "equalsAnyValue",
+                        "condition": "or",
+                        "parameters": {
+                            "fieldModels": ["wondaftpergeen"],
+                            "value": false
+                        }
+                    }
+                ],
+                "fields": [
+                    {
+                        "label": "U hebt geen recht op zelfstandigenaftrek.",
+                        "type": "label",
+                        "defaultValue": "N",
+                        "customVisible": [
+                            {
+                                "formula": "equalsValue",
+                                "condition": "or",
+                                "parameters": {
+                                    "fieldModels": ["wondaftmeer"],
+                                    "value": false
+                                }
+                            },
+                            {
+                                "formula": "equalsValue",
+                                "condition": "or",
+                                "parameters": {
+                                    "fieldModels": ["wondaftuur"],
+                                    "value": false
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "label": "<em>Uw oudedagsreserve is hoger is dan het totale ondernemingsvermogen. Als u 2 jaar geen recht hebt op de zelfstandigenaftrek, moet u uw oudedagsreserve verlagen tot uw ondernemingsvermogen. Kreeg u in #{BDRGJAARMIN1} ook geen zelfstandigenaftrek? Pas dan de waarde van uw oudedagsreserve aan.</em>",
+                        "type": "label",
+                        "//": "Extra boodschap als er geen recht is op zlfstaftrek en DE FOR HOGER IS DAN ONDERNEMINGSVERMOGEN. IN DAT GEVAL DEZE (EXTRA) BOODSCHAP LATEN ZIEN ",
+                        "customVisible": [
+                            {
+                                "formula": "compareValues",
+                                "condition": "and",
+                                "parameters": {
+                                    "greater": "119343-EBStatic",
+                                    "than": "119356-EB"
+                                }
+                            },
+                            {
+                                "condition": "and",
+                                "terms": [
+                                    {
+                                        "formula": "equalsValue",
+                                        "condition": "or",
+                                        "parameters": {
+                                            "fieldModels": ["wondaftmeer"],
+                                            "value": false
+                                        }
+                                    },
+                                    {
+                                        "formula": "equalsValue",
+                                        "condition": "or",
+                                        "parameters": {
+                                            "fieldModels": ["wondaftuur"],
+                                            "value": false
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Hebt u in de periode #{BDRGJAARMIN5} tot en met #{BDRGJAARMIN1} meer dan 2 keer zelfstandigenaftrek gekregen?",
+                        "type": "radios",
+                        "values": [
+                            { "name": "Ja", "value": true },
+                            { "name": "Nee", "value": false }
+                        ],
+                        "validator": ["verplicht"],
+                        "model": "wondaftzelfmeer",
+                        "refid": "wondaftzelfmeer",
+                        "customVisible": [
+                            {
+                                "formula": "equalsValue",
+                                "parameters": {
+                                    "fieldModels": ["wondaftpergeen"],
+                                    "value": false
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Hebt u niet-gerealiseerde zelfstandigenaftrek uit vorige jaren?",
+                        "type": "radios",
+                        "validator": ["verplicht"],
+                        "values": [
+                            { "name": "Ja", "value": true },
+                            { "name": "Nee", "value": false }
+                        ],
+                        "model": "wondaftzelfvorig",
+                        "refid": "wondaftzelfvorig",
+                        "customVisible": [
+                            {
+                                "formula": "equalsValue",
+                                "condition": "or",
+                                "parameters": {
+                                    "fieldModels": ["wondaftzelfmeer"],
+                                    "value": true
+                                }
+                            },
+                            {
+                                "formula": "equalsValue",
+                                "condition": "or",
+                                "parameters": {
+                                    "fieldModels": ["wondaftmeer"],
+                                    "value": true
+                                }
+                            }
+                        ]
+                    },
+
+                    {
+                        "label": "Niet-gerealiseerde zelfstandigenaftrek uit vorige jaren",
+                        "type": "currency",
+                        "currency": "EUR",
+                        "model": "wondaftzelfvorigbdrg",
+                        "refid": "wondaftzelfvorigbdrg",
+                        "postKey": "623775",
+                        "validator": ["verplicht", "bedrag_pos13"],
+                        "customVisible": [
+                            {
+                                "formula": "equalsValue",
+                                "parameters": {
+                                    "fieldModels": ["wondaftzelfvorig"],
+                                    "value": true
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "//": "HIER DE CONCLUSIE OVER ZELFSTANDIGENAFTREK",
+                        "label": "RECHT OP ZELFSTANDIGENAFTREK",
+                        "type": "hidden",
+                        "model": "zlfstaftrek",
+                        "postKey": "1767671",
+                        "defaultValue": "N",
+                        "conditionalValues": [
+                            {
+                                "setValue": "J",
+                                "terms": [
+                                    {
+                                        "formula": "equalsValue",
+                                        "condition": "or",
+                                        "parameters": {
+                                            "fieldModels": ["wondaftpergeen"],
+                                            "value": false
+                                        }
+                                    },
+                                    {
+                                        "formula": "equalsValue",
+                                        "condition": "or",
+                                        "parameters": {
+                                            "fieldModels": ["wondaftmeer"],
+                                            "value": true
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "//": "HIER DE CONCLUSIES OVER STARTERSAFTREK",
+                        "label": "RECHT OP STARTERSAFTREK",
+                        "type": "hidden",
+                        "model": "strtaftrek",
+                        "postKey": "1767670",
+                        "defaultValue": "N",
+                        "conditionalValues": [
+                            {
+                                "setValue": "J",
+                                "terms": [
+                                    {
+                                        "formula": "equalsValue",
+                                        "parameters": {
+                                            "fieldModels": ["wondaftzelfmeer"],
+                                            "value": false
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+
+            {
+                "legend": "Startersaftrek bij arbeidsongeschiktheid",
+                "customVisible": [
+                    {
+                        "formula": "equalsValue",
+                        "condition": "and",
+                        "parameters": {
+                            "fieldModels": ["wondaftuur"],
+                            "value": false
+                        }
+                    }
+                ],
+                "fields": [
+                    {
+                        "//": "DIT IS NODIG ALS 'AOWleeftijdBereikt' NIET IS GE-PREFILLED",
+                        "label": "Bent u geboren voor #{BDRGAOWLEEFTIJDBEGIN}?",
+                        "type": "radios",
+                        "values": [
+                            { "name": "Ja", "value": true },
+                            { "name": "Nee", "value": false }
+                        ],
+                        "validator": ["verplicht"],
+                        "model": "AOWGerechtigd",
+                        "doNotPost": true,
+                        "blockVisible": "wondaftwaoblok"
+                    },
+                    {
+                        "label": "Had u in #{BDRGJAAR} recht op een arbeidsongeschiktheidsuitkering?",
+                        "type": "radios",
+                        "values": [
+                            { "name": "Ja", "value": true },
+                            { "name": "Nee", "value": false }
+                        ],
+                        "validator": ["verplicht"],
+                        "model": "wondaftwaorecht",
+                        "refid": "wondaftwaorecht",
+                        "blockVisible": "wondaftwaoblok",
+                        "customVisible": [
+                            {
+                                "formula": "equalsValue",
+                                "condition": "and",
+                                "parameters": {
+                                    "fieldModels": ["AOWGerechtigd"],
+                                    "value": false
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Was u in de periode #{BDRGJAARMIN5} tot en met #{BDRGJAARMIN1} elk jaar ondernemer voor de inkomstenbelasting?",
+                        "type": "radios",
+                        "values": [
+                            { "name": "Ja", "value": true },
+                            { "name": "Nee", "value": false }
+                        ],
+                        "validator": ["verplicht"],
+                        "model": "wondaftpergeenao",
+                        "refid": "wondaftpergeenao",
+                        "blockVisible": "wondaftwaoblok",
+                        "customVisible": [
+                            {
+                                "formula": "equalsValue",
+                                "condition": "and",
+                                "parameters": {
+                                    "fieldModels": ["wondaftwaorecht"],
+                                    "value": true
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Werkte u in #{BDRGJAAR} minimaal 800 uur in de onderneming?",
+                        "type": "radios",
+                        "values": [
+                            { "name": "Ja", "value": true },
+                            { "name": "Nee", "value": false }
+                        ],
+                        "validator": ["verplicht"],
+                        "model": "wondaftwao800",
+                        "refid": "wondaftwao800",
+                        "blockVisible": "wondaftwaoblok",
+                        "customVisible": [
+                            {
+                                "formula": "equalsValue",
+                                "parameters": {
+                                    "fieldModels": ["wondaftpergeenao"],
+                                    "value": false
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Hebt u in de periode #{BDRGJAARMIN5} tot en met #{BDRGJAARMIN1} minimaal 1 keer startersaftrek bij arbeidsongeschiktheid gekregen?",
+                        "type": "radios",
+                        "values": [
+                            { "name": "Ja", "value": "J" },
+                            { "name": "Nee", "value": "N" }
+                        ],
+                        "validator": ["verplicht"],
+                        "model": "wondaftwaoeerder",
+                        "refid": "wondaftwaoeerder",
+                        "postKey": "1767679",
+                        "blockVisible": "wondaftwaoblok",
+                        "customVisible": [
+                            {
+                                "formula": "equalsValue",
+                                "parameters": {
+                                    "fieldModels": ["wondaftwao800"],
+                                    "value": true
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Hoe vaak kreeg u in die periode startersaftrek bij arbeidsongeschiktheid?",
+                        "type": "select",
+                        "values": [
+                            { "name": "1 keer", "id": 1 },
+                            { "name": "2 keer", "id": 2 },
+                            { "name": "3 keer", "id": 3 }
+                        ],
+                        "selectOptions": { "noneSelectedText": "Maak een keuze" },
+                        "model": "wondaftwaohoev",
+                        "refid": "wondaftwaohoev",
+                        "postKey": "1767680",
+                        "validator": ["verplicht"],
+                        "blockVisible": "wondaftwaoblok",
+                        "customVisible": [
+                            {
+                                "formula": "equalsValue",
+                                "parameters": {
+                                    "fieldModels": ["wondaftwaoeerder"],
+                                    "value": "J"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "label": "U hebt geen recht op startersaftrek bij arbeidsongeschiktheid.",
+                        "type": "label",
+                        "model": "wondaftwaohoev_m01",
+                        "refid": "wondaftwaohoev_m01",
+                        "doNotPost": true,
+                        "blockVisible": "wondaftwaoblok",
+                        "//": "Let op! bovengenoemd blockVsisible is een AND, hieronder staan OR, wellicht nest probleem in excecutie (EV 2207) moet getest worden",
+                        "customVisible": [
+                            {
+                                "formula": "equalsValue",
+                                "condition": "or",
+                                "parameters": {
+                                    "fieldModels": ["wondaftwaorecht"],
+                                    "value": false
+                                }
+                            },
+                            {
+                                "formula": "equalsValue",
+                                "condition": "or",
+                                "parameters": {
+                                    "fieldModels": ["wondaftpergeenao"],
+                                    "value": true
+                                }
+                            },
+                            {
+                                "formula": "equalsValue",
+                                "condition": "or",
+                                "parameters": {
+                                    "fieldModels": ["wondaftwao800"],
+                                    "value": false
+                                }
+                            },
+                            {
+                                "formula": "equalsData",
+                                "condition": "or",
+                                "parameters": {
+                                    "fieldModels": ["wondaftwaohoev"],
+                                    "data": [3]
+                                }
+                            },
+                            {
+                                "formula": "equalsValue",
+                                "condition": "or",
+                                "parameters": {
+                                    "fieldModels": ["AOWGerechtigd"],
+                                    "value": true
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+
+            {
+                "legend": "Meewerkaftrek",
+                "//": "wondaftmeeblok vanuit IDO",
+                "customVisible": [
+                    {
+                        "formula": "compareValues",
+                        "condition": "and",
+                        "parameters": {
+                            "equal": "wondgegmee",
+                            "to": true
+                        }
+                    }
+                ],
+                "fields": [
+                    {
+                        "type": "label",
+                        "label": "Uw fiscale partner heeft meegewerkt in de onderneming"
+                    },
+                    {
+                        "//": "VASTSTELLEN DAT ER SPRAKE IS VAN FISCALE PARTNER GEBEURT DOOR AANTAL VRAGEN BEGIN AANGIFTE. DIT ZIJN 3 (OLAV) VRAGEN IN 1",
+                        "label": "Heeft uw fiscale partner in #{BDRGJAAR} minstens 525 uur meegewerkt in de onderneming?",
+                        "type": "radios",
+                        "values": [
+                            { "name": "Ja", "value": true },
+                            { "name": "Nee", "value": false }
+                        ],
+                        "validator": ["verplicht"],
+                        "model": "wondaftmee525",
+                        "refid": "wondaftmee525",
+                        "customVisible": [
+                            {
+                                "condition": "and",
+                                "terms": [
+                                    {
+                                        "formula": "equalsValue",
+                                        "condition": "or",
+                                        "parameters": {
+                                            "fieldModels": ["wondaftpergeen"],
+                                            "value": false
+                                        }
+                                    },
+                                    {
+                                        "formula": "equalsValue",
+                                        "condition": "or",
+                                        "parameters": {
+                                            "fieldModels": ["wondaftmeer"],
+                                            "value": true
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Hebt u uw fiscale partner een vergoeding van €5.000 of meer betaald voor het meewerken?",
+                        "type": "radios",
+                        "values": [
+                            { "name": "Ja", "value": "J" },
+                            { "name": "Nee", "value": "N" }
+                        ],
+                        "validator": ["verplicht"],
+                        "model": "wondaftmeeverg",
+                        "refid": "wondaftmeeverg",
+                        "postKey": "1767672",
+                        "customVisible": [
+                            {
+                                "formula": "equalsValue",
+                                "parameters": {
+                                    "fieldModels": ["wondaftmee525"],
+                                    "value": true
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Hoeveel uur heeft uw fiscale partner meegewerkt?",
+                        "type": "select",
+                        "values": [
+                            { "name": "525 tot 875", "id": "525" },
+                            { "name": "875 tot 1225", "id": "875" },
+                            { "name": "1225 tot 1750", "id": "1225" },
+                            { "name": "1750 of meer", "id": "1750" }
+                        ],
+                        "selectOptions": { "noneSelectedText": "Maak een keuze" },
+                        "validator": ["verplicht"],
+                        "model": "wondaftmeeuur",
+                        "refid": "wondaftmeeuur",
+                        "postKey": "1767889",
+                        "customVisible": [
+                            {
+                                "formula": "equalsValue",
+                                "parameters": {
+                                    "fieldModels": ["wondaftmeeverg"],
+                                    "value": "N"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "label": "U hebt geen recht op meewerkaftrek.",
+                        "type": "label",
+                        "model": "wondaftmeeondtekst_m01",
+                        "refid": "wondaftmeeondtekst_m01",
+                        "doNotPost": true,
+                        "customVisible": [
+                            {
+                                "formula": "equalsValue",
+                                "condition": "or",
+                                "parameters": {
+                                    "fieldModels": ["wondaftuur"],
+                                    "value": false
+                                }
+                            },
+                            {
+                                "formula": "equalsValue",
+                                "condition": "or",
+                                "parameters": {
+                                    "fieldModels": ["wondaftmeer"],
+                                    "value": false
+                                }
+                            },
+                            {
+                                "formula": "equalsValue",
+                                "condition": "or",
+                                "parameters": {
+                                    "fieldModels": ["wondaftmee525"],
+                                    "value": false
+                                }
+                            },
+                            {
+                                "formula": "equalsValue",
+                                "condition": "or",
+                                "parameters": {
+                                    "fieldModels": ["wondaftmeeverg"],
+                                    "value": "J"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

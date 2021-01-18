@@ -1,0 +1,889 @@
+{
+  "schema": {
+    "version": "2019-5.2",
+    "groups": [
+      {
+        "legend": "Niet- of gedeeltelijk aftrekbare kosten en lasten",
+        "fields": [
+          {
+            "type": "label",
+            "label": "Hebt u onderstaande kosten verwerkt in uw winst en verliesrekening zonder rekening te houden met het niet aftrekbare gedeelte? Dan moet u deze hier invullen. Zo worden deze niet-aftrekbare kosten gecorrigeerd. Soms zijn bedragen vooringevuld met de beschikbare informatie uit uw boekhouding. Controleer deze en pas zonodig aan. Heeft u al wel rekening gehouden met het niet aftrekbare deel? Pas het bedrag dan aan naar €0."
+          },
+
+          {
+            "type": "hidden",
+            "label": "Bereken totaal representatiekosten",
+            "model": "totaalRepresentatiekosten",
+            "doNotPost": true,
+            "customValue": {
+              "formula": "sumOfStatics",
+              "parameters": {
+                "fieldModels": [
+                  "WBedVkkRep-CB",
+                  "WBedVkkKer-CB",
+                  "WBedVkkRel-CB"
+                ]
+              }
+            }
+          },
+
+          {
+            "type": "hidden",
+            "label": "Bereken totaal reis en aftrek kosten reis en verblijf",
+            "model": "totaalreisEnVerblijfKosten",
+            "doNotPost": true,
+            "customValue": {
+              "formula": "sumOfStatics",
+              "parameters": {
+                "fieldModels": ["WBedVkkRev-CB"]
+              }
+            }
+          },
+
+          {
+            "type": "hidden",
+            "label": "Overige buitengewone baten fisc van (gemapte) brugstaat",
+            "model": "initOverigeBuitengewoneBaten",
+            "doNotPost": true,
+            "customValue": {
+              "formula": "sumOfStatics",
+              "parameters": {
+                "fieldModels": ["119674-DB"]
+              }
+            }
+          },
+
+          {
+            "type": "hidden",
+            "label": "Ondernemingsvermogen excl fiscale reserves fisc van (gemapte) brugstaat",
+            "model": "ondernemingsvermogenExclFiscaleEeserves",
+            "doNotPost": true,
+            "customValue": {
+              "formula": "sumOfStatics",
+              "parameters": {
+                "fieldModels": ["119356-EB"]
+              }
+            }
+          },
+
+          {
+            "type": "hidden",
+            "label": "Bedrag van aftrek buitengesloten boeten van (gemapte) brugstaat",
+            "model": "initBedragVanAftrekBuitengeslotenBoeten",
+            "doNotPost": true,
+            "customValue": {
+              "formula": "sumOfStatics",
+              "parameters": {
+                "fieldModels": ["119780Rounded"]
+              }
+            }
+          }
+        ]
+      },
+
+      {
+        "legend": "Representatiekosten (20% niet aftrekbaar)",
+        "styleClasses": [
+          "multiple-fields-50",
+          "repeatModel-header",
+          "hide-border-bottom"
+        ],
+        "fields": [
+          {
+            "type": "label",
+            "label": "Totaalbedrag (niet gecorrigeerd)"
+          },
+          {
+            "type": "label",
+            "label": "Niet-aftrekbaar bedrag"
+          }
+        ]
+      },
+
+      {
+        "legend": "",
+        "styleClasses": [
+          "multiple-fields-50",
+          "hide-border-top",
+          "hide-border-bottom"
+        ],
+        "repeatModel": "representatiekosten",
+        "repeatModelPostKey": "108728",
+        "repeatModelId": "representatiekosten",
+        "fields": [
+          {
+            "type": "currency",
+            "currency": "EUR",
+            "model": "representatiekostenAftrekbaar",
+            "isNotRequired": true,
+            "presetValue": "totaalRepresentatiekostenModel"
+          },
+
+          {
+            "type": "hidden",
+            "label": "20% van totaal kosten representatie",
+            "model": "20PercentOftotaalRepresentatiekosten",
+            "customValue": {
+              "formula": "percentOfField",
+              "parameters": {
+                "fieldModels": ["representatiekostenAftrekbaarRepeatModel"],
+                "percent": 20
+              }
+            }
+          },
+
+          {
+            "type": "hidden",
+            "label": "Omschrijving representatiekosten",
+            "postKey": "119789",
+            "model": "119789",
+            "conditionalValues": [
+              {
+                "setValue": "Correctie beperkte aftrekbaarheid representatiekosten",
+                "terms": [
+                  {
+                    "formula": "equalsAnyValue",
+                    "parameters": {
+                      "fieldModels": [
+                        "20PercentOftotaalRepresentatiekostenRepeatModel"
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+
+          {
+            "type": "hidden",
+            "label": "Bedrag representatiekosten",
+            "postKey": "119788",
+            "model": "119788",
+            "conditionalValues": [
+              {
+                "setValueWithCalculation": {
+                  "formula": "roundDown",
+                  "parameters": {
+                    "fieldModels": [
+                      "20PercentOftotaalRepresentatiekostenRepeatModel"
+                    ]
+                  }
+                },
+                "terms": [
+                  {
+                    "formula": "equalsAnyValue",
+                    "parameters": {
+                      "fieldModels": [
+                        "20PercentOftotaalRepresentatiekostenRepeatModel"
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "label",
+            "label": "€ #{119788RepeatModel}"
+          }
+        ]
+      },
+
+      {
+        "legend": "",
+        "styleClasses": ["repeatModel-footer", "hide-border-top"],
+        "fields": [
+          {
+            "type": "label",
+            "label": " "
+          }
+        ]
+      },
+
+      {
+        "legend": "Congressen, excursies e.d. inclusief reis- en verblijfkosten (20% niet aftrekbaar)",
+        "styleClasses": [
+          "multiple-fields-50",
+          "repeatModel-header",
+          "hide-border-bottom"
+        ],
+        "fields": [
+          {
+            "type": "label",
+            "label": "Totaalbedrag (niet gecorrigeerd)"
+          },
+          {
+            "type": "label",
+            "label": "Niet-aftrekbaar bedrag"
+          }
+        ]
+      },
+
+      {
+        "legend": "",
+        "styleClasses": [
+          "multiple-fields-50",
+          "hide-border-top",
+          "hide-border-bottom"
+        ],
+        "repeatModel": "reisEnVerblijfKosten",
+        "repeatModelPostKey": "108728",
+        "repeatModelId": "reisEnVerblijfKosten",
+        "fields": [
+          {
+            "type": "currency",
+            "currency": "EUR",
+            "model": "reisEnVerblijfKostenAftrekbaar",
+            "isNotRequired": true,
+            "presetValue": "totaalreisEnVerblijfKostenModel"
+          },
+
+          {
+            "type": "hidden",
+            "label": "20% van totaal kosten reis en verblijfkosten",
+            "model": "20PercentOfreisEnVerblijfkosten",
+            "customValue": {
+              "formula": "percentOfField",
+              "parameters": {
+                "fieldModels": ["reisEnVerblijfKostenAftrekbaarRepeatModel"],
+                "percent": 20
+              }
+            }
+          },
+
+          {
+            "type": "hidden",
+            "label": "Omschrijving reis en verblijfkosten",
+            "postKey": "119789",
+            "model": "119789",
+            "conditionalValues": [
+              {
+                "setValue": "Correctie beperkte aftrekbaarheid congressen, seminars etc.",
+                "terms": [
+                  {
+                    "formula": "equalsAnyValue",
+                    "parameters": {
+                      "fieldModels": [
+                        "20PercentOfreisEnVerblijfkostenRepeatModel"
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+
+          {
+            "type": "hidden",
+            "label": "Plus bedrag als kosten hoger zijn dan 1875",
+            "model": "plusBedragKostenHoger",
+            "conditionalValues": [
+              {
+                "setValue": 375,
+                "terms": [
+                  {
+                    "formula": "greaterThanValue",
+                    "parameters": {
+                      "fieldModels": [
+                        "reisEnVerblijfKostenAftrekbaarRepeatModel"
+                      ],
+                      "value": 1875
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+
+          {
+            "type": "hidden",
+            "label": "Min bedrag als kosten hoger zijn dan 1875",
+            "model": "minBedragKostenHoger",
+            "conditionalValues": [
+              {
+                "setValue": 1875,
+                "terms": [
+                  {
+                    "formula": "greaterThanValue",
+                    "parameters": {
+                      "fieldModels": [
+                        "reisEnVerblijfKostenAftrekbaarRepeatModel"
+                      ],
+                      "value": 1875
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+
+          {
+            "type": "hidden",
+            "label": "Basis bedrag min 1875",
+            "model": "basisBedragMinMaximaleBedrag",
+            "conditionalValues": [
+              {
+                "setValueWithCalculation": {
+                  "formula": "minusSumOfFields",
+                  "parameters": {
+                    "fieldModels": [
+                      "reisEnVerblijfKostenAftrekbaarRepeatModel",
+                      "minBedragKostenHogerRepeatModel"
+                    ]
+                  }
+                },
+                "terms": [
+                  {
+                    "formula": "greaterThanValue",
+                    "parameters": {
+                      "fieldModels": [
+                        "reisEnVerblijfKostenAftrekbaarRepeatModel"
+                      ],
+                      "value": 1875
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "hidden",
+            "label": "Bedrag reis en verblijfkosten (niet afgerond)",
+            "model": "bedragReisEnVerblijfkostenNietAfgerond",
+            "conditionalValues": [
+              {
+                "setValue": "20PercentOfreisEnVerblijfkostenRepeatModel",
+                "terms": [
+                  {
+                    "formula": "equalsAnyValue",
+                    "condition": "and",
+                    "parameters": {
+                      "fieldModels": [
+                        "20PercentOfreisEnVerblijfkostenRepeatModel"
+                      ]
+                    }
+                  },
+                  {
+                    "formula": "compareValues",
+                    "condition": "and",
+                    "parameters": {
+                      "equalOrLess": "reisEnVerblijfKostenAftrekbaarRepeatModel",
+                      "than": 1875
+                    }
+                  }
+                ]
+              },
+
+              {
+                "setValueWithCalculation": {
+                  "formula": "sumOfFields",
+                  "parameters": {
+                    "fieldModels": [
+                      "plusBedragKostenHogerRepeatModel",
+                      "basisBedragMinMaximaleBedragRepeatModel"
+                    ]
+                  }
+                },
+                "terms": [
+                  {
+                    "formula": "compareValues",
+                    "condition": "and",
+                    "parameters": {
+                      "greater": "reisEnVerblijfKostenAftrekbaarRepeatModel",
+                      "than": 1875
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+
+          {
+            "type": "hidden",
+            "label": "Bedrag reis en verblijfkosten",
+            "postKey": "119788",
+            "model": "119788",
+            "conditionalValues": [
+              {
+                "setValueWithCalculation": {
+                  "formula": "roundDown",
+                  "parameters": {
+                    "fieldModels": [
+                      "bedragReisEnVerblijfkostenNietAfgerondRepeatModel"
+                    ]
+                  }
+                },
+                "terms": [
+                  {
+                    "formula": "equalsAnyValue",
+                    "condition": "and",
+                    "parameters": {
+                      "fieldModels": [
+                        "bedragReisEnVerblijfkostenNietAfgerondRepeatModel"
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "label",
+            "label": "€ #{119788RepeatModel}"
+          }
+        ]
+      },
+
+      {
+        "legend": "",
+        "styleClasses": ["hide-border-bottom", "hide-border-top"],
+        "fields": [
+          {
+            "type": "hidden",
+            "label": "Basis bedrag reis en verblijf kosten",
+            "model": "somVanBedragReisEnVerblijfKostenGroep",
+            "customValue": {
+              "formula": "sumOfGroupFields",
+              "parameters": {
+                "fieldModels": [
+                  "reisEnVerblijfKosten",
+                  "reisEnVerblijfKostenAftrekbaar"
+                ]
+              }
+            }
+          },
+          {
+            "type": "label",
+            "label": "De kosten zijn hoger dan €1875. Alle kosten boven dit bedrag worden bij het niet-aftrekbare bedrag opgeteld.",
+            "customVisible": [
+              {
+                "formula": "greaterThanValue",
+                "parameters": {
+                  "fieldModels": ["somVanBedragReisEnVerblijfKostenGroep"],
+                  "value": 1875
+                }
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "legend": "",
+        "styleClasses": ["repeatModel-footer", "hide-border-top"],
+        "fields": [
+          {
+            "type": "label",
+            "label": " "
+          }
+        ]
+      },
+
+      {
+        "legend": "Boetes (niet aftrekbaar)",
+        "styleClasses": [
+          "repeatModel-header",
+          "multiple-fields-50",
+          "hide-border-bottom"
+        ],
+        "fields": [
+          {
+            "type": "label",
+            "label": "Omschrijving"
+          },
+          {
+            "type": "label",
+            "label": "Niet-aftrekbaar bedrag"
+          }
+        ]
+      },
+
+      {
+        "legend": "",
+        "styleClasses": [
+          "hide-border-top",
+          "hide-border-bottom",
+          "help-text-group"
+        ],
+        "fields": [
+          {
+            "type": "label",
+            "label": "",
+            "refid": "wnafkostboe"
+          }
+        ]
+      },
+
+      {
+        "legend": "",
+        "styleClasses": [
+          "multiple-fields-50",
+          "hide-border-top",
+          "hide-border-bottom"
+        ],
+        "repeatModel": "boeteToevoegen",
+        "repeatModelPostKey": "108724",
+        "repeatModelId": "boete-toevoegen",
+        "addLink": "Boete toevoegen",
+        "removeLink": "bucket",
+        "fields": [
+          {
+            "type": "input",
+            "inputType": "text",
+            "model": "119779",
+            "postKey": "119779",
+            "noRefHelpText": true,
+            "presetValue": "Niet aftrekbare boete",
+            "isNotRequired": true,
+            "validator": ["verplichtAls119780VeldRepeatModel"],
+            "validatorParameters": {
+              "label": "omschrijving"
+            }
+          },
+          {
+            "type": "currency",
+            "currency": "EUR",
+            "model": "119780Veld",
+            "isNotRequired": true,
+            "presetValue": "initBedragVanAftrekBuitengeslotenBoetenModel",
+            "noRefHelpText": true,
+            "validator": ["verplichtAls119779RepeatModel", "bedrag_pos13"],
+            "validatorParameters": {
+              "label": "bedrag"
+            }
+          },
+
+          {
+            "type": "hidden",
+            "label": "Bedrag van aftrek buitengesloten boeten afgerond",
+            "postKey": "119780",
+            "model": "119780",
+            "conditionalValues": [
+              {
+                "setValueWithCalculation": {
+                  "formula": "roundDown",
+                  "parameters": {
+                    "fieldModels": ["119780VeldRepeatModel"]
+                  }
+                },
+                "terms": [
+                  {
+                    "formula": "equalsAnyValue",
+                    "parameters": {
+                      "fieldModels": ["119780VeldRepeatModel"]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "legend": "",
+        "styleClasses": ["repeatModel-footer", "hide-border-top"],
+        "fields": [
+          {
+            "type": "label",
+            "label": " "
+          }
+        ]
+      },
+
+      {
+        "legend": "Overige kosten en lasten die niet aftrekbaar zijn",
+        "styleClasses": [
+          "multiple-fields-50",
+          "repeatModel-header",
+          "hide-border-bottom"
+        ],
+        "fields": [
+          {
+            "type": "label",
+            "label": "Omschrijving"
+          },
+          {
+            "type": "label",
+            "label": "Niet-aftrekbaar bedrag"
+          }
+        ]
+      },
+
+      {
+        "legend": "",
+        "styleClasses": [
+          "hide-border-top",
+          "hide-border-bottom",
+          "help-text-group"
+        ],
+        "fields": [
+          {
+            "type": "label",
+            "label": "",
+            "refid": "wnafkostovr"
+          }
+        ]
+      },
+
+      {
+        "legend": "",
+        "styleClasses": [
+          "multiple-fields-50",
+          "hide-border-top",
+          "hide-border-bottom"
+        ],
+        "repeatModel": "nietAftrekbareKostenLastenToevoegen",
+        "repeatModelPostKey": "108728",
+        "repeatModelId": "niet-aftrekbare-kosten-lasten-toevoegen",
+        "addLink": "Niet-aftrekbare kosten en lasten toevoegen",
+        "removeLink": "bucket",
+        "fields": [
+          {
+            "type": "input",
+            "inputType": "text",
+            "model": "119789",
+            "postKey": "119789",
+            "noRefHelpText": true,
+            "isNotRequired": true,
+            "validator": ["verplichtAls119788RepeatModel"],
+            "validatorParameters": {
+              "label": "omschrijving"
+            }
+          },
+          {
+            "type": "currency",
+            "currency": "EUR",
+            "model": "119788",
+            "postKey": "119788",
+            "noRefHelpText": true,
+            "isNotRequired": true,
+            "validator": ["verplichtAls119789RepeatModel", "bedrag_pos13"],
+            "validatorParameters": {
+              "label": "bedrag"
+            }
+          }
+        ]
+      },
+
+      {
+        "legend": "",
+        "styleClasses": ["repeatModel-footer", "hide-border-top"],
+        "fields": [
+          {
+            "type": "label",
+            "label": " "
+          }
+        ]
+      },
+
+      {
+        "legend": "Overige kosten en lasten die gedeeltelijk niet aftrekbaar zijn",
+        "styleClasses": [
+          "multiple-fields-50",
+          "repeatModel-header",
+          "hide-border-bottom"
+        ],
+        "fields": [
+          {
+            "type": "label",
+            "label": "Omschrijving"
+          },
+          {
+            "type": "label",
+            "label": "Niet-aftrekbaar bedrag"
+          }
+        ]
+      },
+
+      {
+        "legend": "",
+        "styleClasses": [
+          "hide-border-top",
+          "hide-border-bottom",
+          "help-text-group"
+        ],
+        "fields": [
+          {
+            "type": "label",
+            "label": "",
+            "refid": "wnafkostovrged"
+          }
+        ]
+      },
+
+      {
+        "legend": "",
+        "styleClasses": [
+          "multiple-fields-50",
+          "hide-border-top",
+          "hide-border-bottom"
+        ],
+        "repeatModel": "gedeeltelijkNietAftrekbareKostenLastenToevoegen",
+        "repeatModelPostKey": "108728",
+        "repeatModelId": "gedeeltelijk-niet-aftrekbare-kosten-lasten-toevoegen",
+        "addLink": "Gedeeltelijk niet-aftrekbare kosten en lasten toevoegen",
+        "removeLink": "bucket",
+        "fields": [
+          {
+            "type": "input",
+            "inputType": "text",
+            "model": "119789",
+            "postKey": "119789",
+            "noRefHelpText": true,
+            "isNotRequired": true,
+            "validator": ["verplichtAls119788RepeatModel"],
+            "validatorParameters": {
+              "label": "omschrijving"
+            }
+          },
+          {
+            "type": "currency",
+            "currency": "EUR",
+            "model": "119788",
+            "postKey": "119788",
+            "noRefHelpText": true,
+            "isNotRequired": true,
+            "validator": ["verplichtAls119789RepeatModel", "bedrag_pos13"],
+            "validatorParameters": {
+              "label": "bedrag"
+            }
+          }
+        ]
+      },
+
+      {
+        "legend": "",
+        "styleClasses": ["repeatModel-footer", "hide-border-top"],
+        "fields": [
+          {
+            "type": "label",
+            "label": " "
+          }
+        ]
+      },
+
+      {
+        "legend": "",
+        "styleClasses": ["hidden"],
+        "//": "Final calculations and set mutations",
+        "fields": [
+          {
+            "type": "hidden",
+            "label": "Overige buitengewone baten representatiekosten mutatie",
+            "model": "representatiekostenMutatie",
+            "customValue": {
+              "formula": "sumOfGroupFields",
+              "parameters": {
+                "fieldModels": ["representatiekosten", "119788"]
+              }
+            }
+          },
+
+          {
+            "type": "hidden",
+            "label": "Overige buitengewone baten reis en verblijfkosten mutatie",
+            "model": "reisEnVerblijfkostenMutatie",
+            "customValue": {
+              "formula": "sumOfGroupFields",
+              "parameters": {
+                "fieldModels": ["reisEnVerblijfKosten", "119788"]
+              }
+            }
+          },
+
+          {
+            "type": "hidden",
+            "label": "Niet aftrekbare kosten en lasten mutatie",
+            "model": "nietAftrekbareKostenLastenMutatie",
+            "customValue": {
+              "formula": "sumOfGroupFields",
+              "parameters": {
+                "fieldModels": ["nietAftrekbareKostenLastenToevoegen", "119788"]
+              }
+            }
+          },
+
+          {
+            "type": "hidden",
+            "label": "gedeeltelijk niet aftrekbare kosten en lasten mutatie",
+            "model": "gedeeltelijkNietAftrekbareKostenLastenMutatie",
+            "customValue": {
+              "formula": "sumOfGroupFields",
+              "parameters": {
+                "fieldModels": [
+                  "gedeeltelijkNietAftrekbareKostenLastenToevoegen",
+                  "119788"
+                ]
+              }
+            }
+          },
+
+          {
+            "type": "hidden",
+            "label": "Overige buitengewone baten",
+            "model": "119674-DB",
+            "postKey": "119674-DB",
+            "customValue": {
+              "formula": "sumOfFields",
+              "parameters": {
+                "fieldModels": [
+                  "initOverigeBuitengewoneBaten",
+                  "representatiekostenMutatie",
+                  "reisEnVerblijfkostenMutatie",
+                  "nietAftrekbareKostenLastenMutatie",
+                  "gedeeltelijkNietAftrekbareKostenLastenMutatie"
+                ]
+              }
+            }
+          },
+          {
+            "type": "hidden",
+            "label": "Ondernemingsvermogen excl fiscale reserves fisc",
+            "model": "119356-EB",
+            "postKey": "119356-EB",
+            "customValue": {
+              "formula": "minusSumOfFields",
+              "parameters": {
+                "fieldModels": [
+                  "ondernemingsvermogenExclFiscaleEeserves",
+                  "representatiekostenMutatie",
+                  "reisEnVerblijfkostenMutatie",
+                  "nietAftrekbareKostenLastenMutatie",
+                  "gedeeltelijkNietAftrekbareKostenLastenMutatie"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "legend": "Let op",
+        "customVisible": [
+          {
+            "formula": "equalsAnyValue",
+            "condition": "or",
+            "parameters": {
+              "fieldModels": ["nietAftrekbareKostenLastenMutatie"],
+              "value": true
+            }
+          },
+          {
+            "formula": "equalsAnyValue",
+            "condition": "or",
+            "parameters": {
+              "fieldModels": ["gedeeltelijkNietAftrekbareKostenLastenMutatie"],
+              "value": true
+            }
+          }
+        ],
+        "fields": [
+          {
+            "type": "label",
+            "label": "U geeft aan dat er kosten in uw winst- en verliesrekening zijn verwerkt die niet of maar gedeeltelijk aftrekbaar zijn. Deze zullen worden gecorrigeerd in uw aangifte Inkomstenbelasting. Heeft u ook BTW teruggevraagd over deze kosten? Dan moet u deze ook nog corrigeren in een aangifte Omzetbelasting."
+          }
+        ]
+      }
+    ]
+  }
+}

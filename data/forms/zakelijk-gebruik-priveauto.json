@@ -1,0 +1,151 @@
+{
+    "schema": {
+        "version": "2019-5.2",
+        "groups": [
+            {
+                "legend": "Zakelijk gebruik privéauto",
+                "fields": [
+                    {
+                        "type": "label",
+                        "label": "Hebt u zakelijke kilometers gereden in uw privéauto? Dan kunt u hier het aantal kilometers opgeven. Hebt u geen zakelijke kilometers gereden? Pas het aantal kilometers dan aan naar 0."
+                    }
+                ]
+            },
+            {
+                "legend": "Aftrekbare autokosten",
+                "styleClasses": ["multiple-fields-50"],
+                "fields": [
+                    {
+                        "type": "label",
+                        "label": "€ #{BDRGGEHKM} per kilometer"
+                    },
+                    {
+                        "type": "label",
+                        "label": "Aftrekbaar bedrag"
+                    },
+                    {
+                        "type": "hidden",
+                        "label": "Stortingen van kapitaal cq vermogenssprong in boekjaar van brugstaat",
+                        "model": "stortingenKapitaalVermogenssprong",
+                        "doNotPost": true,
+                        "customValue": {
+                            "formula": "sumOfStatics",
+                            "parameters": {
+                                "fieldModels": ["118340"]
+                            }
+                        }
+                    },
+
+                    {
+                        "type": "hidden",
+                        "label": "Overige buitengewone lasten fisc van brugstaat",
+                        "model": "overigeBuitengewoneLasten",
+                        "doNotPost": true,
+                        "customValue": {
+                            "formula": "sumOfStatics",
+                            "parameters": {
+                                "fieldModels": ["119706-DB"]
+                            }
+                        }
+                    },
+
+                    {
+                        "type": "number",
+                        "inputType": "number",
+                        "affix": "km",
+                        "model": "geredenKilometers",
+                        "doNotPost": true,
+                        "validator": ["verplicht"]
+                    },
+
+                    {
+                        "type": "hidden",
+                        "label": "Berekende kilometer kosten privegebruik",
+                        "model": "kostenZakelijkGebruik",
+                        "doNotPost": true,
+                        "customValue": {
+                            "formula": "multiplyField",
+                            "parameters": {
+                                "fieldModels": ["geredenKilometers"],
+                                "multiplier": "BDRGGEHKMStatic"
+                            }
+                        }
+                    },
+
+                    {
+                        "type": "hidden",
+                        "label": "Afgeronde kosten zakelijk gebruik prive auto",
+                        "model": "afgerondeKostenZakelijkGebruik",
+                        "doNotPost": true,
+                        "customValue": {
+                            "formula": "roundUp",
+                            "parameters": {
+                                "fieldModels": ["kostenZakelijkGebruik"]
+                            }
+                        }
+                    },
+
+                    {
+                        "type": "label",
+                        "label": "€ #{afgerondeKostenZakelijkGebruik}"
+                    },
+
+                    {
+                        "type": "hidden",
+                        "label": "Stortingen van kapitaal cq vermogenssprong in boekjaar mutatie",
+                        "model": "118340",
+                        "postKey": "118340",
+                        "customValue": {
+                            "formula": "sumOfFields",
+                            "parameters": {
+                                "fieldModels": ["stortingenKapitaalVermogenssprong", "afgerondeKostenZakelijkGebruik"]
+                            }
+                        }
+                    },
+
+                    {
+                        "type": "hidden",
+                        "label": "Overige buitengewone lasten fisc mutatie",
+                        "model": "119706-DB",
+                        "postKey": "119706-DB",
+                        "customValue": {
+                            "formula": "sumOfFields",
+                            "parameters": {
+                                "fieldModels": ["overigeBuitengewoneLasten", "afgerondeKostenZakelijkGebruik"]
+                            }
+                        }
+                    },
+
+                    {
+                        "type": "hidden",
+                        "label": "Ondernemingsvermogen excl fiscale reserves fisc van (gemapte) brugstaat",
+                        "model": "ondernemingsvermogenExclFiscaleEeserves",
+                        "doNotPost": true,
+                        "customValue": {
+                            "formula": "sumOfStatics",
+                            "parameters": {
+                                "fieldModels": ["119356-EB"]
+                            }
+                        }
+                    },
+
+                    {
+                        "type": "hidden",
+                        "label": "ondernemingsvermogen excl fiscale reserves fisc mutatie",
+                        "model": "119356-EB",
+                        "postKey": "119356-EB",
+                        "customValue": {
+                            "formula": "sumOfFields",
+                            "parameters": {
+                                "fieldModels": [
+                                    "ondernemingsvermogenExclFiscaleEeserves",
+                                    "afgerondeKostenZakelijkGebruik"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

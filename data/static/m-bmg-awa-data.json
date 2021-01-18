@@ -1,0 +1,471 @@
+{
+  "118315": {
+    "name": "mutaties/onttrekkingen kapitaal in het boekjaar",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDDOWN",
+    "position": "geen"
+  },
+  "118320": {
+    "name": "overdrachtsprijs prive-onttrekking natura/goederen",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDDOWN",
+    "position": "geen"
+  },
+  "118340": {
+    "name": "stortingen van kapitaal cq vermogenssprong in boekjaar",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDUP",
+    "position": "geen"
+  },
+  "118387": {
+    "name": "toevoeging FOR",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDUP",
+    "position": "geen"
+  },
+  "118388": {
+    "name": "onttrekking FOR",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDDOWN",
+    "position": "geen"
+  },
+  "119780": {
+    "name": "bedrag van aftrek uitgesloten boeten",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDDOWN",
+    "position": "geen"
+  },
+  "119788": {
+    "name": "bedrag overige prive onttrekkingen",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDDOWN",
+    "position": "geen"
+  },
+  "119091-EB": {
+    "name": "goodwill fisc",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDDOWN",
+    "position": "activa"
+  },
+  "119091-SB": {
+    "name": "goodwill fisc",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDDOWN",
+    "position": "activa"
+  },
+  "119092-EB": {
+    "name": "kosten aanschaf goodwill fisc",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDUP",
+    "position": "geen"
+  },
+  "119105-EB": {
+    "name": "overige immateriele vaste activa fisc",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDDOWN",
+    "position": "activa"
+  },
+  "119105-SB": {
+    "name": "overige immateriele vaste activa fisc",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDDOWN",
+    "position": "activa"
+  },
+  "119106-EB": {
+    "name": "aansch/voortbr overige imm vaste activa fisc",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDUP",
+    "position": "geen"
+  },
+  "119129-EB": {
+    "name": "machines fisc",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDDOWN",
+    "position": "activa"
+  },
+  "119129-SB": {
+    "name": "machines fisc",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDDOWN",
+    "position": "activa"
+  },
+  "119130-EB": {
+    "name": "kosten aanschaf machines fisc",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDUP",
+    "position": "geen"
+  },
+  "520515-EB": {
+    "name": "andere vaste bedrijfsmiddelen",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDDOWN",
+    "position": "activa"
+  },
+  "520515-SB": {
+    "name": "andere vaste bedrijfsmiddelen",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDDOWN",
+    "position": "activa"
+  },
+  "520516-EB": {
+    "name": "kosten aanschaf/voortbr andere vaste bedrijfsmiddelen",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDUP",
+    "position": "geen"
+  },
+  "520509-EB": {
+    "name": "voorraden excl onderhanden werk",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDDOWN",
+    "position": "activa"
+  },
+  "520509-SB": {
+    "name": "voorraden excl onderhanden werk",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDDOWN",
+    "position": "activa"
+  },
+  "119211-EB": {
+    "name": "onderhanden werk fisc",
+    "format": "n..13",
+    "mask": null,
+    "round": "ROUNDDOWN",
+    "position": "activa"
+  },
+  "119211-SB": {
+    "name": "onderhanden werk fisc",
+    "format": "n..13",
+    "mask": null,
+    "round": "ROUNDDOWN",
+    "position": "activa"
+  },
+  "119232-EB": {
+    "name": "handelsdebiteuren fisc",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDDOWN",
+    "position": "activa"
+  },
+  "119232-SB": {
+    "name": "handelsdebiteuren fisc",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDDOWN",
+    "position": "activa"
+  },
+  "119233-EB": {
+    "name": "nominaal handelsdebiteuren fisc",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDDOWN",
+    "position": "geen"
+  },
+  "119242-EB": {
+    "name": "vorderingen omzetbelasting fisc",
+    "format": "n..13",
+    "mask": null,
+    "round": "ROUNDDOWN",
+    "position": "activa"
+  },
+  "119242-SB": {
+    "name": "vorderingen omzetbelasting fisc",
+    "format": "n..13",
+    "mask": null,
+    "round": "ROUNDDOWN",
+    "position": "activa"
+  },
+  "119271-EB": {
+    "name": "overige vorderingen kortlopend fisc",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDDOWN",
+    "position": "activa"
+  },
+  "119271-SB": {
+    "name": "overige vorderingen kortlopend fisc",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDDOWN",
+    "position": "activa"
+  },
+  "119286-EB": {
+    "name": "liquide middelen fisc",
+    "format": "n..13",
+    "mask": null,
+    "round": "ROUNDDOWN",
+    "position": "activa"
+  },
+  "119286-SB": {
+    "name": "liquide middelen fisc",
+    "format": "n..13",
+    "mask": null,
+    "round": "ROUNDDOWN",
+    "position": "activa"
+  },
+  "119343-EB": {
+    "name": "fiscale oudedagsreserve fisc",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDDOWN",
+    "position": "passiva"
+  },
+  "119343-SB": {
+    "name": "fiscale oudedagsreserve fisc",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDDOWN",
+    "position": "passiva"
+  },
+  "119356-EB": {
+    "name": "ondernemingsvermogen excl fiscale reserves fisc",
+    "format": "n..13",
+    "mask": null,
+    "round": "ROUNDDOWN",
+    "position": "passiva"
+  },
+  "119356-SB": {
+    "name": "ondernemingsvermogen excl fiscale reserves fisc",
+    "format": "n..13",
+    "mask": null,
+    "round": "ROUNDDOWN",
+    "position": "passiva"
+  },
+  "119411-EB": {
+    "name": "schulden kredietinstellingen fisc",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDDOWN",
+    "position": "passiva"
+  },
+  "119411-SB": {
+    "name": "schulden kredietinstellingen fisc",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDDOWN",
+    "position": "passiva"
+  },
+  "520495-EB": {
+    "name": "langlopende schulden overige",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDDOWN",
+    "position": "passiva"
+  },
+  "520495-SB": {
+    "name": "langlopende schulden overige",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDDOWN",
+    "position": "passiva"
+  },
+  "119415-EB": {
+    "name": "schulden aan leveranciers etc fisc",
+    "format": "n..13",
+    "mask": null,
+    "round": "ROUNDDOWN",
+    "position": "passiva"
+  },
+  "119415-SB": {
+    "name": "schulden aan leveranciers etc fisc",
+    "format": "n..13",
+    "mask": null,
+    "round": "ROUNDDOWN",
+    "position": "passiva"
+  },
+  "119443-EB": {
+    "name": "schulden omzetbelasting fisc",
+    "format": "n..13",
+    "mask": null,
+    "round": "ROUNDDOWN",
+    "position": "passiva"
+  },
+  "119443-SB": {
+    "name": "schulden omzetbelasting fisc",
+    "format": "n..13",
+    "mask": null,
+    "round": "ROUNDDOWN",
+    "position": "passiva"
+  },
+  "520500-EB": {
+    "name": "kortlopende schulden overige",
+    "format": "n..13",
+    "mask": null,
+    "round": "ROUNDDOWN",
+    "position": "passiva"
+  },
+  "520500-SB": {
+    "name": "kortlopende schulden overige",
+    "format": "n..13",
+    "mask": null,
+    "round": "ROUNDDOWN",
+    "position": "passiva"
+  },
+  "119474-DB": {
+    "name": "netto omzet fisc",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDDOWN",
+    "position": "omzet"
+  },
+  "119502-DB": {
+    "name": "overige opbrengsten fisc",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDDOWN",
+    "position": "omzet"
+  },
+  "119509-DB": {
+    "name": "kosten grond/hulpstof cq inkooppr verkopen fisc",
+    "format": "n..13",
+    "mask": null,
+    "round": "ROUNDUP",
+    "position": "kosten"
+  },
+  "119513-DB": {
+    "name": "kosten uitbesteed werk etc fisc",
+    "format": "n..13",
+    "mask": null,
+    "round": "ROUNDUP",
+    "position": "kosten"
+  },
+  "119531-DB": {
+    "name": "arbeidsbeloning fiscale partner fisc",
+    "format": "n..13",
+    "mask": ">=5000",
+    "round": "ROUNDUP",
+    "position": "kosten"
+  },
+  "520479-DB": {
+    "name": "goodwill afschrijvingen fisc",
+    "format": "n..13",
+    "mask": null,
+    "round": "ROUNDUP",
+    "position": "kosten"
+  },
+  "520480-DB": {
+    "name": "overige immateriele vaste activa afschrijvingen fisc",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDUP",
+    "position": "kosten"
+  },
+  "119562-DB": {
+    "name": "afschr machines en installaties fisc",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDUP",
+    "position": "kosten"
+  },
+  "520482-DB": {
+    "name": "andere vaste bedrijfsmiddelen afschrijvingen fisc",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDUP",
+    "position": "kosten"
+  },
+  "119581-DB": {
+    "name": "auto- en transportkosten fisc",
+    "format": "n..13",
+    "mask": null,
+    "round": "ROUNDUP",
+    "position": "kosten"
+  },
+  "119585-DB": {
+    "name": "huisvestingskosten fisc",
+    "format": "n..13",
+    "mask": null,
+    "round": "ROUNDUP",
+    "position": "kosten"
+  },
+  "119589-DB": {
+    "name": "onderhoud ov materiele vaste activa fisc",
+    "format": "n..13",
+    "mask": null,
+    "round": "ROUNDUP",
+    "position": "kosten"
+  },
+  "119593-DB": {
+    "name": "verkoopkosten fisc",
+    "format": "n..13",
+    "mask": null,
+    "round": "ROUNDUP",
+    "position": "kosten"
+  },
+  "119603-DB": {
+    "name": "andere kosten fisc",
+    "format": "n..13",
+    "mask": null,
+    "round": "ROUNDUP",
+    "position": "kosten"
+  },
+  "119619-DB": {
+    "name": "opbrengst overige vorderingen fisc",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDDOWN",
+    "position": "omzet"
+  },
+  "119615-DB": {
+    "name": "opbrengst banktegoeden fisc",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDDOWN",
+    "position": "omzet"
+  },
+  "119635-DB": {
+    "name": "kosten schulden en rentelasten etc fisc",
+    "format": "n..13",
+    "mask": null,
+    "round": "ROUNDUP",
+    "position": "kosten"
+  },
+  "119663-DB": {
+    "name": "boekwinst op activa fisc",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDDOWN",
+    "position": "omzet"
+  },
+  "119674-DB": {
+    "name": "overige buitengewone baten fisc",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDDOWN",
+    "position": "omzet"
+  },
+  "1762319-DB": {
+    "name": "boekverlies op activa fisc",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDUP",
+    "position": "kosten"
+  },
+  "119706-DB": {
+    "name": "overige buitengewone lasten fisc",
+    "format": "n..13",
+    "mask": ">=0",
+    "round": "ROUNDUP",
+    "position": "kosten"
+  }
+}

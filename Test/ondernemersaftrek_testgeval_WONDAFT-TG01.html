@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Expires" content="0">		
+		<meta charset=utf-8> 
+		<meta http-equiv=X-UA-Compatible content="IE=edge">
+		<meta name=viewport content="width=device-width,initial-scale=1">
+ 		<meta name="author" content="Belastingdienst/InteractieWerf">
+		<meta name="description" content="Voorbeeld formulier versie 1.1">
+		<title>Ondernemersaftrek</title>
+		<link href=css/app.css rel=preload as=style>
+		<link href=js/app.js rel=preload as=script>
+		<link href=css/app.css rel=stylesheet>
+		<style>
+			.helpText {text-align: left!important;}
+			.currency-symbol {margin-left: 10px;}
+			legend {font-weight: bold;}
+			table { text-align: left; margin-top: 0px;}
+			tr { padding-bottom: 20px;}
+			td { vertical-align: top; padding: 5px;}
+			hr { margin: 50px 0 20px 0;}
+			h2 { margin: 10px 0 0 0;}
+		</style>
+	</head>
+	<body>
+		<noscript>
+			<strong>We're sorry but bd-forms doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+		</noscript>
+		<bd-form-uitleg>
+			<h1>Ondernemersaftrek</h1>
+			<p></p>
+		</bd-form-uitleg>
+		<bd-forms></bd-forms>
+		<hr />
+		<h2>Specificaties formulier</h2>
+
+		<table style="text-align: left">
+			<tr><th>Specificatie</th><th>Opmerking</th></tr>
+			<tr><td>Release: </td><td>2019-5.1</td></tr>
+			<tr><td>Toonconditie:</td><td>Altijd</td></tr>
+			<tr><td>Prefill in window.bdForms.model</td><td>Er kan 1 model waarde worden vooringevuld: window.bdForms.model = { AOWleeftijdBereikt: true or false} Dit is het antwoord op de vraag of de ondernemer in 2019 de AOW leeftijd heeft bereikt, voor 2019 is dat geboren voor 1 september 1953</td></tr>
+			<tr><td>Prefill in window.bdForms.static</td><td>Er MOETEN 4 statics worden geprefilled: window.bdForms.static = { WOmz: 54321, BEivKap: 12345, BEivFirFor: 67890, wondgegmee: true}. Dit zijn de omzet over het boekjaar (Gelid 119474) en de eindejaarssaldo's (Debet) van het ondernemingsvermogen (Gelid 119356). Verder nog het antwoord op de vraag uit het algemene gegevens formulier over meewerkende fiscale partner
+				en de FOR (GElid 119343). Deze waarden worden gebruikt om te bepalen of een informerende tekst en/of vervolgvragen wordt getoond</td></tr>
+		</table>
+				
+
+		<script>
+			window.bdForms = {};
+			window.bdForms.config = {
+				postRequestEndpoint: 'bd-test',
+				
+				getRequestEndpoint: 'data/ondernemersaftrek.json',
+				redirectLocation: 'http://www.google.nl',
+				submitButtonText: "Opslaan en verder"
+			};
+			window.bdForms.model = {
+				AOWleeftijdBereikt: ""
+			}
+			window.bdForms.static = {
+				WOmz: 9000,
+				BEivKap: 12345, 
+				BEivFirFor: 67890,
+				wondgegmee: true
+			}
+		</script>
+	<script src=js/app.js></script>
+	</body>
+</html>

@@ -1,0 +1,77 @@
+{
+  "schema": {
+    "version": "2019-5.1",
+    "groups": [
+      {
+        "legend": "Er zijn extra gegevens nodig voor de aangifte",
+        "fields": [
+          {
+            "type": "label",
+            "label": "Controleer de ingevulde waarden of vul deze in. Het totaal van de ingevulde waarden moet overeenkomen met de totale boekwaarde vordering omzetbelasting (<strong>€ #{119242-EBRounded}</strong>)."
+          }
+        ]
+      },
+      {
+        "legend": "Specificatie vordering omzetbelasting",
+        "fields": [
+          {
+            "type": "currency",
+            "currency": "EUR",
+            "label": "Vordering omzetbelasting over dit boekjaar",
+            "model": "wactvordspecboek",
+            "refid": "wactvordspecboek",
+            "postKey": "1764402",
+            "validator": ["verplicht", "bedrag13"]
+          },
+          {
+            "type": "currency",
+            "currency": "EUR",
+            "label": "Vordering omzetbelasting over het vorige boekjaar",
+            "model": "wactvordspecvor",
+            "refid": "wactvordspecvor",
+            "postKey": "1764403",
+            "validator": ["verplicht", "bedrag13"]
+          },
+          {
+            "type": "currency",
+            "currency": "EUR",
+            "label": "Vordering omzetbelasting over oudere boekjaren",
+            "model": "wactvordspecoud",
+            "refid": "wactvordspecoud",
+            "postKey": "1764404",
+            "validator": ["verplicht", "bedrag13"]
+          },
+          {
+            "type": "currency",
+            "currency": "EUR",
+            "disabled": true,
+            "total": true,
+            "totalSymbol": "+",
+            "label": "Totaal specificatie vordering omzetbelasting",
+            "model": "wpasvordspectot",
+            "refid": "wpasvordspectot",
+            "doNotPost": true,
+            "customValue": {
+              "formula": "sumOfFields",
+              "parameters": {
+                "fieldModels": [
+                  "wactvordspecboek",
+                  "wactvordspecvor",
+                  "wactvordspecoud"
+                ]
+              }
+            }
+          },
+          {
+            "type": "label",
+            "label": "Het totaalbedrag komt niet overeen met het verwachte bedrag #{119242-EBRounded}",
+            "customExpectedName": {
+              "model": "wpasvordspectot",
+              "static": "119242-EBRounded"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<TestCases>
+	
+		<TestCase omschrijving="testcase 1 {fmwpontautpercbijtel} is 0">
+			<Input type="fiscaalmodel">		
+					<list refid="ondernemingList">
+						<item>
+							<TestValue key="fmwondgegstamin" type="Boolean">False</TestValue>
+							<list refid="ondernemingIndividueelAang:priveontrekking:bijzSituatiePriveGebrAutoList">
+								<item>
+									<TestValue key="fmwpontautbijzbdrg" type="Integer">10</TestValue>
+								</item>
+								<item>
+									<TestValue key="fmwpontautbijzbdrg" type="Integer">20</TestValue>
+								</item>
+							</list>
+						</item>
+						<item>
+							<TestValue key="fmwondgegstamin" type="Boolean">False</TestValue>
+							<list refid="ondernemingIndividueelPart:priveontrekking:bijzSituatiePriveGebrAutoList">
+								<item>
+									<TestValue key="fmwpontautbijzbdrg" type="Integer">30</TestValue>
+								</item>
+								<item>
+									<TestValue key="fmwpontautbijzbdrg" type="Integer">40</TestValue>
+								</item>
+							</list>
+						</item>
+					</list>
+			</Input>
+			<Output type="berekendfiscaalmodel">
+				<list refid="onderneminglist">
+					<item>
+						<TestValue key="ondernemingIndividueelAang:priveontrekking:fmwpontautbijzbdrgtot" type="Integer">30</TestValue>
+					</item>
+					<item>
+						<TestValue key="ondernemingIndividueelPart:priveontrekking:fmwpontautbijzbdrgtot" type="Integer">70</TestValue>
+					</item>
+				</list>
+			</Output>
+		</TestCase>		
+		
+		<TestCase omschrijving="testcase 2">
+			<Input type="fiscaalmodel">		
+					<list refid="ondernemingList">
+						<item>
+							<TestValue key="fmwondgegstamin" type="Boolean">False</TestValue>
+							<list refid="ondernemingIndividueelAang:priveontrekking:bijzSituatiePriveGebrAutoList">
+								<item>
+									<TestValue key="fmwpontautbijzbdrg" type="Integer">-10</TestValue>
+								</item>
+								<item>
+									<TestValue key="fmwpontautbijzbdrg" type="Integer">-20</TestValue>
+								</item>
+							</list>
+						</item>
+						<item>
+							<TestValue key="fmwondgegstamin" type="Boolean">False</TestValue>
+							<list refid="ondernemingIndividueelPart:priveontrekking:bijzSituatiePriveGebrAutoList">
+								<item>
+									<TestValue key="fmwpontautbijzbdrg" type="Integer">-30</TestValue>
+								</item>
+								<item>
+									<TestValue key="fmwpontautbijzbdrg" type="Integer">-40</TestValue>
+								</item>
+							</list>
+						</item>
+					</list>
+			</Input>
+			<Output type="berekendfiscaalmodel">
+				<list refid="onderneminglist">
+					<item>
+						<TestValue key="ondernemingIndividueelAang:priveontrekking:fmwpontautbijzbdrgtot" type="Integer">-30</TestValue>
+					</item>
+					<item>
+						<TestValue key="ondernemingIndividueelPart:priveontrekking:fmwpontautbijzbdrgtot" type="Integer">-70</TestValue>
+					</item>
+				</list>
+			</Output>
+		</TestCase>		
+		
+	</TestCases>

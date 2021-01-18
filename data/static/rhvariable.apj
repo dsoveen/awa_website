@@ -1,0 +1,2008 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rhpml majorversion="4" minorversion="0">
+  <variablesets />
+  <!--DA2019 versie 2.6 BDRGGRNSAFKPENS en BDRGpercBX3RENDKLASSE2-->
+  <Versie>2.6</Versie>
+  <variables>
+    <variable>
+      <name>BDRGAOWLEEFTIJD</name>
+      <value>66,4</value>
+      <desc>GETAL Algemeen: Art. 7a Algemene Ouderdomswet (Leeftijd waarop de AOW begint)</desc>
+    </variable>
+    <variable>
+      <name>BDRGAOWLEEFTIJDBEGIN</name>
+      <value>01-01-1953</value>
+      <desc>DATE Algemeen: Art. 7a Algemene Ouderdomswet (Uiterlijke geboortedatum waarop iemand het hele jaar AOW-gerechtigd is)</desc>
+    </variable>
+    <variable>
+      <name>BDRGAOWLEEFTIJDBEGINMIN1</name>
+      <value>01-04-1952</value>
+      <desc>DATE Algemeen: Art. 7a Algemene Ouderdomswet (Uiterlijke geboortedatum waarop iemand het hele jaar AOW-gerechtigd is 1 jaar eerder)</desc>
+    </variable>
+    <variable>
+      <name>BDRGAOWLEEFTIJDBEGINMIN2</name>
+      <value>01-07-1951</value>
+      <desc>DATE Algemeen: Art. 7a Algemene Ouderdomswet (Uiterlijke geboortedatum waarop iemand het hele jaar AOW-gerechtigd is 2 jaar eerder)</desc>
+    </variable>
+    <variable>
+      <name>BDRGAOWLEEFTIJDBEGINMIN3</name>
+      <value>01-10-1950</value>
+      <desc>DATE Algemeen: Art. 7a Algemene Ouderdomswet (Uiterlijke geboortedatum waarop iemand het hele jaar AOW-gerechtigd is 3 jaar eerder)</desc>
+    </variable>
+    <variable>
+      <name>BDRGAOWLEEFTIJDBEGINMIN4</name>
+      <value>01-11-1949</value>
+      <desc>DATE Algemeen: Art. 7a Algemene Ouderdomswet (Uiterlijke geboortedatum waarop iemand het hele jaar AOW-gerechtigd is 4 jaar eerder)</desc>
+    </variable>
+    <variable>
+      <name>BDRGAOWLEEFTIJDBEGINMIN5</name>
+      <value>01-12-1948</value>
+      <desc>DATE Algemeen: Art. 7a Algemene Ouderdomswet (Uiterlijke geboortedatum waarop iemand het hele jaar AOW-gerechtigd is 5 jaar eerder)</desc>
+    </variable>
+    <variable>
+      <name>BDRGAOWLEEFTIJDBEGINMIN6</name>
+      <value>01-01-1948</value>
+      <desc>DATE Algemeen: Art. 7a Algemene Ouderdomswet (Uiterlijke geboortedatum waarop iemand het hele jaar AOW-gerechtigd is 6 jaar eerder)</desc>
+    </variable>
+    <variable>
+      <name>BDRGAOWLEEFTIJDBEGINMIN7</name>
+      <value>01-01-1947</value>
+      <desc>DATE Algemeen: Art. 7a Algemene Ouderdomswet (Uiterlijke geboortedatum waarop iemand het hele jaar AOW-gerechtigd is 7 jaar eerder)</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercSCHIJF1</name>
+      <value>9,00</value>
+      <desc>PERCENT Art 2.10 lid 1 Tarief belastbaar inkomen uit werk en woning</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercSCHIJF2</name>
+      <value>10,45</value>
+      <desc>PERCENT Art 2.10 lid 1 Tarief belastbaar inkomen uit werk en woning</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercSCHIJF3</name>
+      <value>38,10</value>
+      <desc>PERCENT Art 2.10 lid 1 Tarief belastbaar inkomen uit werk en woning</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercSCHIJF4</name>
+      <value>51,75</value>
+      <desc>PERCENT Art 2.10 lid 1 Tarief belastbaar inkomen uit werk en woning</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercSCHIJF4LHAFKLIJFR</name>
+      <value>52,00</value>
+      <desc>PERCENT Art 34 lid 2 Wet op Loonbelasting 1964</desc>
+    </variable>
+    <variable>
+      <name>BDRGMAXSCHIJF1</name>
+      <value>20.384</value>
+      <desc>BEDRAG Art 2.10 lid 1 Tarief belastbaar inkomen uit werk en woning</desc>
+    </variable>
+    <variable>
+      <name>BDRGMAXSCHIJF2</name>
+      <value>34.300</value>
+      <desc>BEDRAG Art 2.10 lid 1 Tarief belastbaar inkomen uit werk en woning voor belastingplichtige geboren op of na 01-01-1946</desc>
+    </variable>
+    <variable>
+      <name>BDRGMAXSCHIJF3</name>
+      <value>68.507</value>
+      <desc>BEDRAG Art 2.10 lid 1 Tarief belastbaar inkomen uit werk en woning</desc>
+    </variable>
+    <variable>
+      <name>BDRGMAXLHSCHIJF1nietAOW</name>
+      <value>0</value>
+      <desc>BEDRAG Art 2.10 lid 1 Tarief belastbaar inkomen uit werk en woning: loonheffing schijf 1</desc>
+    </variable>
+    <variable>
+      <name>BDRGMAXLHSCHIJF1AOWvanaf1946</name>
+      <value>0</value>
+      <desc>BEDRAG Art 2.10 lid 1 Tarief belastbaar inkomen uit werk en woning: loonheffing schijf 1</desc>
+    </variable>
+    <variable>
+      <name>BDRGMAXLHSCHIJF1AOWvoor1946</name>
+      <value>0</value>
+      <desc>BEDRAG Art 2.10 lid 1 Tarief belastbaar inkomen uit werk en woning: loonheffing schijf 1</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercAFBOUWHYP</name>
+      <value>2,75</value>
+      <desc>PERCENT Art 2.10 lid 2 Tarief belastbaar inkomen uit werk en woning</desc>
+    </variable>
+    <variable>
+      <name>BDRGMAXSCHIJF2ART210a</name>
+      <value>34.817</value>
+      <desc>BEDRAG Art 2.10a lid 1 Tarief belastbaar inkomen uit werk en woning voor belastingplichtige geboren voor 01-01-1946</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercBOX2</name>
+      <value>25</value>
+      <desc>PERCENT Art 2.12 Tarief belastbaar inkomen uit aanmerkelijk belang</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercBOX3</name>
+      <value>30</value>
+      <desc>PERCENT Art 2.13 Tarief belastbaar inkomen uit sparen en beleggen</desc>
+    </variable>
+    <variable>
+      <name>BDRGW315DLAFTMAX</name>
+      <value>4.600</value>
+      <desc>BEDRAG Art 3.15 lid 1 In aftrek beperkte algemene kosten</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercZAKWOZA</name>
+      <value>0,95</value>
+      <desc>PERCENT Art 3.19 lid 2 Bijtelling prive-gebruik woning</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercZAKWOZB</name>
+      <value>1,20</value>
+      <desc>PERCENT Art 3.19 lid 2 Bijtelling prive-gebruik woning</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercZAKWOZC</name>
+      <value>1,30</value>
+      <desc>PERCENT Art 3.19 lid 2 Bijtelling prive-gebruik woning</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercZAKWOZD</name>
+      <value>1,45</value>
+      <desc>PERCENT Art 3.19 lid 2 Bijtelling prive-gebruik woning</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercZAKWOZE</name>
+      <value>1,65</value>
+      <desc>PERCENT Art 3.19 lid 2 Bijtelling prive-gebruik woning</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercZAKWOZF</name>
+      <value>2,35</value>
+      <desc>PERCENT Art 3.19 lid 2 Bijtelling prive-gebruik woning</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercZAKWOZAMIN1</name>
+      <value>1,00</value>
+      <desc>PERCENT Art 3.19 lid 2 Bijtelling prive-gebruik woning</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercZAKWOZBMIN1</name>
+      <value>1,25</value>
+      <desc>PERCENT Art 3.19 lid 2 Bijtelling prive-gebruik woning</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercZAKWOZCMIN1</name>
+      <value>1,40</value>
+      <desc>PERCENT Art 3.19 lid 2 Bijtelling prive-gebruik woning</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercZAKWOZDMIN1</name>
+      <value>1,55</value>
+      <desc>PERCENT Art 3.19 lid 2 Bijtelling prive-gebruik woning</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercZAKWOZEMIN1</name>
+      <value>1,75</value>
+      <desc>PERCENT Art 3.19 lid 2 Bijtelling prive-gebruik woning</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercZAKWOZFMIN1</name>
+      <value>2,35</value>
+      <desc>PERCENT Art 3.19 lid 2 Bijtelling prive-gebruik woning</desc>
+    </variable>
+    <variable>
+      <name>BDRGZAKFORF1</name>
+      <value>17.820</value>
+      <desc>BEDRAG Art 3.19 lid 2 Bijtelling prive-gebruik woning</desc>
+    </variable>
+    <variable>
+      <name>BDRGZAKFORFMIN1</name>
+      <value>18.550</value>
+      <desc>BEDRAG Art 3.19 lid 2 Bijtelling prive-gebruik woning</desc>
+    </variable>
+    <variable>
+      <name>BDRGWOZW1</name>
+      <value>12.500</value>
+      <desc>BEDRAG Art 3.19 Bijtelling prive-gebruik woning Art 3.112 Eigenwoningforfait</desc>
+    </variable>
+    <variable>
+      <name>BDRGWOZW2</name>
+      <value>25.000</value>
+      <desc>BEDRAG Art 3.19 Bijtelling prive-gebruik woning Art 3.112 Eigenwoningforfait</desc>
+    </variable>
+    <variable>
+      <name>BDRGWOZW3</name>
+      <value>50.000</value>
+      <desc>BEDRAG Art 3.19 Bijtelling prive-gebruik woning Art 3.112 Eigenwoningforfait</desc>
+    </variable>
+    <variable>
+      <name>BDRGWOZW4</name>
+      <value>75.000</value>
+      <desc>BEDRAG Art 3.19 Bijtelling prive-gebruik woning Art 3.112 Eigenwoningforfait</desc>
+    </variable>
+    <variable>
+      <name>BDRGWOZW5</name>
+      <value>1.080.000</value>
+      <desc>BEDRAG Art 3.19 Bijtelling prive-gebruik woning Art 3.112 Eigenwoningforfait</desc>
+    </variable>
+    <variable>
+      <name>BDRGWOZW1MIN1</name>
+      <value>12.500</value>
+      <desc>BEDRAG Art 3.19 Bijtelling prive-gebruik woning Art 3.112 Eigenwoningforfait</desc>
+    </variable>
+    <variable>
+      <name>BDRGWOZW2MIN1</name>
+      <value>25.000</value>
+      <desc>BEDRAG Art 3.19 Bijtelling prive-gebruik woning Art 3.112 Eigenwoningforfait</desc>
+    </variable>
+    <variable>
+      <name>BDRGWOZW3MIN1</name>
+      <value>50.000</value>
+      <desc>BEDRAG Art 3.19 Bijtelling prive-gebruik woning Art 3.112 Eigenwoningforfait</desc>
+    </variable>
+    <variable>
+      <name>BDRGWOZW4MIN1</name>
+      <value>75.000</value>
+      <desc>BEDRAG Art 3.19 Bijtelling prive-gebruik woning Art 3.112 Eigenwoningforfait</desc>
+    </variable>
+    <variable>
+      <name>BDRGWOZWMIN5</name>
+      <value>1.060.000</value>
+      <desc>BEDRAG Art 3.19 Bijtelling prive-gebruik woning Art 3.112 Eigenwoningforfait</desc>
+    </variable>
+    <variable>
+      <name>BDRGPERCBIJTAUTOHOOG</name>
+      <value>35,00</value>
+      <desc>PERCENT Art 3.20 lid1a Bijtelling privegebruik auto</desc>
+    </variable>
+    <variable>
+      <name>BDRGPERCBIJTAUTOLAAG</name>
+      <value>22,00</value>
+      <desc>PERCENT Art 3.20 lid1a Bijtelling privegebruik auto</desc>
+    </variable>
+    <variable>
+      <name>BDRGPERCBIJTAUTOEMISSIE</name>
+      <value>4,00</value>
+      <desc>PERCENT Art 3.20 lid1a Bijtelling privegebruik auto</desc>
+    </variable>
+    <variable>
+      <name>BDRGBIJTAUTOMAXEMISSIE</name>
+      <value>50.000</value>
+      <desc>BEDRAG Art 3.20 lid1a Bijtelling privegebruik auto</desc>
+    </variable>
+    <variable>
+      <name>BDRGW323TON1</name>
+      <value>9,08</value>
+      <desc>BEDRAG Art 3.23 lid 1 Bepaling van de winst a.d.h.v. de tonnage</desc>
+    </variable>
+    <variable>
+      <name>BDRGW323TON2</name>
+      <value>6,81</value>
+      <desc>BEDRAG Art 3.23 lid 1 Bepaling van de winst a.d.h.v. de tonnage</desc>
+    </variable>
+    <variable>
+      <name>BDRGW323TON3</name>
+      <value>4,54</value>
+      <desc>BEDRAG Art 3.23 lid 1 Bepaling van de winst a.d.h.v. de tonnage</desc>
+    </variable>
+    <variable>
+      <name>BDRGW323TON4</name>
+      <value>2,27</value>
+      <desc>BEDRAG Art 3.23 lid 1 Bepaling van de winst a.d.h.v. de tonnage</desc>
+    </variable>
+    <variable>
+      <name>BDRGW323TON5</name>
+      <value>0,50</value>
+      <desc>BEDRAG Art 3.23 lid 1 Bepaling van de winst a.d.h.v. de tonnage</desc>
+    </variable>
+    <variable>
+      <name>BDRGW323TON5A</name>
+      <value>2,27</value>
+      <desc>BEDRAG Art 3.23 lid 1 Bepaling van de winst a.d.h.v. de tonnage</desc>
+    </variable>
+    <variable>
+      <name>BDRGW323TONGEW1</name>
+      <value>1.000</value>
+      <desc>ALFANUM Art 3.23 lid 1 Bepaling van de winst a.d.h.v. de tonnage</desc>
+    </variable>
+    <variable>
+      <name>BDRGW323TONGEW2</name>
+      <value>10.000</value>
+      <desc>ALFANUM Art 3.23 lid 1 Bepaling van de winst a.d.h.v. de tonnage</desc>
+    </variable>
+    <variable>
+      <name>BDRGW323TONGEW3</name>
+      <value>25.000</value>
+      <desc>ALFANUM Art 3.23 lid 1 Bepaling van de winst a.d.h.v. de tonnage</desc>
+    </variable>
+    <variable>
+      <name>BDRGW323TONGEW4</name>
+      <value>50.000</value>
+      <desc>ALFANUM Art 3.23 lid 1 Bepaling van de winst a.d.h.v. de tonnage</desc>
+    </variable>
+    <variable>
+      <name>BDRGW323TONGEW5</name>
+      <value>50.000</value>
+      <desc>ALFANUM Art 3.23 lid 1 Bepaling van de winst a.d.h.v. de tonnage</desc>
+    </variable>
+    <variable>
+      <name>BDRGW323TONGEW5A</name>
+      <value>50.000</value>
+      <desc>ALFANUM Art 3.23 lid 1 Bepaling van de winst a.d.h.v. de tonnage</desc>
+    </variable>
+    <variable>
+      <name>BDRGW323FACTORZEESCHEEPVAARTHOOG</name>
+      <value>1,00</value>
+      <desc>PERCENT Art 3.23 lid 1 Bepaling van de winst a.d.h.v. de tonnage</desc>
+    </variable>
+    <variable>
+      <name>BDRGW323FACTORZEESCHEEPVAARTLAAG</name>
+      <value>0,25</value>
+      <desc>PERCENT Art 3.23 lid 1 Bepaling van de winst a.d.h.v. de tonnage</desc>
+    </variable>
+    <variable>
+      <name>BDRGW341KIA1</name>
+      <value>2.300</value>
+      <desc>BEDRAG Art 3.41 lid 2 Kleinschaligheidsinvesteringsaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGW341KIA1MIN1</name>
+      <value>2.300</value>
+      <desc>BEDRAG Art 3.41 lid 2 Kleinschaligheidsinvesteringsaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGW341KIA2</name>
+      <value>57.321</value>
+      <desc>BEDRAG Art 3.41 lid 2 Kleinschaligheidsinvesteringsaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGW341KIA2MIN1</name>
+      <value>56.642</value>
+      <desc>BEDRAG Art 3.41 lid 2 Kleinschaligheidsinvesteringsaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGW341KIA3</name>
+      <value>106.150</value>
+      <desc>BEDRAG Art 3.41 lid 2 Kleinschaligheidsinvesteringsaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGW341KIA3MIN1</name>
+      <value>104.891</value>
+      <desc>BEDRAG Art 3.41 lid 2 Kleinschaligheidsinvesteringsaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGW341KIA4</name>
+      <value>318.449</value>
+      <desc>BEDRAG Art 3.41 lid 2 Kleinschaligheidsinvesteringsaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGW341KIA4MIN1</name>
+      <value>314.673</value>
+      <desc>BEDRAG Art 3.41 lid 2 Kleinschaligheidsinvesteringsaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGW341KIAPERC1</name>
+      <value>0</value>
+      <desc>PERCENT Art 3.41 lid 2 Kleinschaligheidsinvesteringsaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGW341KIAPERC2</name>
+      <value>28</value>
+      <desc>PERCENT Art 3.41 lid 2 Kleinschaligheidsinvesteringsaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGW341KIAPERC3</name>
+      <value>7,56</value>
+      <desc>PERCENT Art 3.41 lid 2 Kleinschaligheidsinvesteringsaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGW341KIAMAX</name>
+      <value>16.051</value>
+      <desc>BEDRAG Art 3.41 lid 2 Kleinschaligheidsinvesteringsaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGW341KIAMAXMIN1</name>
+      <value>15.863</value>
+      <desc>BEDRAG Art 3.41 lid 2 Kleinschaligheidsinvesteringsaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGW342EIAMAX</name>
+      <value>122.000.000</value>
+      <desc>BEDRAG Art 3.42 lid 4 Energie-investeringsaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGW342EIAMAXMIN1</name>
+      <value>121.000.000</value>
+      <desc>BEDRAG Art 3.42 lid 3 Energie-investeringsaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGW342EIAPERC</name>
+      <value>45,00</value>
+      <desc>PERCENT Art 3.42 lid 3 Energie-investeringsaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGW342EIAPERCMIN1</name>
+      <value>54,50</value>
+      <desc>PERCENT Art 3.42 lid 3 Energie-investeringsaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGW342AMIAPERC1</name>
+      <value>36</value>
+      <desc>PERCENT Art 3.42a lid 3 Milieu-investeringsaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGW342AMIAPERC2</name>
+      <value>27</value>
+      <desc>PERCENT Art 3.42a lid 3 Milieu-investeringsaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGW342AMIAPERC3</name>
+      <value>13,50</value>
+      <desc>PERCENT Art 3.42a lid 3 Milieu-investeringsaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGW342AMIAPERC4</name>
+      <value>0</value>
+      <desc>PERCENT Art 3.42a lid 3 Milieu-investeringsaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGW345KIAMIN</name>
+      <value>450</value>
+      <desc>BEDRAG Art 3.45 lid 2b Uitgesloten bedrijfsmiddelen voor investeringsaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGW345INVMIN</name>
+      <value>2.500</value>
+      <desc>BEDRAG Art 3.45 lid 4b Uitgesloten bedrijfsmiddelen voor investeringsaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGW367FORPERC</name>
+      <value>9,44</value>
+      <desc>PERCENT Art 3.68 lid 1 Toegang toevoegingen oudedagsreserve</desc>
+    </variable>
+    <variable>
+      <name>BDRGW367FORMAX</name>
+      <value>8.999</value>
+      <desc>BEDRAG Art 3.68 lid 1 Toegang toevoegingen oudedagsreserve</desc>
+    </variable>
+    <variable>
+      <name>BDRGZELFSTLAAG</name>
+      <value>3.640</value>
+      <desc>BEDRAG Art 3.76 lid 4 Zelfstandigenaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGZELFSTHOOG</name>
+      <value>7.280</value>
+      <desc>BEDRAG Art 3.76 lid 2 Zelfstandigenaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGSTARTAFTLAAG</name>
+      <value>1.062</value>
+      <desc>BEDRAG Art 3.76 lid 4 Zelfstandigenaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGSTARTAFTHOOG</name>
+      <value>2.123</value>
+      <desc>BEDRAG Art 3.76 lid 3 Zelfstandigenaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGW377SOLAAG</name>
+      <value>12.775</value>
+      <desc>BEDRAG Art 3.77 lid 1 Aftrek speur- en ontwikkelingswerk</desc>
+    </variable>
+    <variable>
+      <name>BDRGW377SOHOOG</name>
+      <value>19.166</value>
+      <desc>BEDRAG Art 3.77 lid 2 Aftrek speur- en ontwikkelingswerk</desc>
+    </variable>
+    <variable>
+      <name>BDRGW378MWAUREN1</name>
+      <value>525</value>
+      <desc>ALFANUM Art 3.78 lid 2 Meewerkaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGW378MWAUREN2</name>
+      <value>875</value>
+      <desc>ALFANUM Art 3.78 lid 2 Meewerkaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGW378MWAUREN3</name>
+      <value>1.225</value>
+      <desc>ALFANUM Art 3.78 lid 2 Meewerkaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGW378MWAUREN4</name>
+      <value>1.750</value>
+      <desc>ALFANUM Art 3.78 lid 2 Meewerkaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGW378MWAPERC1</name>
+      <value>1,25</value>
+      <desc>PERCENT Art 3.78 lid 2 Meewerkaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGW378MWAPERC2</name>
+      <value>2</value>
+      <desc>PERCENT Art 3.78 lid 2 Meewerkaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGW378MWAPERC3</name>
+      <value>3</value>
+      <desc>PERCENT Art 3.78 lid 2 Meewerkaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGW378MWAPERC4</name>
+      <value>4</value>
+      <desc>PERCENT Art 3.78 lid 2 Meewerkaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGSTARTARBEIDSA</name>
+      <value>12.000</value>
+      <desc>BEDRAG Art 3.78a lid 4 Startersaftrek bij arbeidsongeschiktheid</desc>
+    </variable>
+    <variable>
+      <name>BDRGSTARTARBEIDSB</name>
+      <value>8.000</value>
+      <desc>BEDRAG Art 3.78a lid 4 Startersaftrek bij arbeidsongeschiktheid</desc>
+    </variable>
+    <variable>
+      <name>BDRGSTARTARBEIDSC</name>
+      <value>4.000</value>
+      <desc>BEDRAG Art 3.78a lid 4 Startersaftrek bij arbeidsongeschiktheid</desc>
+    </variable>
+    <variable>
+      <name>BDRGSTAKING</name>
+      <value>3.630</value>
+      <desc>BEDRAG Art 3.79 lid 2 Stakingsaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercMKB</name>
+      <value>14</value>
+      <desc>PERCENT Art 3.79a MKB-winstvrijstelling</desc>
+    </variable>
+    <variable>
+      <name>BDRGLOONGEBR</name>
+      <value>45.000</value>
+      <desc>BEDRAG Art 3.81 loon Art 12a Loonbelasting</desc>
+    </variable>
+    <variable>
+      <name>BDRGMAXREISDPW</name>
+      <value>7</value>
+      <desc>GETAL Art 3.87 Reisaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGMAXREISKM</name>
+      <value>300</value>
+      <desc>GETAL Art 3.87 Reisaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGMINREISKM</name>
+      <value>11</value>
+      <desc>GETAL Art 3.87 lid 4 Reisaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGMINREISDPW</name>
+      <value>1</value>
+      <desc>GETAL Art 3.87 Reisaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGRKPD</name>
+      <value>0,23</value>
+      <desc>BEDRAG Art 3.87 lid 5b Reisaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGRK1</name>
+      <value>455</value>
+      <desc>BEDRAG Art 3.87 lid 2 Reisaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGRK2</name>
+      <value>606</value>
+      <desc>BEDRAG Art 3.87 lid 2 Reisaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGRK3</name>
+      <value>1.011</value>
+      <desc>BEDRAG Art 3.87 lid 2 Reisaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGRK4</name>
+      <value>1.254</value>
+      <desc>BEDRAG Art 3.87 lid 2 Reisaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGRK5</name>
+      <value>1.635</value>
+      <desc>BEDRAG Art 3.87 lid 2 Reisaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGRK6</name>
+      <value>1.819</value>
+      <desc>BEDRAG Art 3.87 lid 2 Reisaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGRK7</name>
+      <value>2.017</value>
+      <desc>BEDRAG Art 3.87 lid 2 Reisaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGRK8</name>
+      <value>2.087</value>
+      <desc>BEDRAG Art 3.87 lid 2 Reisaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGRK9</name>
+      <value>2.116</value>
+      <desc>BEDRAG Art 3.87 lid 2 Reisaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGRKMAX</name>
+      <value>2.116</value>
+      <desc>BEDRAG Art 3.87 lid 5b Reisaftrek</desc>
+    </variable>
+    <variable>
+      <name>BDRGPGBMAXSYMBVERG</name>
+      <value>141</value>
+      <desc>BEDRAG Art 3.94 Resultaat uit werkzaamheid - Regeling Jeugdwet</desc>
+    </variable>
+    <variable>
+      <name>BDRGKMRVERHVRIJST</name>
+      <value>5.367</value>
+      <desc>BEDRAG Art. 3.97 lid 2a Keuzemogelijkheid bij het houden van kostgangers</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercTBS</name>
+      <value>12</value>
+      <desc>PERCENT Art 3.99b lid 2 Terbeschikkingstellingsvrijstelling</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercWOZA</name>
+      <value>0,25</value>
+      <desc>PERCENT Art 3.112 lid 1 Eigenwoningforfait</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercWOZB</name>
+      <value>0,35</value>
+      <desc>PERCENT Art 3.112 lid 1 Eigenwoningforfait</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercWOZC</name>
+      <value>0,50</value>
+      <desc>PERCENT Art 3.112 lid 1 Eigenwoningforfait</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercWOZD</name>
+      <value>0,65</value>
+      <desc>PERCENT Art 3.112 lid 1 Eigenwoningforfait</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercWOZE</name>
+      <value>2,35</value>
+      <desc>PERCENT Art 3.112 lid 1 Eigenwoningforfait</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercWOZF</name>
+      <value>1,05</value>
+      <desc>PERCENT Art 3.112 lid 5 Eigenwoningforfait</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercWOZG</name>
+      <value>2,35</value>
+      <desc>PERCENT Art 3.112 lid 5 Eigenwoningforfait</desc>
+    </variable>
+    <variable>
+      <name>BDRGFORF1</name>
+      <value>7.020</value>
+      <desc>BEDRAG Art 3.112 lid 1 Eigenwoningforfait</desc>
+    </variable>
+    <variable>
+      <name>BDRGFORF2</name>
+      <value>11.340</value>
+      <desc>BEDRAG Art 3.112 lid 5 Eigenwoningforfait</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercTIJDVERH</name>
+      <value>70</value>
+      <desc>PERCENT Art. 3.113 Tijdelijke verhuur</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercVERMAFTRGEW</name>
+      <value>96,667</value>
+      <desc>PERCENT Art. 3.123a lid2 Vermindering aftrek geen of geringe eigenwoningschuld</desc>
+    </variable>
+    <variable>
+      <name>BDRGGRNSAFKLIJFR</name>
+      <value>4.404</value>
+      <desc>BEDRAG Art 3.126a lid 5 Uitgaven voor inkomensvoorzieningen via een </desc>
+    </variable>
+    <variable>
+      <name>BDRGDATUMJAARRUIMTE</name>
+      <value>01-09-1952</value>
+      <desc>DATE Art 3.127 lid 1 In aanmerking te nemen premies voor lijfrente (01-01-2019 - 66,4 = {BDRGAOWLEEFTIJD2019})</desc>
+    </variable>
+    <variable>
+      <name>BDRGDATUMJAARRUIMTEMIN1</name>
+      <value>01-04-1952</value>
+      <desc>DATE Art 3.127 lid 1 In aanmerking te nemen premies voor lijfrente (BDRGAOWLEEFTIJDBEGINMIN1 known error)</desc>
+    </variable>
+    <variable>
+      <name>BDRGDATUMJAARRUIMTEMIN2</name>
+      <value>01-07-1951</value>
+      <desc>DATE Art 3.127 lid 1 In aanmerking te nemen premies voor lijfrente (BDRGAOWLEEFTIJDBEGINMIN2 known error)</desc>
+    </variable>
+    <variable>
+      <name>BDRGDATUMJAARRUIMTEMIN3</name>
+      <value>01-10-1950</value>
+      <desc>DATE Art 3.127 lid 1 In aanmerking te nemen premies voor lijfrente (BDRGAOWLEEFTIJDBEGINMIN3 known error)</desc>
+    </variable>
+    <variable>
+      <name>BDRGDATUMJAARRUIMTEMIN4</name>
+      <value>01-11-1949</value>
+      <desc>DATE Art 3.127 lid 1 In aanmerking te nemen premies voor lijfrente (BDRGAOWLEEFTIJDBEGINMIN4 known error)</desc>
+    </variable>
+    <variable>
+      <name>BDRGDATUMJAARRUIMTEMIN5</name>
+      <value>01-12-1948</value>
+      <desc>DATE Art 3.127 lid 1 In aanmerking te nemen premies voor lijfrente (BDRGAOWLEEFTIJDBEGINMIN5 known error)</desc>
+    </variable>
+    <variable>
+      <name>BDRGDATUMJAARRUIMTEMIN6</name>
+      <value>01-01-1948</value>
+      <desc>DATE Art 3.127 lid 1 In aanmerking te nemen premies voor lijfrente (BDRGAOWLEEFTIJDBEGINMIN6 known error)</desc>
+    </variable>
+    <variable>
+      <name>BDRGDATUMJAARRUIMTEMIN7</name>
+      <value>01-01-1947</value>
+      <desc>DATE Art 3.127 lid 1 In aanmerking te nemen premies voor lijfrente (BDRGAOWLEEFTIJDBEGINMIN7 known error)</desc>
+    </variable>
+    <variable>
+      <name>BDRGMAXRESRUIMTEMIN</name>
+      <value>7.254</value>
+      <desc>BEDRAG Art 3.127 lid 2 In aanmerking te nemen premies voor lijfrente</desc>
+    </variable>
+    <variable>
+      <name>BDRGMAXRESRUIMTEPLUS</name>
+      <value>14.322</value>
+      <desc>BEDRAG Art 3.127 lid 2 In aanmerking te nemen premies voor lijfrente</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercPREMIEGRMAXRES</name>
+      <value>17</value>
+      <desc>PERCENT Art 3.127 lid 2 In aanmerking te nemen premies voor lijfrente</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARpercPREMIEGR</name>
+      <value>13,30</value>
+      <desc>PERCENT Art 3.127 lid 1 In aanmerking te nemen premies voor lijfrente</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN1percPREMIEGR</name>
+      <value>13,30</value>
+      <desc>PERCENT Art 3.127 lid 1 In aanmerking te nemen premies voor lijfrente</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN2percPREMIEGR</name>
+      <value>13,80</value>
+      <desc>PERCENT Art 3.127 lid 1 In aanmerking te nemen premies voor lijfrente</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN3percPREMIEGR</name>
+      <value>13,80</value>
+      <desc>PERCENT Art 3.127 lid 1 In aanmerking te nemen premies voor lijfrente</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN4percPREMIEGR</name>
+      <value>13,80</value>
+      <desc>PERCENT Art 3.127 lid 1 In aanmerking te nemen premies voor lijfrente</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN5percPREMIEGR</name>
+      <value>15,50</value>
+      <desc>PERCENT Art 3.127 lid 1 In aanmerking te nemen premies voor lijfrente</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN6percPREMIEGR</name>
+      <value>17,00</value>
+      <desc>PERCENT Art 3.127 lid 1 In aanmerking te nemen premies voor lijfrente</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN7percPREMIEGR</name>
+      <value>17,00</value>
+      <desc>PERCENT Art 3.127 lid 1 In aanmerking te nemen premies voor lijfrente</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARAOWFR</name>
+      <value>12.275</value>
+      <desc>BEDRAG Art 3.127 lid 3 In aanmerking te nemen premies voor lijfrente</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN1AOWFR</name>
+      <value>12.129</value>
+      <desc>BEDRAG Art 3.127 lid 3 In aanmerking te nemen premies voor lijfrente</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN2AOWFR</name>
+      <value>12.032</value>
+      <desc>BEDRAG Art 3.127 lid 3 In aanmerking te nemen premies voor lijfrente</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN3AOWFR</name>
+      <value>11.996</value>
+      <desc>BEDRAG Art 3.127 lid 3 In aanmerking te nemen premies voor lijfrente</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN4AOWFR</name>
+      <value>11.936</value>
+      <desc>BEDRAG Art 3.127 lid 3 In aanmerking te nemen premies voor lijfrente</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN5AOWFR</name>
+      <value>11.829</value>
+      <desc>BEDRAG Art 3.127 lid 3 In aanmerking te nemen premies voor lijfrente</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN6AOWFR</name>
+      <value>11.829</value>
+      <desc>BEDRAG Art 3.127 lid 3 In aanmerking te nemen premies voor lijfrente</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN7AOWFR</name>
+      <value>11.829</value>
+      <desc>BEDRAG Art 3.127 lid 3 In aanmerking te nemen premies voor lijfrente</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMAXPRGRSLGVOORVERM</name>
+      <value>107.593</value>
+      <desc>BEDRAG Art 3.127 lid 3 In aanmerking te nemen premies voor lijfrente 1e bedrag</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN1MAXPRGRSLGVOORVERM</name>
+      <value>105.075</value>
+      <desc>BEDRAG Art 3.127 lid 3 In aanmerking te nemen premies voor lijfrente 1e bedrag</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN2MAXPRGRSLGVOORVERM</name>
+      <value>103.317</value>
+      <desc>BEDRAG Art 3.127 lid 3 In aanmerking te nemen premies voor lijfrente 1e bedrag</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMAXPRGRSLG</name>
+      <value>95.318</value>
+      <desc>BEDRAG Art 3.127 lid 3 In aanm te nemen prem voor lijfr (BDRGJAARMAXPRGRSLGVOORVERM - BDRGJAARAOWFR)</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN1MAXPRGRSLG</name>
+      <value>92.946</value>
+      <desc>BEDRAG Art 3.127 lid 3 In aanm te nemen prem voor lijfr (BDRGJAARMIN1MAXPRGRSLGVOORVERM - BDRGJAARMIN1AOWFR)</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN2MAXPRGRSLG</name>
+      <value>91.285</value>
+      <desc>BEDRAG Art 3.127 lid 3 In aanm te nemen prem voor lijfr (BDRGJAARMIN2MAXPRGRSLGVOORVERM - BDRGJAARMIN2AOWFR)</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN3MAXPRGRSLG</name>
+      <value>89.523</value>
+      <desc>BEDRAG Art 3.127 lid 3 In aanmerking te nemen premies voor lijfrente</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN4MAXPRGRSLG</name>
+      <value>88.064</value>
+      <desc>BEDRAG Art 3.127 lid 3 In aanmerking te nemen premies voor lijfrente</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN5MAXPRGRSLG</name>
+      <value>162.457</value>
+      <desc>BEDRAG Art 3.127 lid 3 In aanmerking te nemen premies voor lijfrente Dit jaar extra verlaging</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN6MAXPRGRSLG</name>
+      <value>162.457</value>
+      <desc>BEDRAG Art 3.127 lid 3 In aanmerking te nemen premies voor lijfrente</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN7MAXPRGRSLG</name>
+      <value>162.457</value>
+      <desc>BEDRAG Art 3.127 lid 3 In aanmerking te nemen premies voor lijfrente</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARFACTAPENS</name>
+      <value>6,27</value>
+      <desc>GETAL Art 3.127 lid 4a In aanmerking te nemen premies voor lijfrente</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN1FACTAPENS</name>
+      <value>6,27</value>
+      <desc>GETAL Art 3.127 lid 4a In aanmerking te nemen premies voor lijfrente</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN2FACTAPENS</name>
+      <value>6,5</value>
+      <desc>GETAL Art 3.127 lid 4a In aanmerking te nemen premies voor lijfrente</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN3FACTAPENS</name>
+      <value>6,5</value>
+      <desc>GETAL Art 3.127 lid 4a In aanmerking te nemen premies voor lijfrente</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN4FACTAPENS</name>
+      <value>6,5</value>
+      <desc>GETAL Art 3.127 lid 4a In aanmerking te nemen premies voor lijfrente</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN5FACTAPENS</name>
+      <value>7,2</value>
+      <desc>GETAL Art 3.127 lid 4a In aanmerking te nemen premies voor lijfrente</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN6FACTAPENS</name>
+      <value>7,5</value>
+      <desc>GETAL Art 3.127 lid 4a In aanmerking te nemen premies voor lijfrente</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN7FACTAPENS</name>
+      <value>7,5</value>
+      <desc>GETAL Art 3.127 lid 4a In aanmerking te nemen premies voor lijfrente</desc>
+    </variable>
+    <variable>
+      <name>BDRGW3129STAAKINLIJFRENTEA</name>
+      <value>459.688</value>
+      <desc>BEDRAG Art 3.129 lid 2a Omzetting stakingswinst in lijfrente</desc>
+    </variable>
+    <variable>
+      <name>BDRGW3129STAAKINLIJFRENTEB</name>
+      <value>229.852</value>
+      <desc>BEDRAG Art 3.129 lid 2b Omzetting stakingswinst in lijfrente</desc>
+    </variable>
+    <variable>
+      <name>BDRGW3129STAAKINLIJFRENTEC</name>
+      <value>114.932</value>
+      <desc>BEDRAG Art 3.129 lid 2c Omzetting stakingswinst in lijfrente</desc>
+    </variable>
+    <variable>
+      <name>BDRGRNSAFKLIJFARB</name>
+      <value>41.132</value>
+      <desc>BEDRAG Art 3.133 Uitbreiding begrip negatieve uitgaven lid 9c </desc>
+    </variable>
+    <variable>
+      <name>BDRGGRNSAFKPENS</name>
+      <value>484,09</value>
+      <desc>BEDRAG Art 1.7 Lijfrenten en pensioenen: Pensioenwet, Art 66 Afkoop klein ouderdomspensioen bij beëindiging deelneming</desc>
+    </variable>
+    <variable>
+      <name>BDRGBX3MAXSCHIJF1</name>
+      <value>71.650</value>
+      <desc>BEDRAG Art. 5.2 Voordeel uit sparen en beleggen</desc>
+    </variable>
+    <variable>
+      <name>BDRGBX3MAXSCHIJF2</name>
+      <value>989.736</value>
+      <desc>BEDRAG Art. 5.2 Voordeel uit sparen en beleggen</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercBX3RENDKLASSE1</name>
+      <value>0,13</value>
+      <desc>PERCENT Art. 5.2 Voordeel uit sparen en beleggen</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercBX3RENDKLASSE1SCHIJF1</name>
+      <value>67</value>
+      <desc>PERCENT Art. 5.2 Voordeel uit sparen en beleggen</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercBX3RENDKLASSE1SCHIJF2</name>
+      <value>21</value>
+      <desc>PERCENT Art. 5.2 Voordeel uit sparen en beleggen</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercBX3RENDKLASSE1SCHIJF3</name>
+      <value>0</value>
+      <desc>PERCENT Art. 5.2 Voordeel uit sparen en beleggen</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercBX3RENDKLASSE2</name>
+      <value>5,59</value>
+      <desc>PERCENT Art. 5.2 Voordeel uit sparen en beleggen</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercBX3RENDKLASSE2SCHIJF1</name>
+      <value>33</value>
+      <desc>PERCENT Art. 5.2 Voordeel uit sparen en beleggen</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercBX3RENDKLASSE2SCHIJF2</name>
+      <value>79</value>
+      <desc>PERCENT Art. 5.2 Voordeel uit sparen en beleggen</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercBX3RENDKLASSE2SCHIJF3</name>
+      <value>100</value>
+      <desc>PERCENT Art. 5.2 Voordeel uit sparen en beleggen</desc>
+    </variable>
+    <variable>
+      <name>BDRGBX3DREM</name>
+      <value>3.100</value>
+      <desc>BEDRAG Art 5.3 lid 3e Rendementgrondslag</desc>
+    </variable>
+    <variable>
+      <name>BDRGBX3DREMFIPA</name>
+      <value>6.200</value>
+      <desc>BEDRAG Art 5.3 lid 3e Rendementgrondslag</desc>
+    </variable>
+    <variable>
+      <name>BDRGHFFVR</name>
+      <value>30.360</value>
+      <desc>BEDRAG Art 5.5 Heffingvrij vermogen</desc>
+    </variable>
+    <variable>
+      <name>BDRGHFFVRMETFIPA</name>
+      <value>60.720</value>
+      <desc>BEDRAG Art 5.5 Heffingvrij vermogen</desc>
+    </variable>
+    <variable>
+      <name>BDRGVRIJSTKAPOV</name>
+      <value>7.118</value>
+      <desc>BEDRAG Art 5.10 Vrijstelling kapitaalverzekering i.v.m. overlijden</desc>
+    </variable>
+    <variable>
+      <name>BDRGCONTGELD</name>
+      <value>534</value>
+      <desc>BEDRAG Art 5.10 Vrijstelling bepaalde rechten</desc>
+    </variable>
+    <variable>
+      <name>BDRGCONTGELDFIPA</name>
+      <value>1.068</value>
+      <desc>BEDRAG Art 5.10 Vrijstelling bepaalde rechten</desc>
+    </variable>
+    <variable>
+      <name>BDRGVRIJSTGROEN</name>
+      <value>58.540</value>
+      <desc>BEDRAG Art 5.13 Vrijstelling groene beleggingen</desc>
+    </variable>
+    <variable>
+      <name>BDRGVRIJSTGROENFIPA</name>
+      <value>117.080</value>
+      <desc>BEDRAG Art 5.13 Vrijstelling groene beleggingen</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARpercSCHIJF4MIN1</name>
+      <value>51,75</value>
+      <desc>PERCENT Art 5.16 lid 4 Vrijstelling nettolijfrenten: percentage schijf 4 van voorgaande jaar</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN1percSCHIJF4MIN1</name>
+      <value>51,95</value>
+      <desc>PERCENT Art 5.16 lid 4 Vrijstelling nettolijfrenten: percentage schijf 4 van voorgaande jaar</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN2percSCHIJF4MIN1</name>
+      <value>52</value>
+      <desc>PERCENT Art 5.16 lid 4 Vrijstelling nettolijfrenten: percentage schijf 4 van voorgaande jaar</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN3percSCHIJF4MIN1</name>
+      <value>52</value>
+      <desc>PERCENT Art 5.16 lid 4 Vrijstelling nettolijfrenten: percentage schijf 4 van voorgaande jaar</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN4percSCHIJF4MIN1</name>
+      <value>52</value>
+      <desc>PERCENT Art 5.16 lid 4 Vrijstelling nettolijfrenten: percentage schijf 4 van voorgaande jaar</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN5percSCHIJF4MIN1</name>
+      <value>52</value>
+      <desc>PERCENT Art 5.16 lid 4 Vrijstelling nettolijfrenten: percentage schijf 4 van voorgaande jaar</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN6percSCHIJF4MIN1</name>
+      <value>52</value>
+      <desc>PERCENT Art 5.16 lid 4 Vrijstelling nettolijfrenten: percentage schijf 4 van voorgaande jaar</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN7percSCHIJF4MIN1</name>
+      <value>52</value>
+      <desc>PERCENT Art 5.16 lid 4 Vrijstelling nettolijfrenten: percentage schijf 4 van voorgaande jaar</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercJAARHUUR1</name>
+      <value>0</value>
+      <desc>PERCENT Art 5.20 Uitvoeringsbesluit IB Art 17a lid 2 Waardering woningen; correctie op WOZ-waarde</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercJAARHUUR2</name>
+      <value>1</value>
+      <desc>PERCENT Art 5.20 lid 2 Uitvoeringsbesluit IB Art 17a lid 2 Waardering woningen; correctie op WOZ-waarde</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercJAARHUUR3</name>
+      <value>2</value>
+      <desc>PERCENT Art 5.20 lid 2 Uitvoeringsbesluit IB Art 17a lid 2 Waardering woningen; correctie op WOZ-waarde</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercJAARHUUR4</name>
+      <value>3</value>
+      <desc>PERCENT Art 5.20 lid 2 Uitvoeringsbesluit IB Art 17a lid 2 Waardering woningen; correctie op WOZ-waarde</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercJAARHUUR5</name>
+      <value>4</value>
+      <desc>PERCENT Art 5.20 lid 2 Uitvoeringsbesluit IB Art 17a lid 2 Waardering woningen; correctie op WOZ-waarde</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercJAARHUUR6</name>
+      <value>5</value>
+      <desc>PERCENT Art 5.20 lid 2 Uitvoeringsbesluit IB Art 17a lid 2 Waardering woningen; correctie op WOZ-waarde</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercJAARHUUR7</name>
+      <value>6</value>
+      <desc>PERCENT Art 5.20 lid 2 Uitvoeringsbesluit IB Art 17a lid 2 Waardering woningen; correctie op WOZ-waarde</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercJAARHUUR8</name>
+      <value>7</value>
+      <desc>PERCENT Art 5.20 Uitvoeringsbesluit IB Art 17a lid 2 Waardering woningen; correctie op WOZ-waarde</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercHUUBESCOR1</name>
+      <value>55</value>
+      <desc>PERCENT Art 5.20 Uitvoeringsbesluit IB Art 17a lid 2 Waardering woningen; correctie op WOZ-waarde</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercHUUBESCOR2</name>
+      <value>49</value>
+      <desc>PERCENT Art 5.20 Uitvoeringsbesluit IB Art 17a lid 2 Waardering woningen; correctie op WOZ-waarde</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercHUUBESCOR3</name>
+      <value>44</value>
+      <desc>PERCENT Art 5.20 Uitvoeringsbesluit IB Art 17a lid 2 Waardering woningen; correctie op WOZ-waarde</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercHUUBESCOR4</name>
+      <value>38</value>
+      <desc>PERCENT Art 5.20 Uitvoeringsbesluit IB Art 17a lid 2 Waardering woningen; correctie op WOZ-waarde</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercHUUBESCOR5</name>
+      <value>33</value>
+      <desc>PERCENT Art 5.20 Uitvoeringsbesluit IB Art 17a lid 2 Waardering woningen; correctie op WOZ-waarde</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercHUUBESCOR6</name>
+      <value>27</value>
+      <desc>PERCENT Art 5.20 Uitvoeringsbesluit IB Art 17a lid 2 Waardering woningen; correctie op WOZ-waarde</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercHUUBESCOR7</name>
+      <value>22</value>
+      <desc>PERCENT Art 5.20 Uitvoeringsbesluit IB Art 17a lid 2 Waardering woningen; correctie op WOZ-waarde</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercHUUBESCOR8</name>
+      <value>15</value>
+      <desc>PERCENT Art 5.20 Uitvoeringsbesluit IB Art 17a lid 2 Waardering woningen; correctie op WOZ-waarde</desc>
+    </variable>
+    <variable>
+      <name>BDRGVERHNIETSPL</name>
+      <value>20.000 </value>
+      <desc>BEDRAG Art 5.20 Uitvoeringsbesluit IB Art 17a lid 3 Waardering woningen; correctie op WOZ-waarde</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercHUURNIETZAK</name>
+      <value>38</value>
+      <desc>PERCENT Art 5.20 Uitvoeringsbesluit IB Art 17a Waardering woningen; correctie op WOZ-waarde</desc>
+    </variable>
+    <variable>
+      <name>BDRGVERHERFCAN</name>
+      <value>17</value>
+      <desc>ALFANUM Art 5.20 Uitvoeringsbesluit IB Art 17b Waardering woningen; correctie voor erfpachtcanon</desc>
+    </variable>
+    <variable>
+      <name>BDRGVERHERFCANHOOG</name>
+      <value>20</value>
+      <desc>BEDRAG Art 5.20 Uitvoeringsbesluit IB Art 17b Waardering woningen; correctie voor erfpachtcanon</desc>
+    </variable>
+    <variable>
+      <name>BDRGGEZINSHULP1</name>
+      <value>31.744</value>
+      <desc>BEDRAG Art 6.17 lid 3 Uitgaven voor specifieke zorgkosten</desc>
+    </variable>
+    <variable>
+      <name>BDRGGEZINSHULP2</name>
+      <value>47.615</value>
+      <desc>BEDRAG Art 6.17 lid 3 Uitgaven voor specifieke zorgkosten</desc>
+    </variable>
+    <variable>
+      <name>BDRGGEZINSHULP3</name>
+      <value>63.479</value>
+      <desc>BEDRAG Art 6.17 lid 3 Uitgaven voor specifieke zorgkosten</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercGEZINSHULPA</name>
+      <value>0</value>
+      <desc>PERCENT Art 6.17 lid 3 Uitgaven voor specifieke zorgkosten</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercGEZINSHULPB</name>
+      <value>1</value>
+      <desc>PERCENT Art 6.17 lid 3 Uitgaven voor specifieke zorgkosten</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercGEZINSHULPC</name>
+      <value>2</value>
+      <desc>PERCENT Art 6.17 lid 3 Uitgaven voor specifieke zorgkosten</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercGEZINSHULPD</name>
+      <value>3</value>
+      <desc>PERCENT Art 6.17 lid 3 Uitgaven voor specifieke zorgkosten</desc>
+    </variable>
+    <variable>
+      <name>BDRGDIEETLIJST01</name>
+      <value>550</value>
+      <desc>BEDRAG Art 6.17 Uitgaven voor specifieke zorgkosten: Uitvoeringsregeling IB Art 37</desc>
+    </variable>
+    <variable>
+      <name>BDRGDIEETLIJST02</name>
+      <value>700</value>
+      <desc>BEDRAG Art 6.17 Uitgaven voor specifieke zorgkosten: Uitvoeringsregeling IB Art 37</desc>
+    </variable>
+    <variable>
+      <name>BDRGDIEETLIJST03</name>
+      <value>700</value>
+      <desc>BEDRAG Art 6.17 Uitgaven voor specifieke zorgkosten: Uitvoeringsregeling IB Art 37</desc>
+    </variable>
+    <variable>
+      <name>BDRGDIEETLIJST04</name>
+      <value>700</value>
+      <desc>BEDRAG Art 6.17 Uitgaven voor specifieke zorgkosten: Uitvoeringsregeling IB Art 37</desc>
+    </variable>
+    <variable>
+      <name>BDRGDIEETLIJST05</name>
+      <value>750</value>
+      <desc>BEDRAG Art 6.17 Uitgaven voor specifieke zorgkosten: Uitvoeringsregeling IB Art 37</desc>
+    </variable>
+    <variable>
+      <name>BDRGDIEETLIJST06</name>
+      <value>900</value>
+      <desc>BEDRAG Art 6.17 Uitgaven voor specifieke zorgkosten: Uitvoeringsregeling IB Art 37</desc>
+    </variable>
+    <variable>
+      <name>BDRGDIEETLIJST07</name>
+      <value>1.200</value>
+      <desc>BEDRAG Art 6.17 Uitgaven voor specifieke zorgkosten: Uitvoeringsregeling IB Art 37</desc>
+    </variable>
+    <variable>
+      <name>BDRGDIEETLIJST08</name>
+      <value>750</value>
+      <desc>BEDRAG Art 6.17 Uitgaven voor specifieke zorgkosten: Uitvoeringsregeling IB Art 37</desc>
+    </variable>
+    <variable>
+      <name>BDRGDIEETLIJST09</name>
+      <value>900</value>
+      <desc>BEDRAG Art 6.17 Uitgaven voor specifieke zorgkosten: Uitvoeringsregeling IB Art 37</desc>
+    </variable>
+    <variable>
+      <name>BDRGDIEETLIJST10</name>
+      <value>250</value>
+      <desc>BEDRAG Art 6.17 Uitgaven voor specifieke zorgkosten: Uitvoeringsregeling IB Art 37</desc>
+    </variable>
+    <variable>
+      <name>BDRGDIEETLIJST11</name>
+      <value>200</value>
+      <desc>BEDRAG Art 6.17 Uitgaven voor specifieke zorgkosten: Uitvoeringsregeling IB Art 37</desc>
+    </variable>
+    <variable>
+      <name>BDRGDIEETLIJST12</name>
+      <value>900</value>
+      <desc>BEDRAG Art 6.17 Uitgaven voor specifieke zorgkosten: Uitvoeringsregeling IB Art 37</desc>
+    </variable>
+    <variable>
+      <name>BDRGDIEETLIJST13</name>
+      <value>1.050</value>
+      <desc>BEDRAG Art 6.17 Uitgaven voor specifieke zorgkosten: Uitvoeringsregeling IB Art 37</desc>
+    </variable>
+    <variable>
+      <name>BDRGDIEETLIJST14</name>
+      <value>100</value>
+      <desc>BEDRAG Art 6.17 Uitgaven voor specifieke zorgkosten: Uitvoeringsregeling IB Art 37</desc>
+    </variable>
+    <variable>
+      <name>BDRGDIEETLIJST15</name>
+      <value>300</value>
+      <desc>BEDRAG Art 6.17 Uitgaven voor specifieke zorgkosten: Uitvoeringsregeling IB Art 37</desc>
+    </variable>
+    <variable>
+      <name>BDRGDIEETLIJST16</name>
+      <value>1.100</value>
+      <desc>BEDRAG Art 6.17 Uitgaven voor specifieke zorgkosten: Uitvoeringsregeling IB Art 37</desc>
+    </variable>
+    <variable>
+      <name>BDRGDIEETLIJST17</name>
+      <value>400</value>
+      <desc>BEDRAG Art 6.17 Uitgaven voor specifieke zorgkosten: Uitvoeringsregeling IB Art 37</desc>
+    </variable>
+    <variable>
+      <name>BDRGDIEETLIJST18</name>
+      <value>950</value>
+      <desc>BEDRAG Art 6.17 Uitgaven voor specifieke zorgkosten: Uitvoeringsregeling IB Art 37</desc>
+    </variable>
+    <variable>
+      <name>BDRGDIEETLIJST19</name>
+      <value>350</value>
+      <desc>BEDRAG Art 6.17 Uitgaven voor specifieke zorgkosten: Uitvoeringsregeling IB Art 37</desc>
+    </variable>
+    <variable>
+      <name>BDRGDIEETLIJST20</name>
+      <value>350</value>
+      <desc>BEDRAG Art 6.17 Uitgaven voor specifieke zorgkosten: Uitvoeringsregeling IB Art 37</desc>
+    </variable>
+    <variable>
+      <name>BDRGDIEETLIJST21</name>
+      <value>200</value>
+      <desc>BEDRAG Art 6.17 Uitgaven voor specifieke zorgkosten: Uitvoeringsregeling IB Art 37</desc>
+    </variable>
+    <variable>
+      <name>BDRGDIEETLIJST22</name>
+      <value>100</value>
+      <desc>BEDRAG Art 6.17 Uitgaven voor specifieke zorgkosten: Uitvoeringsregeling IB Art 37</desc>
+    </variable>
+    <variable>
+      <name>BDRGDIEETLIJST23</name>
+      <value>650</value>
+      <desc>BEDRAG Art 6.17 Uitgaven voor specifieke zorgkosten: Uitvoeringsregeling IB Art 37</desc>
+    </variable>
+    <variable>
+      <name>BDRGDIEETLIJST24</name>
+      <value>2.700</value>
+      <desc>BEDRAG Art 6.17 Uitgaven voor specifieke zorgkosten: Uitvoeringsregeling IB Art 37</desc>
+    </variable>
+    <variable>
+      <name>BDRGDIEETLIJST25</name>
+      <value>150</value>
+      <desc>BEDRAG Art 6.17 Uitgaven voor specifieke zorgkosten: Uitvoeringsregeling IB Art 37</desc>
+    </variable>
+    <variable>
+      <name>BDRGDIEETLIJST26</name>
+      <value>250</value>
+      <desc>BEDRAG Art 6.17 Uitgaven voor specifieke zorgkosten: Uitvoeringsregeling IB Art 37</desc>
+    </variable>
+    <variable>
+      <name>BDRGDIEETLIJST27</name>
+      <value>800</value>
+      <desc>BEDRAG Art 6.17 Uitgaven voor specifieke zorgkosten: Uitvoeringsregeling IB Art 37</desc>
+    </variable>
+    <variable>
+      <name>BDRGDIEETLIJST28</name>
+      <value>600</value>
+      <desc>BEDRAG Art 6.17 Uitgaven voor specifieke zorgkosten: Uitvoeringsregeling IB Art 37</desc>
+    </variable>
+    <variable>
+      <name>BDRGDIEETLIJST29</name>
+      <value>700</value>
+      <desc>BEDRAG Art 6.17 Uitgaven voor specifieke zorgkosten: Uitvoeringsregeling IB Art 37</desc>
+    </variable>
+    <variable>
+      <name>BDRGDIEETLIJST30</name>
+      <value>100</value>
+      <desc>BEDRAG Art 6.17 Uitgaven voor specifieke zorgkosten: Uitvoeringsregeling IB Art 37</desc>
+    </variable>
+    <variable>
+      <name>BDRGDIEETLIJST31</name>
+      <value>700</value>
+      <desc>BEDRAG Art 6.17 Uitgaven voor specifieke zorgkosten: Uitvoeringsregeling IB Art 37</desc>
+    </variable>
+    <variable>
+      <name>BDRGKLEDINGA</name>
+      <value>300</value>
+      <desc>BEDRAG Art 6.17 lid 1 Uitgaven voor specifieke zorgkosten: Uitvoeringsregeling IB Art 38</desc>
+    </variable>
+    <variable>
+      <name>BDRGKLEDINGB</name>
+      <value>750</value>
+      <desc>BEDRAG Art 6.17 lid 1 Uitgaven voor specifieke zorgkosten: Uitvoeringsregeling IB Art 38</desc>
+    </variable>
+    <variable>
+      <name>BDRGKLEDINGDRMP</name>
+      <value>600</value>
+      <desc>BEDRAG Art 6.17 lid 1 Uitgaven voor specifieke zorgkosten: Uitvoeringsregeling IB Art 38</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercZORGVERHOGINGA</name>
+      <value>113</value>
+      <desc>PERCENT Art 6.19 lid 1a Verhoging uitgaven voor specifieke zorgkosten</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercZORGVERHOGINGB</name>
+      <value>40</value>
+      <desc>PERCENT Art 6.19 lid 1b Verhoging uitgaven voor specifieke zorgkosten</desc>
+    </variable>
+    <variable>
+      <name>BDRGGRENSDRMPA</name>
+      <value>7.739</value>
+      <desc>BEDRAG Art 6.20 lid 1 Omvang in aanmerking te nemen uitgaven voor specifieke zorgkosten</desc>
+    </variable>
+    <variable>
+      <name>BDRGGRENSDRMPASAMEN</name>
+      <value>15.478</value>
+      <desc>BEDRAG Art 6.20 lid 1 Omvang in aanmerking te nemen uitgaven voor specifieke zorgkosten</desc>
+    </variable>
+    <variable>
+      <name>BDRGGRENSDRMPB</name>
+      <value>41.107</value>
+      <desc>BEDRAG Art 6.20 lid 1 Omvang in aanmerking te nemen uitgaven voor specifieke zorgkosten</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercDRMP1</name>
+      <value>1,65</value>
+      <desc>PERCENT Art 6.20 lid 1b Omvang in aanmerking te nemen uitgaven voor specifieke zorgkosten</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercDRMP2</name>
+      <value>5,75</value>
+      <desc>PERCENT Art 6.20 lid 1c Omvang in aanmerking te nemen uitgaven voor specifieke zorgkosten</desc>
+    </variable>
+    <variable>
+      <name>BDRGDRMPA</name>
+      <value>133</value>
+      <desc>BEDRAG Art 6.20 lid 1a Omvang in aanmerking te nemen uitgaven voor specifieke zorgkosten</desc>
+    </variable>
+    <variable>
+      <name>BDRGDRMPASAMEN</name>
+      <value>266</value>
+      <desc>BEDRAG 6.20 lid 1a Omvang in aanmerking te nemen uitgaven voor specifieke zorgkosten</desc>
+    </variable>
+    <variable>
+      <name>BDRGGEHDAG</name>
+      <value>10</value>
+      <desc>BEDRAG Art 6.25 Definities: Uitvoeringsregeling IB Art. 40 lid 1a Weekenduitgaven voor gehandicapten</desc>
+    </variable>
+    <variable>
+      <name>BDRGGEHKM</name>
+      <value>0,19</value>
+      <desc>BEDRAG Art 6.25 Definities: Uitvoeringsregeling IB Art. 40 lid 1b Weekenduitgaven voor gehandicapten</desc>
+    </variable>
+    <variable>
+      <name>BDRGLENINGMBO</name>
+      <value>141,08</value>
+      <desc>BEDRAG Art 6.27 Scholingsuitgaven</desc>
+    </variable>
+    <variable>
+      <name>BDRGLENINGHBO</name>
+      <value>203,58</value>
+      <desc>BEDRAG Art 6.27 Scholingsuitgaven</desc>
+    </variable>
+    <variable>
+      <name>BDRGSTUDIE</name>
+      <value>250</value>
+      <desc>BEDRAG Art 6.30 lid 1 Omvang in aanmerking te nemen scholingsuitgaven</desc>
+    </variable>
+    <variable>
+      <name>BDRGMAXSTUD</name>
+      <value>15.000</value>
+      <desc>BEDRAG Art 6.30 lid 1 Omvang in aanmerking te nemen scholingsuitgaven</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercONDHKSTN</name>
+      <value>20</value>
+      <desc>PERCENT Art. 6.31 lid 1 Uitgaven voor monumentenpanden</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercMAXGIFT</name>
+      <value>10</value>
+      <desc>PERCENT Art 6.39 lid 1 Omvang in aanmerking te nemen andere giften</desc>
+    </variable>
+    <variable>
+      <name>BDRGMINDREMPEL</name>
+      <value>60</value>
+      <desc>BEDRAG Art 6.39 lid 1 Omvang in aanmerking te nemen andere giften</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercDRGIFT</name>
+      <value>1</value>
+      <desc>PERCENT Art 6.39 lid 1 Omvang in aanmerking te nemen andere giften</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercGIFTCULT</name>
+      <value>25</value>
+      <desc>PERCENT Art 6.39a lid 1 Giften aan culturele instellingen</desc>
+    </variable>
+    <variable>
+      <name>BDRGGIFTCULTMAX</name>
+      <value>1.250</value>
+      <desc>BEDRAG Art 6.39a lid 1 Giften aan culturele instellingen</desc>
+    </variable>
+    <variable>
+      <name>BDRGTARTURKIJELAAG</name>
+      <value>10</value>
+      <desc>PERCENT Art 7.8 Verdrag Turkije</desc>
+    </variable>
+    <variable>
+      <name>BDRGTARTURKIJEHOOG</name>
+      <value>15</value>
+      <desc>PERCENT Art 7.8 Verdrag Turkije</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercAHKA</name>
+      <value>26,667</value>
+      <desc>PERCENT Art 8.9 lid 1 Verhoging maximum gecombineerde heffingskorting AHK</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercVERHAK</name>
+      <value>26,667</value>
+      <desc>PERCENT Art 8.9 lid 1 Verhoging maximum gecombineerde heffingskorting AK</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercVERHIACK</name>
+      <value>26,667</value>
+      <desc>PERCENT Art 8.9 lid 1 Verhoging maximum gecombineerde heffingskorting IACK</desc>
+    </variable>
+    <variable>
+      <name>BDRGONDERHKIND</name>
+      <value>425</value>
+      <desc>BEDRAG Art 8.9 Verhoging maximum gecombineerde heffingskorting (Uitv.reg. Art.2 In belangrijke mate onderhouden van kinderen)</desc>
+    </variable>
+    <variable>
+      <name>BDRGMININKAHKANDER</name>
+      <value>7.105</value>
+      <desc>BEDRAG Art 8.9 Verhoging maximum gecombineerde heffingskorting (minimum van de ander zodat nog verschuldigde belasting over is)</desc>
+    </variable>
+    <variable>
+      <name>BDRGMAXINKAHK</name>
+      <value>20.710</value>
+      <desc>BEDRAG Art 8.9 Verhoging maximum gecombineerde heffingskorting (maximum waar er mogelijk nog recht er op is)</desc>
+    </variable>
+    <variable>
+      <name>BDRGINKAHK</name>
+      <value>22.425</value>
+      <desc>BEDRAG Art 8.9 Verhoging maximum gecombineerde heffingskorting</desc>
+    </variable>
+    <variable>
+      <name>BDRGINKAHK65</name>
+      <value>27.045</value>
+      <desc>BEDRAG Art 8.9 Verhoging maximum gecombineerde heffingskorting AOW-ers</desc>
+    </variable>
+    <variable>
+      <name>BDRGALGHFK</name>
+      <value>2.477</value>
+      <desc>BEDRAG Art 8.10 lid 2 Algemene heffingskorting</desc>
+    </variable>
+    <variable>
+      <name>BDRGperAHKVERMIND</name>
+      <value>5,147</value>
+      <desc>PERCENT Art 8.10 lid 2 Algemene heffingskorting</desc>
+    </variable>
+    <variable>
+      <name>BDRGAFBOUWAHKMAX</name>
+      <value>2.477</value>
+      <desc>BEDRAG Art 8.10 Algemene heffingskorting</desc>
+    </variable>
+    <variable>
+      <name>BDRGAFBOUWAHKAOWMAX</name>
+      <value>1.268</value>
+      <desc>BEDRAG Art 8.10 Algemene heffingskorting</desc>
+    </variable>
+    <variable>
+      <name>BDRGperAHKAOWVERMIND</name>
+      <value>2,633</value>
+      <desc>PERCENT Art 8.10 lid 2 Algemene heffingskorting</desc>
+    </variable>
+    <variable>
+      <name>BDRGAFBOUWAHKGRENS</name>
+      <value>20.384</value>
+      <desc>BEDRAG Art 8.10 Algemene heffingskorting</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercAK1</name>
+      <value>1,754</value>
+      <desc>PERCENT Art 8.11 lid 2a Arbeidskorting</desc>
+    </variable>
+    <variable>
+      <name>BDRGperc65AK1</name>
+      <value>0,898</value>
+      <desc>PERCENT Art 8.11 lid 2a Arbeidskorting</desc>
+    </variable>
+    <variable>
+      <name>BDRGAK1MAX</name>
+      <value>170</value>
+      <desc>BEDRAG Art 8.11 lid 2a Arbeidskorting</desc>
+    </variable>
+    <variable>
+      <name>BDRG65AK1MAX</name>
+      <value>88</value>
+      <desc>BEDRAG Art 8.11 lid 2a Arbeidskorting</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercAK2A</name>
+      <value>28,712</value>
+      <desc>PERCENT Art 8.11 lid 2b Arbeidskorting</desc>
+    </variable>
+    <variable>
+      <name>BDRGperc65AK2A</name>
+      <value>14,689</value>
+      <desc>PERCENT Art 8.11 lid 2b Arbeidskorting</desc>
+    </variable>
+    <variable>
+      <name>BDRGAK2AMAX</name>
+      <value>3.399</value>
+      <desc>BEDRAG Art 8.11 lid 2b Arbeidskorting</desc>
+    </variable>
+    <variable>
+      <name>BDRG65AK2AMAX</name>
+      <value>1.740</value>
+      <desc>BEDRAG Art 8.11 lid 2b Arbeidskorting</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercAK3</name>
+      <value>6,0</value>
+      <desc>PERCENT Art 8.11 lid 2c Arbeidskorting</desc>
+    </variable>
+    <variable>
+      <name>BDRGperc65AK3</name>
+      <value>3,069</value>
+      <desc>PERCENT Art 8.11 lid 2c Arbeidskorting</desc>
+    </variable>
+    <variable>
+      <name>BDRGGRENSAK</name>
+      <value>9.694</value>
+      <desc>BEDRAG Art 8.11 lid 2b Arbeidskorting (maximum arbeidsgrondslag laag tarief)</desc>
+    </variable>
+    <variable>
+      <name>BDRGGRENSAKB</name>
+      <value>20.940</value>
+      <desc>BEDRAG Art 8.11 lid 2b Arbeidskorting</desc>
+    </variable>
+    <variable>
+      <name>BDRGGRENSAKC</name>
+      <value>90.710</value>
+      <desc>BEDRAG Art 8.11 Arbeidskorting</desc>
+    </variable>
+    <variable>
+      <name>BDRGDRMP</name>
+      <value>34.060</value>
+      <desc>BEDRAG Art 8.11 lid 2c Arbeidskorting (maximum arbeidsgrondslag hoog tarief)</desc>
+    </variable>
+    <variable>
+      <name>BDRGIACK</name>
+      <value>0</value>
+      <desc>BEDRAG Art 8.14a lid 2 Inkomensafhankelijke combinatiekorting</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercIACK</name>
+      <value>11,450</value>
+      <desc>PERCENT Art 8.14a lid 2 Inkomensafhankelijke combinatiekorting</desc>
+    </variable>
+    <variable>
+      <name>BDRGGRENSIACK</name>
+      <value>4.993</value>
+      <desc>BEDRAG Art 8.14a lid 1a Inkomensafhankelijke combinatiekorting</desc>
+    </variable>
+    <variable>
+      <name>BDRGMAXIACK</name>
+      <value>2.835</value>
+      <desc>BEDRAG Art 8.14a lid 2 Inkomensafhankelijke combinatiekorting</desc>
+    </variable>
+    <variable>
+      <name>BDRGMAXJGK</name>
+      <value>737</value>
+      <desc>BEDRAG Art 8.16a lid 2 Jonggehandicaptekorting</desc>
+    </variable>
+    <variable>
+      <name>BDRGMAXOUD</name>
+      <value>1.596</value>
+      <desc>BEDRAG Art 8.17 lid 2 Ouderenkorting</desc>
+    </variable>
+    <variable>
+      <name>BDRGMAXVIOUD</name>
+      <value>36.783</value>
+      <desc>BEDRAG Art 8.17 lid 2 Ouderenkorting</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercAFBOUD</name>
+      <value>15</value>
+      <desc>PERCENT Art 8.17 lid 2 Ouderenkorting</desc>
+    </variable>
+    <variable>
+      <name>BDRGMAXAANOK</name>
+      <value>429</value>
+      <desc>BEDRAG Art 8.18 lid 2 Alleenstaande ouderenkorting</desc>
+    </variable>
+    <variable>
+      <name>BDRGMAXLLVK</name>
+      <value>1.290</value>
+      <desc>BEDRAG Art 8.18a Overgangsbepaling levensloopregelingen</desc>
+    </variable>
+    <variable>
+      <name>BDRGLEVKORT</name>
+      <value>215</value>
+      <desc>BEDRAG Art 8.18a Overgangsbepaling levensloopregelingen</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercHKGROEN</name>
+      <value>0,70</value>
+      <desc>PERCENT Art 8.19 lid 2 Korting voor groene beleggingen</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercINGDIVBEL</name>
+      <value>15</value>
+      <desc>PERCENT Art. 9.2 Voorheffingen</desc>
+    </variable>
+    <variable>
+      <name>BDRGAANSLAGGRENS</name>
+      <value>46</value>
+      <desc>BEDRAG Art 9.4 lid 1a Wel of geen aanslag</desc>
+    </variable>
+    <variable>
+      <name>BDRGTERUGGAAFGRENS</name>
+      <value>15</value>
+      <desc>BEDRAG Art 9.4 lid 5 Wel of geen aanslag</desc>
+    </variable>
+    <variable>
+      <name>BDRGVRIJSTKAPVERZEW</name>
+      <value>166.000</value>
+      <desc>BEDRAG Art 10bis.6 lid 1 Vrijstelling kapitaalverzekering eigen woning</desc>
+    </variable>
+    <variable>
+      <name>BDRGVRIJSTKAPVERZEWFIPA</name>
+      <value>332.000</value>
+      <desc>BEDRAG Art 10bis.6 lid 1 Vrijstelling kapitaalverzekering eigen woning</desc>
+    </variable>
+    <variable>
+      <name>BDRGVRIJSTKAPVERZ</name>
+      <value>123.428</value>
+      <desc>BEDRAG Art 10bis.6 Vrijstelling kapitaalverzekering eigen woning</desc>
+    </variable>
+    <variable>
+      <name>BDRGVRIJSTKAPVERZFIPA</name>
+      <value>246.856</value>
+      <desc>BEDRAG Art 10bis.6 Vrijstelling kapitaalverzekering eigen woning</desc>
+    </variable>
+    <variable>
+      <name>BDRGPENSDEU</name>
+      <value>15.000</value>
+      <desc>BEDRAG Verdrag Duitsland, grensbedrag pensioen belast NED of DEU</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercANW</name>
+      <value>0,10</value>
+      <desc>PERCENT Wfsv Art. 11 Premiepercentage (Anw)</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercWLZ</name>
+      <value>9,65</value>
+      <desc>PERCENT Wfsv Art. 11 Premiepercentage (WLZ)</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercAOW</name>
+      <value>17,90</value>
+      <desc>PERCENT Wfsv Art. 11 Premiepercentage (Anw)</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercTOTHFK</name>
+      <value>36,65</value>
+      <desc>PERCENT Wfsv Art. 11 Premiepercentage (som: schijf 1 box 1 + percentage AOW+Anw+WLZ)</desc>
+    </variable>
+    <variable>
+      <name>BDRGPVDAGENJAAR</name>
+      <value>360</value>
+      <desc>GETAL Wfsv Art. 11 Premiepercentage (aantal dagen)</desc>
+    </variable>
+    <variable>
+      <name>BDRGpercWERKKSTREG</name>
+      <value>1,2</value>
+      <desc>PERCENT LB Art. 31a, lid 2 Werkkostenregeling en onkostenvergoeding</desc>
+    </variable>
+    <variable>
+      <name>BDRGZVWMAX</name>
+      <value>55.927</value>
+      <desc>BEDRAG Zorgverzekeringswet Art. 43 Bijdrage van verzekeringsplichtige</desc>
+    </variable>
+    <variable>
+      <name>BDRGPERCZVW</name>
+      <value>5,70</value>
+      <desc>PERCENT Zorgverzekeringswet Art. 45 Percentage inhoudingsplichtige</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARPLUS9</name>
+      <value>2028</value>
+      <desc>ALFANUM Art. 4.53 lid 4 (voorbeeldjaren voor de help)</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARPLUS3</name>
+      <value>2022</value>
+      <desc>ALFANUM Art. 3.112 (voorbeeldjaren voor de help)</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARPLUS2</name>
+      <value>2021</value>
+      <desc>ALFANUM Art. 4.53 lid 4 (voorbeeldjaren voor de help)</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARPLUS1</name>
+      <value>2020</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAAR</name>
+      <value>2019</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN1</name>
+      <value>2018</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN2</name>
+      <value>2017</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN3</name>
+      <value>2016</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN4</name>
+      <value>2015</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN5</name>
+      <value>2014</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN6</name>
+      <value>2013</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN7</name>
+      <value>2012</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN8</name>
+      <value>2011</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN9</name>
+      <value>2010</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN10</name>
+      <value>2009</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN11</name>
+      <value>2008</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN12</name>
+      <value>2007</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN13</name>
+      <value>2006</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN14</name>
+      <value>2005</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN15</name>
+      <value>2004</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN16</name>
+      <value>2003</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN17</name>
+      <value>2002</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN18</name>
+      <value>2001</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN19</name>
+      <value>2000</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN20</name>
+      <value>1999</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN21</name>
+      <value>1998</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN22</name>
+      <value>1997</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN30</name>
+      <value>1989</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN40</name>
+      <value>1979</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN41</name>
+      <value>1978</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN50</name>
+      <value>1969</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN61</name>
+      <value>1958</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN62</name>
+      <value>1957</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN63</name>
+      <value>1956</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN64</name>
+      <value>1955</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN65</name>
+      <value>1954</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN66</name>
+      <value>1953</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN70</name>
+      <value>1949</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGJAARMIN100</name>
+      <value>1919</value>
+      <desc>ALFANUM</desc>
+    </variable>
+    <variable>
+      <name>BDRGDAGENJAAR</name>
+      <value>365</value>
+      <desc>ALFANUM</desc>
+    </variable>
+  </variables>
+</rhpml>

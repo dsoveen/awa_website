@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<TestCases>
+	
+		<TestCase omschrijving="testcase 1 {fmwpontautkost} is leeg>">
+			<Input type="fiscaalmodel">		
+					<list refid="ondernemingList">
+						<item>
+							<TestValue key="fmwondgegstamin" type="Boolean">False</TestValue>
+							<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+								<item>
+									<TestValue key="fmwpontautberprivg" type="Integer">1000</TestValue>
+									<TestValue key="fmwpontautnaamg5jr" type="Boolean">True</TestValue>
+								</item>
+							</list>
+						</item>
+						<item>
+							<TestValue key="fmwondgegstamin" type="Boolean">False</TestValue>
+							<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+								<item>
+									<TestValue key="fmwpontautberprivg" type="Integer">1000</TestValue>
+									<TestValue key="fmwpontautnaamg5jr" type="Boolean">True</TestValue>
+								</item>
+							</list>
+						</item>
+					</list>
+			</Input>
+			<Output type="berekendfiscaalmodel">
+				<list refid="onderneminglist">
+					<item>
+						<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+							<item>
+								<TestValue key="fmwpontautokostbedr" type="Integer">1000</TestValue>
+							</item>
+						</list>
+					</item>
+					<item>
+						<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+							<item>
+								<TestValue key="fmwpontautokostbedr" type="Integer">1000</TestValue>
+							</item>
+						</list>
+					</item>
+				</list>
+			</Output>
+		</TestCase>
+		
+		<TestCase omschrijving="testcase 2 { fmwpontautkost} gelijk aan {fmwpontautberprivg}>">
+			<Input type="fiscaalmodel">		
+					<list refid="ondernemingList">
+						<item>
+							<TestValue key="fmwondgegstamin" type="Boolean">False</TestValue>
+							<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+								<item>
+									<TestValue key="fmwpontautkost" type="Integer">2000</TestValue>
+									<TestValue key="fmwpontautberprivg" type="Integer">2000</TestValue>
+									<TestValue key="fmwpontautnaamg5jr" type="Boolean">True</TestValue>
+								</item>
+							</list>
+						</item>
+						<item>
+							<TestValue key="fmwondgegstamin" type="Boolean">False</TestValue>
+							<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+								<item>
+									<TestValue key="fmwpontautkost" type="Integer">2000</TestValue>
+									<TestValue key="fmwpontautberprivg" type="Integer">2000</TestValue>
+									<TestValue key="fmwpontautnaamg5jr" type="Boolean">True</TestValue>
+								</item>
+							</list>
+						</item>
+					</list>
+			</Input>
+			<Output type="berekendfiscaalmodel">
+				<list refid="onderneminglist">
+					<item>
+						<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+							<item>
+								<TestValue key="fmwpontautokostbedr" type="Integer">2000</TestValue>
+							</item>
+						</list>
+					</item>
+					<item>
+						<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+							<item>
+								<TestValue key="fmwpontautokostbedr" type="Integer">2000</TestValue>
+							</item>
+						</list>
+					</item>
+				</list>
+			</Output>
+		</TestCase>
+		
+		<TestCase omschrijving="testcase 3 { fmwpontautkost} groter dan {fmwpontautberprivg}>">
+			<Input type="fiscaalmodel">		
+					<list refid="ondernemingList">
+						<item>
+							<TestValue key="fmwondgegstamin" type="Boolean">False</TestValue>
+							<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+								<item>
+									<TestValue key="fmwpontautkost" type="Integer">3000</TestValue>
+									<TestValue key="fmwpontautberprivg" type="Integer">2000</TestValue>
+									<TestValue key="fmwpontautnaamg5jr" type="Boolean">True</TestValue>
+								</item>
+							</list>
+						</item>
+						<item>
+							<TestValue key="fmwondgegstamin" type="Boolean">False</TestValue>
+							<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+								<item>
+									<TestValue key="fmwpontautkost" type="Integer">3000</TestValue>
+									<TestValue key="fmwpontautberprivg" type="Integer">2000</TestValue>
+									<TestValue key="fmwpontautnaamg5jr" type="Boolean">True</TestValue>
+								</item>
+							</list>
+						</item>
+					</list>
+			</Input>
+			<Output type="berekendfiscaalmodel">
+				<list refid="onderneminglist">
+					<item>
+						<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+							<item>
+								<TestValue key="fmwpontautokostbedr" type="Integer">2000</TestValue>
+							</item>
+						</list>
+					</item>
+					<item>
+						<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+							<item>
+								<TestValue key="fmwpontautokostbedr" type="Integer">2000</TestValue>
+							</item>
+						</list>
+					</item>
+				</list>
+			</Output>
+		</TestCase>
+		
+		<TestCase omschrijving="testcase 4 { fmwpontautkost} kleiner dan {fmwpontautberprivg}>">
+			<Input type="fiscaalmodel">		
+					<list refid="ondernemingList">
+						<item>
+							<TestValue key="fmwondgegstamin" type="Boolean">False</TestValue>
+							<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+								<item>
+									<TestValue key="fmwpontautkost" type="Integer">1000</TestValue>
+									<TestValue key="fmwpontautberprivg" type="Integer">4000</TestValue>
+									<TestValue key="fmwpontautnaamg5jr" type="Boolean">True</TestValue>
+								</item>
+							</list>
+						</item>
+						<item>
+							<TestValue key="fmwondgegstamin" type="Boolean">False</TestValue>
+							<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+								<item>
+									<TestValue key="fmwpontautkost" type="Integer">1000</TestValue>
+									<TestValue key="fmwpontautberprivg" type="Integer">4000</TestValue>
+									<TestValue key="fmwpontautnaamg5jr" type="Boolean">True</TestValue>
+								</item>
+							</list>
+						</item>
+					</list>
+			</Input>
+			<Output type="berekendfiscaalmodel">
+				<list refid="onderneminglist">
+					<item>
+						<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+							<item>
+								<TestValue key="fmwpontautokostbedr" type="Integer">1000</TestValue>
+							</item>
+						</list>
+					</item>
+					<item>
+						<list refid="ondernemingIndividueelPart:priveontrekking:privegebruikAutoList">
+							<item>
+								<TestValue key="fmwpontautokostbedr" type="Integer">1000</TestValue>
+							</item>
+						</list>
+					</item>
+				</list>
+			</Output>
+		</TestCase>		
+						
+	</TestCases>

@@ -1,0 +1,4802 @@
+{
+  "B": {
+    "cover": null,
+    "debit_credit": null
+  },
+  "BIva": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BIvaKou": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BIvaKoo": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BIvaCev": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BIvaGoo": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BIvaGooVvp": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BIvaGooVvpBeg": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BIvaGooVvpInv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BIvaGooVvpAdo": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BIvaGooVvpDda": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BIvaGooVvpOmv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BIvaGooVvpOvm": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BIvaGooCae": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BIvaGooCaeBeg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BIvaGooCaeAfs": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BIvaVoi": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BIvaBou": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BIvaOiv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BIvaOivVvp": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BIvaOivVvpBeg": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BIvaOivVvpInv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BIvaOivVvpAdo": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BIvaOivVvpDda": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BIvaOivVvpOmv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BIvaOivVvpOvm": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BIvaOivCae": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BIvaOivCaeBeg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BIvaOivCaeAfs": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BMva": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaTer": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaBeg": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaVer": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaMei": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaMeiVvp": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaMeiVvpBeg": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaMeiVvpIna": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaMeiVvpAdo": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaMeiVvpDda": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BMvaMeiVvpOmv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaMeiVvpOve": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaMeiVvpOvm": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaMeiCae": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BMvaMeiCaeBeg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BMvaMeiCaeAfs": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BMvaObe": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaObeVvp": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaObeVvpBeg": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaObeVvpIna": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaObeVvpAdo": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaObeVvpDda": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BMvaObeVvpOmv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaObeVvpOve": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaObeVvpOvm": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaObeCae": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BMvaObeCaeBeg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BMvaObeCaeAfs": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BMvaBei": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaBeiVvp": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaBeiVvpBeg": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaBeiVvpIna": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaBeiVvpAdo": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaBeiVvpDda": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BMvaBeiVvpOmv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaBeiVvpOve": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaBeiVvpOvm": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaBeiCae": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BMvaBeiCaeBeg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BMvaBeiCaeAfs": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BMvaTev": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaTevVvp": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaTevVvpBeg": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaTevVvpIna": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaTevVvpAdo": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaTevVvpDda": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BMvaTevVvpOmv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaTevVvpOve": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaTevVvpOvm": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaTevCae": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BMvaTevCaeBeg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BMvaTevCaeAfs": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BMvaHuu": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaHuuVvp": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaHuuVvpBeg": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaHuuVvpIna": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaHuuVvpAdo": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaHuuVvpDda": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BMvaHuuVvpOmv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaHuuVvpOve": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaHuuVvpOvm": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaHuuCae": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BMvaHuuCaeBeg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BMvaHuuCaeAfs": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BMvaVli": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaSch": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaMep": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaGeb": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaVbi": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaVmv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaNad": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BMvaOrz": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVas": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVasVio": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVasSvi": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVasCvi": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVasOzv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BFva": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BFvaDig": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BFvaDio": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BFvaVog": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BFvaVov": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BFvaAnd": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BFvaVop": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BFvaOve": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BFvaOvr": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BFvaLbv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BFvaSub": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BFvaLen": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BFvaIlg": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BFvaNvm": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVrd": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVrdGeh": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVrdGehVoo": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVrdGehTus": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVrdGehVic": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BVrdHal": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVrdHalVoo": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVrdHalVic": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BVrdOwe": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVrdOweVoo": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVrdOweGet": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BVrdOweVzv": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BVrdGep": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVrdGepVoo": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVrdGepVic": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BVrdHan": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVrdHanVoo": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVrdHanTus": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVrdHanVic": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BVrdVrv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVrdVrvVoo": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVrdVrvVic": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BVrdEmb": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVrdEmbVoo": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVrdEmbVic": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BVrdVas": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVrdNig": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVrdVoo": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVrdVooVoo": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BPro": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BProOnp": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "Bvor": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorDeb": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorDebHad": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorDebVdd": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BVorDebHdb": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorDebTus": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorDebVhd": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BVorVog": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorVov": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorVop": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorVao": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorVbk": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorVbkVbk": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorVbkTvo": {
+    "cover": "BSchBepBtw",
+    "debit_credit": "D"
+  },
+  "BVorVbkTvoToi": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorVbkTvoTou": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorVbkTtb": {
+    "cover": "BSchBepOvbOvb",
+    "debit_credit": "D"
+  },
+  "BVorLbv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorLbvBlk": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorLbvCba": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorLbvCfo": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorTsk": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorTskTos": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorTskTvs": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorVpk": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorOvr": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorOvrWbs": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorOvrVrb": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorOvrTvr": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorOvrTvo": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorOvrOvk": {
+    "cover": "BSchOvsOvs",
+    "debit_credit": "D"
+  },
+  "BVorOvrLen": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorOvrLenLn1": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorOvrLenLn2": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorOvrLenLn3": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorOvrLenLn4": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorOvrLenLn5": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorOva": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorOvaVof": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorOvaVbs": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorOvaNtf": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorOvaNoo": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorOvaNtp": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorOvaNth": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorOvaNov": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorOvaNob": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorOvaVoh": {
+    "cover": "BSchOpaNhv",
+    "debit_credit": "D"
+  },
+  "BVorOvaVem": {
+    "cover": "BSchOpaNee",
+    "debit_credit": "D"
+  },
+  "BVorOvaVov": {
+    "cover": "BSchOpaNvk",
+    "debit_credit": "D"
+  },
+  "BVorOvaVak": {
+    "cover": "BSchOpaNak",
+    "debit_credit": "D"
+  },
+  "BVorOvaVtr": {
+    "cover": "BSchOpaNtk",
+    "debit_credit": "D"
+  },
+  "BVorOvaVok": {
+    "cover": "BSchOpaNkk",
+    "debit_credit": "D"
+  },
+  "BVorOvaVoo": {
+    "cover": "BSchOpaNok",
+    "debit_credit": "D"
+  },
+  "BVorOvaVas": {
+    "cover": "BSchOpaNas",
+    "debit_credit": "D"
+  },
+  "BVorOvaVae": {
+    "cover": "BSchOpaNaa",
+    "debit_credit": "D"
+  },
+  "BVorOvaVoa": {
+    "cover": "BSchOpaNad",
+    "debit_credit": "D"
+  },
+  "BVorOvaVkf": {
+    "cover": "BSchOpaNkf",
+    "debit_credit": "D"
+  },
+  "BVorOvaVan": {
+    "cover": "BSchOpaNtb",
+    "debit_credit": "D"
+  },
+  "BVorOvaTor": {
+    "cover": "BSchOpaTbr",
+    "debit_credit": "D"
+  },
+  "BVorOvaVbr": {
+    "cover": "BSchOpaVor",
+    "debit_credit": "D"
+  },
+  "BVorOvaOoa": {
+    "cover": "BSchOpaOop",
+    "debit_credit": "D"
+  },
+  "BVorOvaNos": {
+    "cover": "BSchOpaNbs",
+    "debit_credit": "D"
+  },
+  "BVorOvaNtr": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorTus": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BVorTusTbt": {
+    "cover": "BSchTusTbt",
+    "debit_credit": "D"
+  },
+  "BVorTusTbtTca": {
+    "cover": "BSchTusTbtTca",
+    "debit_credit": "D"
+  },
+  "BVorTusTbtTcb": {
+    "cover": "BSchTusTbtTcb",
+    "debit_credit": "D"
+  },
+  "BVorTusTin": {
+    "cover": "BSchTusTin",
+    "debit_credit": "D"
+  },
+  "BVorTusTinTog": {
+    "cover": "BSchTusTinTog",
+    "debit_credit": "D"
+  },
+  "BVorTusTinTof": {
+    "cover": "BSchTusTinTof",
+    "debit_credit": "D"
+  },
+  "BVorTusTinTiv": {
+    "cover": "BSchTusTinTiv",
+    "debit_credit": "D"
+  },
+  "BVorTusTpr": {
+    "cover": "BSchTusTpr",
+    "debit_credit": "D"
+  },
+  "BVorTusTprTmv": {
+    "cover": "BSchTusTprTmv",
+    "debit_credit": "D"
+  },
+  "BVorTusTprTmu": {
+    "cover": "BSchTusTprTmu",
+    "debit_credit": "D"
+  },
+  "BVorTusTprTau": {
+    "cover": "BSchTusTprTau",
+    "debit_credit": "D"
+  },
+  "BVorTusTprTbu": {
+    "cover": "BSchTusTprTbu",
+    "debit_credit": "D"
+  },
+  "BVorTusTprTbg": {
+    "cover": "BSchTusTprTbg",
+    "debit_credit": "D"
+  },
+  "BVorTusTdv": {
+    "cover": "BSchTusTdv",
+    "debit_credit": "D"
+  },
+  "BVorTusTdvTcp": {
+    "cover": "BSchTusTdvTcp",
+    "debit_credit": "D"
+  },
+  "BVorTusTdvTma": {
+    "cover": "BSchTusTdvTma",
+    "debit_credit": "D"
+  },
+  "BVorTusTdvTuu": {
+    "cover": "BSchTusTdvTuu",
+    "debit_credit": "D"
+  },
+  "BVorTusTdvInv": {
+    "cover": "BSchTusTdvInv",
+    "debit_credit": "D"
+  },
+  "BVorTusTdvVso": {
+    "cover": "BSchTusTdvVso",
+    "debit_credit": "D"
+  },
+  "BVorTusTdvVsb": {
+    "cover": "BSchTusTdvVsb",
+    "debit_credit": "D"
+  },
+  "BVorTusTdvDvo": {
+    "cover": "BSchTusTdvDvo",
+    "debit_credit": "D"
+  },
+  "BVorTusTdvDvb": {
+    "cover": "BSchTusTdvDvb",
+    "debit_credit": "D"
+  },
+  "BVorTusTvr": {
+    "cover": "BSchTusTvr",
+    "debit_credit": "D"
+  },
+  "BVorTusTvrTvn": {
+    "cover": "BSchTusTvrTvn",
+    "debit_credit": "D"
+  },
+  "BVorTusTvk": {
+    "cover": "BSchTusTvk",
+    "debit_credit": "D"
+  },
+  "BVorTusTvkTnf": {
+    "cover": "BSchTusTvkTnf",
+    "debit_credit": "D"
+  },
+  "BVorTusTvkTng": {
+    "cover": "BSchTusTvkTng",
+    "debit_credit": "D"
+  },
+  "BVorTusTvkTve": {
+    "cover": "BSchTusTvkTve",
+    "debit_credit": "D"
+  },
+  "BVorTusTon": {
+    "cover": "BSchTusTon",
+    "debit_credit": "D"
+  },
+  "BVorTusTonTco": {
+    "cover": "BSchTusTonTco",
+    "debit_credit": "D"
+  },
+  "BVorTusTonTcv": {
+    "cover": "BSchTusTonTcv",
+    "debit_credit": "D"
+  },
+  "BVorTusTov": {
+    "cover": "BSchTusTov",
+    "debit_credit": "D"
+  },
+  "BVorTusTovTbb": {
+    "cover": "BSchTusTovTbb",
+    "debit_credit": "D"
+  },
+  "BVorTusTovTvp": {
+    "cover": "BSchTusTovTvp",
+    "debit_credit": "D"
+  },
+  "BVorTusTovTov": {
+    "cover": "BSchTusTovTov",
+    "debit_credit": "D"
+  },
+  "BVorTusLen": {
+    "cover": "BSchTusLen",
+    "debit_credit": "D"
+  },
+  "BVorTusLenLog": {
+    "cover": "BSchTusLenLog",
+    "debit_credit": "D"
+  },
+  "BVorTusLenLug": {
+    "cover": "BSchTusLenLug",
+    "debit_credit": "D"
+  },
+  "BVorTusLenKog": {
+    "cover": "BSchTusLenKog",
+    "debit_credit": "D"
+  },
+  "BVorTusLenKug": {
+    "cover": "BSchTusLenKug",
+    "debit_credit": "D"
+  },
+  "BVorTusLenSde": {
+    "cover": "BSchTusLenSde",
+    "debit_credit": "D"
+  },
+  "BOvhOvh": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BOvhOvhVor": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BEff": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BEffAan": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BEffObl": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BEffOve": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BEffOpt": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BEffOpv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BEffDer": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLim": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLimKas": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLimKasKas": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLimKasKlk": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLimBan": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLimBanRba": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLimBanRbaBg1": {
+    "cover": "BSchSakRbaBg1",
+    "debit_credit": "D"
+  },
+  "BLimBanRbaBg2": {
+    "cover": "BSchSakRbaBg2",
+    "debit_credit": "D"
+  },
+  "BLimBanRbaBg3": {
+    "cover": "BSchSakRbaBg3",
+    "debit_credit": "D"
+  },
+  "BLimBanRbaBg4": {
+    "cover": "BSchSakRbaBg4",
+    "debit_credit": "D"
+  },
+  "BLimBanRbaBg5": {
+    "cover": "BSchSakRbaBg5",
+    "debit_credit": "D"
+  },
+  "BLimBanRbaBg6": {
+    "cover": "BSchSakRbaBg6",
+    "debit_credit": "D"
+  },
+  "BLimBanRbaBg7": {
+    "cover": "BSchSakRbaBg7",
+    "debit_credit": "D"
+  },
+  "BLimBanRbaBg8": {
+    "cover": "BSchSakRbaBg8",
+    "debit_credit": "D"
+  },
+  "BLimBanRbaBg9": {
+    "cover": "BSchSakRbaBg9",
+    "debit_credit": "D"
+  },
+  "BLimBanDrk": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLimBanDep": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLimBanBel": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLimBanGrb": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLimBanInb": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLimKru": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLimKruSto": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLimKruKlu": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLimKruPIb": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLimKruCra": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLimKruWec": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BEiv": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivGok": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivSev": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivCok": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivAgi": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivHer": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivWer": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivStr": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivBef": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivBer": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivOvr": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivOre": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivKap": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivKapOnd": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivKapOndBeg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivKapOndOvm": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BEivKapPrs": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivKapPrsPsk": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivKapPrsOns": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivKapPrsOlp": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivKapPrsOte": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivKapPrsOnk": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivKapPrsOpp": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivKapPrsOsp": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivKapPrsVep": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivKapPrsPzl": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivKapPrsOps": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivKapProPok": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BEivKapProPmv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BEivKapProPrg": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BEivKapProPiz": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BEivKapProPpr": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BEivKapProPri": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BEivKapProPer": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BEivKapProPrk": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BEivKapProOvp": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BEivKa2": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivKa3": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivKa4": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivKa5": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivOkc": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivFir": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivFirFor": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivFirForBeg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivFirForFor": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivFirForAtg": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BEivFirForKtl": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BEivFirForOve": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivFirForVal": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivFirForOvm": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEivAvd": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEga": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BEgaEga": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BVrz": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BVrzVvp": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BVrzVvb": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BVrzOvz": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BVrzOih": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLas": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasAcl": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasAclAll": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasAclAllBeg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasAclAllToe": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasAclAllOvs": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasAclAllAvs": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasAclAllBir": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasAclAllOmv": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasAclAllOvm": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasAclCla": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasAclClaBeg": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasAclClaAfl": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasAclClaAvp": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasCol": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasAoe": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasAoeAol": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasAoeAolBeg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasAoeAolToe": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasAoeAolOvs": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasAoeAolAvs": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasAoeAolBir": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasAoeAolOmv": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasAoeAolOvm": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasAoeCla": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasAoeClaBeg": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasAoeClaAfl": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasAoeClaAvp": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasFlv": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasFlvFlv": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasFlvFlvBeg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasFlvFlvToe": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasFlvFlvOvs": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasFlvFlvAvs": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasFlvFlvBir": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasFlvFlvOmv": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasFlvFlvOvm": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasFlvCla": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasFlvClaBeg": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasFlvClaAfl": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasFlvClaAvp": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasSak": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSakFvl": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSakFvlBeg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSakFvlToe": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSakFvlOvs": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSakFvlAvs": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasSakFvlBir": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSakFvlOmv": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSakFvlOvm": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSakFca": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasSakFcaBeg": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasSakFcaAfl": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasSakFcaAvp": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasSakLvl": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSakLvlBeg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSakLvlToe": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSakLvlOvs": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSakLvlAvs": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasSakLvlBir": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSakLvlOmv": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSakLvlOvm": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSakLca": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasSakLcaBeg": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasSakLcaAfl": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasSakLcaAvp": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasSakOvl": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSakOvlBeg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSakOvlToe": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSakOvlOvs": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSakOvlAvs": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasSakOvlBir": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSakOvlOmv": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSakOvlOvm": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSakOca": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasSakOcaBeg": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasSakOcaAfl": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasSakOcaAvp": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasVob": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasVobVob": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSal": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSalSal": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasTbw": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasTbwTbw": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSag": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSao": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSap": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasBep": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSuh": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSuhSuh": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasStz": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasNeg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasNegBrw": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasNegBrwBeg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasNegBrwAao": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasNegBrwAag": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasNegBrwAga": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasNegBrwOvm": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasNegCbd": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasNegCbdBeg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasNegCbdTgv": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasNegCbdVtg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasOdv": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSoh": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSohSoh": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSohSohBeg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSohSohToe": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSohSohOvs": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSohSohAvs": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasSohSohBir": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSohSohOmv": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSohSohOvm": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSohSohOwv": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSohAso": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasSohAsofBeg": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasSohAsoAfl": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasSohAsoAvp": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasSohGos": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSohGosBeg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSohGosToe": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSohGosOvs": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSohGosAvs": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasSohGosBir": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSohGosOmv": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSohGosOvm": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSohGosOwv": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasSohGoa": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasSohGoaBeg": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasSohGoaAfl": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasSohGoaAvp": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasVhz": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasOls": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasOlsOsl": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasOlsOslBeg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasOlsOslToe": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasOlsOslOvm": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasOlsAfl": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasOlsAflAfl": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasOlsOslAvp": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BLasOvp": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BLasOvpOvp": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSch": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchKol": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchKolAlk": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchKolClk": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchKolAok": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchKolAov": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchSoh": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchSohSoh": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchSak": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchSakRba": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchSakRbaBg1": {
+    "cover": "BLimBanRbaBg1",
+    "debit_credit": "C"
+  },
+  "BSchSakRbaBg2": {
+    "cover": "BLimBanRbaBg2",
+    "debit_credit": "C"
+  },
+  "BSchSakRbaBg3": {
+    "cover": "BLimBanRbaBg3",
+    "debit_credit": "C"
+  },
+  "BSchSakRbaBg4": {
+    "cover": "BLimBanRbaBg4",
+    "debit_credit": "C"
+  },
+  "BSchSakRbaBg5": {
+    "cover": "BLimBanRbaBg5",
+    "debit_credit": "C"
+  },
+  "BSchSakRbaBg6": {
+    "cover": "BLimBanRbaBg6",
+    "debit_credit": "C"
+  },
+  "BSchSakRbaBg7": {
+    "cover": "BLimBanRbaBg7",
+    "debit_credit": "C"
+  },
+  "BSchSakRbaBg8": {
+    "cover": "BLimBanRbaBg8",
+    "debit_credit": "C"
+  },
+  "BSchSakRbaBg9": {
+    "cover": "BLimBanRbaBg9",
+    "debit_credit": "C"
+  },
+  "BSchSakRbaBg10": {
+    "cover": "BLimBanRbaBg10",
+    "debit_credit": "C"
+  },
+  "BSchVob": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchVobVgf": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchVobVob": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchCre": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchCreHac": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchCreVbk": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchCreKcr": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchCreTus": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BschCreTtf": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchTbw": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchTbwAvp": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchTbwTbr": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchTbwOvs": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchSag": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchSao": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchSap": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchShb": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchShbShb": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchFlk": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchFlkFlk": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchBep": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchBepBtw": {
+    "cover": "BVorVbkTvo",
+    "debit_credit": "C"
+  },
+  "BSchBepBtwBeg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchBepBtwOla": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchBepBtwOlv": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchBepBtwOlt": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchBepBtwOlo": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchBepBtwOop": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchBepBtwOlw": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchBepBtwOlb": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchBepBtwOlu": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchBepBtwVoo": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BSchBepBtwVvd": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BSchBepBtwSva": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchBepBtwSda": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchBepBtwAfo": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "BSchBepBtwNah": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchBepBtwOvm": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchBepOvb": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchBepOvbBib": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchBepOvbBut": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchBepOvbPrb": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchBepOvbGbe": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchBepOvbBgd": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchBepOvbOvb": {
+    "cover": "BVorVbkTtb",
+    "debit_credit": "C"
+  },
+  "BSchStz": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchAos": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchAosLvk": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchAosFvk": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchAosAos": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchOpp": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchSal": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchOvs": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchOvsGif": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchOvsSuv": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchOvsVpo": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchOvsOvs": {
+    "cover": "BVorOvrOvk",
+    "debit_credit": "C"
+  },
+  "BSchOvsWaa": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchOpa": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchOpaNto": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchOpaNtb": {
+    "cover": "BVorOvaVan",
+    "debit_credit": "C"
+  },
+  "BSchOpaTbr": {
+    "cover": "BVorOvaTor",
+    "debit_credit": "C"
+  },
+  "BSchOpaVor": {
+    "cover": "BVorOvaVbr",
+    "debit_credit": "C"
+  },
+  "BSchOpaOop": {
+    "cover": "BVorOvaOoa",
+    "debit_credit": "C"
+  },
+  "BSchOpaNbs": {
+    "cover": "BVorOvaNos",
+    "debit_credit": "C"
+  },
+  "BSchOpaNom": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchOpaNpr": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchOpaNbh": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchOpaNve": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchOpaNbi": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchOpaNhv": {
+    "cover": "BVorOvaVoh",
+    "debit_credit": "C"
+  },
+  "BSchOpaNee": {
+    "cover": "BVorOvaVem",
+    "debit_credit": "C"
+  },
+  "BSchOpaNvk": {
+    "cover": "BVorOvaVov",
+    "debit_credit": "C"
+  },
+  "BSchOpaNak": {
+    "cover": "BVorOvaVak",
+    "debit_credit": "C"
+  },
+  "BSchOpaNtk": {
+    "cover": "BVorOvaVtr",
+    "debit_credit": "C"
+  },
+  "BSchOpaNkk": {
+    "cover": "BVorOvaVok",
+    "debit_credit": "C"
+  },
+  "BSchOpaNok": {
+    "cover": "BVorOvaVoo",
+    "debit_credit": "C"
+  },
+  "BSchOpaNas": {
+    "cover": "BVorOvaVas",
+    "debit_credit": "C"
+  },
+  "BSchOpaNaa": {
+    "cover": "BVorOvaVae",
+    "debit_credit": "C"
+  },
+  "BSchOpaNad": {
+    "cover": "BVorOvaVoa",
+    "debit_credit": "C"
+  },
+  "BSchOpaHur": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchOpaVhr": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchTus": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchTusTbt": {
+    "cover": "BVorTusTbt",
+    "debit_credit": "C"
+  },
+  "BSchTusTbtTca": {
+    "cover": "BVorTusTbtTca",
+    "debit_credit": "C"
+  },
+  "BSchTusTbtTcb": {
+    "cover": "BVorTusTbtTcb",
+    "debit_credit": "C"
+  },
+  "BSchTusTin": {
+    "cover": "BVorTusTin",
+    "debit_credit": "C"
+  },
+  "BSchTusTinTog": {
+    "cover": "BVorTusTinTog",
+    "debit_credit": "C"
+  },
+  "BSchTusTinTof": {
+    "cover": "BVorTusTinTof",
+    "debit_credit": "C"
+  },
+  "BSchTusTinTiv": {
+    "cover": "BVorTusTinTiv",
+    "debit_credit": "C"
+  },
+  "BSchTusTpr": {
+    "cover": "BVorTusTpr",
+    "debit_credit": "C"
+  },
+  "BSchTusTprTmv": {
+    "cover": "BVorTusTprTmv",
+    "debit_credit": "C"
+  },
+  "BSchTusTprTmu": {
+    "cover": "BVorTusTprTmu",
+    "debit_credit": "C"
+  },
+  "BSchTusTprTau": {
+    "cover": "BVorTusTprTau",
+    "debit_credit": "C"
+  },
+  "BSchTusTprTbu": {
+    "cover": "BVorTusTprTbu",
+    "debit_credit": "C"
+  },
+  "BSchTusTprTbg": {
+    "cover": "BVorTusTprTbg",
+    "debit_credit": "C"
+  },
+  "BSchTusTdv": {
+    "cover": "BVorTusTdv",
+    "debit_credit": "C"
+  },
+  "BSchTusTdvTcp": {
+    "cover": "BVorTusTdvTcp",
+    "debit_credit": "C"
+  },
+  "BSchTusTdvTma": {
+    "cover": "BVorTusTdvTma",
+    "debit_credit": "C"
+  },
+  "BSchTusTdvTuu": {
+    "cover": "BVorTusTdvTuu",
+    "debit_credit": "C"
+  },
+  "BSchTusTdvInv": {
+    "cover": "BVorTusTdvInv",
+    "debit_credit": "C"
+  },
+  "BSchTusTdvVso": {
+    "cover": "BVorTusTdvVso",
+    "debit_credit": "C"
+  },
+  "BSchTusTdvVsb": {
+    "cover": "BVorTusTdvVsb",
+    "debit_credit": "C"
+  },
+  "BSchTusTdvDvo": {
+    "cover": "BVorTusTdvDvo",
+    "debit_credit": "C"
+  },
+  "BSchTusTdvDvb": {
+    "cover": "BVorTusTdvDvb",
+    "debit_credit": "C"
+  },
+  "BSchTusTvr": {
+    "cover": "BVorTusTvr",
+    "debit_credit": "C"
+  },
+  "BSchTusTvrTvn": {
+    "cover": "BVorTusTvrTvn",
+    "debit_credit": "C"
+  },
+  "BSchTusTvk": {
+    "cover": "BVorTusTvk",
+    "debit_credit": "C"
+  },
+  "BSchTusTvkTnf": {
+    "cover": "BVorTusTvkTnf",
+    "debit_credit": "C"
+  },
+  "BSchTusTvkTng": {
+    "cover": "BVorTusTvkTng",
+    "debit_credit": "C"
+  },
+  "BSchTusTvkTve": {
+    "cover": "BVorTusTvkTve",
+    "debit_credit": "C"
+  },
+  "BSchTusTon": {
+    "cover": "BVorTusTon",
+    "debit_credit": "C"
+  },
+  "BSchTusTonTco": {
+    "cover": "BVorTusTonTco",
+    "debit_credit": "C"
+  },
+  "BSchTusTonTcv": {
+    "cover": "BVorTusTonTcv",
+    "debit_credit": "C"
+  },
+  "BSchTusTov": {
+    "cover": "BVorTusTov",
+    "debit_credit": "C"
+  },
+  "BSchTusTovTbb": {
+    "cover": "BVorTusTovTbb",
+    "debit_credit": "C"
+  },
+  "BSchTusTovTvp": {
+    "cover": "BVorTusTovTvp",
+    "debit_credit": "C"
+  },
+  "BSchTusTovTov": {
+    "cover": "BVorTusTovTov",
+    "debit_credit": "C"
+  },
+  "BSchTusLen": {
+    "cover": "BVorTusLen",
+    "debit_credit": "C"
+  },
+  "BSchTusLenLog": {
+    "cover": "BVorTusLenLog",
+    "debit_credit": "C"
+  },
+  "BSchTusLenLug": {
+    "cover": "BVorTusLenLug",
+    "debit_credit": "C"
+  },
+  "BSchTusLenKog": {
+    "cover": "BVorTusLenKog",
+    "debit_credit": "C"
+  },
+  "BSchTusLenKug": {
+    "cover": "BVorTusLenKug",
+    "debit_credit": "C"
+  },
+  "BSchTusLenSde": {
+    "cover": "BVorTusLenSde",
+    "debit_credit": "C"
+  },
+  "BSchDha": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchDhp": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "BSchSdn": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "W": {
+    "cover": null,
+    "debit_credit": null
+  },
+  "WOmz": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNop": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNopOlh": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNopOlv": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNopOlo": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNopOpg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNopOlg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNopOll": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNopOln": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNopOli": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNopOla": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNopOlu": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNopOle": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNopNon": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNoh": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNohOlh": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNohOlv": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNohOlo": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNohMai": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WOmzNohOmr": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNohOpg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNohOlg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNohOll": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNohOln": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNohOli": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNohOla": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNohOlu": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNohOle": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNohNon": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNod": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNodOdh": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNodOdl": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNodOdo": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNodOpd": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNodOdg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNodOdv": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNodOdb": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNodOdi": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNodOda": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNodOdu": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNodOde": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNodNon": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzAol": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzAolPom": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzAolVpa": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzAolGms": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzAolVee": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzAolVwd": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzAolOno": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzAov": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNoo": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNooNdl": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNooNdy": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNooNdd": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNooOur": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNooOnw": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNooNdo": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNooNon": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzNooNtf": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzOit": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzKeb": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WOmzKebVek": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WOmzKebVekVkp": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WOmzKebVekVkh": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WOmzKebVekVkd": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WOmzKebVekOkr": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WOmzKebOmz": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WOmzKebOmzOog": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WOmzKebOmzOoh": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WOmzKebOmzOod": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WOmzKebPrv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WOmzKebPrvPvh": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WOmzKebPrvPvp": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WOmzKebPrvPvd": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WOmzKebPrvOvp": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WOmzGrp": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzGrpGr1": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzGrpGr1Pra": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzGrpGr1Prb": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzGrpGr1Prc": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzGrpGr1Prd": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzGrpGr1Pre": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzGrpGr2": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzGrpGr2Pra": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzGrpGr2Prb": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzGrpGr2Prc": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzGrpGr2Prd": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzGrpGr2Pre": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzGrpGr3": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzGrpGr3Pra": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzGrpGr3Prb": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzGrpGr3Prc": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzGrpGr3Prd": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzGrpGr3Pre": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzGrpGr4": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzGrpGr4Pra": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzGrpGr4Prb": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzGrpGr4Prc": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzGrpGr4Prd": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzGrpGr4Pre": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzGrpGr5": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzGrpGr5Pra": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzGrpGr5Prb": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzGrpGr5Prc": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzGrpGr5Prd": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOmzGrpGr5Pre": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WRev": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WRevHuo": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WRevOsc": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WRevLsc": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WRevOhb": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WRevLvb": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WRevLoa": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WRevOol": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WRvi": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WRviOvo": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WRviUvv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WRviTok": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WRviTfk": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WRgr": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WRgrOvp": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WRgrTok": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WRgrRvb": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WRgrDkv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WWvv": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WWvvOwv": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WWvvNwp": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WWvvNwv": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WWvvNwb": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WNoa": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WNoaOoa": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WNoaKoa": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WOok": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WOokOok": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKol": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKolKol": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WWiv": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WWivWgp": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WWivWow": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WWivWop": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WWivGpv": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WWivWav": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WWivWva": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKpr": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprKvg": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprKvgKvg": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprKvgKgI": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprKvgVrv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprKvgPrv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprKvp": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprKuw": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprKuwKuw": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprKuwAek": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprAkl": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprIna": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprAkv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprKra": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprInh": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprInhInh": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprInhVrv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprInhPrv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprInp": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprInpInp": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprInpVrv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprInpPrv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprLeb": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprLebLeb": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprLebInp": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprBtk": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprBtkBed": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprBtkBec": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprKit": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprMuo": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprMuoMuo": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprVom": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprVomVom": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprPrg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WKprPrgPrg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WKprPrd": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WKprPrdPrd": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WKprGrp": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprGrpGr1": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprGrpGr1Pra": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprGrpGr1Prb": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprGrpGr1Prc": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprGrpGr1Prd": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprGrpGr1Pre": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprGrpGr2": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprGrpGr2Pra": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprGrpGr2Prb": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprGrpGr2Prc": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprGrpGr2Prd": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprGrpGr2Pre": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprGrpGr3": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprGrpGr3Pra": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprGrpGr3Prb": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprGrpGr3Prc": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprGrpGr3Prd": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprGrpGr3Pre": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprGrpGr4": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprGrpGr4Pra": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprGrpGr4Prb": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprGrpGr4Prc": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprGrpGr4Prd": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprGrpGr4Pre": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprGrpGr5": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprGrpGr5Pra": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprGrpGr5Prb": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprGrpGr5Prc": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprGrpGr5Prd": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WKprGrpGr5Pre": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WOvb": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbLpd": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbLpdLpd": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbOrs": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbOrsOel": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbOrsOre": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbOrsOreOar": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbOrsOreEeo": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbOrsOsu": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbOrsOsuSro": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbOrsOsuSov": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbOrsOsuSoo": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbOrsOsuSeu": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbOrsOsuSbd": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbOrsOsuSpo": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbOrsOsuSop": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbSpd": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbSpdSpd": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbBue": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbBueCol": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbBueDeg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbBueCtb": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbBueSpo": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbBueNal": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbBueEle": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbBueVeg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbBueObu": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbBug": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbBugCol": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbBugDeg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbBugCtb": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbBugSpo": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbBugNal": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbBugEle": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbBugVeg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbBugObu": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbBua": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbBuaCol": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbBuaDeg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbBuaCtb": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbBuaSpo": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbBuaNal": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbBuaEle": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbBuaVeg": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbBuaObu": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbHuo": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbHuoHuo": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbOps": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbOpsOps": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbCcl": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbCclCcl": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbNvv": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbBwi": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbBwiBwi": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbOnm": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbOdp": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbOvo": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbOvoOvo": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbVez": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbVezUib": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbVezOvu": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvbDob": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WPer": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WPerLes": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WPerSol": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WPerPen": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WPerOlu": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WAfs": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WAfsAiv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WAfsAivOek": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WAfsAivKoe": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WAfsAivCev": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WAfsAivGoo": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WAfsAivViv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WAfsAivOiv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WAfsAmv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WAfsAmvHuu": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WAfsAmvMei": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WAfsAmvObe": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WAfsAmvTev": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WAfsAmvBei": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WAfsAmvVbi": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WAfsAfv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WAfsRvi": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WAfsRviOek": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WAfsRviKoe": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WAfsRviCev": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WAfsRviGoo": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WAfsRviViv": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WAfsRviOiv": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WAfsRvm": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WAfsRvmHuu": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WAfsRvmMei": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WAfsRvmObe": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WAfsRvmTev": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WAfsRvmBei": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WAfsRvmVbi": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WAfsRvmBvm": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WAfsRvmBgm": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WAfsBov": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WAfsDae": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WWvi": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WWviWvi": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WWviWvm": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WWviWvb": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBwv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBwvObw": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBwvGwb": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WBwvNwb": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WBed": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedWkr": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedWkrWkvMpi": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedOvp": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedHui": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedHuiErf": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedHuiLee": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedHuiLas": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedHuiBeh": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedHuiOhu": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WBedHuiHuw": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WBedHuiOnt": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedHuiOng": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedHuiSch": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedHuiSer": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedHuiGwe": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedHuiGweGas": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedHuiGweElk": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedHuiGweWat": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedHuiGweNed": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedHuiPre": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WBedHuiAoz": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedHuiOnz": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedHuiMez": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedHuiObh": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedHuiOvh": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedHuiOhv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedHuiOhvOhv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedHuiOhGbw": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedHuiOhvSav": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedHuiOhvOgb": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedHuiOhvRvb": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedHuiOhvBev": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedHuiOhvKap": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedHuiOhvBlm": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedHuiOhvIhh": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedHuiDoh": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WBedHuiOhvEhr": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedEem": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedEemRoi": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedEemOls": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedEemHui": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedEemKai": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedEemGsk": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedEemOki": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedEemRom": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedEemOlm": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedEemHum": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedEemOme": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedEemBrm": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedEemKam": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedEemObm": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedEemOkm": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedEemWdi": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedEemWdd": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedEemDrm": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedEemVrm": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WBedEemAme": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedEemVpm": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedEemOee": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedEemDem": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WBedVkk": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedVkkRea": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedVkkKos": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedVkkBeu": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedVkkRel": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedVkkKer": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedVkkRep": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedVkkRev": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedVkkEta": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedVkkVrk": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedVkkInc": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedVkkKmz": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedVkkKmw": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedVkkVkp": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedVkkCom": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedVkkFra": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedVkkDvd": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedVkkAdd": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedVkkWeb": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedVkkObs": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedVkkOvr": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedVkkDbv": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WBedAut": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAutBra": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAutRoa": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAutAsa": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAutMot": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAutOpa": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAutBwl": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WBedAutPga": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WBedAutBop": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAutHua": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAutKil": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAutBeb": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAutObv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAutDrv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAutVrv": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WBedAutPar": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAutOak": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAutDau": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WBedTra": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedTraBrr": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedTraRot": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedTraAst": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedTraMot": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedTraOpt": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedTraPgt": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WBedTraBot": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedTraHut": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedTraObt": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedTraDrt": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedTraVrt": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WBedTraPar": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedTraOtr": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedTraDot": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WBedKan": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedKanKan": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedKanPor": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedKanTef": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedKanPrt": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WBedKanDru": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedKanKak": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedKanCea": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedKanVak": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedKanBoe": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedKanInc": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedKanKoa": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedKanAss": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedKanOba": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedKanRok": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedKanOka": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedKanDka": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WBedKanCom": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedOrg": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedOrgOeo": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedOrgLgv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedOrgOct": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedOrgOok": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedOrgDoo": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WBedAss": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAssBea": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAssOva": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAssScb": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAssSco": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WBedAssDas": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WBedAssAvk": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAssBhk": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAea": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAeaAea": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAeaAeaAov": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAeaAeaAac": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAeaAeaAao": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAeaAeaAnc": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAeaPda": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WBedAeaNot": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAeaAej": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAeaAdv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAeaDae": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WBedAdl": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAdlHef": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAdlOvb": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAdlKav": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAdlBan": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAdlVal": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAdlBov": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAdlBet": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAdlBev": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAdlNao": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAdlNbo": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAdlBtk": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WBedAdlOad": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAdlDal": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WBedAdlOpr": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WBedKof": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedKofBad": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedKofKef": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedKofKgf": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedKofKfv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedKofKvs": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedKse": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedDvr": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedDvv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedDvvDov": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedDvvVov": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WBedAlk": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAlkOal": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBedAlkDak": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvt": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvtRof": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WOvtRofRov": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WVhe": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WVheVuh": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WVheVeI": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WVheVoe": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WWfa": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WWfaBwv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WFbe": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WFbeRlm": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WFbeRlmRlm": {
+    "cover": "WFbeOrlRkb",
+    "debit_credit": "C"
+  },
+  "WFbeRlmOdr": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WFbeRlmObr": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WFbeRlmRbb": {
+    "cover": "WFbeOrlRlb",
+    "debit_credit": "C"
+  },
+  "WFbeRlmKgd": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WFbeRlmCol": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WFbeRlmKsw": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WFbeRlmAre": {
+    "cover": "WFbeOrlOrl",
+    "debit_credit": "C"
+  },
+  "WFbeRlmInc": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WFbeRls": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WFbeRlsRal": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WFbeRlsRob": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WFbeRlsRol": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WFbeRlsRle": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WFbeRlsRef": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WFbeRlsRlk": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WFbeRlsRlv": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WFbeRlsRlo": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WFbeOrl": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WFbeOrlRlb": {
+    "cover": "WFbeRlmRbb",
+    "debit_credit": "D"
+  },
+  "WFbeOrlRos": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WFbeOrlRkb": {
+    "cover": "WFbeRlmRlm",
+    "debit_credit": "D"
+  },
+  "WFbeOrlRls": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WFbeOrlOrl": {
+    "cover": "WFbeRlmAre",
+    "debit_credit": "D"
+  },
+  "WFbeWis": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WFbeKvb": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WFbeKba": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WFbeOnn": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WFbeWnn": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WFbeDer": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WFbeDfb": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WBel": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WBelBgr": {
+    "cover": null,
+    "debit_credit": "D"
+  },
+  "WRed": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WRedAir": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WRedArv": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WAad": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WAadRav": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WNer": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WNerNew": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WMfo": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WMfoBel": {
+    "cover": null,
+    "debit_credit": "C"
+  },
+  "WMfoBelMfo": {
+    "cover": null,
+    "debit_credit": "C"
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "schema": {
+ 	"version": "2019-5.2",
+    "groups": [ 
+      {
+        "styleClasses": ["hide-border-bottom"],
+        "legend": "Er zijn extra gegevens nodig voor de aangifte",
+        "fields": [
+          {
+            "type": "label",
+            "label": "Controleer de restwaarde(s) of vul deze in."
+          }
+        ]
+      },
+      {
+        "styleClasses": ["multiple-fields-25", "hide-border-top", "hide-border-bottom"],
+        "legend": " ",
+        "fields": [
+          {
+            "type": "label",
+            "label": ""
+          },
+          {
+            "type": "label",
+            "label": "Kosten van aanschaf of voortbrenging",
+            "refid": "wactmatvakost"
+          },
+          {
+            "type": "label",
+            "label": "Boekwaarde einde boekjaar",
+            "refid": "wactmatvaboek"
+          },
+          {
+            "type": "label",
+            "label": "Restwaarde"
+          }
+
+        ]
+      },
+      {
+        "styleClasses": ["multiple-fields-25", "hide-border-top", "hide-border-bottom"],
+        "legend": " ",
+        "customVisible": [
+          {
+              "formula": "compareValues",
+              "condition": "or",
+              "parameters": {
+                  "less": "119129-EBStatic",
+                  "than": 0
+              }
+          },
+          {
+              "formula": "compareValues",
+              "condition": "or",
+              "parameters": {
+                  "greater": "119129-EBStatic",
+                  "than": 0
+              }
+          }
+        ],
+        "fields": [
+          {
+            "type": "label",
+            "label": "Machines en installaties",
+            "refid": "wactmatvamach"
+          },
+          {
+            "type": "label",
+            "label": "€ #{119130-EBRounded}"
+          },
+          {
+            "type": "label",
+            "label": "€ #{119129-EBRounded}"
+          },
+          {
+            "type": "currency",
+            "currency": "EUR",
+            "model": "wactmatvarestmach",
+            "refid": "wactmatvarestmach",
+            "postKey": "507413-EB",
+            "validator": ["verplicht","bedrag_pos13"]
+          }
+        ]
+      },
+      {
+        "styleClasses": ["multiple-fields-25", "hide-border-top", "hide-border-bottom"],
+        "legend": " ",
+        "customVisible": [
+          {
+              "formula": "compareValues",
+              "condition": "or",
+              "parameters": {
+                  "less": "520515-EBStatic",
+                  "than": 0
+              }
+          },
+          {
+              "formula": "compareValues",
+              "condition": "or",
+              "parameters": {
+                  "greater": "520515-EBStatic",
+                  "than": 0
+              }
+          }
+        ],
+        "fields": [
+          {
+            "type": "label",
+            "label": "Overige materiële vaste activa",
+            "refid": "wactmatvaovr"
+          },
+          {
+            "type": "label",
+            "label": "€ #{520516-EBRounded}"
+          },
+          {
+            "type": "label",
+            "label": "€ #{520515-EBRounded}"
+          },
+          {
+            "type": "currency",
+            "currency": "EUR",
+            "model": "wactmatvaovr",
+            "postKey": "520517-EB",
+            "validator": ["verplicht","bedrag_pos13"]
+          }
+        ]
+      },
+      {
+        "styleClasses": "hide-border-top",
+        "legend":" ",
+        "fields":[
+          {
+            "type": "label"
+          }
+        ]
+      }
+    ]
+  }
+}

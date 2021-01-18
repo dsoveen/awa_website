@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCases>
+	<TestCase omschrijving="TC01 - 7 op {fmwpontautpercbijt} = 4% EN {fmwpontautstandcata} kleiner of gelijk aan {BDRGBIJTAUTOMAXEMISSIE}">
+		<Input type="fiscaalmodel">
+			<list refid="ondernemingList">
+				<item>
+					<TestValue key="fmwondgegstamin" type="Boolean">False</TestValue>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautstandcata" type="Integer">10000</TestValue>
+							<TestValue key="fmwpontautpercbijt" type="Double">4.0</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Input>
+		<Output type="berekendfiscaalmodel">
+			<list refid="onderneminglist">
+				<item>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautpercbijtvanaf5jr" type="Double">7.0</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Output>
+	</TestCase>
+	<TestCase omschrijving="TC02 - berekenen op {fmwpontautpercbijt} = 4% EN {fmwpontautstandcata} groter dan {BDRGBIJTAUTOMAXEMISSIE}">
+		<Input type="fiscaalmodel">
+			<list refid="ondernemingList">
+				<item>
+					<TestValue key="fmwondgegstamin" type="Boolean">False</TestValue>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautstandcata" type="Integer">100000</TestValue>
+							<TestValue key="fmwpontautpercbijt" type="Double">4.0</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Input>
+		<Output type="berekendfiscaalmodel">
+			<list refid="onderneminglist">
+				<item>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautpercbijtvanaf5jr" type="Double">16.0</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Output>
+	</TestCase>
+	<TestCase omschrijving="TC03 - 25 op {fmwpontautpercbijt} ongelijk aan 4% EN {fmwpontautstandcata} kleiner of gelijk aan {BDRGBIJTAUTOMAXEMISSIE}">
+		<Input type="fiscaalmodel">
+			<list refid="ondernemingList">
+				<item>
+					<TestValue key="fmwondgegstamin" type="Boolean">False</TestValue>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautpercbijt" type="Double">21.0</TestValue>
+							<TestValue key="fmwpontautstandcata" type="Integer">30000</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Input>
+		<Output type="berekendfiscaalmodel">
+			<list refid="onderneminglist">
+				<item>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautpercbijtvanaf5jr" type="Double">25.0</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Output>
+	</TestCase>
+	<TestCase omschrijving="TC04 - 25 op {fmwpontautpercbijt} ongelijk aan 4% EN {fmwpontautstandcata} groter dan {BDRGBIJTAUTOMAXEMISSIE}">
+		<Input type="fiscaalmodel">
+			<list refid="ondernemingList">
+				<item>
+					<TestValue key="fmwondgegstamin" type="Boolean">False</TestValue>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautpercbijt" type="Double">21.0</TestValue>
+							<TestValue key="fmwpontautstandcata" type="Integer">100000</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Input>
+		<Output type="berekendfiscaalmodel">
+			<list refid="onderneminglist">
+				<item>
+					<list refid="ondernemingIndividueelAang:priveontrekking:privegebruikAutoList">
+						<item>
+							<TestValue key="fmwpontautpercbijtvanaf5jr" type="Double">25.0</TestValue>
+						</item>
+					</list>
+				</item>
+			</list>
+		</Output>
+	</TestCase>
+</TestCases>

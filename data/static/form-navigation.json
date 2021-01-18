@@ -1,0 +1,185 @@
+[
+  {
+    "label": "Algemene vragen en gegevens",
+    "form": "algemene-gegevens",
+    "json": "data/forms/algemene-gegevens.json",
+    "conditions": true
+  },
+  {
+    "label": "Restwaarde materiele vaste activa",
+    "form": "materiele-vaste-activa",
+    "json": "data/forms/materiele-vaste-activa.json",
+    "conditions": [
+      {
+        "formula": "compareValues",
+        "condition": "or",
+        "parameters": {
+          "less": "119129-EBStatic",
+          "than": 0
+        }
+      },
+      {
+        "formula": "compareValues",
+        "condition": "or",
+        "parameters": {
+          "greater": "119129-EBStatic",
+          "than": 0
+        }
+      }
+    ]
+  },
+  {
+    "label": "Specificatie schuld omzetbelasting",
+    "form": "specificatie-schulden-omzetbelasting",
+    "json": "data/forms/specificatie-schulden-omzetbelasting.json",
+    "conditions": [
+      {
+        "formula": "compareValues",
+        "condition": "or",
+        "parameters": {
+          "less": "119443-EBStatic",
+          "than": 0
+        }
+      },
+      {
+        "formula": "compareValues",
+        "condition": "or",
+        "parameters": {
+          "greater": "119443-EBStatic",
+          "than": 0
+        }
+      }
+    ]
+  },
+  {
+    "label": "Specificatie vordering omzetbelasting",
+    "form": "specificatie-vorderingen-omzetbelasting",
+    "json": "data/forms/specificatie-vorderingen-omzetbelasting.json",
+    "conditions": [
+      {
+        "formula": "compareValues",
+        "condition": "or",
+        "parameters": {
+          "less": "119242-EBStatic",
+          "than": 0
+        }
+      },
+      {
+        "formula": "compareValues",
+        "condition": "or",
+        "parameters": {
+          "greater": "119242-EBStatic",
+          "than": 0
+        }
+      }
+    ]
+  },
+  {
+    "label": "Privégebruik zakelijke auto",
+    "form": "privegebruik-auto",
+    "json": "data/forms/privegebruik-auto.json",
+    "conditions": [
+      {
+        "formula": "equalsValue",
+        "parameters": {
+          "fieldModels": ["wondgegautoaanw"],
+          "value": true
+        }
+      }
+    ]
+  },
+  {
+    "label": "Inbreng of onttrekking overige activa",
+    "form": "inbr-ont-overige-activa",
+    "json": "data/forms/inbr-ont-overige-activa.json",
+    "conditions": true
+  },
+  {
+    "label": "Specificatie privéontrekkingen in natura en goederen",
+    "form": "priveonttrekkingen-natura-goederen",
+    "json": "data/forms/priveonttrekkingen-natura-goederen.json",
+    "conditions": [
+      {
+        "formula": "staticExists",
+        "condition": "or",
+        "parameters": {
+          "static": ["118320"]
+        }
+      }
+    ]
+  },
+  {
+    "label": "Specificatie overige privéonttrekkingen",
+    "form": "overige-priveonttrekkingen",
+    "json": "data/forms/overige-priveonttrekkingen.json",
+    "conditions": [
+      {
+        "formula": "staticExists",
+        "condition": "or",
+        "parameters": {
+          "static": ["119788"]
+        }
+      }
+    ]
+  },
+  {
+    "label": "Research-en-developementaftrek",
+    "form": "wrd",
+    "json": "data/forms/wrd.json",
+    "conditions": [
+      {
+        "formula": "equalsValue",
+        "parameters": {
+          "fieldModels": ["wondgeginvrda"],
+          "value": true
+        }
+      }
+    ]
+  },
+  {
+    "label": "Desinvesteringsbijtelling",
+    "form": "wdes",
+    "json": "data/forms/wdes.json",
+    "conditions": [
+      {
+        "formula": "equalsValue",
+        "parameters": {
+          "fieldModels": ["wondgeginvdesinv"],
+          "value": true
+        }
+      }
+    ]
+  },
+  {
+    "label": "Investeringen",
+    "form": "investeringen",
+    "json": "data/forms/investeringen.json",
+    "conditions": true
+  },
+
+  {
+    "header": "Correctie van zakelijke kosten"
+  },
+  {
+    "label": "Niet- of gedeeltelijk aftrekbare lasten",
+    "form": "niet-of-gedeeltelijke-aftrekbare-lasten",
+    "json": "data/forms/niet-of-gedeeltelijke-aftrekbare-lasten.json",
+    "conditions": true
+  },
+  {
+    "label": "Zakelijk gebruik privéauto",
+    "form": "zakelijk-gebruik-priveauto",
+    "json": "data/forms/zakelijk-gebruik-priveauto.json",
+    "conditions": true
+  },
+
+  {
+    "header": "Ondernemersregelingen"
+  },
+  {
+    "label": "Ondernemersaftrek",
+    "form": "ondernemersaftrek",
+    "json": "data/forms/ondernemersaftrek.json",
+    "conditions": true
+  }
+]

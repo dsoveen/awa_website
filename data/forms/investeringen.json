@@ -1,0 +1,829 @@
+{
+  "schema": {
+ 	"version": "2019-5.1",
+    "groups": [
+ 
+      {
+        "legend": "Investeringen",
+        "fields": [
+          {
+            "type": "radios",
+            "validator": ["verplicht"],
+            "label": "Hebt u investeringen gedaan waarvoor recht bestaat op kleinschaligheidsinvesteringsaftrek?",
+            "model": "wondgeginv",
+            "refid": "wondgeginv",
+
+            "values": [
+              {
+                "name": "Ja",
+                "value": true
+              },
+              {
+                "name": "Nee",
+                "value": false
+              }
+            ]
+          },
+          {
+            "type": "radios",
+            "validator": ["verplicht"],
+            "label": "Hebt u recht op een doorgeschoven investeringsaftrek uit een voorgaand jaar?",
+            "model": "wondgeginvdoorvb",
+            "refid": "wondgeginvdoorvb",
+            "values": [
+              {
+                "name": "Ja",
+                "value": true
+              },
+              {
+                "name": "Nee",
+                "value": false
+              }
+            ],
+            "customVisible": [
+              {
+                "formula": "equalsValue",
+                "parameters": {
+                  "fieldModels": ["wondgeginv"],
+                  "value": false
+                }
+              }
+            ]
+          },
+          {
+            "type": "radios",
+            "validator": ["verplicht"],
+            "label": "Hebt u recht op energie- of milieu-investeringsaftrek?",
+            "model": "wondgeginvmiaeia",
+            "refid": "wondgeginvmiaeia",
+            "values": [
+              {
+                "name": "Ja",
+                "value": true
+              },
+              {
+                "name": "Nee",
+                "value": false
+              }
+            ],
+            "customVisible": [
+              {
+                "formula": "equalsValue",
+                "condition":"or",
+                "parameters": {
+                  "fieldModels": ["wondgeginv"],
+                  "value": true
+                }
+              },
+              {
+                "formula": "equalsAnyValue",
+                "condition":"or",
+                "parameters": {
+                  "fieldModels": ["wondgeginvdoorvb"],
+                  "value": true
+                }
+              }
+            ]
+          },
+          {
+            "type": "label",
+            "label": "<em>Vul hieronder de investeringen in waarvoor u recht hebt op kleinschaligheidsinvesteringsaftrek</em>",
+            "customVisible": [
+              {
+                "formula": "equalsAnyValue",
+                "condition":"and",
+                "parameters": {
+                  "fieldModels": ["wondgeginvmiaeia"],
+                  "value": true
+                }
+              },
+              {
+                "condition": "and",
+                "terms": [
+                  {
+                    "formula": "equalsValue",
+                    "condition":"or",
+                    "parameters": {
+                      "fieldModels": ["wondgeginv"],
+                      "value": true
+                    }
+                  },
+                  {
+                    "formula": "equalsValue",
+                    "condition":"or",
+                    "parameters": {
+                      "fieldModels": ["wondgeginvdoorvb"],
+                      "value": true
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "legend": "Kleinschaligheidsinvesteringsaftrek",
+        "repeatModel": "1618028",
+        "addLink": "Voeg nog een investering toe",
+        "removeLink": "verwijderen",
+        "customVisible": [
+          {
+            "formula": "equalsAnyValue",
+            "condition":"and",
+            "parameters": {
+              "fieldModels": ["wondgeginvmiaeia"],
+              "value": true
+            }
+          },
+          {
+            "condition": "and",
+            "terms": [
+              {
+                "formula": "equalsValue",
+                "condition":"or",
+                "parameters": {
+                  "fieldModels": ["wondgeginv"],
+                  "value": true
+                }
+              },
+              {
+                "formula": "equalsValue",
+                "condition":"or",
+                "parameters": {
+                  "fieldModels": ["wondgeginvdoorvb"],
+                  "value": true
+                }
+              }
+            ]
+          }
+        ],
+        "fields": [
+          {
+            "type": "input",
+            "inputType": "text",
+            "label": "Omschrijving investering bedrijfsmiddel",
+            "model": "wkiaoms",
+            "refid": "wkiaoms",
+            "postKey": "1767664",
+            "doNotPost": false,
+            "validator": ["verplicht"]
+            
+          },
+          {
+            "type": "radios",
+            "validator": ["verplicht"],
+            "label": "Heeft uw onderneming de investering in dit boekjaar gedaan?",
+            "model": "wkiaboekj",
+            "refid": "wkiaboekj",
+            "values": [
+              {
+                "name": "Ja",
+                "value": true
+              },
+              {
+                "name": "Nee",
+                "value": false
+              }
+            ],
+            "customVisible": [
+              {
+                "formula": "equalsValue",
+                "condition":"or",
+                "parameters": {
+                  "fieldModels": ["wondgeginv"],
+                  "value": true
+                }
+              },
+              {
+                "formula": "equalsValue",
+                "condition":"or",
+                "parameters": {
+                  "fieldModels": ["wondgeginvdoorvb"],
+                  "value": true
+                }
+              }
+            ]
+          },
+          
+          {
+            "type": "currency",
+            "label": "Uw restant investeringsaftrek van vorige boekjaren",
+            "currency": "EUR",
+            "model": "wkiarestvorigaang",
+            "refid": "wkiarestvorigaang",
+            "postKey": "1767666",
+            "validator": ["verplicht","bedrag_pos13"],
+            "customVisible": [
+              {
+                "condition": "and",
+                "terms": [
+                  {
+                    "formula": "equalsValue",
+                    "condition":"or",
+                    "parameters": {
+                      "fieldModels": ["wondgeginv"],
+                      "value": true
+                    }
+                  },
+                  {
+                    "formula": "equalsValue",
+                    "condition":"or",
+                    "parameters": {
+                      "fieldModels": ["wondgeginvdoorvb"],
+                      "value": true
+                    }
+                  }
+                ]
+              },
+              {
+                "formula": "equalsValue",
+                "condition":"and",
+                "parameters": {
+                  "fieldModels": ["wkiaboekjRepeatModel"],
+                  "value": false
+                }
+              }          
+            ]     
+          },
+          {
+            "type": "radios",
+            "validator": ["verplicht"],
+            "label": "Is de investering dit boekjaar in gebruik genomen?",
+            "model": "wkiagebr",
+            "refid": "wkiagebr",
+            "postKey": "1767667",
+            "values": [
+              {
+                "name": "Ja",
+                "value": "J"
+              },
+              {
+                "name": "Nee",
+                "value": "N"
+              }
+            ],
+            "customVisible": [
+              {
+                "condition": "and",
+                "terms": [
+                  {
+                    "formula": "equalsValue",
+                    "condition":"or",
+                    "parameters": {
+                      "fieldModels": ["wondgeginv"],
+                      "value": true
+                    }
+                  },
+                  {
+                    "formula": "equalsValue",
+                    "condition":"or",
+                    "parameters": {
+                      "fieldModels": ["wondgeginvdoorvb"],
+                      "value": true
+                    }
+                  }
+                ]
+              },
+              {
+                "formula": "equalsAnyValue",
+                "condition":"and",
+                "parameters": {
+                  "fieldModels": ["wkiaboekjRepeatModel"]
+                }
+              }
+            ]
+          },
+
+          {
+            "type": "currency",
+            "currency": "EUR",
+            "model": "wkiabetbedrbjaang",
+            "refid": "wkiabetbedrbjaang",
+            "postKey": "1767668",
+            "label": "Door u betaald bedrag in dit boekjaar voor deze investering",
+            "validator": ["verplicht","bedrag_pos13"],
+            "customVisible": [
+              { 
+                "formula": "equalsValue",
+                "condition":"and",
+                "parameters": {
+                  "fieldModels": ["wkiagebrRepeatModel"],
+                  "value": "N"
+                }
+              },
+              {
+                "condition": "and",
+                "terms": [
+                  {   
+                    "formula": "equalsValue",
+                    "condition":"or",
+                    "parameters": {
+                      "fieldModels": ["wondgeginv"],
+                      "value": true
+                    }
+                  },
+                  {
+                    "formula": "equalsValue",
+                    "condition":"or",
+                    "parameters": {
+                      "fieldModels": ["wondgeginvdoorvb"],
+                      "value": true
+                    }
+                  }
+                ]
+              }          
+            ]     
+          },
+          {
+            "type": "currency",
+            "currency": "EUR",
+            "model": "wkiainvbedr",
+            "refid": "wkiainvbedr",
+            "postKey": "1767669",
+            "label": "Investeringsbedrag",
+            "validator": ["bedrag_pos13"],
+            "customVisible": [
+              {
+                "formula": "equalsValue",
+                "condition":"and",
+                "parameters": {
+                  "fieldModels": ["wkiaboekjRepeatModel"],
+                  "value": true
+                }
+              },
+              {
+                "formula": "equalsAnyValue",
+                "condition":"and",
+                "parameters": {
+                  "fieldModels": ["wkiagebrRepeatModel"]
+                }
+              },
+              {
+                "condition":"and",
+                "terms": [
+                  {
+                    "formula": "equalsValue",
+                    "condition":"or",
+                    "parameters": {
+                      "fieldModels": ["wondgeginv"],
+                      "value": true
+                    }
+                  },
+                  {
+                    "formula": "equalsValue",
+                    "condition":"or",
+                    "parameters": {
+                      "fieldModels": ["wondgeginvdoorvb"],
+                      "value": true
+                    }
+                  }
+                ]
+              }          
+            ]     
+          }
+          
+        ]
+      },
+ 
+      {
+        "legend": "Energie- en milieu-investeringsaftrek",
+        "repeatModel": "108250",
+        "addLink": "Voeg nog een investering toe",
+        "removeLink": "verwijderen",
+        "customVisible": [
+          {
+            "formula": "equalsValue",
+            "parameters": {
+              "fieldModels": ["wondgeginvmiaeia"],
+              "value": true
+            }
+          }
+        ],
+        "fields": [
+          {
+            "type": "input",
+            "inputType": "text",
+           
+            "label": "Omschrijving investering bedrijfsmiddel",
+            "model": "wmiaeiaoms",
+            "refid": "wmiaeiaoms",
+            "postKey": "118553",
+            "validator": ["verplicht"]
+          },
+		      {
+            "type": "select",
+            "label": "Soort investering",
+            "model": "wmiaeiakeuze",
+            "refid": "wmiaeiakeuze",
+            "postKey": "1767675",
+            "validator": ["verplicht"],
+            "values": [
+              { "name": "Energie-investering", "id": 1 },
+              { "name": "Milieu-investering", "id": 2 }
+            ],
+            "selectOptions": {
+              "noneSelectedText": "Maak een keuze"
+            },
+            "customVisible": [
+              {
+                "formula": "equalsValue",
+                "parameters": {
+                  "fieldModels": ["wondgeginvmiaeia"],
+                  "value": true
+                }
+              }
+            ]
+
+          },
+
+          {
+            "label": "Was de investering in dit boekjaar?",
+            "type": "radios",
+            "model": "wmiaeiaboekj",
+            "refid": "wmiaeiaboekj",
+            "validator": ["verplicht"],
+            "customVisible": [
+              {
+                "formula": "equalsValue",
+                "parameters": {
+                  "fieldModels": ["wondgeginvmiaeia"],
+                  "value": true
+                }
+              },
+              {
+                "formula": "equalsAnyValue",
+                "parameters": {
+                  "fieldModels": ["wmiaeiakeuzeRepeatModel"]
+                }
+              }
+            ],
+            "values": [
+              {
+                "name": "Ja",
+                "value": true
+              },
+              {
+                "name": "Nee",
+                "value": false
+              }
+            ]
+          },
+          {
+            "type": "currency",
+            "currency": "EUR",
+            "model": "wmiaeiarestvorigaang",
+            "refid": "wmiaeiarestvorigaang",
+            "postKey": "1767677",
+            "validator": ["verplicht","bedrag_pos13"],
+            "label": "Uw restant investeringsaftrek van vorige boekjaren",
+            "customVisible": [
+              {
+                "formula": "equalsValue",
+                "parameters": {
+                  "fieldModels": ["wmiaeiaboekjRepeatModel"],
+                  "value": false
+                }
+              },
+              {    
+                "formula": "equalsValue",
+                "parameters": {
+                  "fieldModels": ["wondgeginvmiaeia"],
+                  "value": true
+                }
+              }
+            ]          
+          },
+          {
+            "type": "date",
+            "label": "Datum waarop de investering in gebruik is genomen",
+            "model": "wmiaeiagebr",
+            "refid": "wmiaeiagebr",
+            "postKey": "623905",
+            "placeholder": "dd-mm-jjjj",
+            "validator": ["verplicht","datum"],
+            "validatorParameters": {
+              "afterDate": "01-01-2019"
+            },
+            "customVisible": [
+              {    
+                "formula": "equalsValue",
+                "parameters": {
+                  "fieldModels": ["wondgeginvmiaeia"],
+                  "value": true
+                }
+              },
+              {
+                "formula": "equalsAnyValue",
+                "parameters": {
+                  "fieldModels": ["wmiaeiaboekjRepeatModel"]
+                }
+              }
+            ]
+          },
+
+          {
+            "type": "currency",
+            "currency": "EUR",
+            "model": "wmiaeiabetbedrbjaang",
+            "refid": "wmiaeiabetbedrbjaang",
+            "postKey": "118560",
+            "validator": ["verplicht","bedrag_pos13"],
+            "label": "Door u betaald bedrag voor deze investering in dit boekjaar",
+            "customVisible": [
+              {
+                "formula": "equalsValue",
+                "parameters": {
+                  "fieldModels": ["wmiaeiaboekjRepeatModel"],
+                  "value": false
+                }
+              },
+              {    
+                "formula": "equalsValue",
+                "parameters": {
+                  "fieldModels": ["wondgeginvmiaeia"],
+                  "value": true
+                }
+              }
+            ]          
+          },
+          {
+            "type": "currency",
+            "currency": "EUR",
+            "model": "wmiaeiainvbedr",
+            "refid": "wmiaeiainvbedr",
+            "postKey": "118556",
+            "validator": ["verplicht","bedrag_pos13"],
+            "label": "Investeringsbedrag",
+            "customVisible": [
+              {
+                "formula": "equalsValue",
+                "parameters": {
+                  "fieldModels": ["wmiaeiaboekjRepeatModel"],
+                  "value": true
+                }
+              },
+              {    
+                "formula": "equalsValue",
+                "parameters": {
+                  "fieldModels": ["wondgeginvmiaeia"],
+                  "value": true
+                }
+              }
+            ]          
+          },
+          {
+            "//": "meldnummer verschijnt alleen als bij wmiaeiakeuze voor energie aftrek is gekozen",
+            "model": "wmiaeiameldnr",
+            "refid": "wmiaeiameldnr",
+            "postKey": "118563",
+            "validator": ["verplicht","meldnr_e"],
+            "type": "input",
+            "inputType": "text",
+            "label": "Meldingsnummer",
+            "customVisible": [
+              {
+                "formula": "equalsValue",
+                "parameters": {
+                  "fieldModels": ["wondgeginvmiaeia"],
+                  "value": true
+                }
+              },
+              {
+                "formula": "equalsAnyValue",
+                "parameters": {
+                  "fieldModels": ["wmiaeiaboekjRepeatModel"]
+                }
+              },
+              {
+                "formula": "equalsData",
+                "parameters": {
+                  "fieldModels": ["wmiaeiakeuzeRepeatModel"],
+                  "data": [1]
+                }
+              }
+            ]
+          },
+          {
+            "//": "meldnummer verschijnt alleen als bij wmiaeiakeuze voor milieuaftrek is gekozen",
+            "model": "wmiaeiameldnr",
+            "refid": "wmiaeiameldnr",
+            "postKey": "118563",
+            "validator": ["verplicht","meldnr_m"],
+            "type": "input",
+            "inputType": "text",
+            "label": "Meldingsnummer",
+            "customVisible": [
+              {
+                "formula": "equalsValue",
+                "parameters": {
+                  "fieldModels": ["wondgeginvmiaeia"],
+                  "value": true
+                }
+              },
+              {
+                "formula": "equalsAnyValue",
+                "parameters": {
+                  "fieldModels": ["wmiaeiaboekjRepeatModel"]
+                }
+              },
+              {
+                "formula": "equalsData",
+                "parameters": {
+                  "fieldModels": ["wmiaeiakeuzeRepeatModel"],
+                  "data": [2]
+                }
+              }
+            ]
+          },
+		      {
+            "type": "select",
+            "label": "Eerste letter bedrijfsmiddelcode",
+            "model": "wmiaeiaelbmc",
+            "refid": "wmiaeiaelbmc",
+            "postKey": "1767678",
+            "validator": ["verplicht"],
+            "values": [
+              { "name": "A", "id": "A"},
+              { "name": "B", "id": "B" },
+              { "name": "C", "id": "C" },
+              { "name": "D", "id": "D" },
+              { "name": "E", "id": "E" },
+              { "name": "F", "id": "F" },
+              { "name": "G", "id": "G" }
+            ],
+            "selectOptions": {
+              "noneSelectedText": "Maak een keuze"
+            },
+            "customVisible": [
+              {
+                "formula": "equalsData",
+                "parameters": {
+                  "fieldModels": ["wmiaeiakeuzeRepeatModel"],
+                  "data": [2]
+                }
+              },
+              {   
+                "formula": "equalsValue",
+                "parameters": {
+                  "fieldModels": ["wondgeginvmiaeia"],
+                  "value": true
+                }
+              },
+              {
+                "formula": "equalsAnyValue",
+                "parameters": {
+                  "fieldModels": ["wmiaeiaboekjRepeatModel"]
+                }
+              }
+            ]
+          }
+        ]
+      },
+
+
+      {
+        "legend": "Bijzondere situaties aangever",
+        "customVisible": [
+          {
+            "formula": "equalsValueAnyRepeatModel",
+            "condition": "or",
+            "parameters": {
+              "fieldModels": ["1618028","wkiaboekj"],
+              "value": true
+            }
+          },
+          {
+            "formula": "equalsValueAnyRepeatModel",
+            "condition": "or",
+            "parameters": {
+              "fieldModels": ["108250","wmiaeiaboekj"],
+              "value": true
+            }
+          }
+        ],
+        "fields": [
+          {
+            "type": "radios",
+            "validator": ["verplicht"],
+            "label": "Hebt u een bedrijfsmiddel gekocht van naaste verwanten?",
+            "model": "wmiaeiaverwgek",
+            "refid": "wmiaeiaverwgek",
+            "values": [
+              {
+                "name": "Ja",
+                "value": true
+              },
+              {
+                "name": "Nee",
+                "value": false
+              }
+            ]
+          },
+          {
+            "type": "radios",
+            "validator": ["verplicht"],
+            "label": "Wilt u in aanmerking komen voor de investeringsaftrek over dit gekochte bedrijfsmiddel?",
+            "model": "wmiaeiaverw",
+            "refid": "wmiaeiaverw",
+            "postKey": "1751854",
+            "customVisible": [
+              {
+                "formula": "equalsValue",
+                "parameters": {
+                  "fieldModels": ["wmiaeiaverwgek"],
+                  "value": true
+                }
+              }
+            ],
+            "values": [
+              {
+                "name": "Ja",
+                "value": "J"
+              },
+              {
+                "name": "Nee",
+                "value": "N"
+              }
+            ]
+          },
+          {
+            "type": "radios",
+            "validator": ["verplicht"],
+            "label": "Hebt u een bedrijfsmiddel uit een nalatenschap verkregen waarvoor u verplichtingen bent aangegaan met de andere erfgenamen?",
+            "model": "wmiaeianalatensgek",
+            "refid": "wmiaeianalatensgek",
+            "customVisible": [
+              {
+                "formula": "equalsValue",
+                "condition":"or",
+                "parameters": {
+                  "fieldModels": ["wmiaeiaverwgek"],
+                  "value": false
+                }
+              },
+              {
+                "condition":"or",
+                "terms": [
+                  {
+                    "formula": "equalsValue",
+                    "condition": "and",
+                    "parameters": {
+                      "fieldModels": ["wmiaeiaverwgek"],
+                      "value": true
+                    }
+                  },
+                  {
+                    "formula": "equalsAnyValue",
+                    "condition": "and",
+                    "parameters": {
+                      "fieldModels": ["wmiaeiaverw"]
+                    }
+                  }
+                ]
+              }             
+            ],
+            "values": [
+              {
+                "name": "Ja",
+                "value": true
+              },
+              {
+                "name": "Nee",
+                "value": false
+              }
+            ]
+          },
+          {
+            "type": "radios",
+            "validator": ["verplicht"],
+            "label": "Wilt u in aanmerking komen voor de investeringsaftrek over dit bedrijfsmiddel?",
+            "model": "wmiaeianalatens",
+            "refid": "wmiaeianalatens",
+            "postKey": "1751855",
+            "customVisible": [
+              {
+                "formula": "equalsValue",
+                "parameters": {
+                "fieldModels": ["wmiaeianalatensgek"],
+                "value": true
+                }
+              }
+              ],
+            "values": [
+              {
+                "name": "Ja",
+                "value": "J"
+              },
+              {
+                "name": "Nee",
+                "value": "N"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

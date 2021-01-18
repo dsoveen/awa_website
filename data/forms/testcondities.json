@@ -1,0 +1,1542 @@
+{
+  "schema": {
+    "version": "1.1",
+    "groups": [
+
+      {
+        "legend": "Static - Prefill gegevens, welke door de boekhoudpakketten kunnen worden aangegeven",
+        "fields": [
+
+          {
+            "type": "label",
+            "label": "Naam Bedrijf: #{NaamBedrijf}"
+          },
+          {
+            "type": "label",
+            "label": "Boekjaar: #{BDRGJAAR}"
+          },
+          {
+            "type": "label",
+            "label": "Bruto omzet in 2018 was: #{BrutoOmzet2018}"
+          },
+          {
+            "type": "label",
+            "label": "Bruto omzet in 2019 bedraagt: #{BrutoOmzet2019}"
+          }
+        ]
+      },
+
+      {
+        "legend": "Gegevens - gevuld door de pre-fill vanuit testcondities.html",
+        "fields": [
+          {
+            "type": "label",
+            "label": "Beste #{Naam}"
+          },
+          {
+            "type": "input",
+            "inputType": "text",
+            "//": "en zo kan je commentaar kwijt in een veldblok",
+            "label": "Dit label zie je niet",
+            "visible": false
+          },
+          {
+            "type": "input",
+            "inputType": "text",
+            "label": "Een standaard inputveld en kun je niet wijzigen",
+            "model": "InputveldText1",
+            "addAsterisk": true,
+            "disabled": true,
+            "validator": "verplicht"
+          },
+          {
+            "type": "input",
+            "inputType": "text",
+            "label": "Een standaard inputveld en kun je wel wijzigen",
+            "model": "InputveldText2",
+            "help": "Standaard inputveld. de key 'required' plaatst een * bij het label; de key 'validator' zorgt ervoor dat dit inputveld verplicht is.",
+            "addAsterisk": true,
+            "validator": "verplicht"
+          },
+          {
+            "type": "input",
+            "inputType": "text",
+            "label": "De help tekst van dit veld wordt opgehaald vanuit het html bestand 'aanvgegafwprniet'",
+            "model": "htmlHelpTekst",
+            "refid": "aanvgegafwprniet"
+          },
+          {
+            "type": "input",
+            "inputType": "text",
+            "label": "Een veld met een ref id maar zonder help button",
+            "model": "noHtmlHelpTekst",
+            "refid": "aanvgegafwprniet",
+            "noRefHelpText": true
+          },
+
+          {
+            "type": "currency",
+            "currency": "EUR",
+            "label": "Prijs van een kilo appels (trigger op 2 of 6)",
+            "model": "PrijsKiloAppels",
+            "validator": "number"
+          },
+
+          {
+            "type": "currency",
+            "currency": "EUR",
+            "label": "Prijs van een kilo peren",
+            "model": "PrijsKiloPeren",
+            "validator": "number"
+          },
+
+          {
+            "type": "currency",
+            "currency": "EUR",
+            "label": "Prijs van een kilo bananen",
+            "model": "PrijsKiloBananen",
+            "validator": "number"
+          },
+
+          {
+            "type": "input",
+            "inputType": "text",
+            "label": "Kenteken bestelauto",
+            "model": "KentekenBestelauto",
+            "addAsterisk": true,
+            "min": 6,
+            "max": 6,
+            "//": "ondertaande validator is speciaal voor autoformulier geschreven",
+            "validator": ["licensePlate"]
+          },
+
+          {
+            "type": "number",
+            "label": "Hoeveel dagen gewerkt in #{BDRGJAAR}",
+            "help": "de key 'validator' bepaald dat er alleen numerieke toetsen mogen worden gebruikt.",
+            "model": "DagenGewerkt",
+            "validator": "number"
+          },
+
+          {
+            "type": "number",
+            "label": "Als dagen gewerk 123 is, dan is de waarde de som van kiloprijs bananen, appels, peren.",
+            "model": "conditionalValueWithCalculation",
+            "conditionalValues": [
+              {
+                "setValueWithCalculation": {
+                  "formula": "sumOfFields",
+                  "parameters": {
+                    "fieldModels": ["PrijsKiloAppels", "PrijsKiloPeren", "PrijsKiloBananen"]
+                  }
+                },
+                "terms": [
+                  {
+                    "formula": "equalsValue",
+                    "parameters": {
+                      "fieldModels": ["DagenGewerkt"],
+                      "value": 123
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+
+          {
+            "type": "date",
+            "placeholder": "dd-mm-jjjj",
+            "label": "Van",
+            "model": "InputveldDatum1"
+          },
+
+          {
+            "type": "date",
+            "placeholder": "dd-mm-jjjj",
+            "label": "t/m",
+            "model": "InputveldDatum2"
+          },
+
+          {
+            "type": "date",
+            "placeholder": "dd-mm-jjjj",
+            "label": "15 jaar opgeteld bij t/m",
+            "disabled": true,
+            "model": "InputveldDatumPlusVijftien",
+            "customValue": {
+              "formula": "addYears",
+              "parameters": {
+                "fieldModels": ["InputveldDatum2"],
+                "years": 15
+              }
+            }
+          },
+
+          {
+            "type": "year",
+            "placeholder": "jjjj",
+            "label": "Een jaar input veld",
+            "model": "InputveldJaar"
+          },
+
+          {
+            "type": "year",
+            "placeholder": "jjjj",
+            "label": "15 jaar opgeteld bij het ingevulde jaar",
+            "disabled": true,
+            "model": "InputveldJaarPlusVijftien",
+            "customValue": {
+              "formula": "addYears",
+              "parameters": {
+                "fieldModels": ["InputveldJaar"],
+                "years": 15
+              }
+            }
+          },
+
+
+          {
+            "type": "radios",
+            "label": "Vraag waarvan de value niet gepost wordt (model: dontPost).",
+            "model": "dontPost",
+            "doNotPost": true,
+            "values": [ { "name": "Ja", "value": true }, { "name": "Nee", "value": false } ]
+          },
+
+          {
+            "type": "number",
+            "label": "Post dit nummer (model: doNotPostIfInvisible) alleen als dit veld zichtbaar is.",
+            "model": "doNotPostIfInvisible",
+            "validator": "number",
+            "customVisible": [
+                {
+                    "formula": "equalsValue",
+                    "condition": "or",
+                    "parameters": {
+                      "fieldModels": ["dontPost"],
+                      "value": true
+                    }
+                }
+              ]
+          },
+
+
+          {
+            "type": "number",
+            "label": "Toon dit veld niet wanneer doNotPostIfInvisible niet zichtbaar is of niet gelijk aan 100.",
+            "model": "doNotShowIfDoNotPostIfInvisible",
+            "validator": "number",
+            "customVisible": [
+                {
+                    "formula": "equalsValue",
+                    "condition": "or",
+                    "parameters": {
+                      "fieldModels": ["doNotPostIfInvisible"],
+                      "value": 100
+                    }
+                }
+              ]
+          },
+
+          {
+              "type": "radios",
+              "validator": "verplicht",
+              "label": "Doe je mee?",
+              "model": "radioMeedoen",
+              "values": [ { "name": "Ja", "value": true }, { "name": "Nee", "value": false } ]
+          },
+
+          {
+              "type": "radios",
+              "validator": "verplicht",
+              "label": "Ik ben een...",
+              "model": "radioGeslacht",
+              "values": [ { "name": "Man", "value": true }, { "name": "Vrouw", "value": false } ]
+          },
+
+          {
+            "type": "number",
+            "label": "Toon dit veld enkel als geslacht is man, of als doNotPostIfInvisible is zichtbaar en gelijk aan 100",
+            "model": "doNotShowIftwoConditons",
+            "validator": "number",
+            "customVisible": [
+                {
+                    "formula": "equalsValue",
+                    "condition": "or",
+                    "parameters": {
+                      "fieldModels": ["doNotPostIfInvisible"],
+                      "value": 100
+                    }
+                },
+                {
+                    "formula": "equalsValue",
+                    "condition": "or",
+                    "parameters": {
+                      "fieldModels": ["radioGeslacht"],
+                      "value": true
+                    }
+                }
+              ]
+          },
+
+          {
+            "type": "radios",
+            "validator": "verplicht",
+            "label": "Ik hou van...",
+            "model": "radioWijn",
+            "values": [ { "name": "Rode wijn", "value": true }, { "name": "Witte wijn", "value": false } ]
+          },
+
+          {
+            "type": "select",
+            "label": "Welk fruit vindt je lekker",
+            "values": [
+              { "name": "Appels", "id": 1 },
+              { "name": "Peren", "id": 2 },
+              { "name": "Bananen", "id": 3 }
+            ],
+            "selectOptions": {
+              "noneSelectedText": "Kies een stuk fruit..."
+            },
+            "model": "DropDownLijst"
+          },
+
+          {
+            "type": "radios",
+            "validator": "verplicht",
+            "label": "Wil je keuze uit meer exotische soorten fruit?",
+            "model": "otherFruits",
+            "values": [ { "name": "ja", "value": true }, { "name": "nee", "value": false } ]
+          },
+
+          {
+            "type": "select",
+            "label": "Vled met conditionele values afhanken van otherFruits",
+            "values": [
+              { "name": "Appels", "id": 1 },
+              { "name": "Peren", "id": 2 },
+              { "name": "Bananen", "id": 3 }
+            ],
+            "conditionalOptions": [
+              {
+                "setOptions": [
+                  { "name": "Ananas", "id": 1 },
+                  { "name": "Kokosnoot", "id": 2 },
+                  { "name": "Limoen", "id": 3 }
+                ],
+                "terms":  [
+                  {
+                    "formula": "equalsValue",
+                    "parameters": {
+                      "fieldModels": ["otherFruits"],
+                      "value": true
+                    }
+                  }
+                ]
+              }
+            ],
+            "selectOptions": {
+              "noneSelectedText": "Kies een stuk fruit..."
+            },
+            "model": "DropDownLijstOtherFruits"
+          }
+        ]
+      },
+
+      {
+        "legend": "Conclusies",
+        "fields": [
+
+          {
+            "type": "label",
+            "label": "1a: De bruto omzet van 2019 is HOGER dan 2018",
+            "//": "LET OP In de prefill HTML declareer je de BrutoOmzet2019 enz. zonder Static!",
+            "customVisible": [
+              {
+                  "formula": "compareValues",
+                  "condition": "or",
+                  "parameters": {
+                    "greater": "BrutoOmzet2019Static",
+                    "than": "BrutoOmzet2018Static"
+                  }
+              }
+            ]
+          },
+
+          {
+            "type": "label",
+            "label": "1b: De bruto omzet van 2019 is LAGER dan 2018",
+            "//": "LET OP In de prefill HTML declareer je de BrutoOmzet2019 enz. zonder Static!",
+            "customVisible": [
+              {
+                  "formula": "compareValues",
+                  "parameters": {
+                    "less": "BrutoOmzet2019Static",
+                    "than": "BrutoOmzet2018Static"
+                  }
+              }
+            ]
+          },
+
+          {
+            "type": "label",
+            "label": "1c: De bruto omzet van 2018 ligt onder de drempel van €10.000",
+            "customVisible": [
+              {
+                  "formula": "compareValues",
+                  "parameters": {
+                    "less": "BrutoOmzet2018Static",
+                    "than": "10000"
+                  }
+              }
+            ]
+          },
+
+          {
+            "type": "label",
+            "label": "1d: De bruto omzet van 2019 ligt boven de drempel van €10.000",
+            "customVisible": [
+              {
+                  "formula": "compareValues",
+                  "parameters": {
+                    "greater": "BrutoOmzet2019Static",
+                    "than": "10000"
+                  }
+              }
+            ]
+          },
+
+          {
+            "type": "label",
+            "label": "1e: De bruto omzet 2019 is boven de drempel van €10.000, aantal gewerkte dagen minder dan 1234 ",
+            "customVisible": [
+              {
+                  "formula": "compareValues",
+                  "condition": "and",
+                  "parameters": {
+                    "greater": "BrutoOmzet2019Static",
+                    "than": "10000"
+                  }
+              },
+              {
+                "formula": "lessThanValue",
+                "condition": "and",
+                "parameters": {
+                  "fieldModels": ["DagenGewerkt"],
+                  "value": 1234
+                }
+              }
+            ]
+          },
+
+          {
+            "type": "label",
+            "label": "1f: Je komt niet in aanmerking omdat: </br>- óf de bruto omzet <strong>2018</strong> boven de drempel €10.000 is </br>- óf je aantal gewerkte dagen minder dan 1234 ",
+            "customVisible": [
+              {
+                  "formula": "compareValues",
+                  "condition": "or",
+                  "parameters": {
+                    "greater": "BrutoOmzet2019Static",
+                    "than": "10000"
+                  }
+              },
+              {
+                "formula": "lessThanValue",
+                "condition": "or",
+                "parameters": {
+                  "fieldModels": ["DagenGewerkt"],
+                  "value": 1234
+                }
+              }
+            ]
+          },
+
+          {
+            "type": "label",
+            "label": "2a: Er is iets ingevuld in het inputveld",
+            "customVisible": [
+              {
+                "formula": "equalsAnyValue",
+                "parameters": {
+                  "fieldModels": ["InputveldText2"]
+                }
+              }
+            ]
+          },
+
+          {
+            "type": "label",
+            "label": "2b: Het woord <strong>iets</strong> is gevonden in het 2e inputveld",
+            "customVisible": [
+              {
+                "formula": "isRegex",
+                "parameters": {
+                    "fieldModels": ["InputveldText2"],
+                    "value": "iets*"
+                }
+              }
+            ]
+          },
+
+          {
+            "type": "label",
+            "label": "3a: Appels zijn duurder dan peren & bananen",
+            "customVisible": [
+              {
+                "formula": "compareValues",
+                "condition": "and",
+                "parameters": {
+                  "greater": "PrijsKiloAppels",
+                  "than": "PrijsKiloBananen"
+                }
+              },
+              {
+                "formula": "compareValues",
+                "condition": "and",
+                "parameters": {
+                  "greater": "PrijsKiloAppels",
+                  "than": "PrijsKiloPeren"
+                }
+              }
+            ]
+          },
+
+          {
+            "type": "label",
+            "label": "3b: Appels kosten minder dan 10 euro",
+            "customVisible": [
+              {
+                "formula": "lessThanValue",
+                "parameters": {
+                  "fieldModels": ["PrijsKiloAppels"],
+                  "value": 10
+                }
+              }
+            ]
+          },
+
+          {
+            "type": "label",
+            "label": "3c: Bananen zijn goedkoper dan 5 euro of gelijk aan 24 euro",
+            "customVisible": [
+              {
+                "formula": "lessThanValue",
+                "condition": "or",
+                "parameters": {
+                  "fieldModels": ["PrijsKiloBananen"],
+                  "value": 5
+                }
+              },
+              {
+                "formula": "equalsValue",
+                "condition": "or",
+                "parameters": {
+                  "fieldModels": ["PrijsKiloBananen"],
+                  "value": 24
+                }
+              }
+            ]
+          },
+
+          {
+            "type": "label",
+            "label": "3d: Bedrag 1 & 2 = 24",
+            "customVisible": [
+              {
+                "formula": "equalsValue",
+                "parameters": {
+                  "fieldModels": ["PrijsKiloAppels"],
+                  "value": 24
+                }
+              },
+              {
+                "formula": "equalsValue",
+                "parameters": {
+                  "fieldModels": ["PrijsKiloBananen"],
+                  "value": 24
+                }
+              }
+            ]
+          },
+
+          {
+            "type": "label",
+            "label": "3e: Er is een prijs ingevuld in Appels óf Bananen",
+            "customVisible": [
+              {
+                "formula": "equalsAnyValue",
+                "condition": "or",
+                "parameters": {
+                  "fieldModels": ["PrijsKiloAppels"]
+                }
+              },
+              {
+                "formula": "equalsAnyValue",
+                "condition": "or",
+                "parameters": {
+                  "fieldModels": ["PrijsKiloBananen"]
+                }
+              }
+            ]
+          },
+
+          {
+            "type": "label",
+            "label": "3f: Apples kosten €8",
+            "customVisible": [
+              {
+                "formula": "equalsValue",
+                "parameters": {
+                  "fieldModels": ["PrijsKiloAppels"],
+                  "value": 8
+                }
+              }
+           ]
+          },
+
+          {
+            "type": "label",
+            "label": "4a: Datumveld 'Van' ligt niet in boekjaar",
+            "customVisible": [
+              {
+                "formula": "notInFinancialYear",
+                "parameters": {
+                  "fieldModels": ["InputveldDatum1"]
+                }
+              }
+            ]
+          },
+
+          {
+            "type": "label",
+            "label": "4b: Datumveld 't/m' ligt in boekjaar",
+            "customVisible": [
+              {
+                "formula": "inFinancialYear",
+                "parameters": {
+                  "fieldModels": ["InputveldDatum2"]
+                }
+              }
+            ]
+          },
+
+
+          {
+            "type": "label",
+            "label": "4b: Vul alleen een periode in binnen 1 kalenderjaar.",
+            "customVisible": [
+              {
+                "formula": "periodNotInCalendarYear",
+                "parameters": {
+                  "fieldModels": ["InputveldDatum1", "InputveldDatum2"]
+                }
+              }
+            ]
+          },
+
+          {
+            "type": "label",
+            "label": "5a: Je doet mee",
+            "customVisible": [
+              {
+                "formula": "equalsValue",
+                "parameters": {
+                  "fieldModels": ["radioMeedoen"],
+                  "value": true
+                }
+              }
+            ]
+          },
+
+          {
+            "type": "label",
+            "label": "5b: Je doet niet mee",
+            "customVisible": [
+              {
+                "formula": "equalsValue",
+                "parameters": {
+                  "fieldModels": ["radioMeedoen"],
+                  "value": false
+                }
+              }
+            ]
+          },
+
+          {
+            "type": "label",
+            "label": "6a: Je bent een man",
+            "customVisible": [
+              {
+                "formula": "equalsValue",
+                "parameters": {
+                  "fieldModels": ["radioGeslacht"],
+                  "value": true
+                }
+              }
+            ]
+          },
+
+          {
+            "type": "label",
+            "label": "6b: Je bent een vrouw",
+            "customVisible": [
+              {
+                "formula": "equalsValue",
+                "parameters": {
+                  "fieldModels": ["radioGeslacht"],
+                  "value": false
+                }
+              }
+            ]
+          },
+
+          {
+            "type": "label",
+            "label": "7a: Je bent een man en houdt van rode wijn!",
+            "//": "Wanneer dit blok verschijnt wordt de modelID gevuld met TRUE",
+            "model": 172890,
+            "setvalue": true,
+            "customVisible": [
+              {
+                "formula": "equalsValue",
+                "parameters": {
+                  "fieldModels": ["radioGeslacht"],
+                  "value": true
+                }
+              },
+              {
+                "formula": "equalsValue",
+                "parameters": {
+                  "fieldModels": ["radioWijn"],
+                  "value": true
+                }
+              }
+            ]
+          },
+
+          {
+            "type": "label",
+            "label": "7b: Je bent een man en houdt van witte wijn",
+            "customVisible": [
+              {
+                "formula": "equalsValue",
+                "parameters": {
+                  "fieldModels": ["radioGeslacht"],
+                  "value": true
+                }
+              },
+              {
+                "formula": "equalsValue",
+                "parameters": {
+                  "fieldModels": ["radioWijn"],
+                  "value": false
+                }
+              }
+            ]
+          },
+
+          {
+            "type": "label",
+            "label": "7c: Je bent een vrouw en houdt van rode wijn",
+            "customVisible": [
+              {
+                "formula": "equalsValue",
+                "parameters": {
+                  "fieldModels": ["radioGeslacht"],
+                  "value": false
+                }
+              },
+              {
+                "formula": "equalsValue",
+                "parameters": {
+                  "fieldModels": ["radioWijn"],
+                  "value": true
+                }
+              }
+            ]
+          },
+
+          {
+            "type": "label",
+            "label": "7d: Je bent een vrouw en houdt van witte wijn",
+            "customVisible": [
+              {
+                "formula": "equalsValue",
+                "parameters": {
+                  "fieldModels": ["radioGeslacht"],
+                  "value": false
+                }
+              },
+              {
+                "formula": "equalsValue",
+                "parameters": {
+                  "fieldModels": ["radioWijn"],
+                  "value": false
+                }
+              }
+            ]
+          },
+
+          {
+            "type": "label",
+            "label": "8a: Je hebt voor appels of bananen gekozen",
+            "customVisible": [
+              {
+                "formula": "equalsData",
+                "parameters": {
+                  "fieldModels": ["DropDownLijst"],
+                  "data": [1, 3]
+                }
+              }
+            ]
+
+          },
+
+          {
+            "type": "label",
+            "label": "8b: Je hebt voor appels gekozen",
+            "customVisible": [
+              {
+                "formula": "equalsData",
+                "parameters": {
+                  "fieldModels": ["DropDownLijst"],
+                  "data": [1]
+                }
+              }
+            ]
+
+          },
+
+          {
+            "type": "label",
+            "label": "8c: Je hebt voor peren gekozen",
+            "customVisible": [
+              {
+                "formula": "equalsData",
+                "parameters": {
+                  "fieldModels": ["DropDownLijst"],
+                  "data": [2]
+                }
+              }
+            ]
+
+          },
+
+          {
+            "type": "label",
+            "label": "8d: Je hebt voor bananen gekozen",
+            "customVisible": [
+              {
+                "formula": "equalsData",
+                "parameters": {
+                  "fieldModels": ["DropDownLijst"],
+                  "data": [3]
+                }
+              }
+            ]
+
+          },
+
+          {
+            "type": "label",
+            "label": "9a: Je hebt voor bananen gekozen en doet niet mee.",
+            "customVisible": [
+              {
+                "formula": "equalsData",
+                "parameters": {
+                  "fieldModels": ["DropDownLijst"],
+                  "data": [3]
+                }
+              },
+              {
+                "formula": "equalsValue",
+                "parameters": {
+                  "fieldModels": ["radioMeedoen"],
+                  "value": false
+                }
+              }
+            ]
+          },
+
+          {
+            "type": "label",
+            "label": "9b: Je hebt voor bananen gekozen en doet wel mee.",
+            "customVisible": [
+              {
+                "formula": "equalsData",
+                "parameters": {
+                  "fieldModels": ["DropDownLijst"],
+                  "data": [3]
+                }
+              },
+              {
+                "formula": "equalsValue",
+                "parameters": {
+                  "fieldModels": ["radioMeedoen"],
+                  "value": true
+                }
+              }
+            ]
+          },
+
+          {
+            "type": "currency",
+            "currency": "EUR",
+            "round": "down",
+            "disabled": true,
+            "label": "10: De prijs van appels min de prijs van peren ",
+            "model": "AppelsMinPerengetal",
+            "customValue": {
+              "formula": "minusSumOfFields",
+              "parameters": {
+                "fieldModels": ["PrijsKiloAppels", "PrijsKiloPeren"]
+              }
+            }
+          },
+
+          {
+            "type": "currency",
+            "currency": "EUR",
+            "round": "down",
+            "disabled": true,
+            "label": "11: Totale prijs van het fruit ",
+            "model": "Totaalgetal",
+            "customValue": {
+              "formula": "sumOfFields",
+              "parameters": {
+                "fieldModels": ["PrijsKiloAppels", "PrijsKiloPeren", "PrijsKiloBananen"]
+              }
+            }
+          }
+
+        ]
+      },
+      {
+        "legend": "Afweging of je de validatie voorbeelden wil zien",
+        "fields": [
+          {
+            "type": "radios",
+            "doNotPost": true,
+            "label": "Wil je de validatie voorbeelden ook zien?",
+            "model": "showValidationGroup",
+            "values": [ { "name": "ja", "value": true }, { "name": "nee", "value": false } ]
+          }
+        ]
+      },
+      {
+        "legend": "Velden met validatie regels",
+        "customVisible": [
+          {
+            "formula": "equalsValue",
+            "condition": "or",
+            "parameters": {
+              "fieldModels": ["showValidationGroup"],
+              "value": true
+            }
+          }
+        ],
+        "fields": [
+          {
+            "type": "input",
+            "inputType": "text",
+            "label": "Een verplicht veld met de validatie regel 'verplicht'.",
+            "model": "verplichtInputVeld",
+            "validator": ["verplicht"]
+          },
+
+          {
+            "type": "input",
+            "inputType": "text",
+            "label": "Een verplicht veld met de validatie regel 'verplicht' en custom verplicht label.",
+            "model": "verplichtCustomLabelInputVeld",
+            "doNotPost": true,
+            "validator": ["verplicht"],
+            "validatorParameters": {
+              "label": "verplichte input veld"
+            }
+          },
+
+          {
+            "type": "currency",
+            "currency": "EUR",
+            "label": "Een currency veld met de validatie regel 'bedrag13'",
+            "model": "bedrag13InputVeld",
+            "validator": ["bedrag13"]
+          },
+
+          {
+            "type": "currency",
+            "currency": "EUR",
+            "label": "Een currency veld met de validatie regel 'bedrag_pos13'",
+            "model": "bedragPos13InputVeld",
+            "validator": ["bedrag_pos13"]
+          },
+          {
+            "type": "date",
+            "label": "Een datum veld met de validatie regel 'datum'.",
+            "model": "datumInputVeld",
+            "validator": ["datum"]
+          },
+
+          {
+            "type": "date",
+            "label": "Een datum veld met de validatie regel 'datum' en dient voor 10-12-1990 te zijn.",
+            "model": "datumDateBeforeInputVeld",
+            "validator": ["datum"],
+            "validatorParameters": {
+              "beforeDate": "10-12-1990"
+            }
+          },
+
+          {
+            "type": "date",
+            "label": "Een datum veld met de validatie regel 'datum' en dient na 10-10-1990 te zijn.",
+            "model": "datumDateAfterInputVeld",
+            "validator": ["datum"],
+            "validatorParameters": {
+              "afterDate": "10-10-1990"
+            }
+          },
+
+          {
+            "type": "date",
+            "label": "Een datum veld met de validatie regel 'datum' en dient na 10-10-1990 en voor 10-12-1990 te zijn.",
+            "model": "datumDateBeforeAfterInputVeld",
+            "validator": ["datum"],
+            "validatorParameters": {
+              "beforeDate": "10-12-1990",
+              "afterDate": "10-10-1990"
+            }
+          },
+
+          {
+            "type": "date",
+            "label": "Een datum veld met de validatie regel 'datum' en dient na #{datumDateAfter} en voor #{datumDateBefore} te zijn (met statics).",
+            "model": "datumDateBeforeAfterStaticInputVeld",
+            "validator": ["datum"],
+            "validatorParameters": {
+              "beforeDate": "datumDateBeforeStatic",
+              "afterDate": "datumDateAfterStatic"
+            }
+          },
+
+          {
+            "type": "date",
+            "label": "Een datum veld met de validatie regel 'datum' en dient voor #{datumInputVeld} te zijn (met model).",
+            "model": "datumDateBeforeModelInputVeld",
+            "validator": ["datum"],
+            "validatorParameters": {
+              "beforeDate": "datumInputVeldModel"
+            }
+          },
+
+          {
+            "type": "year",
+            "label": "Een jaar veld met de validatie regel 'jaar'.",
+            "model": "jaarInputVeld",
+            "validator": ["jaar"]
+          },
+
+          {
+            "type": "year",
+            "label": "Een jaar veld met de validatie regel 'jaar' en dient na 2000 te zijn.",
+            "model": "jaarAfterInputVeld",
+            "validator": ["jaar"],
+            "validatorParameters": {
+              "afterYear": 2000
+            }
+          },
+
+          {
+            "type": "year",
+            "label": "Een jaar veld met de validatie regel 'jaar' en dient voor 2020 te zijn.",
+            "model": "jaarBeforeInputVeld",
+            "validator": ["jaar"],
+            "validatorParameters": {
+              "beforeYear": 2020
+            }
+          },
+
+          {
+            "type": "year",
+            "label": "Een jaar veld met de validatie regel 'jaar' en dient na 2000 en voor 2020 te zijn.",
+            "model": "jaarBeforeAfterInputVeld",
+            "validator": ["jaar"],
+            "validatorParameters": {
+              "beforeYear": 2020,
+              "afterYear": 2000
+            }
+          },
+
+          {
+            "type": "year",
+            "label": "Een jaar veld met de validatie regel 'jaar' en dient na #{jaarYearAfter} en voor #{jaarYearBefore} te zijn (met statics).",
+            "model": "jaarBeforeAfterStaticInputVeld",
+            "validator": ["jaar"],
+            "validatorParameters": {
+              "beforeYear": "jaarYearBeforeStatic",
+              "afterYear": "jaarYearAfterStatic"
+            }
+          },
+
+          {
+            "type": "year",
+            "label": "Een jaar veld met de validatie regel 'jaar' en dient voor model #{jaarInputVeld} te zijn (met model).",
+            "model": "jaarBeforeModelInputVeld",
+            "validator": ["jaar"],
+            "validatorParameters": {
+              "beforeYear": "jaarInputVeldModel"
+            }
+          },
+
+          {
+            "type": "input",
+            "inputType": "text",
+            "label": "Een meld nummer veld met de validatie regel 'meldnr_e'.",
+            "model": "meldNrEInputVeld",
+            "validator": ["meldnr_e"]
+          },
+
+          {
+            "type": "input",
+            "inputType": "text",
+            "label": "Een meld nummer veld met de validatie regel 'meldnr_m'.",
+            "model": "meldNrMInputVeld",
+            "validator": ["meldnr_m"]
+          },
+
+          {
+            "type": "number",
+            "label": "Een percentage veld met de validatie regel 'percentage3'.",
+            "model": "percentageInputVeld",
+            "validator": ["percentage3"]
+          },
+
+          {
+            "type": "licensePlate",
+            "label": "Een kenteken veld met de validatie regel 'kenteken'.",
+            "model": "kentekenInputVeld",
+            "validator": ["kenteken"]
+          },
+
+          {
+            "type": "input",
+            "inputType": "text",
+            "label": "Custom validator met terms: niet lager dan percentageInputVeld, niet hoger dan jaarInputVeld, en percentageInputVeld moet hoger zijn dan 50",
+            "model": "customValidator",
+            "validator": ["custom"],
+            "customValidators": [
+              {
+                "message": "customValidator is lager dan percentageInputVeld of hoger dan jaarInputVeld",
+                "terms": [
+                  {
+                    "formula": "compareValues",
+                    "condition": "or",
+                    "parameters": {
+                      "less": "customValidatorModel",
+                      "than": "percentageInputVeldModel"
+                    }
+                  },
+                  {
+                    "formula": "compareValues",
+                    "condition": "or",
+                    "parameters": {
+                      "greater": "customValidatorModel",
+                      "than": "jaarInputVeldModel"
+                    }
+                  }
+                ]
+              },
+              {
+                "message": "percentageInputVeld is hoger dan 50",
+                "terms": [
+                  {
+                    "formula": "greaterThanValue",
+                    "parameters": {
+                      "fieldModels": ["percentageInputVeld"],
+                      "value": 50
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "legend": "Inwonende kinderen met radio om toe te voegen",
+        "fields": [
+          {
+            "type": "radios",
+            "doNotPost": true,
+            "label": "Heeft u een inwonend kinderen? (radio groep)",
+            "model": "inwonendeKinderen",
+            "values": [ { "name": "ja", "value": true }, { "name": "nee", "value": false } ]
+          }
+        ]
+      },
+
+      {
+        "legend": "Herhaalbare groep met inline radio vraag om te herhalen",
+        "repeatModel": "inkomenKinderenRadioInline",
+        "radioModel": "kindToevoegenRadioInline",
+        "removeLink": "verwijderen",
+        "customVisible": [
+          {
+            "formula": "equalsValue",
+            "condition": "or",
+            "parameters": {
+              "fieldModels": ["inwonendeKinderen"],
+              "value": true
+            }
+          }
+        ],
+        "fields": [
+          {
+            "type": "radios",
+            "label": "Is het kind ouder dan 18 jaar?",
+            "model": "kinderenPlus18",
+            "doNotPost": true,
+            "values": [ { "name": "Ja", "value": true }, { "name": "Nee", "value": false } ],
+            "validator": ["verplicht"]
+          },
+          {
+            "type": "input",
+            "inputType": "text",
+            "label": "Wat is de naam van het kind?",
+            "model": "kindNaam",
+            "validator": ["verplicht"],
+            "customVisible": [
+                {
+                    "formula": "equalsValue",
+                    "condition": "or",
+                    "parameters": {
+                      "fieldModels": ["kinderenPlus18RepeatModel"],
+                      "value": true
+                    }
+                }
+              ]
+          },
+          {
+            "type": "currency",
+            "currency": "EUR",
+            "label": "Wat is het inkomen van dit kind?",
+            "model": "kindInkomen",
+            "validator": ["verplicht"],
+            "customVisible": [
+                {
+                    "formula": "equalsValue",
+                    "condition": "or",
+                    "parameters": {
+                      "fieldModels": ["kinderenPlus18RepeatModel"],
+                      "value": true
+                    }
+                }
+              ]
+          },
+          {
+            "type": "radios",
+            "doNotPost": true,
+            "label": "Heeft u nog meer inwonende kinderen?",
+            "model": "kindToevoegenRadioInline",
+            "values": [ { "name": "ja", "value": true }, { "name": "nee", "value": false } ],
+            "customVisible": [
+                {
+                    "formula": "equalsAnyValue",
+                    "condition": "or",
+                    "parameters": {
+                      "fieldModels": ["kinderenPlus18RepeatModel"],
+                      "value": true
+                    }
+                }
+              ]
+          }
+        ]
+      },
+
+      {
+        "legend": "Inwonende kinderen met link om toe te voegen",
+        "fields": [
+          {
+            "type": "radios",
+            "doNotPost": true,
+            "label": "Heeft u een inwonend kinderen? (link)",
+            "model": "inwonendeKinderenLink",
+            "values": [ { "name": "ja", "value": true }, { "name": "nee", "value": false } ]
+          }
+        ]
+      },
+
+      {
+        "legend": "Herhaalbare groep met link op groep toe te voegen",
+        "repeatModel": "inkomenKinderenLink",
+        "addLink": "Voeg nog een kind toe",
+        "removeLink": "verwijderen",
+        "customVisible": [
+          {
+            "formula": "equalsValue",
+            "condition": "or",
+            "parameters": {
+              "fieldModels": ["inwonendeKinderenLink"],
+              "value": true
+            }
+          }
+        ],
+        "fields": [
+          {
+            "type": "radios",
+            "label": "Is het kind ouder dan 18 jaar?",
+            "model": "kinderenPlus18",
+            "doNotPost": true,
+            "values": [ { "name": "Ja", "value": true }, { "name": "Nee", "value": false } ],
+            "validator": ["verplicht"]
+          },
+          {
+            "type": "input",
+            "inputType": "text",
+            "label": "Wat is de naam van het kind?",
+            "model": "kindNaam",
+            "validator": ["verplicht"],
+            "customVisible": [
+                {
+                    "formula": "equalsValue",
+                    "condition": "or",
+                    "parameters": {
+                      "fieldModels": ["kinderenPlus18RepeatModel"],
+                      "value": true
+                    }
+                }
+              ]
+          },
+          {
+            "type": "currency",
+            "currency": "EUR",
+            "label": "Wat is het inkomen van dit kind?",
+            "model": "kindInkomen",
+            "validator": ["verplicht"],
+            "customVisible": [
+                {
+                    "formula": "equalsValue",
+                    "condition": "or",
+                    "parameters": {
+                      "fieldModels": ["kinderenPlus18RepeatModel"],
+                      "value": true
+                    }
+                }
+              ]
+          }
+        ]
+      },
+      {
+        "legend": "Inwonende kinderen met radio en totaal outside",
+        "fields": [
+          {
+            "type": "radios",
+            "doNotPost": true,
+            "label": "Heeft u een inwonend kinderen?",
+            "model": "inwonendeKinderenRadioOutside",
+            "values": [ { "name": "ja", "value": true }, { "name": "nee", "value": false } ]
+          }
+        ]
+      },
+
+      {
+        "legend": "Herhaalbare groep met link op groep toe te voegen",
+        "repeatModel": "inkomenKinderenOutside",
+        "radioModel": "kindToevoegenRadioOutside",
+        "removeLink": "verwijderen",
+        "customVisible": [
+          {
+            "formula": "equalsValue",
+            "condition": "or",
+            "parameters": {
+              "fieldModels": ["inwonendeKinderenRadioOutside"],
+              "value": true
+            }
+          }
+        ],
+        "fields": [
+          {
+            "type": "radios",
+            "label": "Is het kind ouder dan 18 jaar?",
+            "model": "kinderenPlus18",
+            "doNotPost": true,
+            "values": [ { "name": "Ja", "value": true }, { "name": "Nee", "value": false } ],
+            "validator": ["verplicht"]
+          },
+          {
+            "type": "input",
+            "inputType": "text",
+            "label": "Wat is de naam van het kind?",
+            "model": "kindNaam",
+            "validator": ["verplicht"],
+            "customVisible": [
+                {
+                    "formula": "equalsValue",
+                    "condition": "or",
+                    "parameters": {
+                      "fieldModels": ["kinderenPlus18RepeatModel"],
+                      "value": true
+                    }
+                }
+              ]
+          },
+          {
+            "type": "currency",
+            "currency": "EUR",
+            "label": "Wat is het inkomen van dit kind?",
+            "model": "kindInkomen",
+            "validator": ["verplicht"],
+            "customVisible": [
+                {
+                    "formula": "equalsValue",
+                    "condition": "or",
+                    "parameters": {
+                      "fieldModels": ["kinderenPlus18RepeatModel"],
+                      "value": true
+                    }
+                }
+              ]
+          }
+        ]
+      },
+
+      {
+        "legend": "Voeg een groep toe en zie het totaal inkomen",
+        "customVisible": [
+          {
+            "formula": "equalsValue",
+            "condition": "or",
+            "parameters": {
+              "fieldModels": ["inwonendeKinderenRadioOutside"],
+              "value": true
+            }
+          }
+        ],
+        "fields": [
+          {
+            "type": "radios",
+            "doNotPost": true,
+            "label": "Heeft u nog meer inwonende kinderen?",
+            "model": "kindToevoegenRadioOutside",
+            "values": [ { "name": "ja", "value": true } ]
+          },
+          {
+            "type": "currency",
+            "currency": "EUR",
+            "label": "De kinderen veriden in totaal",
+            "model": "kindInkomenTotaal",
+            "customValue": {
+              "formula": "sumOfGroupFields",
+              "parameters": {
+                "fieldModels": ["inkomenKinderenOutside", "kindInkomen"]
+              }
+            }
+          },
+          {
+            "type": "label",
+            "label": "Dit label is alleen zichtbaar als een van de 'inkomenKinderenOutside' 'kinderenPlus18' ja is",
+            "customVisible": [
+              {
+                "formula": "equalsValueAnyRepeatModel",
+                "parameters": {
+                  "fieldModels": ["inkomenKinderenOutside", "kinderenPlus18"],
+                  "value": true
+                }
+              }
+            ]
+          },
+          {
+            "type": "label",
+            "label": "Dit label is alleen zichtbaar als een van de 'inkomenKinderenOutside' 'kindInkomen' hoger is dan 1800",
+            "customVisible": [
+              {
+                "formula": "greaterThanValueAnyRepeatModel",
+                "parameters": {
+                  "fieldModels": ["inkomenKinderenOutside", "kindInkomen"],
+                  "value": 1800
+                }
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "legend": "Vooringevulde groep",
+        "fields": [
+          {
+            "type": "radios",
+            "doNotPost": true,
+            "label": "Wil je de voor ingevulde groep zien?",
+            "model": "showPrefilledGroup",
+            "values": [ { "name": "ja", "value": true }, { "name": "nee", "value": false } ]
+          }
+        ]
+      },
+
+      {
+        "legend": "Herhaalbare groep voor ingevuld",
+        "repeatModel": "inkomenKinderenPrefilled",
+        "addLink": "Kind toevoegen",
+        "removeLink": "verwijderen",
+        "customVisible": [
+          {
+            "formula": "equalsValue",
+            "condition": "or",
+            "parameters": {
+              "fieldModels": ["showPrefilledGroup"],
+              "value": true
+            }
+          }
+        ],
+        "fields": [
+          {
+            "type": "radios",
+            "label": "Is het kind ouder dan 18 jaar?",
+            "model": "kinderenPlus18",
+            "doNotPost": true,
+            "values": [ { "name": "Ja", "value": true }, { "name": "Nee", "value": false } ],
+            "validator": ["verplicht"]
+          },
+          {
+            "type": "input",
+            "inputType": "text",
+            "label": "Wat is de naam van het kind?",
+            "model": "kindNaam",
+            "validator": ["verplicht"],
+            "customVisible": [
+                {
+                    "formula": "equalsValue",
+                    "condition": "or",
+                    "parameters": {
+                      "fieldModels": ["kinderenPlus18RepeatModel"],
+                      "value": true
+                    }
+                }
+              ]
+          },
+          {
+            "type": "currency",
+            "currency": "EUR",
+            "label": "Wat is het inkomen van dit kind?",
+            "model": "kindInkomen",
+            "validator": ["verplicht"],
+            "customVisible": [
+                {
+                    "formula": "equalsValue",
+                    "condition": "or",
+                    "parameters": {
+                      "fieldModels": ["kinderenPlus18RepeatModel"],
+                      "value": true
+                    }
+                }
+              ]
+          }
+        ]
+      }
+    ]
+  }
+}

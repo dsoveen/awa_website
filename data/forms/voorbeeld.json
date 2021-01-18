@@ -1,0 +1,73 @@
+{
+  "schema": {
+    "version": "1.0",
+    "groups": [
+      {
+        "legend": "Vul uw NAW gegevens in",
+        "fields": [
+          {
+            "label": "Naam",
+            "type": "input",
+            "inputType": "text",
+            "model": "naam"
+          },
+          {
+            "label": "Geboortedatum",
+            "type": "date",
+            "placeholder": "dd-mm-jjjj",
+            "model": "geboortedatum",
+            "validator": ["datum"]
+          },
+          {
+            "label": "Hebt u kinderen?",
+            "type": "radios",
+            "model": "kinderenJANEE",
+            "doNotPost": true,
+            "values": [ { "name": "ja", "value": true }, { "name": "nee", "value": false } ]
+          }
+        ]
+      },
+      {
+        "styleClasses": ["multiple-fields-50", "hide-border-top", "hide-border-bottom", "hide-border-left", "hide-border-right"],
+        "legend": "",
+        "fields": [
+          { "type": "label", "label": "Naam kind" },
+          { "type": "label", "label": "Leeftijd" }
+        ],
+        "customVisible": [
+          {
+            "formula": "equalsValue",
+            "parameters": { "fieldModels": ["kinderenJANEE"], "value": true }
+          }
+        ]
+      },
+      {
+        "styleClasses": ["multiple-fields-50", "hide-border-top", "hide-border-bottom", "hide-border-left", "hide-border-right"],
+        "legend":"",
+        "repeatModel": "Kinderen",
+        "addLink": "Voeg nog een kind toe",
+        "removeLink": "bucket",
+        "fields": [
+          {
+            "type": "input",
+            "inputType": "text",
+            "model": "kind",
+            "validatorParameters": { "label": "de naam van het kind"}
+          },
+          {
+            "type": "number",
+            "model": "leeftijd",
+            "validator": ["verplicht"],
+            "validatorParameters": { "label": "de leeftijd"}
+          }
+        ],
+        "customVisible": [
+          {
+            "formula": "equalsValue",
+            "parameters": { "fieldModels": ["kinderenJANEE"], "value": true }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,105 @@
+{
+  	"schema": {
+	"version": "2019-5.2",
+	"styleClasses": ["multiple-fields-50", "repeatModel-header", "hide-border-bottom"],
+    "groups": [
+      {
+        "legend": "Er zijn extra gegevens nodig voor de aangifte",
+        "fields": [
+          {
+            "type": "radios",
+            "label": "Hebt u overige activa vanuit het privévermogen ingebracht of aan de onderneming ontrokken?<br /><strong>Let op</strong> Het gaat hier niet om liquide middelen.",
+			"model": "wondgegactinb",
+			"refid": "wondgegactinb",
+            "validator": ["verplicht"],
+            "values": [ { "name": "Ja", "value": true }, { "name": "Nee", "value": false } ]
+          }
+		]
+	  },
+      {
+		"styleClasses": ["multiple-fields-50", "hide-border-top", "hide-border-bottom"],
+		"legend":" ",
+		"customVisible": [
+			{
+			"formula": "equalsValue",
+			"parameters": {
+			  "fieldModels": ["wondgegactinb"],
+			  "value": true
+				}
+			}
+		],
+		"fields": [
+		 {
+            "type": "label",
+			"label": "Omschrijving",
+			"refid": "wondgegactinbomschr"
+          },
+          {
+            "type": "label",
+			"label": "Bedrag"
+          }
+		]
+	  },
+      {
+		"styleClasses": ["multiple-fields-50", "hide-border-top", "hide-border-bottom"],
+		"legend":" ",
+		"repeatModel": "502240",
+		"addLink": "Voeg nog een inbreng of ontrekking toe",
+		"removeLink": "bucket",
+		"customVisible": [
+			{
+			"formula": "equalsValue",
+			"parameters": {
+			  "fieldModels": ["wondgegactinb"],
+			  "value": true
+				}
+			}
+		],
+		"fields": [
+		  {
+            "type": "input",
+            "inputType": "text",
+            "model": "wondgegactinbomschr",
+			"refid": "wondgegactinbomschr",
+			"postKey": "507394",
+			"noRefHelpText": true,
+			"validator": ["verplicht"],
+			"validatorParameters": {
+				"label": "Omschrijving"
+			}
+          },
+          {
+            "type": "currency",
+            "currency": "EUR",
+            "model": "wondgegactinbbdrg",
+			"refid": "wondgegactinbbdrg",
+			"postKey": "507395",
+			"validator":["verplicht","bedrag_pos13"],
+			"validatorParameters": {
+			"label": "Bedrag"
+			}
+          }
+		]
+	  },
+	  {
+        "legend": "",
+		"styleClasses": ["multiple-fields-25", "repeatModel-footer", "hide-border-top"],
+		"customVisible": [
+			{
+			"formula": "equalsValue",
+			"parameters": {
+			  "fieldModels": ["wondgegactinb"],
+			  "value": true
+				}
+			}
+		], 
+        "fields": [
+          {
+            "type": "label",
+            "label": " "
+		  }
+		]
+	  }
+	]
+  }
+}

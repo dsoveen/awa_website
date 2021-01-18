@@ -1,0 +1,1230 @@
+{
+    "schema": {
+        "version": "2019-5.1",
+        "//": "Blokcondities definieren",
+        "blockVisibleConditions": {
+            "wpontautbijzblok": [
+                {
+                    "formula": "equalsValue",
+                    "condition": "or",
+                    "parameters": {
+                        "fieldModels": ["wpontautvervgoedRepeatModel"],
+                        "value": true
+                    }
+                },
+                {
+                    "formula": "equalsValue",
+                    "condition": "or",
+                    "parameters": {
+                        "fieldModels": ["wpontautexcprivRepeatModel"],
+                        "value": true
+                    }
+                },
+                {
+                    "formula": "equalsData",
+                    "condition": "or",
+                    "parameters": {
+                        "fieldModels": ["wpontautbouwRepeatModel"],
+                        "data": [2, 3]
+                    }
+                }
+            ],
+            "wpontautstandblok": [
+                {
+                    "formula": "equalsValue",
+                    "condition": "and",
+                    "parameters": {
+                        "fieldModels": ["wpontautexcprivRepeatModel"],
+                        "value": false
+                    }
+                },
+                {
+                    "formula": "equalsData",
+                    "condition": "and",
+                    "parameters": {
+                        "fieldModels": ["wpontautbouwRepeatModel"],
+                        "data": [1, 2]
+                    }
+                },
+                {
+                    "formula": "notEqualsValue",
+                    "condition": "and",
+                    "parameters": {
+                        "fieldModels": ["wpontautosplitsvraagRepeatModel"],
+                        "value": false
+                    }
+                }
+            ],
+            "wpontautmeer500blok": [
+                {
+                    "condition": "and",
+                    "terms": [
+                        {
+                            "formula": "equalsValue",
+                            "condition": "or",
+                            "parameters": {
+                                "fieldModels": ["wpontaut500meerRepeatModel"],
+                                "value": "J"
+                            }
+                        },
+                        {
+                            "formula": "equalsValue",
+                            "condition": "or",
+                            "parameters": {
+                                "fieldModels": ["wpontautsamen500meer"],
+                                "value": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "formula": "equalsValue",
+                    "condition": "and",
+                    "parameters": {
+                        "fieldModels": ["wpontautexcprivRepeatModel"],
+                        "value": false
+                    }
+                },
+                {
+                    "formula": "equalsData",
+                    "condition": "and",
+                    "parameters": {
+                        "fieldModels": ["wpontautbouwRepeatModel"],
+                        "data": [1, 2]
+                    }
+                },
+                {
+                    "formula": "notEqualsValue",
+                    "condition": "and",
+                    "parameters": {
+                        "fieldModels": ["wpontautosplitsvraagRepeatModel"],
+                        "value": false
+                    }
+                }
+            ]
+        },
+        "groups": [
+            {
+                "legend": "Berekening onttrekking privégebruik auto van de onderneming",
+                "fields": [
+                    {
+                        "type": "select",
+                        "values": [
+                            { "name": "0", "id": 1 },
+                            { "name": "1", "id": 2 },
+                            { "name": "2 of meer", "id": 3 }
+                        ],
+                        "selectOptions": { "noneSelectedText": "Maak een keuze" },
+                        "label": "Aantal auto's van de onderneming waarmee u privé hebt gereden",
+                        "help": "Kies het aantal auto's van de onderneming waarmee u of uw fiscale partner privé heeft gereden.<br /><br /><strong>Meer dan 1 auto tegelijkertijd</strong><br />Hebt u tegelijkertijd meer dan 1 auto van de onderneming? Dan beoordelen wij het privégebruik per auto. De bijtelling is alleen € 0 als u op jaarbasis met de auto's in totaal niet meer dan 500 kilometer privé rijdt.",
+                        "model": "wpontautmeer1",
+                        "refid": "wpontautmeer1",
+                        "//": "VRAAG: wpontautmeer1_f01: is nog niet verwerkt"
+                    },
+                    {
+                        "type": "radios",
+                        "label": "Hebt u met deze auto's in totaal meer dan 500 kilometer (op jaarbasis) privé gereden?",
+
+                        "model": "wpontautsamen500meer",
+                        "refid": "wpontautsamen500meer",
+                        "values": [
+                            { "name": "Ja", "value": true },
+                            { "name": "Nee", "value": false }
+                        ],
+                        "customVisible": [
+                            {
+                                "formula": "equalsData",
+                                "parameters": {
+                                    "fieldModels": ["wpontautmeer1"],
+                                    "data": [3]
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+
+            {
+                "//": "Onderstaande group heeft dezelfde tooncondities als wpontautblok: 1 of meer auto's geseleceteerd",
+                "legend": "",
+                "repeatModel": "1617773",
+                "addLink": "Privégebruik auto toevoegen",
+                "removeLink": "Verwijderen",
+                "customVisible": [
+                    {
+                        "condition": "or",
+                        "formula": "equalsData",
+                        "parameters": {
+                            "fieldModels": ["wpontautmeer1"],
+                            "data": [2]
+                        }
+                    },
+                    {
+                        "condition": "or",
+                        "terms": [
+                            {
+                                "condition": "and",
+                                "formula": "equalsData",
+                                "parameters": {
+                                    "fieldModels": ["wpontautmeer1"],
+                                    "data": [3]
+                                }
+                            },
+                            {
+                                "condition": "and",
+                                "formula": "equalsAnyValue",
+                                "parameters": {
+                                    "fieldModels": ["wpontautsamen500meer"]
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "fields": [
+                    {
+                        "type": "label",
+                        "label": "<strong>Privégebruik auto #{wpontautstandkenRepeatModel}</strong>",
+                        "model": "wpontautblok",
+                        "doNotPost": true
+                    },
+                    {
+                        "type": "input",
+                        "inputType": "LicencePlate",
+                        "label": "Kenteken (vul het kenteken in zonder koppeltekens)",
+                        "help": "Betreft het een buitenlands kenteken? Vul hier dan in: AAAA01.<br /><br />Viel u onder het dealerbesluit? Vul hier dan in: AAAA02.<br /><br />Als u het kenteken niet weet, vul hier dan in: AAAA03.",
+                        "model": "wpontautstandken",
+                        "refid": "wpontautstandken",
+                        "postKey": "118329",
+                        "validator": ["kenteken"]
+                    },
+
+                    {
+                        "type": "radios",
+                        "label": "Ging het om een bestelauto die (bijna) uitsluitend geschikt is voor het vervoer van goederen?",
+
+                        "help": "Het gaat hier bijvoorbeeld om een auto die alleen een bestuurderstoel had, en waarin de bevestigingspunten van de passagiersstoel waren weggeslepen of dichtgelast.",
+                        "model": "wpontautvervgoed",
+                        "refid": "wpontautvervgoed",
+                        "values": [
+                            { "name": "Ja", "value": true },
+                            { "name": "Nee", "value": false }
+                        ]
+                    },
+                    {
+                        "type": "radios",
+                        "label": "Hebt u een 'Verklaring uitsluitend zakelijk gebruik bestelauto'?",
+                        "model": "wpontautzakgebr",
+                        "refid": "wpontautzakgebr",
+                        "values": [
+                            { "name": "Ja", "value": true },
+                            { "name": "Nee", "value": false }
+                        ],
+                        "customVisible": [
+                            {
+                                "formula": "equalsValue",
+                                "parameters": {
+                                    "fieldModels": ["wpontautvervgoedRepeatModel"],
+                                    "value": false
+                                }
+                            }
+                        ]
+                    },
+
+                    {
+                        "type": "label",
+                        "label": "<em>Kies 'Nee' als u voor deze auto wel een 'Verklaring uitsluitend zakelijk gebruik bestelauto' hebt, <br />maar in een andere periode een andere auto had waarvoor u in #{BDRGJAAR} wel moet bijtellen.</em>",
+                        "model": "wpontautzakgebr_w01",
+                        "customVisible": [
+                            {
+                                "formula": "equalsAnyValue",
+                                "parameters": {
+                                    "fieldModels": ["wpontautzakgebrRepeatModel"]
+                                }
+                            }
+                        ]
+                    },
+
+                    {
+                        "type": "select",
+                        "values": [
+                            { "name": "na #{BDRGJAARMIN15}", "id": 1 },
+                            { "name": "#{BDRGJAARMIN15}", "id": 2 },
+                            { "name": "voor #{BDRGJAARMIN15}", "id": 3 }
+                        ],
+                        "selectOptions": { "noneSelectedText": "Maak een keuze" },
+                        "label": "Jaar waarin de auto voor het eerst is toegelaten",
+                        "model": "wpontautbouw",
+                        "refid": "wpontautbouw",
+
+                        "customVisible": [
+                            {
+                                "formula": "equalsValue",
+                                "parameters": {
+                                    "fieldModels": ["wpontautzakgebrRepeatModel"],
+                                    "value": false
+                                }
+                            }
+                        ]
+                    },
+
+                    {
+                        "type": "date",
+                        "label": "Datum eerste toelating",
+                        "placeholder": "dd-mm-jjjj",
+                        "model": "wpontautdatumkent",
+                        "refid": "wpontautdatumkent",
+                        "validator": ["verplicht", "datum"],
+                        "customVisible": [
+                            {
+                                "formula": "equalsData",
+                                "parameters": {
+                                    "fieldModels": ["wpontautbouwRepeatModel"],
+                                    "data": [2],
+                                    "//": "#{BDRGJAARMIN15}"
+                                }
+                            }
+                        ],
+                        "//": "DE EERSTE EN LAATSTE DAG VAN EEN JAAR ZIJN GEEN CONSTANTEN, VANDAAR HARD CODED",
+                        "validatorParameters": { "beforeDate": "31-12-2004", "afterDate": "01-01-2004" }
+                    },
+
+                    {
+                        "type": "radios",
+
+                        "label": "Waren de werkelijke kosten van het privégebruik van deze auto hoger dan #{wpontautexcprivLabelRepeatModel} (zogenoemd excessief privégebruik)?",
+                        "help": "Kies 'Ja' als er sprake is van excessief privégebruik.",
+                        "model": "wpontautexcpriv",
+                        "refid": "wpontautexcpriv",
+                        "values": [
+                            { "name": "Ja", "value": true },
+                            { "name": "Nee", "value": false }
+                        ],
+                        "customVisible": [
+                            {
+                                "formula": "equalsValue",
+                                "parameters": {
+                                    "fieldModels": ["wpontautzakgebrRepeatModel"],
+                                    "value": false
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "//": "#### Start Blok wpontautbijzblok ####",
+                        "type": "label",
+                        "label": "<em>Vul hieronder het bedrag in van de bijtelling over de periode waarin de auto 15 jaar of ouder was.</em>",
+                        "model": "wpontautbijzblok_i01",
+                        "doNotPost": true,
+                        "blockVisible": "wpontautbijzblok",
+                        "customVisible": [
+                            {
+                                "formula": "equalsData",
+                                "parameters": {
+                                    "fieldModels": ["wpontautbouwRepeatModel"],
+                                    "data": [2]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "type": "currency",
+                        "currency": "EUR",
+                        "label": "Bedrag van de bijtelling voor u",
+                        "model": "wpontautbijzaang",
+                        "refid": "wpontautbijzaang",
+                        "postKey": "118336",
+                        "validator": ["verplicht", "bedrag_pos13"],
+                        "blockVisible": "wpontautbijzblok"
+                    },
+                    {
+                        "type": "radios",
+
+                        "label": "Had u de auto al in bezit vóór #{hlpmwpontautdatumkentplus15jrRepeatModel}?",
+                        "model": "wpontautosplitsvraag",
+                        "refid": "wpontautosplitsvraag",
+                        "values": [
+                            { "name": "Ja", "value": true },
+                            { "name": "Nee", "value": false }
+                        ],
+                        "blockVisible": "wpontautbijzblok",
+                        "customVisible": [
+                            {
+                                "formula": "equalsData",
+                                "condition": "and",
+                                "parameters": {
+                                    "fieldModels": ["wpontautbouwRepeatModel"],
+                                    "data": [2]
+                                }
+                            },
+                            {
+                                "formula": "equalsValue",
+                                "condition": "and",
+                                "parameters": {
+                                    "fieldModels": ["wpontautexcprivRepeatModel"],
+                                    "value": false
+                                }
+                            },
+                            {
+                                "formula": "isFieldModelDateNewerThanDateString",
+                                "condition": "and",
+                                "parameters": {
+                                    "fieldModels": ["wpontautdatumkentRepeatModel"],
+                                    "//": "date is 01-01-{BDRGJAARMIN15}, value means fieldmodel is newer than date",
+                                    "date": "01-01-2004",
+                                    "value": true
+                                }
+                            }
+                        ],
+                        "//": "#### Einde Blok wpontautbijzblok ####"
+                    },
+
+                    {
+                        "//": "#### BEGIN WPONTAUTSTANDBLOK ######",
+
+                        "type": "label",
+                        "model": "wpontautstandblok_i02",
+                        "doNotPost": true,
+                        "label": "Beantwoord de volgende vragen over de periode waarin de auto jonger was dan 15 jaar.",
+                        "blockVisible": "wpontautstandblok",
+                        "customVisible": [
+                            {
+                                "formula": "equalsData",
+                                "condition": "and",
+                                "parameters": {
+                                    "fieldModels": ["wpontautbouwRepeatModel"],
+                                    "//": "#{BDRGJAARMIN15}",
+                                    "data": [2]
+                                }
+                            }
+                        ]
+                    },
+
+                    {
+                        "type": "currency",
+                        "currency": "EUR",
+                        "label": "Cataloguswaarde",
+                        "model": "wpontautstandcata",
+                        "refid": "wpontautstandcata",
+                        "postKey": "118330",
+                        "validator": ["verplicht", "bedrag_pos13"],
+                        "blockVisible": "wpontautstandblok"
+                    },
+                    {
+                        "type": "date",
+                        "//": "LET OP: Periode gaat over het boekjaar!",
+                        "label": "Periode begindatum",
+                        "model": "wpontautstandper1",
+                        "refid": "wpontautstandper1",
+                        "postKey": "118331-B",
+                        "placeholder": "dd-mm-jjjj",
+                        "validator": ["verplicht", "datum"],
+                        "validatorParameters": {
+                            "beforeDate": "31-12-2019",
+                            "afterDate": "01-01-2019"
+                        },
+                        "blockVisible": "wpontautstandblok"
+                    },
+
+                    {
+                        "type": "date",
+                        "label": "Periode einddatum",
+                        "model": "wpontautstandper2",
+                        "refid": "wpontautstandper2",
+                        "postKey": "118331-E",
+                        "placeholder": "dd-mm-jjjj",
+                        "validator": ["datum"],
+                        "validatorParameters": {
+                            "beforeDate": "31-12-2019",
+                            "afterDate": "wpontautstandper1RepeatModel"
+                        },
+                        "blockVisible": "wpontautstandblok"
+                    },
+                    {
+                        "type": "hidden",
+                        "model": "wpontaut500meerLabel",
+                        "doNotPost": true,
+                        "conditionalValues": [
+                            {
+                                "setValue": "Hebt u in totaal meer dan #{hlpmwpontautkilometersperperiodeRepeatModel} kilometer privé gereden met deze auto?",
+                                "terms": [
+                                    {
+                                        "formula": "equalsData",
+                                        "condition": "and",
+                                        "parameters": {
+                                            "fieldModels": ["wpontautbouwRepeatModel"],
+                                            "data": [1]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "setValue": "Hebt u in totaal meer dan 500 kilometer op jaarbasis privé gereden met deze auto?",
+                                "terms": [
+                                    {
+                                        "formula": "equalsData",
+                                        "condition": "and",
+                                        "parameters": {
+                                            "fieldModels": ["wpontautbouwRepeatModel"],
+                                            "data": [2]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "radios",
+                        "label": "#{wpontaut500meerLabelRepeatModel}",
+                        "model": "wpontaut500meer",
+                        "refid": "wpontaut500meer",
+                        "postKey": "1764237",
+                        "values": [
+                            { "name": "Ja", "value": "J" },
+                            { "name": "Nee", "value": "N" }
+                        ],
+                        "blockVisible": "wpontautstandblok",
+                        "customVisible": [
+                            {
+                                "formula": "equalsAnyValue",
+                                "condition": "and",
+                                "parameters": {
+                                    "fieldModels": ["wpontautstandper1RepeatModel", "wpontautstandper2RepeatModel"]
+                                }
+                            },
+                            {
+                                "formula": "equalsData",
+                                "condition": "and",
+                                "parameters": {
+                                    "fieldModels": ["wpontautmeer1"],
+                                    "data": [2]
+                                }
+                            }
+                        ]
+                    },
+
+                    {
+                        "type": "radios",
+
+                        "label": "Hebt u voor deze auto een rittenregistratie bijgehouden?",
+                        "model": "wpontautrit",
+                        "refid": "wpontautrit",
+                        "postKey": "118332",
+                        "values": [
+                            { "name": "Ja", "value": "J" },
+                            { "name": "Nee", "value": "N" }
+                        ],
+                        "blockVisible": "wpontautstandblok",
+                        "customVisible": [
+                            {
+                                "formula": "equalsValue",
+                                "condition": "or",
+                                "parameters": {
+                                    "fieldModels": ["wpontaut500meerRepeatModel"],
+                                    "//": "wpontaut500meer",
+                                    "value": "N"
+                                }
+                            },
+                            {
+                                "formula": "equalsValue",
+                                "condition": "or",
+                                "parameters": {
+                                    "fieldModels": ["wpontautsamen500meer"],
+                                    "value": false
+                                }
+                            }
+                        ],
+                        "//": "#### Einde blok wpontautstandblok ####"
+                    },
+                    {
+                        "//": "#### Start Blok wpontautmeer500blok ####",
+                        "type": "year",
+                        "placeholder": "jjjj",
+                        "label": "Jaar waarin de auto voor het eerst is toegelaten",
+                        "model": "wpontauttoegel",
+                        "refid": "wpontauttoegel",
+                        "postKey": "1764238",
+                        "validator": ["jaar"],
+                        "validatorParameters": {
+                            "beforeYear": "BDRGJAARStatic"
+                        },
+                        "blockVisible": "wpontautmeer500blok",
+                        "customVisible": [
+                            {
+                                "formula": "equalsData",
+                                "condition": "and",
+                                "parameters": {
+                                    "fieldModels": ["wpontautbouwRepeatModel"],
+                                    "data": [1]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "type": "select",
+                        "label": "Jaar waarin de auto voor het eerst op naam is gesteld",
+                        "values": [
+                            { "name": "voor 2014", "id": 1 },
+                            { "name": "2014", "id": 2 },
+                            { "name": "2015", "id": 3 },
+                            { "name": "2016", "id": 4 },
+                            { "name": "2017", "id": 5 },
+                            { "name": "2018", "id": 6 },
+                            { "name": "2019", "id": 7 }
+                        ],
+                        "selectOptions": { "noneSelectedText": "Maak een keuze" },
+                        "model": "wpontauttenaamgest",
+                        "refid": "wpontauttenaamgest",
+
+                        "doNotPost": true,
+                        "blockVisible": "wpontautmeer500blok",
+                        "customVisible": [
+                            {
+                                "//": "wpontauttoegel voor #{BDRGJAARMIN2}",
+                                "formula": "compareValues",
+                                "parameters": {
+                                    "less": "wpontauttoegelRepeatModel",
+                                    "than": "BDRGJAARMIN2Static"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "type": "select",
+                        "label": "Maand in #{BDRGJAARMIN5} waarin de auto voor het eerst op naam is gesteld",
+                        "values": [
+                            { "name": "Januari", "id": 1 },
+                            { "name": "Februari", "id": 2 },
+                            { "name": "Maart", "id": 3 },
+                            { "name": "April", "id": 4 },
+                            { "name": "Mei", "id": 5 },
+                            { "name": "Juni", "id": 6 },
+                            { "name": "Juli", "id": 7 },
+                            { "name": "Augustus", "id": 8 },
+                            { "name": "September", "id": 9 },
+                            { "name": "Oktober", "id": 10 },
+                            { "name": "November", "id": 11 },
+                            { "name": "December", "id": 12 }
+                        ],
+                        "selectOptions": { "noneSelectedText": "Maak een keuze" },
+                        "model": "wpontautnaambegin60mnd",
+                        "refid": "wpontautnaambegin60mnd",
+                        "blockVisible": "wpontautmeer500blok",
+                        "postKey": "1764241",
+                        "customVisible": [
+                            {
+                                "formula": "equalsValue",
+                                "parameters": {
+                                    "fieldModels": ["wpontauttenaamgestRepeatModel"],
+                                    "value": 2
+                                }
+                            }
+                        ]
+                    },
+
+                    {
+                        "type": "select",
+                        "label": "Welk percentage bijtelling gold voor deze auto?",
+                        "values": [
+                            { "name": "4%", "id": 4 },
+                            { "name": "7%", "id": 7 },
+                            { "name": "14%", "id": 14 },
+                            { "name": "15%", "id": 15 },
+                            { "name": "20%", "id": 20 },
+                            { "name": "21%", "id": 21 },
+                            { "name": "25%", "id": 25 }
+                        ],
+                        "selectOptions": { "noneSelectedText": "Maak een keuze" },
+                        "model": "wpontautpercbijt",
+                        "refid": "wpontautpercbijt",
+                        "blockVisible": "wpontautmeer500blok",
+                        "postKey": "1764247",
+                        "customVisible": [
+                            {
+                                "condition": "and",
+                                "formula": "notEqualsData",
+                                "parameters": {
+                                    "fieldModels": ["wpontauttoegelRepeatModel"],
+                                    "data": ["BDRGJAARMIN2Static", "BDRGJAARMIN1Static", "BDRGJAARStatic"]
+                                }
+                            }
+                        ],
+                        "conditionalOptions": [
+                            {
+                                "setOptions": [
+                                    { "name": "7%", "id": 7 },
+                                    { "name": "25%", "id": 25 }
+                                ],
+                                "terms": [
+                                    {
+                                        "formula": "equalsData",
+                                        "condition": "or",
+                                        "parameters": {
+                                            "fieldModels": ["wpontauttenaamgestRepeatModel"],
+                                            "data": [1, 5, 6, 7]
+                                        }
+                                    },
+                                    {
+                                        "formula": "notEqualsAnyValue",
+                                        "condition": "or",
+                                        "parameters": {
+                                            "fieldModels": ["wpontauttenaamgestRepeatModel"]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "setOptions": [
+                                    { "name": "4%", "id": 4 },
+                                    { "name": "7%", "id": 7 },
+                                    { "name": "14%", "id": 14 },
+                                    { "name": "20%", "id": 20 },
+                                    { "name": "25%", "id": 25 }
+                                ],
+                                "terms": [
+                                    {
+                                        "formula": "equalsData",
+                                        "condition": "and",
+                                        "parameters": {
+                                            "fieldModels": ["wpontauttenaamgestRepeatModel"],
+                                            "data": [2, 3]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "setOptions": [
+                                    { "name": "4%", "id": 4 },
+                                    { "name": "15%", "id": 15 },
+                                    { "name": "21%", "id": 21 },
+                                    { "name": "25%", "id": 25 }
+                                ],
+                                "terms": [
+                                    {
+                                        "formula": "equalsData",
+                                        "condition": "and",
+                                        "parameters": {
+                                            "fieldModels": ["wpontauttenaamgestRepeatModel"],
+                                            "data": [4]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "hidden",
+                        "model": "model_hlpmpontautnaambegin60mndherl",
+                        "doNotPost": true,
+                        "customValue": {
+                            "formula": "hlpmpontautnaambegin60mndherl",
+                            "parameters": {
+                                "fieldModels": ["wpontautnaambegin60mndRepeatModel"]
+                            }
+                        }
+                    },
+                    {
+                        "type": "label",
+                        "model": "wpontautpercbijt_w01",
+                        "doNotPost": true,
+                        "label": "<em>Ga uit van het oorspronkelijke bijtellingspercentage voor de auto.</em>",
+                        "blockVisible": "wpontautmeer500blok",
+                        "customVisible": [
+                            {
+                                "formula": "equalsValue",
+                                "condition": "and",
+                                "parameters": {
+                                    "fieldModels": ["wpontauttenaamgestRepeatModel"],
+                                    "value": 2
+                                }
+                            },
+                            {
+                                "//": "wpontautpercbijt wordt getoond",
+                                "formula": "equalsAnyValue",
+                                "condition": "and",
+                                "parameters": {
+                                    "fieldModels": ["wpontautpercbijtRepeatModel"]
+                                }
+                            },
+                            {
+                                "formula": "olderThan",
+                                "condition": "and",
+                                "parameters": {
+                                    "fieldModels": [
+                                        "wpontautstandper1RepeatModel",
+                                        "model_hlpmpontautnaambegin60mndherlRepeatModel"
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+
+                    {
+                        "type": "radios",
+
+                        "label": "Was het een volledig elektrische auto?",
+                        "model": "wpontautzeroemissie",
+                        "refid": "wpontautzeroemissie",
+                        "postKey": "1767683",
+                        "values": [
+                            { "name": "Ja", "value": "J" },
+                            { "name": "Nee", "value": "N" }
+                        ],
+                        "blockVisible": "wpontautmeer500blok",
+                        "customVisible": [
+                            {
+                                "formula": "equalsData",
+                                "condition": "and",
+                                "parameters": {
+                                    "fieldModels": ["wpontauttoegelRepeatModel"],
+                                    "data": ["BDRGJAARMIN2Static", "BDRGJAARMIN1Static", "BDRGJAARStatic"]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "type": "radios",
+
+                        "label": "Reed de auto op waterstof?",
+                        "model": "wpontautwaterstof",
+                        "refid": "wpontautwaterstof",
+                        "postKey": "1767684",
+                        "values": [
+                            { "name": "Ja", "value": "J" },
+                            { "name": "Nee", "value": "N" }
+                        ],
+                        "blockVisible": "wpontautmeer500blok",
+                        "customVisible": [
+                            {
+                                "formula": "equalsValue",
+                                "condition": "and",
+                                "parameters": {
+                                    "fieldModels": ["wpontautzeroemissieRepeatModel"],
+                                    "value": "J"
+                                }
+                            },
+                            {
+                                "formula": "equalsData",
+                                "condition": "and",
+                                "parameters": {
+                                    "fieldModels": ["wpontauttoegelRepeatModel"],
+                                    "data": ["BDRGJAARStatic"]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "type": "radios",
+                        "label": "Waren de kosten voor deze auto hoger dan €#{hlpmwpontautberprivgRepeatModel}?",
+                        "model": "wpontautkosthoog",
+                        "refid": "wpontautkosthoog",
+                        "values": [
+                            { "name": "Ja", "value": true },
+                            { "name": "Nee", "value": false }
+                        ],
+                        "blockVisible": "wpontautmeer500blok",
+                        "customVisible": [
+                            {
+                                "//": "Nu condities die pas tonen als er gerekend kan worden",
+                                "condition": "and",
+                                "terms": [
+                                    {
+                                        "formula": "equalsAnyValue",
+                                        "condition": "or",
+                                        "parameters": {
+                                            "//": "wpontautpercbijt",
+                                            "fieldModels": ["wpontautpercbijtRepeatModel"]
+                                        }
+                                    },
+                                    {
+                                        "condition": "or",
+                                        "terms": [
+                                            {
+                                                "formula": "equalsAnyValue",
+                                                "condition": "and",
+                                                "parameters": {
+                                                    "//": "wpontautzeroemissie",
+                                                    "fieldModels": ["wpontautzeroemissieRepeatModel"]
+                                                }
+                                            },
+                                            {
+                                                "formula": "equalsData",
+                                                "condition": "and",
+                                                "parameters": {
+                                                    "//": "wpontauttoegel",
+                                                    "fieldModels": ["wpontauttoegelRepeatModel"],
+                                                    "data": ["BDRGJAARMIN2Static", "BDRGJAARMIN1Static"]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "formula": "equalsAnyValue",
+                                        "condition": "or",
+                                        "parameters": {
+                                            "//": "wpontautwaterstof",
+                                            "fieldModels": ["wpontautwaterstofRepeatModel"]
+                                        }
+                                    },
+                                    {
+                                        "condition": "or",
+                                        "terms": [
+                                            {
+                                                "formula": "equalsData",
+                                                "condition": "and",
+                                                "parameters": {
+                                                    "//": "wpontauttoegel",
+                                                    "fieldModels": ["wpontauttoegelRepeatModel"],
+                                                    "data": ["BDRGJAARStatic"]
+                                                }
+                                            },
+                                            {
+                                                "formula": "equalsValue",
+                                                "condition": "and",
+                                                "parameters": {
+                                                    "//": "wpontautzeroemissie",
+                                                    "fieldModels": ["wpontautzeroemissieRepeatModel"],
+                                                    "value": "N"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+
+                    {
+                        "type": "hidden",
+                        "//": "Hulpmiddel tbv berekend privégebruik voor deze auto",
+                        "model": "hlpmwpontautberprivg",
+                        "doNotPost": true,
+                        "disabled": true,
+                        "customValue": {
+                            "formula": "berekeningPriveGebruik",
+                            "parameters": {
+                                "fieldModels": [
+                                    "wpontautstandcataRepeatModel",
+                                    "wpontautpercbijtRepeatModel",
+                                    "wpontautstandper1RepeatModel",
+                                    "wpontautstandper2RepeatModel",
+                                    "wpontauttenaamgestRepeatModel",
+                                    "wpontautnaambegin60mndRepeatModel",
+                                    "wpontauttoegelRepeatModel",
+                                    "wpontautzeroemissieRepeatModel",
+                                    "wpontautbouwRepeatModel",
+                                    "wpontautwaterstofRepeatModel"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "type": "currency",
+                        "currency": "EUR",
+                        "label": "Berekend privégebruik voor deze auto",
+                        "model": "wpontautberprivg",
+                        "refid": "wpontautberprivg",
+                        "doNotPost": true,
+                        "disabled": true,
+                        "//": "Waarde is al berekend in hlpmwpontautberprivgRepeatModel, maar hier nog een keer",
+                        "customValue": {
+                            "formula": "berekeningPriveGebruik",
+                            "parameters": {
+                                "fieldModels": [
+                                    "wpontautstandcataRepeatModel",
+                                    "wpontautpercbijtRepeatModel",
+                                    "wpontautstandper1RepeatModel",
+                                    "wpontautstandper2RepeatModel",
+                                    "wpontauttenaamgestRepeatModel",
+                                    "wpontautnaambegin60mndRepeatModel",
+                                    "wpontauttoegelRepeatModel",
+                                    "wpontautzeroemissieRepeatModel",
+                                    "wpontautbouwRepeatModel",
+                                    "wpontautwaterstofRepeatModel"
+                                ]
+                            }
+                        },
+                        "blockVisible": "wpontautmeer500blok",
+                        "customVisible": [
+                            {
+                                "formula": "equalsValue",
+                                "parameters": {
+                                    "fieldModels": ["wpontautkosthoogRepeatModel"],
+                                    "value": true
+                                }
+                            }
+                        ]
+                    },
+
+                    {
+                        "type": "currency",
+                        "currency": "EUR",
+                        "label": "Kosten voor deze auto",
+                        "model": "wpontautkost",
+                        "refid": "wpontautkost",
+                        "postKey": "1764249",
+                        "//": "verplicht, bedrag_pos13 missen we nu vanwege customValidator",
+                        "blockVisible": "wpontautmeer500blok",
+                        "customVisible": [
+                            {
+                                "formula": "equalsValue",
+                                "parameters": {
+                                    "fieldModels": ["wpontautkosthoogRepeatModel"],
+                                    "value": false
+                                }
+                            }
+                        ],
+                        "validator": ["custom"],
+                        "customValidators": [
+                            {
+                                "message": "U hebt een verkeerde waarde ingevuld. Vul maximaal € #{hlpmwpontautberprivgRepeatModel} in.",
+                                "terms": [
+                                    {
+                                        "formula": "compareValues",
+                                        "parameters": {
+                                            "greater": "wpontautkostRepeatModel",
+                                            "than": "hlpmwpontautberprivgRepeatModel"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "currency",
+                        "currency": "EUR",
+                        "model": "wpontautafeigrek",
+                        "refid": "wpontautafeigrek",
+                        "postKey": "118333",
+                        "label": "Vanuit privémiddelen betaalde kosten voor deze auto",
+                        "validator": ["verplicht", "bedrag13"],
+                        "blockVisible": "wpontautmeer500blok"
+                    },
+                    {
+                        "type": "currency",
+                        "currency": "EUR",
+                        "model": "wpontautonttrek",
+                        "refid": "wpontautonttrek",
+                        "doNotPost": true,
+                        "total": true,
+                        "totalSymbol": "-",
+                        "defaultValue": 0,
+                        "label": "Onttrekking voor privégebruik van deze auto over deze periode",
+                        "disabled": true,
+                        "blockVisible": "wpontautmeer500blok",
+                        "conditionalValues": [
+                            {
+                                "setValueWithCalculation": {
+                                    "formula": "minusSumOfFields",
+                                    "parameters": {
+                                        "fieldModels": ["wpontautberprivgRepeatModel", "wpontautafeigrekRepeatModel"]
+                                    }
+                                },
+                                "terms": [
+                                    {
+                                        "formula": "equalsAnyValue",
+                                        "parameters": {
+                                            "fieldModels": ["wpontautberprivgRepeatModel"]
+                                        }
+                                    },
+                                    {
+                                        "formula": "compareValues",
+                                        "parameters": {
+                                            "greater": "wpontautberprivgRepeatModel",
+                                            "than": "wpontautafeigrekRepeatModel"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "setValueWithCalculation": {
+                                    "formula": "minusSumOfFields",
+                                    "parameters": {
+                                        "fieldModels": ["wpontautkostRepeatModel", "wpontautafeigrekRepeatModel"]
+                                    }
+                                },
+                                "terms": [
+                                    {
+                                        "formula": "compareValues",
+                                        "parameters": {
+                                            "greater": "wpontautkostRepeatModel",
+                                            "than": "wpontautafeigrekRepeatModel"
+                                        }
+                                    },
+                                    {
+                                        "formula": "equalsAnyValue",
+                                        "parameters": {
+                                            "fieldModels": ["wpontautkostRepeatModel"]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+
+                    {
+                        "type": "hidden",
+                        "label": "Bereken totaal bijtelling in deze group",
+                        "model": "hlpmtotaalonttrekkingautoaangGroup",
+                        "doNotPost": true,
+                        "customValue": {
+                            "formula": "sumOfFields",
+                            "parameters": {
+                                "fieldModels": ["wpontautonttrekRepeatModel", "wpontautbijzaangRepeatModel"]
+                            }
+                        }
+                    },
+
+                    {
+                        "type": "hidden",
+                        "label": "Bereken hlpmwpontautkilometersperperiode",
+                        "model": "hlpmwpontautkilometersperperiode",
+                        "doNotPost": true,
+                        "customValue": {
+                            "formula": "vrijstellingKilometersPerPeriode",
+                            "parameters": {
+                                "fieldModels": ["wpontautstandper1RepeatModel", "wpontautstandper2RepeatModel"]
+                            }
+                        }
+                    },
+                    {
+                        "type": "hidden",
+                        "label": "Bereken hlpmwpontautdatumkentplus15jrRepeatModel",
+                        "model": "hlpmwpontautdatumkentplus15jr",
+                        "doNotPost": true,
+                        "customValue": {
+                            "formula": "addYears",
+                            "parameters": {
+                                "fieldModels": ["wpontautdatumkentRepeatModel"],
+                                "years": 15
+                            }
+                        }
+                    },
+                    {
+                        "type": "hidden",
+                        "model": "wpontautexcprivLabel",
+                        "doNotPost": true,
+                        "conditionalValues": [
+                            {
+                                "setValue": "#{BDRGPERCBIJTAUTOLAAG}% van de cataloguswaarde van de auto",
+                                "terms": [
+                                    {
+                                        "formula": "equalsValue",
+                                        "parameters": {
+                                            "fieldModels": ["wpontautbouwRepeatModel"],
+                                            "value": 1
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "setValue": "het bedrag dat u normaal gesproken moet verrekenen",
+                                "terms": [
+                                    {
+                                        "formula": "equalsValue",
+                                        "parameters": {
+                                            "fieldModels": ["wpontautbouwRepeatModel"],
+                                            "value": 2
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "setValue": "#{BDRGPERCBIJTAUTOHOOG}% van de taxatiewaarde van de auto",
+                                "terms": [
+                                    {
+                                        "formula": "equalsValue",
+                                        "parameters": {
+                                            "fieldModels": ["wpontautbouwRepeatModel"],
+                                            "value": 3
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        "//": "#### Einde Blok wpontautmeer500blok ####",
+                        "///": "### Einde blok wpontautstandblok ###"
+                    }
+                ]
+            },
+
+            {
+                "//": "Begin blok wpontauttottab",
+                "legend": "",
+                "customVisible": [
+                    {
+                        "formula": "equalsData",
+                        "parameters": {
+                            "fieldModels": ["wpontautmeer1"],
+                            "data": [2, 3]
+                        }
+                    }
+                ],
+                "fields": [
+                    {
+                        "type": "currency",
+                        "currency": "EUR",
+                        "label": "Totaal onttrekking privégebruik auto van de onderneming",
+                        "model": "wpontauttot",
+                        "refid": "wpontauttot",
+                        "disabled": true,
+                        "customValue": {
+                            "formula": "sumOfGroupFields",
+                            "parameters": {
+                                "fieldModels": ["1617773", "hlpmtotaalonttrekkingautoaangGroup"]
+                            }
+                        }
+                    },
+                    {
+                        "type": "hidden",
+                        "label": "Ontsluit static waarde 119674-DB in model",
+                        "model": "model119674",
+                        "doNotPost": true,
+                        "customValue": {
+                            "formula": "sumOfStatics",
+                            "parameters": {
+                                "fieldModels": ["119674-DB"]
+                            }
+                        }
+                    },
+                    {
+                        "type": "hidden",
+                        "label": "Het bedrag (rounddown) van de gesommeerde bijtelling optellen bij 119674 (overige buitengewone baten fisc)",
+                        "model": "119674-DB",
+                        "postKey": "119674-DB",
+                        "customValue": {
+                            "formula": "sumOfFields",
+                            "parameters": {
+                                "fieldModels": ["model119674", "wpontauttot"]
+                            }
+                        }
+                    },
+
+                    {
+                        "type": "hidden",
+                        "label": "Ondernemingsvermogen excl fiscale reserves fisc van (gemapte) brugstaat",
+                        "model": "ondernemingsvermogenExclFiscaleEeserves",
+                        "doNotPost": true,
+                        "customValue": {
+                            "formula": "sumOfStatics",
+                            "parameters": {
+                                "fieldModels": ["119356-EB"]
+                            }
+                        }
+                    },
+                    {
+                        "type": "hidden",
+                        "label": "Ondernemingsvermogen excl fiscale reserves fisc",
+                        "model": "119356-EB",
+                        "postKey": "119356-EB",
+                        "customValue": {
+                            "formula": "minusSumOfFields",
+                            "parameters": {
+                                "fieldModels": ["ondernemingsvermogenExclFiscaleEeserves", "wpontauttot"]
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}
