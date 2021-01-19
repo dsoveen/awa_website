@@ -49,5 +49,9 @@
     "113": {
         "code": 113,
         "explain": "Het ECG XML document is niet valide. Fouten: :errors"
-    }
+    },
+    "114": {
+        "code": 114,
+        "explain": "De :debit_credit waarde (:value) van :rgsCode is niet valide in record :record"
+    }	    
 }

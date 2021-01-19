@@ -1,0 +1,77 @@
+{
+  "global": {
+    "voorbereiden_ondernemingsgegevens_voor_aangifte_inkomstenbelasting": "Voorbereiden ondernemingsgegevens voor aangifte inkomstenbelasting {year}",
+    "foutcode": "Foutcode",
+    "doorgaan": "Doorgaan",
+    "verwijderen": "Verwijderen",
+    "openen": "Openen",
+    "annuleren": "Annuleren",
+    "nee": "Nee",
+    "ja": "Ja",
+    "controleren": "Controleren",
+    "afsluiten": "Afsluiten",
+    "opslaan": "Opslaan",
+    "bezig_met_opslaan": "Bezig met opslaan",
+    "opgeslagen": "Opgeslagen",
+    "volgende": "Volgende",
+    "vorige": "Vorige",
+    "overslaan": "Overslaan"
+  },
+  "introduction": {
+    "voorbereiden_ondernemingsgegevens_voor_aangifte_inkomstenbelasting": "Voorbereiden ondernemingsgegevens voor aangifte inkomstenbelasting {year}",
+    "introductie": "Introductie",
+    "introduction_tekst": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet dui a efficitur suscipit. Nunc lacus purus, ultricies at risus ut, elementum viverra urna. Nullam quis blandit orci.",
+    "u_hebt_nog_niet_alle_stappen_afgerond": "U hebt nog niet alle stappen afgerond.",
+    "ondernemingsgegevens_voorbereiden": "Ondernemingsgegevens voorbereiden",
+    "nog_niet_begonnen_tekst": "U bent nog niet begonnen met het voorbereiden van de ondernemingsgegevens van de aangifte inkomstenbelasting 2019. Dit kunt u doen met de knop hieronder.",
+    "nog_niet_alle_stappen_afgerond_tekst": "U heeft nog niet alle stappen afgerond. U kunt nu doorgaan met het voorbereiden van de aangifte inkomstenbelasting of deze verwijderen en opnieuw beginnen.",
+    "alle_stappen_doorlopen_tekst": "U hebt alle stappen doorlopen.",
+    "klaar_met_voorbereiding_tekst": "U bent klaar met de voorbereiding. Vergeet niet de gegevens up te loaden in de omgeving van de Belastingdienst",
+    "gegevens_vooringevuld_in_mijn_belastingdienst": "De gegevens die u hebt samengesteld kunnen alleen worden vooringevuld in een speciale omgeving van Mijn.Belastingdienst. U kunt alleen daar uw Belastingaangifte voorinvullen met uw ondernemingsgegevens. Uw privé gegevens zijn daar ook vooringevuld zoals u al eerder gewend was.",
+    "maak_gebruik_van_de_speciale_belastingdienst_omgeving": "Maak gebruik van de speciale belastingdienst omgeving",
+    "start_met_voorbereiden": "Start met voorbereiden",
+    "vergeet_niet_de_ondernemingsgegevens_nog_up_te_loaden": "Vergeet niet de ondernemingsgegevens nog up te loaden",
+    "weet_u_zeker_dat_u_de_uw_ingevulde_gegevens_wilt_verwijderen": "Weet u zeker dat u de uw ingevulde gegevens wilt verwijderen?",
+    "de_winstaangifte": "De winstaangifte {year}"
+  },
+  "download": {
+    "download": "Download",
+    "bestandsnaam_xml": "automatische-winstaangifte-{year}.xml",
+    "stap_1_download_uw_voorbereide_aangiftegegevens": "Stap 1: Download uw voorbereide aangiftegegevens",
+    "stap_2_doe_aangifte_inkomstenbelasting": "Stap 2: Doe aangifte inkomstenbelasting",
+    "ga_naar_omgeving_mijn_belastingdienst_via_de_onderstaande_knop": "Ga naar de speciale omgeving van Mijn Belastingdienst via de onderstaande knop.",
+    "upload_het_bestand_bij_het_onderdeel_ondernemers": "Upload daar het bestand bij het onderdeel ondernemers als daar om gevraagd wordt.",
+    "doe_de_inkomstenbelasting_aangifte": "en doe de inkomstenbelasting aangifte.",
+    "naar_belastingdienst_knop_titel": "Naar belasingdienst.nl/awa",
+    "naar_belastingdienst_knop_url": "https://www.belastingdienst.nl/awa"
+  },
+  "forms": {
+    "veranderingen_in_de_vooringevulde_waarden": "Veranderingen in de vooringevulde waarden hebben de volgende waarde overschreven:",
+    "veld": "Veld",
+    "oude_waarde": "Oude waarde",
+    "nieuwe_waarde": "Nieuwe waarde",
+    "leeg": "(leeg)",
+    "fallback_titel": "Aanvullen en specificeren van gegevens",
+    "ingevulde_waardes_gaan_verloren_weet_u_het_zeker": "Ingevulde waardes in het huidige scherm gaan verloren. Weet u het zeker?",
+    "dit_klopt_niet_ga_terug_naar_boekhouden": "Dit klopt niet, ga terug naar boekhouden",
+    "opslaan_en_naar_boekhouding": "Opslaan en naar boekhouding",
+    "er_zijn_cijfers_die_niet_kloppen": "Er zijn cijfers die niet kloppen ",
+    "er_zijn_cijfers_die_niet_kloppen_tekst": "De cijfers die u niet kunt aanpassen komen uit de boekhouding. Ga terug naar uw boekhouding en pas deze daar aan. Start daarna de aangifte opnieuw.",
+    "eerder_ingevulde_gegevens_blijven_bewaard": "Uw eerder ingevulde gegevens blijven bewaard.",
+    "gegevens_worden_opgeslagen_een_moment_aub": "De gegevens worden opgelsagen, een moment alstublieft."
+  },
+  "year_overview": {
+    "jaarcijfers": "Jaarcijfers",
+    "start_boekjaar": "Start boekjaar",
+    "einde_boekjaar": "Einde boekjaar",
+    "subtotaal": "Subtotaal",
+    "totaal": "Totaal",
+    "resultaat_tot_nu_toe_deze_en_vorige_secties": "Resultaat tot nu toe (deze en vorige secties)",
+    "db": "DB",
+    "ecg": "ECG"
+  },
+  "sidebar": {
+    "aanvullende_vragen": "Aanvullende vragen",
+    "fiscale_check": "Fiscale check"
+  }
+}

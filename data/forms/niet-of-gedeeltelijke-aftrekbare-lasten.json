@@ -240,19 +240,7 @@
 
           {
             "type": "hidden",
-            "label": "20% van totaal kosten reis en verblijfkosten",
-            "model": "20PercentOfreisEnVerblijfkosten",
-            "customValue": {
-              "formula": "percentOfField",
-              "parameters": {
-                "fieldModels": ["reisEnVerblijfKostenAftrekbaarRepeatModel"],
-                "percent": 20
-              }
-            }
-          },
-
-          {
-            "type": "hidden",
+            "//": "Zet omschrijving alleen als er een bedrag bestaat",
             "label": "Omschrijving reis en verblijfkosten",
             "postKey": "119789",
             "model": "119789",
@@ -264,7 +252,7 @@
                     "formula": "equalsAnyValue",
                     "parameters": {
                       "fieldModels": [
-                        "20PercentOfreisEnVerblijfkostenRepeatModel"
+                        "reisEnVerblijfKostenAftrekbaarRepeatModel"
                       ]
                     }
                   }
@@ -275,100 +263,46 @@
 
           {
             "type": "hidden",
-            "label": "Plus bedrag als kosten hoger zijn dan 1875",
-            "model": "plusBedragKostenHoger",
-            "conditionalValues": [
-              {
-                "setValue": 375,
-                "terms": [
-                  {
-                    "formula": "greaterThanValue",
-                    "parameters": {
-                      "fieldModels": [
-                        "reisEnVerblijfKostenAftrekbaarRepeatModel"
-                      ],
-                      "value": 1875
-                    }
-                  }
-                ]
+            "label": "20% van reis en verblijfkosten",
+            "model": "20ProcentVanReisEnVerblijfkosten",
+            "customValue": {
+              "formula": "percentOfField",
+              "parameters": {
+                "fieldModels": ["reisEnVerblijfKostenAftrekbaarRepeatModel"],
+                "percent": 20,
+                "round": "down"
               }
-            ]
+            }
           },
 
           {
             "type": "hidden",
-            "label": "Min bedrag als kosten hoger zijn dan 1875",
-            "model": "minBedragKostenHoger",
-            "conditionalValues": [
-              {
-                "setValue": 1875,
-                "terms": [
-                  {
-                    "formula": "greaterThanValue",
-                    "parameters": {
-                      "fieldModels": [
-                        "reisEnVerblijfKostenAftrekbaarRepeatModel"
-                      ],
-                      "value": 1875
-                    }
-                  }
-                ]
+            "label": "Reis en verblijfkosten min het maximale bedrag",
+            "model": "reisEnVerlijfkostenMinHetMaximaleBedrag",
+            "customValue": {
+              "formula": "fieldMinusValue",
+              "parameters": {
+                "fieldModels": ["reisEnVerblijfKostenAftrekbaarRepeatModel"],
+                "value": 1500
               }
-            ]
+            }
           },
 
           {
             "type": "hidden",
-            "label": "Basis bedrag min 1875",
-            "model": "basisBedragMinMaximaleBedrag",
+            "label": "Niet aftrekbaar bedrag reis en verblijfkosten",
+            "postKey": "119788",
+            "model": "119788",
             "conditionalValues": [
               {
-                "setValueWithCalculation": {
-                  "formula": "minusSumOfFields",
-                  "parameters": {
-                    "fieldModels": [
-                      "reisEnVerblijfKostenAftrekbaarRepeatModel",
-                      "minBedragKostenHogerRepeatModel"
-                    ]
-                  }
-                },
+                "setValue": "20ProcentVanReisEnVerblijfkostenRepeatModel",
                 "terms": [
-                  {
-                    "formula": "greaterThanValue",
-                    "parameters": {
-                      "fieldModels": [
-                        "reisEnVerblijfKostenAftrekbaarRepeatModel"
-                      ],
-                      "value": 1875
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "hidden",
-            "label": "Bedrag reis en verblijfkosten (niet afgerond)",
-            "model": "bedragReisEnVerblijfkostenNietAfgerond",
-            "conditionalValues": [
-              {
-                "setValue": "20PercentOfreisEnVerblijfkostenRepeatModel",
-                "terms": [
-                  {
-                    "formula": "equalsAnyValue",
-                    "condition": "and",
-                    "parameters": {
-                      "fieldModels": [
-                        "20PercentOfreisEnVerblijfkostenRepeatModel"
-                      ]
-                    }
-                  },
                   {
                     "formula": "compareValues",
                     "condition": "and",
                     "parameters": {
                       "equalOrLess": "reisEnVerblijfKostenAftrekbaarRepeatModel",
-                      "than": 1875
+                      "than": 1500
                     }
                   }
                 ]
@@ -376,12 +310,11 @@
 
               {
                 "setValueWithCalculation": {
-                  "formula": "sumOfFields",
+                  "formula": "fieldPlusValue",
                   "parameters": {
-                    "fieldModels": [
-                      "plusBedragKostenHogerRepeatModel",
-                      "basisBedragMinMaximaleBedragRepeatModel"
-                    ]
+                    "fieldModels": [ "reisEnVerlijfkostenMinHetMaximaleBedragRepeatModel" ],
+                    "value": 300,
+                    "round": "down"
                   }
                 },
                 "terms": [
@@ -390,37 +323,7 @@
                     "condition": "and",
                     "parameters": {
                       "greater": "reisEnVerblijfKostenAftrekbaarRepeatModel",
-                      "than": 1875
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-
-          {
-            "type": "hidden",
-            "label": "Bedrag reis en verblijfkosten",
-            "postKey": "119788",
-            "model": "119788",
-            "conditionalValues": [
-              {
-                "setValueWithCalculation": {
-                  "formula": "roundDown",
-                  "parameters": {
-                    "fieldModels": [
-                      "bedragReisEnVerblijfkostenNietAfgerondRepeatModel"
-                    ]
-                  }
-                },
-                "terms": [
-                  {
-                    "formula": "equalsAnyValue",
-                    "condition": "and",
-                    "parameters": {
-                      "fieldModels": [
-                        "bedragReisEnVerblijfkostenNietAfgerondRepeatModel"
-                      ]
+                      "than": 1500
                     }
                   }
                 ]
@@ -430,7 +333,7 @@
           {
             "type": "label",
             "label": "€ #{119788RepeatModel}"
-          }
+          }        
         ]
       },
 
@@ -454,13 +357,13 @@
           },
           {
             "type": "label",
-            "label": "De kosten zijn hoger dan €1875. Alle kosten boven dit bedrag worden bij het niet-aftrekbare bedrag opgeteld.",
+            "label": "De kosten zijn hoger dan €1500. Alle kosten boven dit bedrag worden bij het niet-aftrekbare bedrag opgeteld.",
             "customVisible": [
               {
                 "formula": "greaterThanValue",
                 "parameters": {
                   "fieldModels": ["somVanBedragReisEnVerblijfKostenGroep"],
-                  "value": 1875
+                  "value": 1500
                 }
               }
             ]

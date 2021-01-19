@@ -9,6 +9,7 @@
     "label": "Restwaarde materiele vaste activa",
     "form": "materiele-vaste-activa",
     "json": "data/forms/materiele-vaste-activa.json",
+    "invalidAccountancyButton": true,
     "conditions": [
       {
         "formula": "compareValues",
@@ -32,6 +33,7 @@
     "label": "Specificatie schuld omzetbelasting",
     "form": "specificatie-schulden-omzetbelasting",
     "json": "data/forms/specificatie-schulden-omzetbelasting.json",
+    "invalidAccountancyButton": true,
     "conditions": [
       {
         "formula": "compareValues",
@@ -55,6 +57,7 @@
     "label": "Specificatie vordering omzetbelasting",
     "form": "specificatie-vorderingen-omzetbelasting",
     "json": "data/forms/specificatie-vorderingen-omzetbelasting.json",
+    "invalidAccountancyButton": true,
     "conditions": [
       {
         "formula": "compareValues",
@@ -92,6 +95,7 @@
     "label": "Inbreng of onttrekking overige activa",
     "form": "inbr-ont-overige-activa",
     "json": "data/forms/inbr-ont-overige-activa.json",
+    "invalidAccountancyButton": true,
     "conditions": true
   },
   {
@@ -112,6 +116,7 @@
     "label": "Specificatie overige privéonttrekkingen",
     "form": "overige-priveonttrekkingen",
     "json": "data/forms/overige-priveonttrekkingen.json",
+    "invalidAccountancyButton": true,
     "conditions": [
       {
         "formula": "staticExists",
