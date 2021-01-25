@@ -3,126 +3,126 @@
      <Berichtgegevens>
         <LevCode>NASm</LevCode>
         <RelatienrSWO>ABCDEFGH</RelatienrSWO>
-        <VersieApplicatie>string</VersieApplicatie>
+        <VersieApplicatie></VersieApplicatie>
       </Berichtgegevens>
       <Vermogensvergelijk>
         <SpecPriveOnttrekkingNatura>
-          <OmschPriveOnttrekkingNatura>string</OmschPriveOnttrekkingNatura>
-          <BoekwaardePriveOnttrekkingNatura>1000</BoekwaardePriveOnttrekkingNatura>
-          <WijzeTotstandkomOverdrPrijsNatura>string</WijzeTotstandkomOverdrPrijsNatura>
+          <OmschPriveOnttrekkingNatura></OmschPriveOnttrekkingNatura>
+          <BoekwaardePriveOnttrekkingNatura></BoekwaardePriveOnttrekkingNatura>
+          <WijzeTotstandkomOverdrPrijsNatura></WijzeTotstandkomOverdrPrijsNatura>
         </SpecPriveOnttrekkingNatura>
         <SpecPriveOnttrekkingNatura>
-          <OmschPriveOnttrekkingNatura>string</OmschPriveOnttrekkingNatura>
-          <BoekwaardePriveOnttrekkingNatura>-662</BoekwaardePriveOnttrekkingNatura>
-          <WijzeTotstandkomOverdrPrijsNatura>string</WijzeTotstandkomOverdrPrijsNatura>
+          <OmschPriveOnttrekkingNatura></OmschPriveOnttrekkingNatura>
+          <BoekwaardePriveOnttrekkingNatura></BoekwaardePriveOnttrekkingNatura>
+          <WijzeTotstandkomOverdrPrijsNatura></WijzeTotstandkomOverdrPrijsNatura>
         </SpecPriveOnttrekkingNatura>
         <SpecPriveOnttrekkingNatura>
-          <OmschPriveOnttrekkingNatura>string</OmschPriveOnttrekkingNatura>
-          <BoekwaardePriveOnttrekkingNatura>2091</BoekwaardePriveOnttrekkingNatura>
-          <WijzeTotstandkomOverdrPrijsNatura>string</WijzeTotstandkomOverdrPrijsNatura>
+          <OmschPriveOnttrekkingNatura></OmschPriveOnttrekkingNatura>
+          <BoekwaardePriveOnttrekkingNatura></BoekwaardePriveOnttrekkingNatura>
+          <WijzeTotstandkomOverdrPrijsNatura></WijzeTotstandkomOverdrPrijsNatura>
         </SpecPriveOnttrekkingNatura>
         <SpecOnttrekkingenPriveGebrAuto>
-          <WIACatalogusprijsAuto>-4427</WIACatalogusprijsAuto>
-          <WIAMeerDan500KmJaarPrive>N</WIAMeerDan500KmJaarPrive>
-          <KMAdministrAanwezig>N</KMAdministrAanwezig>
-          <MaandAuto5JrGeledenToegel>43</MaandAuto5JrGeledenToegel>
-          <KostenLastenDezeAuto>9780</KostenLastenDezeAuto>
-          <BedragBijzSituatiePriveGebrAuto>-1736</BedragBijzSituatiePriveGebrAuto>
+          <WIACatalogusprijsAuto></WIACatalogusprijsAuto>
+          <WIAMeerDan500KmJaarPrive></WIAMeerDan500KmJaarPrive>
+          <KMAdministrAanwezig></KMAdministrAanwezig>
+          <MaandAuto5JrGeledenToegel></MaandAuto5JrGeledenToegel>
+          <KostenLastenDezeAuto></KostenLastenDezeAuto>
+          <BedragBijzSituatiePriveGebrAuto></BedragBijzSituatiePriveGebrAuto>
         </SpecOnttrekkingenPriveGebrAuto>
         <SpecOnttrekkingenPriveGebrAuto>
-          <WIACatalogusprijsAuto>-1146</WIACatalogusprijsAuto>
-          <WIAJaarAutoToegel>2021</WIAJaarAutoToegel>
-          <WIABPerAuto>1991-05-26</WIABPerAuto>
-          <KMAdministrAanwezig>J</KMAdministrAanwezig>
-          <MaandAuto5JrGeledenToegel>-65</MaandAuto5JrGeledenToegel>
-          <PercBijtellingDezeAuto>90</PercBijtellingDezeAuto>
-          <KostenLastenEigenRekeningAuto>4269</KostenLastenEigenRekeningAuto>
-          <BedragBijzSituatiePriveGebrAuto>4619</BedragBijzSituatiePriveGebrAuto>
+          <WIACatalogusprijsAuto></WIACatalogusprijsAuto>
+          <WIAJaarAutoToegel></WIAJaarAutoToegel>
+          <WIABPerAuto></WIABPerAuto>
+          <KMAdministrAanwezig></KMAdministrAanwezig>
+          <MaandAuto5JrGeledenToegel></MaandAuto5JrGeledenToegel>
+          <PercBijtellingDezeAuto></PercBijtellingDezeAuto>
+          <KostenLastenEigenRekeningAuto></KostenLastenEigenRekeningAuto>
+          <BedragBijzSituatiePriveGebrAuto></BedragBijzSituatiePriveGebrAuto>
         </SpecOnttrekkingenPriveGebrAuto>
         <SpecOnttrekkingenPriveGebrAuto>
-          <WIAKentekenAuto>ABCDEF</WIAKentekenAuto>
-          <WIACatalogusprijsAuto>377</WIACatalogusprijsAuto>
-          <WIAJaarAutoToegel>2020</WIAJaarAutoToegel>
-          <WIAMeerDan500KmJaarPrive>N</WIAMeerDan500KmJaarPrive>
-          <KMAdministrAanwezig>N</KMAdministrAanwezig>
-          <MaandAuto5JrGeledenToegel>98</MaandAuto5JrGeledenToegel>
-          <AutoVollElekAangedr>J</AutoVollElekAangedr>
-          <AutoWaterstof>J</AutoWaterstof>
-          <BedragBijzSituatiePriveGebrAuto>1235</BedragBijzSituatiePriveGebrAuto>
+          <WIAKentekenAuto></WIAKentekenAuto>
+          <WIACatalogusprijsAuto></WIACatalogusprijsAuto>
+          <WIAJaarAutoToegel></WIAJaarAutoToegel>
+          <WIAMeerDan500KmJaarPrive></WIAMeerDan500KmJaarPrive>
+          <KMAdministrAanwezig></KMAdministrAanwezig>
+          <MaandAuto5JrGeledenToegel></MaandAuto5JrGeledenToegel>
+          <AutoVollElekAangedr></AutoVollElekAangedr>
+          <AutoWaterstof></AutoWaterstof>
+          <BedragBijzSituatiePriveGebrAuto></BedragBijzSituatiePriveGebrAuto>
         </SpecOnttrekkingenPriveGebrAuto>
         <SpecOnttrekkingenPriveGebrAuto>
-          <WIAMeerDan500KmJaarPrive>J</WIAMeerDan500KmJaarPrive>
-          <PercBijtellingDezeAuto>39</PercBijtellingDezeAuto>
-          <KostenLastenDezeAuto>5645</KostenLastenDezeAuto>
-          <KostenLastenEigenRekeningAuto>-1541</KostenLastenEigenRekeningAuto>
-          <BedragBijzSituatiePriveGebrAuto>1315</BedragBijzSituatiePriveGebrAuto>
+          <WIAMeerDan500KmJaarPrive></WIAMeerDan500KmJaarPrive>
+          <PercBijtellingDezeAuto></PercBijtellingDezeAuto>
+          <KostenLastenDezeAuto></KostenLastenDezeAuto>
+          <KostenLastenEigenRekeningAuto></KostenLastenEigenRekeningAuto>
+          <BedragBijzSituatiePriveGebrAuto></BedragBijzSituatiePriveGebrAuto>
         </SpecOnttrekkingenPriveGebrAuto>
         <SpecOverigePriveOnttrekkingen>
-          <OmschOverigePriveOnttrekkingen>string</OmschOverigePriveOnttrekkingen>
+          <OmschOverigePriveOnttrekkingen></OmschOverigePriveOnttrekkingen>
         </SpecOverigePriveOnttrekkingen>
         <SpecOverigePriveOnttrekkingen>
-          <OmschOverigePriveOnttrekkingen>string</OmschOverigePriveOnttrekkingen>
+          <OmschOverigePriveOnttrekkingen></OmschOverigePriveOnttrekkingen>
         </SpecOverigePriveOnttrekkingen>
         <SpecOverigePriveOnttrekkingen>
-          <OmschOverigePriveOnttrekkingen>string</OmschOverigePriveOnttrekkingen>
+          <OmschOverigePriveOnttrekkingen></OmschOverigePriveOnttrekkingen>
         </SpecOverigePriveOnttrekkingen>
         <SpecOverigePriveOnttrekkingen>
-          <OmschOverigePriveOnttrekkingen>string</OmschOverigePriveOnttrekkingen>
+          <OmschOverigePriveOnttrekkingen></OmschOverigePriveOnttrekkingen>
         </SpecOverigePriveOnttrekkingen>
       </Vermogensvergelijk>
       <ToepOndernemersaftrek>
-        <ZelfstandigenaftrekVoorgJaren>2802</ZelfstandigenaftrekVoorgJaren>
+        <ZelfstandigenaftrekVoorgJaren></ZelfstandigenaftrekVoorgJaren>
       </ToepOndernemersaftrek>
       <SpecInvestAftrek>
-        <ResearchDevelopAftrek>4663</ResearchDevelopAftrek>
-        <TotDesinvestBijt>4789</TotDesinvestBijt>
+        <ResearchDevelopAftrek></ResearchDevelopAftrek>
+        <TotDesinvestBijt></TotDesinvestBijt>
         <SpecEnergieMilieuInvestAftrek>
-          <EnergieMilieuInvest>1</EnergieMilieuInvest>
-          <MeldingsnrEnergieMilieuInvestAftrek>M598565115</MeldingsnrEnergieMilieuInvestAftrek>
+          <EnergieMilieuInvest></EnergieMilieuInvest>
+          <MeldingsnrEnergieMilieuInvestAftrek></MeldingsnrEnergieMilieuInvestAftrek>
         </SpecEnergieMilieuInvestAftrek>
         <SpecEnergieMilieuInvestAftrek>
           <EnergieMilieuInvest>1</EnergieMilieuInvest>
-          <MeldingsnrEnergieMilieuInvestAftrek>M950083937</MeldingsnrEnergieMilieuInvestAftrek>
+          <MeldingsnrEnergieMilieuInvestAftrek></MeldingsnrEnergieMilieuInvestAftrek>
         </SpecEnergieMilieuInvestAftrek>
         <SpecKleinschalighInvestAftrek>
-          <InvestBoekjaarInGebrGenomen>J</InvestBoekjaarInGebrGenomen>
-          <InvestBedrMidInGebrGenomenDitBoekjaar>879</InvestBedrMidInGebrGenomenDitBoekjaar>
-          <InvestBedrMidInGebrGenomenNaDitBoekjaar>9284</InvestBedrMidInGebrGenomenNaDitBoekjaar>
+          <InvestBoekjaarInGebrGenomen></InvestBoekjaarInGebrGenomen>
+          <InvestBedrMidInGebrGenomenDitBoekjaar></InvestBedrMidInGebrGenomenDitBoekjaar>
+          <InvestBedrMidInGebrGenomenNaDitBoekjaar></InvestBedrMidInGebrGenomenNaDitBoekjaar>
         </SpecKleinschalighInvestAftrek>
         <SpecKleinschalighInvestAftrek>
-          <InvestBedrMidInGebrGenomenDitBoekjaar>5877</InvestBedrMidInGebrGenomenDitBoekjaar>
-          <InvestBedrMidInGebrGenomenNaDitBoekjaar>6025</InvestBedrMidInGebrGenomenNaDitBoekjaar>
+          <InvestBedrMidInGebrGenomenDitBoekjaar></InvestBedrMidInGebrGenomenDitBoekjaar>
+          <InvestBedrMidInGebrGenomenNaDitBoekjaar></InvestBedrMidInGebrGenomenNaDitBoekjaar>
         </SpecKleinschalighInvestAftrek>
         <SpecKleinschalighInvestAftrek>
-          <KleinschalighInvestAftrekVorigeBoekjaren>3501</KleinschalighInvestAftrekVorigeBoekjaren>
+          <KleinschalighInvestAftrekVorigeBoekjaren></KleinschalighInvestAftrekVorigeBoekjaren>
           <InvestBoekjaarInGebrGenomen>N</InvestBoekjaarInGebrGenomen>
-          <InvestBedrMidInGebrGenomenNaDitBoekjaar>3731</InvestBedrMidInGebrGenomenNaDitBoekjaar>
+          <InvestBedrMidInGebrGenomenNaDitBoekjaar></InvestBedrMidInGebrGenomenNaDitBoekjaar>
         </SpecKleinschalighInvestAftrek>
         <SpecKleinschalighInvestAftrek>
-          <InvestBedrMidInGebrGenomenDitBoekjaar>216</InvestBedrMidInGebrGenomenDitBoekjaar>
-          <InvestBedrMidInGebrGenomenNaDitBoekjaar>6175</InvestBedrMidInGebrGenomenNaDitBoekjaar>
+          <InvestBedrMidInGebrGenomenDitBoekjaar></InvestBedrMidInGebrGenomenDitBoekjaar>
+          <InvestBedrMidInGebrGenomenNaDitBoekjaar></InvestBedrMidInGebrGenomenNaDitBoekjaar>
         </SpecKleinschalighInvestAftrek>
         <SpecKleinschalighInvestAftrek>
-          <KleinschalighInvestAftrekVorigeBoekjaren>2499</KleinschalighInvestAftrekVorigeBoekjaren>
-          <InvestBedrMidInGebrGenomenDitBoekjaar>3373</InvestBedrMidInGebrGenomenDitBoekjaar>
+          <KleinschalighInvestAftrekVorigeBoekjaren></KleinschalighInvestAftrekVorigeBoekjaren>
+          <InvestBedrMidInGebrGenomenDitBoekjaar></InvestBedrMidInGebrGenomenDitBoekjaar>
         </SpecKleinschalighInvestAftrek>
       </SpecInvestAftrek>
       <AlgemeneGegevensOnderneming>
-        <OudeNaamIBOnderneming>string</OudeNaamIBOnderneming>
-        <OmschActivOnderneming>string</OmschActivOnderneming>
+        <OudeNaamIBOnderneming></OudeNaamIBOnderneming>
+        <OmschActivOnderneming></OmschActivOnderneming>
         <SpecOnttrekkingInbrActivum>
-          <OmschActivum>string</OmschActivum>
-          <OverdrPrActivum>187</OverdrPrActivum>
+          <OmschActivum></OmschActivum>
+          <OverdrPrActivum></OverdrPrActivum>
         </SpecOnttrekkingInbrActivum>
       </AlgemeneGegevensOnderneming>
       <FiscaleVermogensOpstellingTotaalActiva>
         <VasteActiva>
           <MatVasteActiva>
           <MachinesInstallaties>
-          <RestwEB>123</RestwEB>
+          <RestwEB></RestwEB>
         </MachinesInstallaties>
         <AndereVasteBedrijfsmid>
-            <RestwEB>123</RestwEB>
+            <RestwEB></RestwEB>
         </AndereVasteBedrijfsmid>
     </MatVasteActiva>
         </VasteActiva>
@@ -130,9 +130,9 @@
             <Vordering>
                 <VorderingenOB>
                     <SpecVorderingOB>
-                        <OBBoekjaar>12345</OBBoekjaar>
-                        <OBBoekjaarMinus1>12356</OBBoekjaarMinus1>
-                        <OBOudereBoekjaren>12345</OBOudereBoekjaren>
+                        <OBBoekjaar>416</OBBoekjaar>
+                        <OBBoekjaarMinus1></OBBoekjaarMinus1>
+                        <OBOudereBoekjaren></OBOudereBoekjaren>
                     </SpecVorderingOB>
                 </VorderingenOB>
             </Vordering>
@@ -142,9 +142,9 @@
         <KortlSchulden>
             <OB>
                 <SpecSchuldenOB>
-                    <OBBoekjaar>123</OBBoekjaar>
-                    <OBBoekjaarMinus1>123</OBBoekjaarMinus1>
-                    <OBOudereBoekjaren>123</OBOudereBoekjaren>
+                    <OBBoekjaar></OBBoekjaar>
+                    <OBBoekjaarMinus1></OBBoekjaarMinus1>
+                    <OBOudereBoekjaren></OBOudereBoekjaren>
                 </SpecSchuldenOB>
             </OB>
         </KortlSchulden>
