@@ -1,57 +1,65 @@
 {
-    "fallback": {
-        "title": "U kunt tijdelijk geen aangifte doen",
-        "message": "Door een technische storing is dit nu niet mogelijk. Onze excuses voor het ongemak. Probeer het later nog een keer."
-    },
-    "100": {
-        "code": 100,
-        "explain": "No function defined on required property :name for the web component"
-    },
-    "101": {
-        "code": 101,
-        "explain": "RGS ledger is not balanced"
-    },
-    "102": { "code": 102, "explain": "RGS ledger parse error, XML is not valid (no string given)" },
-    "103": { "code": 103, "explain": "RGS ledger parse error, XML is not valid; :error" },
-    "104": {
-        "code": 104,
-        "explain": "RGS ledger parse error, the number of Header elements is not valid"
-    },
-    "105": {
-        "code": 105,
-        "explain": "RGS ledger parse error, required header :name not found"
-    },
-    "106": { "code": 106, "explain": "RGS ledger parse error, no records found" },
-    "107": {
-        "code": 107,
-        "explain": "RGS ledger parse error, record element :name is not valid in record :record"
-    },
-    "108": {
-        "code": 108,
-        "explain": "RGS ledger parse error, rgs code :rgsCode is not whitelisted in record :record"
-    },
-    "109": {
-        "code": 109,
-        "explain": "Value of :gelID (:name) is not conform to mask :mask"
-    },
-    "110": {
-        "code": 110,
-        "explain": "RGS ledger is not balanced after mapping"
-    },
-    "111": {
-        "code": 111,
-        "explain": "Equity growth is not zero but :equityGrowth"
-    },
-    "112": {
-        "code": 112,
-        "explain": "File not found: :filePath"
-    },
-    "113": {
-        "code": 113,
-        "explain": "Het ECG XML document is niet valide. Fouten: :errors"
-    },
-    "114": {
-        "code": 114,
-        "explain": "De :debit_credit waarde (:value) van :rgsCode is niet valide in record :record"
-    }	    
+  "fallback": {
+    "title": "U kunt tijdelijk geen aangifte doen",
+    "message": "Door een technische storing is dit nu niet mogelijk. Onze excuses voor het ongemak. Probeer het later nog een keer.",
+    "code": 99,
+    "explain": "Unknown error"
+  },
+  "100": {
+    "code": 100,
+    "explain": "No function defined on required property :name for the web component"
+  },
+  "101": {
+    "code": 101,
+    "explain": "RGS ledger is not balanced"
+  },
+  "102": {
+    "code": 102,
+    "explain": "RGS ledger parse error, XML is not valid (no string given)"
+  },
+  "103": {
+    "code": 103,
+    "explain": "RGS ledger parse error, XML is not valid; :error"
+  },
+  "104": {
+    "code": 104,
+    "explain": "RGS ledger parse error, the number of Header elements is not valid"
+  },
+  "105": {
+    "code": 105,
+    "explain": "RGS ledger parse error, required header :name not found"
+  },
+  "106": { "code": 106, "explain": "RGS ledger parse error, no records found" },
+  "107": {
+    "code": 107,
+    "explain": "RGS ledger parse error, record element :name is not valid in record :record"
+  },
+  "108": {
+    "code": 108,
+    "explain": "RGS ledger parse error, rgs code :rgsCode is not whitelisted in record :record"
+  },
+  "109": {
+    "code": 109,
+    "explain": "Value of :gelID (:name) is not conform to mask :mask"
+  },
+  "110": {
+    "code": 110,
+    "explain": "RGS ledger is not balanced after mapping"
+  },
+  "111": {
+    "code": 111,
+    "explain": "Equity growth is not zero but :equityGrowth"
+  },
+  "112": {
+    "code": 112,
+    "explain": "File not found: :filePath"
+  },
+  "113": {
+    "code": 113,
+    "explain": "Het ECG XML document is niet valide. Fouten: :errors"
+  },
+  "115": {
+    "code": 115,
+    "explain": "RGS ledger parse error"
+  }
 }

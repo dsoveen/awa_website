@@ -29,7 +29,7 @@
         // Define function to get ledger (can be a normal and promise function)
         bdFormsElement.getRGSLedger = function() {
             return new Promise((resolve, reject) => {
-                axios.get('data/testset-5.xml').then((response) => {
+                axios.get('data/testcase-7.xml').then((response) => {
                     resolve(response.data);
                 }).catch(error => {
                     console.log("error", error);

@@ -3,148 +3,19 @@
      <Berichtgegevens>
         <LevCode>NASm</LevCode>
         <RelatienrSWO>ABCDEFGH</RelatienrSWO>
-        <VersieApplicatie></VersieApplicatie>
+        <VersieApplicatie>1</VersieApplicatie>
       </Berichtgegevens>
-      <Vermogensvergelijk>
-        <SpecPriveOnttrekkingNatura>
-          <OmschPriveOnttrekkingNatura></OmschPriveOnttrekkingNatura>
-          <BoekwaardePriveOnttrekkingNatura></BoekwaardePriveOnttrekkingNatura>
-          <WijzeTotstandkomOverdrPrijsNatura></WijzeTotstandkomOverdrPrijsNatura>
-        </SpecPriveOnttrekkingNatura>
-        <SpecPriveOnttrekkingNatura>
-          <OmschPriveOnttrekkingNatura></OmschPriveOnttrekkingNatura>
-          <BoekwaardePriveOnttrekkingNatura></BoekwaardePriveOnttrekkingNatura>
-          <WijzeTotstandkomOverdrPrijsNatura></WijzeTotstandkomOverdrPrijsNatura>
-        </SpecPriveOnttrekkingNatura>
-        <SpecPriveOnttrekkingNatura>
-          <OmschPriveOnttrekkingNatura></OmschPriveOnttrekkingNatura>
-          <BoekwaardePriveOnttrekkingNatura></BoekwaardePriveOnttrekkingNatura>
-          <WijzeTotstandkomOverdrPrijsNatura></WijzeTotstandkomOverdrPrijsNatura>
-        </SpecPriveOnttrekkingNatura>
-        <SpecOnttrekkingenPriveGebrAuto>
-          <WIACatalogusprijsAuto></WIACatalogusprijsAuto>
-          <WIAMeerDan500KmJaarPrive></WIAMeerDan500KmJaarPrive>
-          <KMAdministrAanwezig></KMAdministrAanwezig>
-          <MaandAuto5JrGeledenToegel></MaandAuto5JrGeledenToegel>
-          <KostenLastenDezeAuto></KostenLastenDezeAuto>
-          <BedragBijzSituatiePriveGebrAuto></BedragBijzSituatiePriveGebrAuto>
-        </SpecOnttrekkingenPriveGebrAuto>
-        <SpecOnttrekkingenPriveGebrAuto>
-          <WIACatalogusprijsAuto></WIACatalogusprijsAuto>
-          <WIAJaarAutoToegel></WIAJaarAutoToegel>
-          <WIABPerAuto></WIABPerAuto>
-          <KMAdministrAanwezig></KMAdministrAanwezig>
-          <MaandAuto5JrGeledenToegel></MaandAuto5JrGeledenToegel>
-          <PercBijtellingDezeAuto></PercBijtellingDezeAuto>
-          <KostenLastenEigenRekeningAuto></KostenLastenEigenRekeningAuto>
-          <BedragBijzSituatiePriveGebrAuto></BedragBijzSituatiePriveGebrAuto>
-        </SpecOnttrekkingenPriveGebrAuto>
-        <SpecOnttrekkingenPriveGebrAuto>
-          <WIAKentekenAuto></WIAKentekenAuto>
-          <WIACatalogusprijsAuto></WIACatalogusprijsAuto>
-          <WIAJaarAutoToegel></WIAJaarAutoToegel>
-          <WIAMeerDan500KmJaarPrive></WIAMeerDan500KmJaarPrive>
-          <KMAdministrAanwezig></KMAdministrAanwezig>
-          <MaandAuto5JrGeledenToegel></MaandAuto5JrGeledenToegel>
-          <AutoVollElekAangedr></AutoVollElekAangedr>
-          <AutoWaterstof></AutoWaterstof>
-          <BedragBijzSituatiePriveGebrAuto></BedragBijzSituatiePriveGebrAuto>
-        </SpecOnttrekkingenPriveGebrAuto>
-        <SpecOnttrekkingenPriveGebrAuto>
-          <WIAMeerDan500KmJaarPrive></WIAMeerDan500KmJaarPrive>
-          <PercBijtellingDezeAuto></PercBijtellingDezeAuto>
-          <KostenLastenDezeAuto></KostenLastenDezeAuto>
-          <KostenLastenEigenRekeningAuto></KostenLastenEigenRekeningAuto>
-          <BedragBijzSituatiePriveGebrAuto></BedragBijzSituatiePriveGebrAuto>
-        </SpecOnttrekkingenPriveGebrAuto>
-        <SpecOverigePriveOnttrekkingen>
-          <OmschOverigePriveOnttrekkingen></OmschOverigePriveOnttrekkingen>
-        </SpecOverigePriveOnttrekkingen>
-        <SpecOverigePriveOnttrekkingen>
-          <OmschOverigePriveOnttrekkingen></OmschOverigePriveOnttrekkingen>
-        </SpecOverigePriveOnttrekkingen>
-        <SpecOverigePriveOnttrekkingen>
-          <OmschOverigePriveOnttrekkingen></OmschOverigePriveOnttrekkingen>
-        </SpecOverigePriveOnttrekkingen>
-        <SpecOverigePriveOnttrekkingen>
-          <OmschOverigePriveOnttrekkingen></OmschOverigePriveOnttrekkingen>
-        </SpecOverigePriveOnttrekkingen>
-      </Vermogensvergelijk>
-      <ToepOndernemersaftrek>
-        <ZelfstandigenaftrekVoorgJaren></ZelfstandigenaftrekVoorgJaren>
-      </ToepOndernemersaftrek>
-      <SpecInvestAftrek>
-        <ResearchDevelopAftrek></ResearchDevelopAftrek>
-        <TotDesinvestBijt></TotDesinvestBijt>
-        <SpecEnergieMilieuInvestAftrek>
-          <EnergieMilieuInvest></EnergieMilieuInvest>
-          <MeldingsnrEnergieMilieuInvestAftrek></MeldingsnrEnergieMilieuInvestAftrek>
-        </SpecEnergieMilieuInvestAftrek>
-        <SpecEnergieMilieuInvestAftrek>
-          <EnergieMilieuInvest>1</EnergieMilieuInvest>
-          <MeldingsnrEnergieMilieuInvestAftrek></MeldingsnrEnergieMilieuInvestAftrek>
-        </SpecEnergieMilieuInvestAftrek>
-        <SpecKleinschalighInvestAftrek>
-          <InvestBoekjaarInGebrGenomen></InvestBoekjaarInGebrGenomen>
-          <InvestBedrMidInGebrGenomenDitBoekjaar></InvestBedrMidInGebrGenomenDitBoekjaar>
-          <InvestBedrMidInGebrGenomenNaDitBoekjaar></InvestBedrMidInGebrGenomenNaDitBoekjaar>
-        </SpecKleinschalighInvestAftrek>
-        <SpecKleinschalighInvestAftrek>
-          <InvestBedrMidInGebrGenomenDitBoekjaar></InvestBedrMidInGebrGenomenDitBoekjaar>
-          <InvestBedrMidInGebrGenomenNaDitBoekjaar></InvestBedrMidInGebrGenomenNaDitBoekjaar>
-        </SpecKleinschalighInvestAftrek>
-        <SpecKleinschalighInvestAftrek>
-          <KleinschalighInvestAftrekVorigeBoekjaren></KleinschalighInvestAftrekVorigeBoekjaren>
-          <InvestBoekjaarInGebrGenomen>N</InvestBoekjaarInGebrGenomen>
-          <InvestBedrMidInGebrGenomenNaDitBoekjaar></InvestBedrMidInGebrGenomenNaDitBoekjaar>
-        </SpecKleinschalighInvestAftrek>
-        <SpecKleinschalighInvestAftrek>
-          <InvestBedrMidInGebrGenomenDitBoekjaar></InvestBedrMidInGebrGenomenDitBoekjaar>
-          <InvestBedrMidInGebrGenomenNaDitBoekjaar></InvestBedrMidInGebrGenomenNaDitBoekjaar>
-        </SpecKleinschalighInvestAftrek>
-        <SpecKleinschalighInvestAftrek>
-          <KleinschalighInvestAftrekVorigeBoekjaren></KleinschalighInvestAftrekVorigeBoekjaren>
-          <InvestBedrMidInGebrGenomenDitBoekjaar></InvestBedrMidInGebrGenomenDitBoekjaar>
-        </SpecKleinschalighInvestAftrek>
-      </SpecInvestAftrek>
+
       <AlgemeneGegevensOnderneming>
-        <OudeNaamIBOnderneming></OudeNaamIBOnderneming>
-        <OmschActivOnderneming></OmschActivOnderneming>
-        <SpecOnttrekkingInbrActivum>
-          <OmschActivum></OmschActivum>
-          <OverdrPrActivum></OverdrPrActivum>
-        </SpecOnttrekkingInbrActivum>
+        <OmschActivOnderneming>Haarverzorging</OmschActivOnderneming>
       </AlgemeneGegevensOnderneming>
-      <FiscaleVermogensOpstellingTotaalActiva>
-        <VasteActiva>
-          <MatVasteActiva>
-          <MachinesInstallaties>
-          <RestwEB></RestwEB>
-        </MachinesInstallaties>
-        <AndereVasteBedrijfsmid>
-            <RestwEB></RestwEB>
-        </AndereVasteBedrijfsmid>
-    </MatVasteActiva>
-        </VasteActiva>
-        <VlottendeActiva>
-            <Vordering>
-                <VorderingenOB>
-                    <SpecVorderingOB>
-                        <OBBoekjaar>416</OBBoekjaar>
-                        <OBBoekjaarMinus1></OBBoekjaarMinus1>
-                        <OBOudereBoekjaren></OBOudereBoekjaren>
-                    </SpecVorderingOB>
-                </VorderingenOB>
-            </Vordering>
-        </VlottendeActiva>
-      </FiscaleVermogensOpstellingTotaalActiva>
       <FiscaleVermogensopstellingTotaalPassiva>
         <KortlSchulden>
             <OB>
                 <SpecSchuldenOB>
-                    <OBBoekjaar></OBBoekjaar>
-                    <OBBoekjaarMinus1></OBBoekjaarMinus1>
-                    <OBOudereBoekjaren></OBOudereBoekjaren>
+                    <OBBoekjaar>416</OBBoekjaar>
+                    <OBBoekjaarMinus1>0</OBBoekjaarMinus1>
+                    <OBOudereBoekjaren>0</OBOudereBoekjaren>
                 </SpecSchuldenOB>
             </OB>
         </KortlSchulden>

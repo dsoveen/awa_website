@@ -1,22 +1,22 @@
 [
   {
-    "image":"img/slide1.svg",
-    "html":"De gegevens van je boekhouding controleren we op juistheid. Bijvoorbeeld of je balans op orde is. Zo is de kans dat je fouten maakt een stuk kleiner.",
-    "nextButton":"Volgende"
+    "image": "img/slide1.svg",
+    "html": "De gegevens van je boekhouding controleren we op juistheid. Bijvoorbeeld of je balans op orde is. Zo is de kans dat je fouten maakt een stuk kleiner.",
+    "nextButton": "Volgende"
   },
   {
-    "image":"img/slide2.svg",
-    "html":"<span style='color: rgb(1, 104, 155); font-size: 120%;'>75%</span> van je ondernemingsgegevens zijn vooringevuld. Gegevens die we nog missen vragen we nog aan je.",
-    "nextButton":"Volgende"
+    "image": "img/slide2.svg",
+    "html": "<span style='color: rgb(1, 104, 155); font-size: 120%;'>75%</span> van je ondernemingsgegevens zijn vooringevuld. Gegevens die we nog missen vragen we nog aan je.",
+    "nextButton": "Volgende"
   },
   {
-    "image":"img/slide3.svg",
-    "html":"Vanuit deze applicatie download je de ondernemingsgegevens en upload je ze handmatig bij de Belastingdienst. Je kunt daar dan ondernemingsgegevens terug zien.",
-    "nextButton":"Volgende"
+    "image": "img/slide3.svg",
+    "html": "Vanuit deze applicatie download je de ondernemingsgegevens en upload je ze handmatig bij de Belastingdienst. Je kunt daar dan ondernemingsgegevens terug zien.",
+    "nextButton": "Volgende"
   },
   {
-    "image":"img/slide4.svg",
-    "html":"Zelf je winstaangifte doen is nu een fluitje van een cent. Veel succes met het voorbereiden van je ondernemingsdeel van je aangifte! Heb je feedback laat het ons weten!",
-    "nextButton":"Beginnen maar"
+    "image": "img/slide4.svg",
+    "html": "Je kunt nu beginnen met het voorbereiden van je aangifte. Wanneer je klaar bent vergeet dan niet je gegevens up te loaden naar de speciale omgeving van de Belastingdienst",
+    "nextButton": "Beginnen met voorbereiden"
   }
 ]
