@@ -1,22 +1,22 @@
 [
   {
     "image": "img/slide1.svg",
-    "html": "De gegevens van je boekhouding controleren we op juistheid. Bijvoorbeeld of je balans op orde is. Zo is de kans dat je fouten maakt een stuk kleiner.",
+    "html": "De gegevens van uw boekhouding controleren we op juistheid. We checken bijvoorbeeld of uw balans op orde is. Zo is de kans op fouten in uw aangifte een stuk kleiner.",
     "nextButton": "Volgende"
   },
   {
     "image": "img/slide2.svg",
-    "html": "<span style='color: rgb(1, 104, 155); font-size: 120%;'>75%</span> van je ondernemingsgegevens zijn vooringevuld. Gegevens die we nog missen vragen we nog aan je.",
+    "html": "<span style='color: rgb(1, 104, 155); font-size: 120%;'>75%</span> van uw ondernemingsgegevens is al ingevuld. Gegevens die we nog missen, vragen we aan u.",
     "nextButton": "Volgende"
   },
   {
     "image": "img/slide3.svg",
-    "html": "Vanuit deze applicatie download je de ondernemingsgegevens en upload je ze handmatig bij de Belastingdienst. Je kunt daar dan ondernemingsgegevens terug zien.",
+    "html": "Vanuit deze applicatie downloadt u de ondernemingsgegevens en uploadt u ze handmatig bij de Belastingdienst. U kunt daar uw ondernemingsgegevens terugzien.",
     "nextButton": "Volgende"
   },
   {
     "image": "img/slide4.svg",
-    "html": "Je kunt nu beginnen met het voorbereiden van je aangifte. Wanneer je klaar bent vergeet dan niet je gegevens up te loaden naar de speciale omgeving van de Belastingdienst",
+    "html": "U kunt nu beginnen met het voorbereiden van uw aangifte. Wanneer u klaar bent, vergeet dan niet uw gegevens te uploaden naar de speciale omgeving van de Belastingdienst.",
     "nextButton": "Beginnen met voorbereiden"
   }
 ]

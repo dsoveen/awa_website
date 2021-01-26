@@ -2,6 +2,7 @@
   "winstenverlies": [
     {
       "title": "Opbrengsten",
+      "refId": "wwvopbpan",
       "rules": [
         {
           "refId": "wwvopbomz",
@@ -22,6 +23,7 @@
     },
     {
       "title": "Inkoopkosten, uitbesteed werk en andere externe kosten",
+      "refId": "wwvinkpan",
       "rules": [
         {
           "refId": "wwvinkkost",
@@ -42,6 +44,7 @@
     },
     {
       "title": "Afschrijvingen",
+      "refId": "wwvafschpan",
       "rules": [
         {
           "refId": "wwvafschgood",
@@ -76,6 +79,7 @@
     },
     {
       "title": "Overige bedrijfskosten",
+      "refId": "wwvovrpan",
       "rules": [
         {
           "refId": "wwvovrauto",
@@ -122,6 +126,7 @@
     },
     {
       "title": "Financiële baten en lasten",
+      "refId": "wwvfinpan",
       "rules": [
         {
           "refId": "wwvfinbank",
@@ -149,9 +154,10 @@
     },
     {
       "title": "Buitengewone baten en lasten",
+      "refId": "wwvbgewbvact",
       "rules": [
         {
-          "refId": "wwvbgewbwact",
+          "refId": "wwvbgewpan",
           "gelId": 119663,
           "dimension": "DB",
           "position": "omzet",
@@ -185,9 +191,10 @@
   "activa": [
     {
       "title": "Immateriële vaste activa",
+      "refId": "wactimmvapan",
       "rules": [
         {
-          "refId": "wactimmvakostgood",
+          "refId": "wactimmvagood",
           "gelId": 119092,
           "dimension": "EB",
           "position": "Toelichting activa",
@@ -203,7 +210,7 @@
           "column": "Boekwaarde einde boekjaar"
         },
         {
-          "refId": "wactimmvakostovr",
+          "refId": "wactimmvaovr",
           "gelId": 119106,
           "dimension": "EB",
           "position": "Toelichting activa",
@@ -232,9 +239,10 @@
     },
     {
       "title": "Materiële vaste activa",
+      "refId": "wactmatvapan",
       "rules": [
         {
-          "refId": "wactmatvakostmach",
+          "refId": "wactmatvamach",
           "gelId": 507413,
           "dimension": "EB",
           "position": "Toelichting activa",
@@ -250,7 +258,7 @@
           "column": "Restwaarde"
         },
         {
-          "refId": "wactmatvaboekmach",
+          "refId": "wactmatvamach",
           "gelId": 119129,
           "dimension": "EB",
           "position": "activa",
@@ -258,7 +266,7 @@
           "column": "Boekwaarde einde boekjaar"
         },
         {
-          "refId": "wactmatvarestovr",
+          "refId": "wactmatvaovr",
           "gelId": 520517,
           "dimension": "EB",
           "position": "Toelichting activa",
@@ -291,6 +299,7 @@
     },
     {
       "title": "Voorraden",
+      "refId": "wachtvoorpan",
       "rules": [
         {
           "refId": "wactvoorboekvoor",
@@ -318,6 +327,7 @@
     },
     {
       "title": "Vorderingen",
+      "refId": "wactvordpan",
       "rules": [
         {
           "refId": "wactvordtabboekomz",
@@ -365,6 +375,7 @@
     },
     {
       "title": "Liquide middelen",
+      "refId": "wactliqpan",
       "rules": [
         {
           "refId": "wactliqboekliq",
@@ -386,9 +397,10 @@
   "passiva": [
     {
       "title": "Ondernememingsvermogen",
+      "refId": "wpasvermpan",
       "rules": [
         {
-          "refId": "wpasvermboekbeig",
+          "refId": "wpasvermeig",
           "gelId": 119356,
           "dimension": "SB",
           "position": "passiva",
@@ -404,7 +416,7 @@
           "column": "Boekwaarde einde boekjaar"
         },
         {
-          "refId": "wpasvermboekboud",
+          "refId": "wpasvermoud",
           "gelId": 119343,
           "dimension": "SB",
           "position": "passiva",
@@ -433,9 +445,10 @@
     },
     {
       "title": "Langlopende schulden",
+      "refId": "wpaslangpan",
       "rules": [
         {
-          "refId": "wpaslangboekschuld",
+          "refId": "wpaslangschuld",
           "gelId": 119411,
           "dimension": "EB",
           "position": "passiva",
@@ -443,7 +456,7 @@
           "column": "Boekwaarde einde boekjaar"
         },
         {
-          "refId": "wpaslangboekovr",
+          "refId": "wpaslangovr",
           "gelId": 520495,
           "dimension": "EB",
           "position": "passiva",
@@ -460,9 +473,10 @@
     },
     {
       "title": "Kortlopende schulden",
+      "refId": "wpaskortpan",
       "rules": [
         {
-          "refId": "wpaskortboeklev",
+          "refId": "wpaskortlev",
           "gelId": 119415,
           "dimension": "EB",
           "position": "passiva",
@@ -470,7 +484,7 @@
           "column": "Boekwaarde einde boekjaar"
         },
         {
-          "refId": "wpaskortboekomz",
+          "refId": "wpaskortomz",
           "gelId": 119443,
           "dimension": "EB",
           "position": "passiva",
@@ -478,7 +492,7 @@
           "column": "Boekwaarde einde boekjaar"
         },
         {
-          "refId": "wpaskortboekovr",
+          "refId": "wpaskortovr",
           "gelId": 520500,
           "dimension": "EB",
           "position": "passiva",
@@ -492,6 +506,58 @@
           "order": 1
         }
       ]
+    }
+  ],
+  "winstberekening": [
+    {
+      "title": "Privéonttrekkingen",
+      "rules": [
+        {
+          "refId": "wpontcontbdrgaang",
+          "gelId": 118315,
+          "position": "omzet",
+          "title": "Privéonttrekkingen in geld"
+        },
+        {
+          "position": "herhaal",
+          "title": "Overige privéontrekkingen",
+          "gelId": 108728
+        },
+        {
+          "refId": "wpontoverigoms",
+          "gelId": 119789,
+          "position": "herhaal",
+          "column": "Omschrijving"
+        },
+        {
+          "refId": "wpontoverigaang",
+          "gelId": 119788,
+          "position": "herhaal",
+          "column": "Niet-aftrekbaar bedrag"
+        }
+      ],
+      "columns": [
+        {
+          "title": "Omschrijving",
+          "order": 1
+        },
+        {
+          "title": "Niet-aftrekbaar bedrag",
+          "order": 2
+        }
+      ]
+    },
+    {
+      "title": "Privéstortingen",
+      "rules": [
+        {
+          "refId": "wpstortbdrgaang",
+          "gelId": 118340,
+          "position": "omzet",
+          "title": "Overige privéstortingen"
+        }
+      ],
+      "columns": []
     }
   ]
 }

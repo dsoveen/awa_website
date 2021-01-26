@@ -7,7 +7,7 @@
         "fields": [
           {
             "type": "label",
-            "label": "Hebt u onderstaande kosten verwerkt in uw winst en verliesrekening zonder rekening te houden met het niet aftrekbare gedeelte? Dan moet u deze hier invullen. Zo worden deze niet-aftrekbare kosten gecorrigeerd. Soms zijn bedragen vooringevuld met de beschikbare informatie uit uw boekhouding. Controleer deze en pas zonodig aan. Heeft u al wel rekening gehouden met het niet aftrekbare deel? Pas het bedrag dan aan naar €0."
+            "label": "Hebt u onderstaande kosten verwerkt in uw winst- en verliesrekening zonder rekening te houden met het niet aftrekbare gedeelte? Dan moet u deze hier invullen. Zo worden deze niet-aftrekbare kosten gecorrigeerd. Soms zijn bedragen vooringevuld met de beschikbare informatie uit uw boekhouding. Controleer deze en pas zonodig aan. Hebt u al wel rekening gehouden met het niet-aftrekbare deel? Pas het bedrag dan aan naar €0."
           },
 
           {

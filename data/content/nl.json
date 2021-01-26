@@ -42,7 +42,7 @@
     "stap_2_doe_aangifte_inkomstenbelasting": "Stap 2: Doe aangifte inkomstenbelasting",
     "ga_naar_omgeving_mijn_belastingdienst_via_de_onderstaande_knop": "Ga naar de speciale omgeving van Mijn Belastingdienst via de onderstaande knop.",
     "upload_het_bestand_bij_het_onderdeel_ondernemers": "Upload daar het bestand bij het onderdeel ondernemers als daar om gevraagd wordt.",
-    "doe_de_inkomstenbelasting_aangifte": "en doe de inkomstenbelasting aangifte.",
+    "doe_de_inkomstenbelasting_aangifte": "Dien de aangifte inkomstenbelasting in.",
     "naar_belastingdienst_knop_titel": "Naar belastingdienst.nl/pilotawa",
     "naar_belastingdienst_knop_url": "https://www.belastingdienst.nl/pilotawa",
     "naar_belastingdienst_knop_titel_footer": "Naar belastingdienst.nl/pilotawa",
@@ -76,6 +76,13 @@
     "balans_activa": "Balans: activa",
     "balans_passiva": "Balans: passiva",
     "saldo_winst_en_verliesrekening": "Saldo winst- en verliesrekening"
+  },
+  "check": {
+    "controleren": "Controleren",
+    "winst_en_verliesrekening": "Winst- en verliesrekening",
+    "balans_activa": "Balans: activa",
+    "balans_passiva": "Balans: passiva",
+    "profit_calculation": "Overzicht privéonttrekkingen en -stortingen"
   },
   "sidebar": {
     "aanvullende_vragen": "Aanvullende vragen",
