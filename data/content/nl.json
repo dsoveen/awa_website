@@ -15,7 +15,8 @@
     "opgeslagen": "Opgeslagen",
     "volgende": "Volgende",
     "vorige": "Vorige",
-    "overslaan": "Overslaan"
+    "overslaan": "Overslaan",
+    "laden": "laden..."
   },
   "introduction": {
     "voorbereiden_ondernemingsgegevens_voor_aangifte_inkomstenbelasting": "Voorbereiden ondernemingsgegevens voor aangifte inkomstenbelasting {year}",
@@ -42,8 +43,10 @@
     "ga_naar_omgeving_mijn_belastingdienst_via_de_onderstaande_knop": "Ga naar de speciale omgeving van Mijn Belastingdienst via de onderstaande knop.",
     "upload_het_bestand_bij_het_onderdeel_ondernemers": "Upload daar het bestand bij het onderdeel ondernemers als daar om gevraagd wordt.",
     "doe_de_inkomstenbelasting_aangifte": "en doe de inkomstenbelasting aangifte.",
-    "naar_belastingdienst_knop_titel": "Naar belasingdienst.nl/awa",
-    "naar_belastingdienst_knop_url": "https://www.belastingdienst.nl/awa"
+    "naar_belastingdienst_knop_titel": "Naar belastingdienst.nl/pilotawa",
+    "naar_belastingdienst_knop_url": "https://www.belastingdienst.nl/pilotawa",
+    "naar_belastingdienst_knop_titel_footer": "Naar belastingdienst.nl/pilotawa",
+    "naar_belastingdienst_knop_url_footer": "https://www.belastingdienst.nl/pilotawa"
   },
   "forms": {
     "veranderingen_in_de_vooringevulde_waarden": "Veranderingen in de vooringevulde waarden hebben de volgende waarde overschreven:",
@@ -68,7 +71,11 @@
     "totaal": "Totaal",
     "resultaat_tot_nu_toe_deze_en_vorige_secties": "Resultaat tot nu toe (deze en vorige secties)",
     "db": "DB",
-    "ecg": "ECG"
+    "ecg": "ECG",
+    "winst_en_verliesrekening": "Winst- en verliesrekening",
+    "balans_activa": "Balans: activa",
+    "balans_passiva": "Balans: passiva",
+    "saldo_winst_en_verliesrekening": "Saldo winst- en verliesrekening"
   },
   "sidebar": {
     "aanvullende_vragen": "Aanvullende vragen",

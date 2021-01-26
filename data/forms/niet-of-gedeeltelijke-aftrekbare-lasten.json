@@ -312,7 +312,9 @@
                 "setValueWithCalculation": {
                   "formula": "fieldPlusValue",
                   "parameters": {
-                    "fieldModels": [ "reisEnVerlijfkostenMinHetMaximaleBedragRepeatModel" ],
+                    "fieldModels": [
+                      "reisEnVerlijfkostenMinHetMaximaleBedragRepeatModel"
+                    ],
                     "value": 300,
                     "round": "down"
                   }
@@ -333,7 +335,7 @@
           {
             "type": "label",
             "label": "€ #{119788RepeatModel}"
-          }        
+          }
         ]
       },
 
@@ -436,7 +438,6 @@
             "model": "119779",
             "postKey": "119779",
             "noRefHelpText": true,
-            "presetValue": "Niet aftrekbare boete",
             "isNotRequired": true,
             "validator": ["verplichtAls119780VeldRepeatModel"],
             "validatorParameters": {

@@ -58,8 +58,20 @@
     "code": 113,
     "explain": "Het ECG XML document is niet valide. Fouten: :errors"
   },
+  "114": {
+    "code": 114,
+    "explain": "De :debit_credit waarde (:value) van :rgsCode is niet valide in record :record"
+  },
   "115": {
     "code": 115,
     "explain": "RGS ledger parse error"
+  },
+  "116": {
+    "code": 116,
+    "explain": "RGS ledger parse error, rgs code :rgsCode is not (minimal) level four"
+  },
+  "117": {
+    "code": 117,
+    "explain": "RGS ledger parse error, rgs closing balance from codes starting with B are not equal to closing balance from codes starting with W"
   }
 }
