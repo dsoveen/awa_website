@@ -1,563 +1,563 @@
 {
-  "winstenverlies": [
-    {
-      "title": "Opbrengsten",
-      "refId": "wwvopbpan",
-      "rules": [
+    "winstenverlies": [
         {
-          "refId": "wwvopbomz",
-          "gelId": 119474,
-          "dimension": "DB",
-          "position": "omzet",
-          "title": "Opbrengsten uit leveringen en diensten"
+            "title": "Opbrengsten",
+            "refId": "wwvopbpan",
+            "rules": [
+                {
+                    "refId": "wwvopbomz",
+                    "gelId": 119474,
+                    "dimension": "DB",
+                    "position": "omzet",
+                    "title": "Opbrengsten uit leveringen en diensten"
+                },
+                {
+                    "refId": "wwvopbovr",
+                    "gelId": 119502,
+                    "dimension": "DB",
+                    "position": "omzet",
+                    "title": "Overige opbrengsten"
+                }
+            ],
+            "columns": []
         },
         {
-          "refId": "wwvopbovr",
-          "gelId": 119502,
-          "dimension": "DB",
-          "position": "omzet",
-          "title": "Overige opbrengsten"
+            "title": "Inkoopkosten, uitbesteed werk en andere externe kosten",
+            "refId": "wwvinkpan",
+            "rules": [
+                {
+                    "refId": "wwvinkkost",
+                    "gelId": 119509,
+                    "dimension": "DB",
+                    "position": "kosten",
+                    "title": "Kosten van grond- en hulpstoffen en inkoopprijs van de verkopen"
+                },
+                {
+                    "refId": "wwvinkext",
+                    "gelId": 119513,
+                    "dimension": "DB",
+                    "position": "kosten",
+                    "title": "Kosten van uitbesteed werk en andere externe kosten"
+                }
+            ],
+            "columns": []
+        },
+        {
+            "title": "Afschrijvingen",
+            "refId": "wwvafschpan",
+            "rules": [
+                {
+                    "refId": "wwvafschgood",
+                    "gelId": 520479,
+                    "dimension": "DB",
+                    "position": "kosten",
+                    "title": "Goodwill"
+                },
+                {
+                    "refId": "wwvafschovrimm",
+                    "gelId": 520480,
+                    "dimension": "DB",
+                    "position": "kosten",
+                    "title": "Overige immateriele vaste activa"
+                },
+                {
+                    "refId": "wwvafschmach",
+                    "gelId": 119562,
+                    "dimension": "DB",
+                    "position": "kosten",
+                    "title": "Machines en installaties"
+                },
+                {
+                    "refId": "wwvafschovrmat",
+                    "gelId": 520482,
+                    "dimension": "DB",
+                    "position": "kosten",
+                    "title": "Overige materiele vaste activa"
+                }
+            ],
+            "columns": []
+        },
+        {
+            "title": "Overige bedrijfskosten",
+            "refId": "wwvovrpan",
+            "rules": [
+                {
+                    "refId": "wwvovrauto",
+                    "gelId": 119581,
+                    "dimension": "DB",
+                    "position": "kosten",
+                    "title": "Auto en transport kosten"
+                },
+                {
+                    "refId": "wwvovrhuis",
+                    "gelId": 119585,
+                    "dimension": "DB",
+                    "position": "kosten",
+                    "title": "Huisvestingskosten"
+                },
+                {
+                    "refId": "wwvovronderh",
+                    "gelId": 119589,
+                    "dimension": "DB",
+                    "position": "kosten",
+                    "title": "Onderhoudskosten van overige materiele vaste activa"
+                },
+                {
+                    "refId": "wwvovrverk",
+                    "gelId": 119593,
+                    "dimension": "DB",
+                    "position": "kosten",
+                    "title": "Verkoopkosten"
+                },
+                {
+                    "refId": "wwvovrand",
+                    "gelId": 119603,
+                    "dimension": "DB",
+                    "position": "kosten",
+                    "title": "Andere kosten"
+                }
+            ],
+            "columns": []
+        },
+        {
+            "isSubtotal": true,
+            "name": "Bedrijfslasten",
+            "position": "kosten"
+        },
+        {
+            "title": "Financiële baten en lasten",
+            "refId": "wwvfinpan",
+            "rules": [
+                {
+                    "refId": "wwvfinbank",
+                    "gelId": 119615,
+                    "dimension": "DB",
+                    "position": "omzet",
+                    "title": "Opbrengst banktegoeden"
+                },
+                {
+                    "refId": "wwvfinopvord",
+                    "gelId": 119619,
+                    "dimension": "DB",
+                    "position": "omzet",
+                    "title": "Opbrengsten van overige vorderingen"
+                },
+                {
+                    "refId": "wwvfinkost",
+                    "gelId": 119635,
+                    "dimension": "DB",
+                    "position": "kosten",
+                    "title": "Betaalde rente en andere kosten van schulden"
+                }
+            ],
+            "columns": []
+        },
+        {
+            "title": "Buitengewone baten en lasten",
+            "refId": "wwvbgewbvact",
+            "rules": [
+                {
+                    "refId": "wwvbgewpan",
+                    "gelId": 119663,
+                    "dimension": "DB",
+                    "position": "omzet",
+                    "title": "Boekwinst op activa"
+                },
+                {
+                    "refId": "wwvbgewovact",
+                    "gelId": 119674,
+                    "dimension": "DB",
+                    "position": "omzet",
+                    "title": "Overige buitengewone baten"
+                },
+                {
+                    "refId": "wwvbgewbvact",
+                    "gelId": 1762319,
+                    "dimension": "DB",
+                    "position": "kosten",
+                    "title": "boekverlies op activa"
+                },
+                {
+                    "refId": "wwvbgewov",
+                    "gelId": 119706,
+                    "dimension": "DB",
+                    "position": "kosten",
+                    "title": "Overige buitengewone lasten"
+                }
+            ],
+            "columns": []
         }
-      ],
-      "columns": []
-    },
-    {
-      "title": "Inkoopkosten, uitbesteed werk en andere externe kosten",
-      "refId": "wwvinkpan",
-      "rules": [
+    ],
+    "activa": [
         {
-          "refId": "wwvinkkost",
-          "gelId": 119509,
-          "dimension": "DB",
-          "position": "kosten",
-          "title": "Kosten van grond- en hulpstoffen en inkoopprijs van de verkopen"
+            "title": "Immateriële vaste activa",
+            "refId": "wactimmvapan",
+            "rules": [
+                {
+                    "refId": "wactimmvagood",
+                    "gelId": 119092,
+                    "dimension": "EB",
+                    "position": "Toelichting activa",
+                    "title": "Goodwill",
+                    "column": "Kosten van aanschaf of voortbrenging"
+                },
+                {
+                    "refId": "wactimmvaboekgood",
+                    "gelId": 119091,
+                    "dimension": "EB",
+                    "position": "activa",
+                    "title": "Goodwill",
+                    "column": "Boekwaarde einde boekjaar"
+                },
+                {
+                    "refId": "wactimmvaovr",
+                    "gelId": 119106,
+                    "dimension": "EB",
+                    "position": "Toelichting activa",
+                    "title": "Overige immateriële vaste activa",
+                    "column": "Kosten van aanschaf of voortbrenging"
+                },
+                {
+                    "refId": "wactimmvaboekovr",
+                    "gelId": 119105,
+                    "dimension": "EB",
+                    "position": "activa",
+                    "title": "Overige immateriële vaste activa",
+                    "column": "Boekwaarde einde boekjaar"
+                }
+            ],
+            "columns": [
+                {
+                    "title": "Kosten van aanschaf of voortbrenging",
+                    "order": 1
+                },
+                {
+                    "title": "Boekwaarde einde boekjaar",
+                    "order": 2
+                }
+            ]
         },
         {
-          "refId": "wwvinkext",
-          "gelId": 119513,
-          "dimension": "DB",
-          "position": "kosten",
-          "title": "Kosten van uitbesteed werk en andere externe kosten"
+            "title": "Materiële vaste activa",
+            "refId": "wactmatvapan",
+            "rules": [
+                {
+                    "refId": "wactmatvamach",
+                    "gelId": 507413,
+                    "dimension": "EB",
+                    "position": "Toelichting activa",
+                    "title": "Machines en installaties",
+                    "column": "Kosten van aanschaf of voortbrenging"
+                },
+                {
+                    "refId": "wactmatvarestmach",
+                    "gelId": 507413,
+                    "dimension": "EB",
+                    "position": "Toelichting activa",
+                    "title": "Machines en installaties",
+                    "column": "Restwaarde"
+                },
+                {
+                    "refId": "wactmatvamach",
+                    "gelId": 119129,
+                    "dimension": "EB",
+                    "position": "activa",
+                    "title": "Machines en installaties",
+                    "column": "Boekwaarde einde boekjaar"
+                },
+                {
+                    "refId": "wactmatvaovr",
+                    "gelId": 520517,
+                    "dimension": "EB",
+                    "position": "Toelichting activa",
+                    "title": "Overige materiële vaste activa",
+                    "column": "Restwaarde"
+                },
+                {
+                    "refId": "wactmatvaboekovr",
+                    "gelId": 520515,
+                    "dimension": "EB",
+                    "position": "activa",
+                    "title": "Overige materiële vaste activa",
+                    "column": "Boekwaarde einde boekjaar"
+                }
+            ],
+            "columns": [
+                {
+                    "title": "Kosten van aanschaf of voortbrenging",
+                    "order": 1
+                },
+                {
+                    "title": "Restwaarde",
+                    "order": 2
+                },
+                {
+                    "title": "Boekwaarde einde boekjaar",
+                    "order": 3
+                }
+            ]
+        },
+        {
+            "title": "Voorraden",
+            "refId": "wachtvoorpan",
+            "rules": [
+                {
+                    "refId": "wactvoorboekvoor",
+                    "gelId": 520509,
+                    "dimension": "EB",
+                    "position": "activa",
+                    "title": "Voorraden",
+                    "column": "Boekwaarde einde boekjaar"
+                },
+                {
+                    "refId": "wactvoorboekond",
+                    "gelId": 119211,
+                    "dimension": "EB",
+                    "position": "activa",
+                    "title": "Onderhanden werk",
+                    "column": "Boekwaarde einde boekjaar"
+                }
+            ],
+            "columns": [
+                {
+                    "title": "Boekwaarde einde boekjaar",
+                    "order": 1
+                }
+            ]
+        },
+        {
+            "title": "Vorderingen",
+            "refId": "wactvordpan",
+            "rules": [
+                {
+                    "refId": "wactvordtabboekomz",
+                    "gelId": 119242,
+                    "dimension": "EB",
+                    "position": "activa",
+                    "title": "Vordering omzetbelasting",
+                    "column": "Boekwaarde einde boekjaar"
+                },
+                {
+                    "refId": "wactvordtabnomhand",
+                    "gelId": 119233,
+                    "dimension": "EB",
+                    "position": "Toelichting activa",
+                    "title": "Vorderingen op handelsdebiteuren",
+                    "column": "Nominale waarde"
+                },
+                {
+                    "refId": "wactvordtabboekhand",
+                    "gelId": 119232,
+                    "dimension": "EB",
+                    "position": "activa",
+                    "title": "Vorderingen op handelsdebiteuren",
+                    "column": "Boekwaarde einde boekjaar"
+                },
+                {
+                    "refId": "wactvordtabboekovr",
+                    "gelId": 119271,
+                    "dimension": "EB",
+                    "position": "activa",
+                    "title": "Overige vorderingen",
+                    "column": "Boekwaarde einde boekjaar"
+                }
+            ],
+            "columns": [
+                {
+                    "title": "Nominale waarde",
+                    "order": 1
+                },
+                {
+                    "title": "Boekwaarde einde boekjaar",
+                    "order": 2
+                }
+            ]
+        },
+        {
+            "title": "Liquide middelen",
+            "refId": "wactliqpan",
+            "rules": [
+                {
+                    "refId": "wactliqboekliq",
+                    "gelId": 119286,
+                    "dimension": "EB",
+                    "position": "activa",
+                    "title": "Liquide middelen",
+                    "column": "Boekwaarde einde boekjaar"
+                }
+            ],
+            "columns": [
+                {
+                    "title": "Boekwaarde einde boekjaar",
+                    "order": 1
+                }
+            ]
         }
-      ],
-      "columns": []
-    },
-    {
-      "title": "Afschrijvingen",
-      "refId": "wwvafschpan",
-      "rules": [
+    ],
+    "passiva": [
         {
-          "refId": "wwvafschgood",
-          "gelId": 520479,
-          "dimension": "DB",
-          "position": "kosten",
-          "title": "Goodwill"
+            "title": "Ondernememingsvermogen",
+            "refId": "wpasvermpan",
+            "rules": [
+                {
+                    "refId": "wpasvermeig",
+                    "gelId": 119356,
+                    "dimension": "SB",
+                    "position": "passiva",
+                    "title": "Eigen vermogen",
+                    "column": "Boekwaarde begin boekjaar"
+                },
+                {
+                    "refId": "wpasvermboekeig",
+                    "gelId": 119356,
+                    "dimension": "EB",
+                    "position": "passiva",
+                    "title": "Eigen vermogen",
+                    "column": "Boekwaarde einde boekjaar"
+                },
+                {
+                    "refId": "wpasvermoud",
+                    "gelId": 119343,
+                    "dimension": "SB",
+                    "position": "passiva",
+                    "title": "Oudedagreserve",
+                    "column": "Boekwaarde begin boekjaar"
+                },
+                {
+                    "refId": "wpasvermboekoud",
+                    "gelId": 119343,
+                    "dimension": "EB",
+                    "position": "passiva",
+                    "title": "Oudedagreserve",
+                    "column": "Boekwaarde einde boekjaar"
+                }
+            ],
+            "columns": [
+                {
+                    "title": "Boekwaarde begin boekjaar",
+                    "order": 1
+                },
+                {
+                    "title": "Boekwaarde einde boekjaar",
+                    "order": 2
+                }
+            ]
         },
         {
-          "refId": "wwvafschovrimm",
-          "gelId": 520480,
-          "dimension": "DB",
-          "position": "kosten",
-          "title": "Overige immateriele vaste activa"
+            "title": "Langlopende schulden",
+            "refId": "wpaslangpan",
+            "rules": [
+                {
+                    "refId": "wpaslangschuld",
+                    "gelId": 119411,
+                    "dimension": "EB",
+                    "position": "passiva",
+                    "title": "Schulden aan kredietinstellingen",
+                    "column": "Boekwaarde einde boekjaar"
+                },
+                {
+                    "refId": "wpaslangovr",
+                    "gelId": 520495,
+                    "dimension": "EB",
+                    "position": "passiva",
+                    "title": "Overige langlopende schulden",
+                    "column": "Boekwaarde einde boekjaar"
+                }
+            ],
+            "columns": [
+                {
+                    "title": "Boekwaarde einde boekjaar",
+                    "order": 1
+                }
+            ]
         },
         {
-          "refId": "wwvafschmach",
-          "gelId": 119562,
-          "dimension": "DB",
-          "position": "kosten",
-          "title": "Machines en installaties"
-        },
-        {
-          "refId": "wwvafschovrmat",
-          "gelId": 520482,
-          "dimension": "DB",
-          "position": "kosten",
-          "title": "Overige materiele vaste activa"
+            "title": "Kortlopende schulden",
+            "refId": "wpaskortpan",
+            "rules": [
+                {
+                    "refId": "wpaskortlev",
+                    "gelId": 119415,
+                    "dimension": "EB",
+                    "position": "passiva",
+                    "title": "Schulden aan leveranciers en handelskredieten",
+                    "column": "Boekwaarde einde boekjaar"
+                },
+                {
+                    "refId": "wpaskortomz",
+                    "gelId": 119443,
+                    "dimension": "EB",
+                    "position": "passiva",
+                    "title": "Schuld omzetbelasting",
+                    "column": "Boekwaarde einde boekjaar"
+                },
+                {
+                    "refId": "wpaskortovr",
+                    "gelId": 520500,
+                    "dimension": "EB",
+                    "position": "passiva",
+                    "title": "Overige kortlopende schulden",
+                    "column": "Boekwaarde einde boekjaar"
+                }
+            ],
+            "columns": [
+                {
+                    "title": "Boekwaarde einde boekjaar",
+                    "order": 1
+                }
+            ]
         }
-      ],
-      "columns": []
-    },
-    {
-      "title": "Overige bedrijfskosten",
-      "refId": "wwvovrpan",
-      "rules": [
+    ],
+    "winstberekening": [
         {
-          "refId": "wwvovrauto",
-          "gelId": 119581,
-          "dimension": "DB",
-          "position": "kosten",
-          "title": "Auto en transport kosten"
+            "title": "Privéonttrekkingen",
+            "rules": [
+                {
+                    "refId": "wpontcontbdrgaang",
+                    "gelId": 118315,
+                    "position": "omzet",
+                    "title": "Privéonttrekkingen in geld"
+                },
+                {
+                    "position": "herhaal",
+                    "title": "Overige privéontrekkingen",
+                    "gelId": 108728
+                },
+                {
+                    "refId": "wpontoverigoms",
+                    "gelId": 119789,
+                    "position": "herhaal",
+                    "column": "Omschrijving"
+                },
+                {
+                    "refId": "wpontoverigaang",
+                    "gelId": 119788,
+                    "position": "herhaal",
+                    "column": "Niet-aftrekbaar bedrag"
+                }
+            ],
+            "columns": [
+                {
+                    "title": "Omschrijving",
+                    "order": 1
+                },
+                {
+                    "title": "Niet-aftrekbaar bedrag",
+                    "order": 2
+                }
+            ]
         },
         {
-          "refId": "wwvovrhuis",
-          "gelId": 119585,
-          "dimension": "DB",
-          "position": "kosten",
-          "title": "Huisvestingskosten"
-        },
-        {
-          "refId": "wwvovronderh",
-          "gelId": 119589,
-          "dimension": "DB",
-          "position": "kosten",
-          "title": "Onderhoudskosten van overige materiele vaste activa"
-        },
-        {
-          "refId": "wwvovrverk",
-          "gelId": 119593,
-          "dimension": "DB",
-          "position": "kosten",
-          "title": "Verkoopkosten"
-        },
-        {
-          "refId": "wwvovrand",
-          "gelId": 119603,
-          "dimension": "DB",
-          "position": "kosten",
-          "title": "Andere kosten"
+            "title": "Privéstortingen",
+            "rules": [
+                {
+                    "refId": "wpstortbdrgaang",
+                    "gelId": 118340,
+                    "position": "omzet",
+                    "title": "Overige privéstortingen"
+                }
+            ],
+            "columns": []
         }
-      ],
-      "columns": []
-    },
-    {
-      "isSubtotal": true,
-      "name": "Bedrijfslasten",
-      "position": "kosten"
-    },
-    {
-      "title": "Financiële baten en lasten",
-      "refId": "wwvfinpan",
-      "rules": [
-        {
-          "refId": "wwvfinbank",
-          "gelId": 119615,
-          "dimension": "DB",
-          "position": "omzet",
-          "title": "Opbrengst banktegoeden"
-        },
-        {
-          "refId": "wwvfinopvord",
-          "gelId": 119619,
-          "dimension": "DB",
-          "position": "omzet",
-          "title": "Opbrengsten van overige vorderingen"
-        },
-        {
-          "refId": "wwvfinkost",
-          "gelId": 119635,
-          "dimension": "DB",
-          "position": "kosten",
-          "title": "Betaalde rente en andere kosten van schulden"
-        }
-      ],
-      "columns": []
-    },
-    {
-      "title": "Buitengewone baten en lasten",
-      "refId": "wwvbgewbvact",
-      "rules": [
-        {
-          "refId": "wwvbgewpan",
-          "gelId": 119663,
-          "dimension": "DB",
-          "position": "omzet",
-          "title": "Boekwinst op activa"
-        },
-        {
-          "refId": "wwvbgewovact",
-          "gelId": 119674,
-          "dimension": "DB",
-          "position": "omzet",
-          "title": "Overige buitengewone baten"
-        },
-        {
-          "refId": "wwvbgewbvact",
-          "gelId": 1762319,
-          "dimension": "DB",
-          "position": "kosten",
-          "title": "boekverlies op activa"
-        },
-        {
-          "refId": "wwvbgewov",
-          "gelId": 119706,
-          "dimension": "DB",
-          "position": "kosten",
-          "title": "Overige buitengewone lasten"
-        }
-      ],
-      "columns": []
-    }
-  ],
-  "activa": [
-    {
-      "title": "Immateriële vaste activa",
-      "refId": "wactimmvapan",
-      "rules": [
-        {
-          "refId": "wactimmvagood",
-          "gelId": 119092,
-          "dimension": "EB",
-          "position": "Toelichting activa",
-          "title": "Goodwill",
-          "column": "Kosten van aanschaf of voortbrenging"
-        },
-        {
-          "refId": "wactimmvaboekgood",
-          "gelId": 119091,
-          "dimension": "EB",
-          "position": "activa",
-          "title": "Goodwill",
-          "column": "Boekwaarde einde boekjaar"
-        },
-        {
-          "refId": "wactimmvaovr",
-          "gelId": 119106,
-          "dimension": "EB",
-          "position": "Toelichting activa",
-          "title": "Overige immateriële vaste activa",
-          "column": "Kosten van aanschaf of voortbrenging"
-        },
-        {
-          "refId": "wactimmvaboekovr",
-          "gelId": 119105,
-          "dimension": "EB",
-          "position": "activa",
-          "title": "Overige immateriële vaste activa",
-          "column": "Boekwaarde einde boekjaar"
-        }
-      ],
-      "columns": [
-        {
-          "title": "Kosten van aanschaf of voortbrenging",
-          "order": 1
-        },
-        {
-          "title": "Boekwaarde einde boekjaar",
-          "order": 2
-        }
-      ]
-    },
-    {
-      "title": "Materiële vaste activa",
-      "refId": "wactmatvapan",
-      "rules": [
-        {
-          "refId": "wactmatvamach",
-          "gelId": 507413,
-          "dimension": "EB",
-          "position": "Toelichting activa",
-          "title": "Machines en installaties",
-          "column": "Kosten van aanschaf of voortbrenging"
-        },
-        {
-          "refId": "wactmatvarestmach",
-          "gelId": 507413,
-          "dimension": "EB",
-          "position": "Toelichting activa",
-          "title": "Machines en installaties",
-          "column": "Restwaarde"
-        },
-        {
-          "refId": "wactmatvamach",
-          "gelId": 119129,
-          "dimension": "EB",
-          "position": "activa",
-          "title": "Machines en installaties",
-          "column": "Boekwaarde einde boekjaar"
-        },
-        {
-          "refId": "wactmatvaovr",
-          "gelId": 520517,
-          "dimension": "EB",
-          "position": "Toelichting activa",
-          "title": "Overige materiële vaste activa",
-          "column": "Restwaarde"
-        },
-        {
-          "refId": "wactmatvaboekovr",
-          "gelId": 520515,
-          "dimension": "EB",
-          "position": "activa",
-          "title": "Overige materiële vaste activa",
-          "column": "Boekwaarde einde boekjaar"
-        }
-      ],
-      "columns": [
-        {
-          "title": "Kosten van aanschaf of voortbrenging",
-          "order": 1
-        },
-        {
-          "title": "Restwaarde",
-          "order": 2
-        },
-        {
-          "title": "Boekwaarde einde boekjaar",
-          "order": 3
-        }
-      ]
-    },
-    {
-      "title": "Voorraden",
-      "refId": "wachtvoorpan",
-      "rules": [
-        {
-          "refId": "wactvoorboekvoor",
-          "gelId": 520509,
-          "dimension": "EB",
-          "position": "activa",
-          "title": "Voorraden",
-          "column": "Boekwaarde einde boekjaar"
-        },
-        {
-          "refId": "wactvoorboekond",
-          "gelId": 119211,
-          "dimension": "EB",
-          "position": "activa",
-          "title": "Onderhanden werk",
-          "column": "Boekwaarde einde boekjaar"
-        }
-      ],
-      "columns": [
-        {
-          "title": "Boekwaarde einde boekjaar",
-          "order": 1
-        }
-      ]
-    },
-    {
-      "title": "Vorderingen",
-      "refId": "wactvordpan",
-      "rules": [
-        {
-          "refId": "wactvordtabboekomz",
-          "gelId": 119242,
-          "dimension": "EB",
-          "position": "activa",
-          "title": "Vordering omzetbelasting",
-          "column": "Boekwaarde einde boekjaar"
-        },
-        {
-          "refId": "wactvordtabnomhand",
-          "gelId": 119233,
-          "dimension": "EB",
-          "position": "Toelichting activa",
-          "title": "Vorderingen op handelsdebiteuren",
-          "column": "Nominale waarde"
-        },
-        {
-          "refId": "wactvordtabboekhand",
-          "gelId": 119232,
-          "dimension": "EB",
-          "position": "activa",
-          "title": "Vorderingen op handelsdebiteuren",
-          "column": "Boekwaarde einde boekjaar"
-        },
-        {
-          "refId": "wactvordtabboekovr",
-          "gelId": 119271,
-          "dimension": "EB",
-          "position": "activa",
-          "title": "Overige vorderingen",
-          "column": "Boekwaarde einde boekjaar"
-        }
-      ],
-      "columns": [
-        {
-          "title": "Nominale waarde",
-          "order": 1
-        },
-        {
-          "title": "Boekwaarde einde boekjaar",
-          "order": 2
-        }
-      ]
-    },
-    {
-      "title": "Liquide middelen",
-      "refId": "wactliqpan",
-      "rules": [
-        {
-          "refId": "wactliqboekliq",
-          "gelId": 119286,
-          "dimension": "EB",
-          "position": "activa",
-          "title": "Liquide middelen",
-          "column": "Boekwaarde einde boekjaar"
-        }
-      ],
-      "columns": [
-        {
-          "title": "Boekwaarde einde boekjaar",
-          "order": 1
-        }
-      ]
-    }
-  ],
-  "passiva": [
-    {
-      "title": "Ondernememingsvermogen",
-      "refId": "wpasvermpan",
-      "rules": [
-        {
-          "refId": "wpasvermeig",
-          "gelId": 119356,
-          "dimension": "SB",
-          "position": "passiva",
-          "title": "Eigen vermogen",
-          "column": "Boekwaarde begin boekjaar"
-        },
-        {
-          "refId": "wpasvermboekeig",
-          "gelId": 119356,
-          "dimension": "EB",
-          "position": "passiva",
-          "title": "Eigen vermogen",
-          "column": "Boekwaarde einde boekjaar"
-        },
-        {
-          "refId": "wpasvermoud",
-          "gelId": 119343,
-          "dimension": "SB",
-          "position": "passiva",
-          "title": "Oudedagreserve",
-          "column": "Boekwaarde begin boekjaar"
-        },
-        {
-          "refId": "wpasvermboekoud",
-          "gelId": 119343,
-          "dimension": "EB",
-          "position": "passiva",
-          "title": "Oudedagreserve",
-          "column": "Boekwaarde einde boekjaar"
-        }
-      ],
-      "columns": [
-        {
-          "title": "Boekwaarde begin boekjaar",
-          "order": 1
-        },
-        {
-          "title": "Boekwaarde einde boekjaar",
-          "order": 2
-        }
-      ]
-    },
-    {
-      "title": "Langlopende schulden",
-      "refId": "wpaslangpan",
-      "rules": [
-        {
-          "refId": "wpaslangschuld",
-          "gelId": 119411,
-          "dimension": "EB",
-          "position": "passiva",
-          "title": "Schulden aan kredietinstellingen",
-          "column": "Boekwaarde einde boekjaar"
-        },
-        {
-          "refId": "wpaslangovr",
-          "gelId": 520495,
-          "dimension": "EB",
-          "position": "passiva",
-          "title": "Overige langlopende schulden",
-          "column": "Boekwaarde einde boekjaar"
-        }
-      ],
-      "columns": [
-        {
-          "title": "Boekwaarde einde boekjaar",
-          "order": 1
-        }
-      ]
-    },
-    {
-      "title": "Kortlopende schulden",
-      "refId": "wpaskortpan",
-      "rules": [
-        {
-          "refId": "wpaskortlev",
-          "gelId": 119415,
-          "dimension": "EB",
-          "position": "passiva",
-          "title": "Schulden aan leveranciers en handelskredieten",
-          "column": "Boekwaarde einde boekjaar"
-        },
-        {
-          "refId": "wpaskortomz",
-          "gelId": 119443,
-          "dimension": "EB",
-          "position": "passiva",
-          "title": "Schuld omzetbelasting",
-          "column": "Boekwaarde einde boekjaar"
-        },
-        {
-          "refId": "wpaskortovr",
-          "gelId": 520500,
-          "dimension": "EB",
-          "position": "passiva",
-          "title": "Overige kortlopende schulden",
-          "column": "Boekwaarde einde boekjaar"
-        }
-      ],
-      "columns": [
-        {
-          "title": "Boekwaarde einde boekjaar",
-          "order": 1
-        }
-      ]
-    }
-  ],
-  "winstberekening": [
-    {
-      "title": "Privéonttrekkingen",
-      "rules": [
-        {
-          "refId": "wpontcontbdrgaang",
-          "gelId": 118315,
-          "position": "omzet",
-          "title": "Privéonttrekkingen in geld"
-        },
-        {
-          "position": "herhaal",
-          "title": "Overige privéontrekkingen",
-          "gelId": 108728
-        },
-        {
-          "refId": "wpontoverigoms",
-          "gelId": 119789,
-          "position": "herhaal",
-          "column": "Omschrijving"
-        },
-        {
-          "refId": "wpontoverigaang",
-          "gelId": 119788,
-          "position": "herhaal",
-          "column": "Niet-aftrekbaar bedrag"
-        }
-      ],
-      "columns": [
-        {
-          "title": "Omschrijving",
-          "order": 1
-        },
-        {
-          "title": "Niet-aftrekbaar bedrag",
-          "order": 2
-        }
-      ]
-    },
-    {
-      "title": "Privéstortingen",
-      "rules": [
-        {
-          "refId": "wpstortbdrgaang",
-          "gelId": 118340,
-          "position": "omzet",
-          "title": "Overige privéstortingen"
-        }
-      ],
-      "columns": []
-    }
-  ]
+    ]
 }
