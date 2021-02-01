@@ -1,4 +1,10 @@
-# Instructions for using bd-forms in a 3rd party website
+# Instructions for using bd-forms in a 3rd party infrastructure
+
+[Web component](#web-component)
+
+[Backend API](#backend-api)
+
+# Web component
 
 ## Introduction
 
@@ -238,4 +244,101 @@ The plugin will call a defined function when the user wants to close the plugin.
     // You can also call a function to close a modal or hide a wrapper around the bd forms element.
   };
 </script>
+```
+
+# Backend API
+
+## Pull and run docker image
+
+- Get a github personal token and save it in a file
+
+  github.com > settings > developer access tokens
+
+- Be sure "Improved container support" is enabled for your account
+
+  Click on your avatar on Github and go to Feature preview.
+
+- Login to the registry
+
+  `cat {PATH_TO_TOKEN_FILE} | docker login ghcr.io -u {USERNAME} --password-stdin`
+
+- Run the docker image
+
+  `docker run -dp 8080:8080 ghcr.io/hydex80/awa_formulieren:{VERSION}`
+
+## API Specification
+
+The API has two endpoint:
+
+- `/healthz` to configure health probes
+- `/rgs-check` to check if the RGS ledger is valid
+
+**Healthz endpoint**
+
+You can do a GET request to the healthz endpoint to check if the container is up and running.
+
+Request:
+
+`GET {URL}/healthz`
+
+Response (if healthy):
+
+`Status code: 200 Content: Ok`
+
+**RGS check endpoint**
+
+You can do a POST request to the rgs-check endpoint to check if your RGS ledger XML file is valid.
+
+Request:
+
+`POST /rgs-check Content-Type: application/xml Body: {RGS_LEDGER_XML_CONTENT}`
+
+Response (success):
+
+```
+Status code: 200
+Content-Type: application/json
+Body:
+{
+    "success": true,
+    "assets": {TOTAL_ASSETS},
+    "liabilities": {TOTAL_LIABILITIES},
+    "profit": {TOTAL_PROFIT}
+}
+```
+
+_example body:_
+
+```
+{
+    "success": true,
+    "assets": 5657,
+    "liabilities": 5149,
+    "profit": 508
+}
+```
+
+Response (failed):
+
+```
+Status code 400
+Content-Type: application/json
+Body:
+{
+    "success": false,
+    "code": {SPECIFIED_ERROR_CODE},
+    "explain": {EXPLENATION_OF_THE_ERROR},
+    "details": [{ARRAY_OF_ERROR_DETAILS}],
+}
+```
+
+_example body:_
+
+```
+{
+    "success": false,
+    "code": 115,
+    "explain": "RGS ledger parse error",
+    "details": ["Element 'KVKNumber1': This element is not expected. Expected is ( KVKNumber ).\n"],
+}
 ```
