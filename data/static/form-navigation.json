@@ -128,7 +128,7 @@
     ]
   },
   {
-    "label": "Research-en-developementaftrek",
+    "label": "Research-en-developmentaftrek",
     "form": "wrd",
     "json": "data/forms/wrd.json",
     "conditions": [

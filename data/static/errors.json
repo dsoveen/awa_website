@@ -1,7 +1,7 @@
 {
   "fallback": {
-    "title": "U kunt tijdelijk geen aangifte doen",
-    "message": "Door een technische storing is dit nu niet mogelijk. Onze excuses voor het ongemak. Probeer het later nog een keer.",
+    "title": "Inlezen van uw boekhoudgegevens is niet gelukt",
+    "message": "Er is een fout opgetreden bij het inlezen van uw boekhoudgegevens. Vraag om hulp bij de leverancier van uw boekhoudpakket",
     "code": 99,
     "explain": "Unknown error"
   },

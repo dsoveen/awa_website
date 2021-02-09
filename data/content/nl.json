@@ -8,6 +8,7 @@
     "annuleren": "Annuleren",
     "nee": "Nee",
     "ja": "Ja",
+    "sluiten": "Sluiten",
     "controleren": "Controleren",
     "afsluiten": "Afsluiten",
     "opslaan": "Opslaan",
@@ -74,7 +75,14 @@
     "winst_en_verliesrekening": "Winst- en verliesrekening",
     "balans_activa": "Balans: activa",
     "balans_passiva": "Balans: passiva",
-    "saldo_winst_en_verliesrekening": "Saldo winst- en verliesrekening"
+    "saldo_winst_en_verliesrekening": "Saldo winst- en verliesrekening",
+    "profit_calculation": "Overzicht privéonttrekkingen en -stortingen",
+    "grootboekrekening": "Grootboekrekening",
+    "debet": "Debet",
+    "credit": "Credit",
+    "saldo": "Saldo",
+    "afronden_help_tekst": "Help tekst afronden",
+    "deze_gegevens_komen_uit_uw_boekhouding": "Deze gegevens komen uit uw boekhouding"
   },
   "check": {
     "controleren": "Controleren",

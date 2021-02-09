@@ -13,7 +13,7 @@
 	</Header>
 	<Record>
 		<LedgerAccountId>0107010</LedgerAccountId>
-		<LedgerDescription>Verkrijgings- of vervaardigingsprijs</LedgerDescription>
+		<LedgerDescription>Eigen vermogen</LedgerDescription>
 		<RgsCode>BEivKapOnd</RgsCode>
 		<ClosingBalance>-1500.7</ClosingBalance>
 		<OpeningBalance>-1500.7</OpeningBalance>
@@ -21,7 +21,7 @@
 	</Record>
 	<Record>
 		<LedgerAccountId>0107020</LedgerAccountId>
-		<LedgerDescription>Cumulatieve afschrijvingen en waardeverminderingen</LedgerDescription>
+		<LedgerDescription>Privéopnamen</LedgerDescription>
 		<RgsCode>BEivKapProPok</RgsCode>
 		<ClosingBalance>6000</ClosingBalance>
 		<OpeningBalance>0</OpeningBalance>
@@ -29,15 +29,23 @@
 	</Record>
 	<Record>
 		<LedgerAccountId>0210010</LedgerAccountId>
-		<LedgerDescription>Verkrijgings- of vervaardigingsprijs</LedgerDescription>
-		<RgsCode>BLimBanRba</RgsCode>
-		<ClosingBalance>4617.05</ClosingBalance>
+		<LedgerDescription>Betaalrekening (NL29INGB0006565420)</LedgerDescription>
+		<RgsCode>BLimBanRbaBg1</RgsCode>
+		<ClosingBalance>4000</ClosingBalance>
 		<OpeningBalance>500.7</OpeningBalance>
 		<ProfitLossLastYear>0</ProfitLossLastYear>
 	</Record>
 	<Record>
+		<LedgerAccountId/>
+		<LedgerDescription>Betaalrekening (NL70RABO0115600010)</LedgerDescription>
+		<RgsCode>BLimBanRbaBg2</RgsCode>
+		<ClosingBalance>617.05</ClosingBalance>
+		<OpeningBalance>0</OpeningBalance>
+		<ProfitLossLastYear/>
+	</Record>
+	<Record>
 		<LedgerAccountId>0210020</LedgerAccountId>
-		<LedgerDescription>Cumulatieve afschrijvingen en waardeverminderingen</LedgerDescription>
+		<LedgerDescription>Te betalen BTW</LedgerDescription>
 		<RgsCode>BSchBepBtw</RgsCode>
 		<ClosingBalance>-416</ClosingBalance>
 		<OpeningBalance>0</OpeningBalance>
@@ -45,7 +53,7 @@
 	</Record>
 	<Record>
 		<LedgerAccountId>0214010</LedgerAccountId>
-		<LedgerDescription>Verkrijgings- of vervaardigingsprijs</LedgerDescription>
+		<LedgerDescription>Kortlopende kredieten</LedgerDescription>
 		<RgsCode>BSchOvsOvs</RgsCode>
 		<ClosingBalance>-1000</ClosingBalance>
 		<OpeningBalance>-1000</OpeningBalance>
@@ -53,15 +61,23 @@
 	</Record>
 	<Record>
 		<LedgerAccountId>0214020</LedgerAccountId>
-		<LedgerDescription>Cumulatieve afschrijvingen en waardeverminderingen</LedgerDescription>
+		<LedgerDescription>Voorraad bus</LedgerDescription>
 		<RgsCode>BVrdVooVoo</RgsCode>
-		<ClosingBalance>2000</ClosingBalance>
-		<OpeningBalance>2000</OpeningBalance>
-		<ProfitLossLastYear/>
+		<ClosingBalance>1500</ClosingBalance>
+		<OpeningBalance>1500</OpeningBalance>
+		<ProfitLossLastYear>0</ProfitLossLastYear>
+	</Record>
+	<Record>
+		<LedgerAccountId>0214021</LedgerAccountId>
+		<LedgerDescription>Voorraad magazijn</LedgerDescription>
+		<RgsCode>BVrdVooVoo</RgsCode>
+		<ClosingBalance>500</ClosingBalance>
+		<OpeningBalance>500</OpeningBalance>
+		<ProfitLossLastYear>0</ProfitLossLastYear>
 	</Record>
 	<Record>
 		<LedgerAccountId>3001010</LedgerAccountId>
-		<LedgerDescription>Handelsgoederen, bruto</LedgerDescription>
+		<LedgerDescription>Kosten juridische bijstand</LedgerDescription>
 		<RgsCode>WBedAeaAej</RgsCode>
 		<ClosingBalance>1880.25</ClosingBalance>
 		<OpeningBalance>0</OpeningBalance>
@@ -69,7 +85,7 @@
 	</Record>
 	<Record>
 		<LedgerAccountId>1101010</LedgerAccountId>
-		<LedgerDescription>Handelsdebiteuren nominaal</LedgerDescription>
+		<LedgerDescription>Diverse verzekeringen</LedgerDescription>
 		<RgsCode>WBedAssBea</RgsCode>
 		<ClosingBalance>500</ClosingBalance>
 		<OpeningBalance>0</OpeningBalance>
@@ -77,7 +93,7 @@
 	</Record>
 	<Record>
 		<LedgerAccountId>1103160</LedgerAccountId>
-		<LedgerDescription>Vorderingen uit hoofde van belastingen</LedgerDescription>
+		<LedgerDescription>Kantoorkosten</LedgerDescription>
 		<RgsCode>WBedKanKan</RgsCode>
 		<ClosingBalance>119.75</ClosingBalance>
 		<OpeningBalance>0</OpeningBalance>
@@ -85,15 +101,15 @@
 	</Record>
 	<Record>
 		<LedgerAccountId>1102010</LedgerAccountId>
-		<LedgerDescription>Terug te vorderen Omzetbelasting</LedgerDescription>
-		<RgsCode>WBedVkkKer</RgsCode>
+		<LedgerDescription>Relatiegeschenken (beperkt aftrekbaar)</LedgerDescription>
+		<RgsCode>WBedVkkRel</RgsCode>
 		<ClosingBalance>200</ClosingBalance>
 		<OpeningBalance>0</OpeningBalance>
 		<ProfitLossLastYear>0</ProfitLossLastYear>
 	</Record>
 	<Record>
 		<LedgerAccountId>1104010</LedgerAccountId>
-		<LedgerDescription>Vooruitbetaalde facturen</LedgerDescription>
+		<LedgerDescription>Kosten website</LedgerDescription>
 		<RgsCode>WBedVkkWeb</RgsCode>
 		<ClosingBalance>599.65</ClosingBalance>
 		<OpeningBalance>0</OpeningBalance>
@@ -101,7 +117,7 @@
 	</Record>
 	<Record>
 		<LedgerAccountId>1002010</LedgerAccountId>
-		<LedgerDescription>Rekening-courant bank</LedgerDescription>
+		<LedgerDescription>Inkoopwaarde voorraad</LedgerDescription>
 		<RgsCode>WKprInhInh</RgsCode>
 		<ClosingBalance>1500</ClosingBalance>
 		<OpeningBalance>0</OpeningBalance>
@@ -109,15 +125,31 @@
 	</Record>
 	<Record>
 		<LedgerAccountId>0509010</LedgerAccountId>
-		<LedgerDescription>Ondernemingsvermogen exclusief fiscale reserves fiscaal</LedgerDescription>
+		<LedgerDescription>Omzet knippen heren</LedgerDescription>
 		<RgsCode>WOmzNodOdg</RgsCode>
-		<ClosingBalance>-11500.5</ClosingBalance>
+		<ClosingBalance>-2146.64</ClosingBalance>
+		<OpeningBalance>0</OpeningBalance>
+		<ProfitLossLastYear>0</ProfitLossLastYear>
+	</Record>
+	<Record>
+		<LedgerAccountId>0509011</LedgerAccountId>
+		<LedgerDescription>Omzet knippen dames</LedgerDescription>
+		<RgsCode>WOmzNodOdg</RgsCode>
+		<ClosingBalance>-8000.35</ClosingBalance>
+		<OpeningBalance>0</OpeningBalance>
+		<ProfitLossLastYear>0</ProfitLossLastYear>
+	</Record>
+	<Record>
+		<LedgerAccountId>0509012</LedgerAccountId>
+		<LedgerDescription>Omzet knippen kinderen</LedgerDescription>
+		<RgsCode>WOmzNodOdg</RgsCode>
+		<ClosingBalance>-1353.51</ClosingBalance>
 		<OpeningBalance>0</OpeningBalance>
 		<ProfitLossLastYear>0</ProfitLossLastYear>
 	</Record>
 	<Record>
 		<LedgerAccountId>0510010</LedgerAccountId>
-		<LedgerDescription>Fiscale oudedagsreserve</LedgerDescription>
+		<LedgerDescription>Omzet verkoop producten</LedgerDescription>
 		<RgsCode>WOmzNohOlg</RgsCode>
 		<ClosingBalance>-2999.5</ClosingBalance>
 		<OpeningBalance>0</OpeningBalance>

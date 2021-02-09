@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Root>
+	<Header>
+		<Timestamp>2020-11-09T08:25:47.2656996Z</Timestamp>
+		<FinancialYear>2019</FinancialYear>
+		<RSIN/>
+		<KVKNumber>1122334455</KVKNumber>
+		<VatNumber/>
+		<CompanyName>Tessa's Hair Design</CompanyName>
+		<SoftwarePackage>SW_Pakket_1</SoftwarePackage>
+		<EmailaddressReceived>Bedrijf@mail.com</EmailaddressReceived>
+		<RgsVersion>RGS3.1</RgsVersion>
+	</Header>
+	<Record>
+		<LedgerAccountId>0107010</LedgerAccountId>
+		<LedgerDescription>Verkrijgings- of vervaardigingsprijs</LedgerDescription>
+		<RgsCode>BEivKapOnd</RgsCode>
+		<ClosingBalance>-1500.7</ClosingBalance>
+		<OpeningBalance>-1500.7</OpeningBalance>
+		<ProfitLossLastYear>0</ProfitLossLastYear>
+	</Record>
+	<Record>
+		<LedgerAccountId>0107020</LedgerAccountId>
+		<LedgerDescription>Cumulatieve afschrijvingen en waardeverminderingen</LedgerDescription>
+		<RgsCode>BEivKapProPok</RgsCode>
+		<ClosingBalance>6000</ClosingBalance>
+		<OpeningBalance>0</OpeningBalance>
+		<ProfitLossLastYear>0</ProfitLossLastYear>
+	</Record>
+	<Record>
+		<LedgerAccountId>0210010</LedgerAccountId>
+		<LedgerDescription>Verkrijgings- of vervaardigingsprijs</LedgerDescription>
+		<RgsCode>BLimBanRba</RgsCode>
+		<ClosingBalance>4617.05</ClosingBalance>
+		<OpeningBalance>500.7</OpeningBalance>
+		<ProfitLossLastYear>0</ProfitLossLastYear>
+	</Record>
+	<Record>
+		<LedgerAccountId>0210020</LedgerAccountId>
+		<LedgerDescription>Cumulatieve afschrijvingen en waardeverminderingen</LedgerDescription>
+		<RgsCode>BSchBepBtw</RgsCode>
+		<ClosingBalance>-416</ClosingBalance>
+		<OpeningBalance>0</OpeningBalance>
+		<ProfitLossLastYear>0</ProfitLossLastYear>
+	</Record>
+	<Record>
+		<LedgerAccountId>0214010</LedgerAccountId>
+		<LedgerDescription>Verkrijgings- of vervaardigingsprijs</LedgerDescription>
+		<RgsCode>BSchOvsOvs</RgsCode>
+		<ClosingBalance>-1000</ClosingBalance>
+		<OpeningBalance>-1000</OpeningBalance>
+		<ProfitLossLastYear>0</ProfitLossLastYear>
+	</Record>
+	<Record>
+		<LedgerAccountId>0214020</LedgerAccountId>
+		<LedgerDescription>Cumulatieve afschrijvingen en waardeverminderingen</LedgerDescription>
+		<RgsCode>BVrdVooVoo</RgsCode>
+		<ClosingBalance>2000</ClosingBalance>
+		<OpeningBalance>2000</OpeningBalance>
+		<ProfitLossLastYear/>
+	</Record>
+	<Record>
+		<LedgerAccountId>3001010</LedgerAccountId>
+		<LedgerDescription>Handelsgoederen, bruto</LedgerDescription>
+		<RgsCode>WBedAeaAej</RgsCode>
+		<ClosingBalance>1880.25</ClosingBalance>
+		<OpeningBalance>0</OpeningBalance>
+		<ProfitLossLastYear>0</ProfitLossLastYear>
+	</Record>
+	<Record>
+		<LedgerAccountId>1101010</LedgerAccountId>
+		<LedgerDescription>Handelsdebiteuren nominaal</LedgerDescription>
+		<RgsCode>WBedAssBea</RgsCode>
+		<ClosingBalance>500</ClosingBalance>
+		<OpeningBalance>0</OpeningBalance>
+		<ProfitLossLastYear>0</ProfitLossLastYear>
+	</Record>
+	<Record>
+		<LedgerAccountId>1103160</LedgerAccountId>
+		<LedgerDescription>Vorderingen uit hoofde van belastingen</LedgerDescription>
+		<RgsCode>WBedKanKan</RgsCode>
+		<ClosingBalance>119.75</ClosingBalance>
+		<OpeningBalance>0</OpeningBalance>
+		<ProfitLossLastYear>0</ProfitLossLastYear>
+	</Record>
+	<Record>
+		<LedgerAccountId>1102010</LedgerAccountId>
+		<LedgerDescription>Terug te vorderen Omzetbelasting</LedgerDescription>
+		<RgsCode>WBedVkkKer</RgsCode>
+		<ClosingBalance>200</ClosingBalance>
+		<OpeningBalance>0</OpeningBalance>
+		<ProfitLossLastYear>0</ProfitLossLastYear>
+	</Record>
+	<Record>
+		<LedgerAccountId>1104010</LedgerAccountId>
+		<LedgerDescription>Vooruitbetaalde facturen</LedgerDescription>
+		<RgsCode>WBedVkkWeb</RgsCode>
+		<ClosingBalance>599.65</ClosingBalance>
+		<OpeningBalance>0</OpeningBalance>
+		<ProfitLossLastYear>0</ProfitLossLastYear>
+	</Record>
+	<Record>
+		<LedgerAccountId>1002010</LedgerAccountId>
+		<LedgerDescription>Rekening-courant bank</LedgerDescription>
+		<RgsCode>WKprInhInh</RgsCode>
+		<ClosingBalance>1500</ClosingBalance>
+		<OpeningBalance>0</OpeningBalance>
+		<ProfitLossLastYear>0</ProfitLossLastYear>
+	</Record>
+	<Record>
+		<LedgerAccountId>0509010</LedgerAccountId>
+		<LedgerDescription>Ondernemingsvermogen exclusief fiscale reserves fiscaal</LedgerDescription>
+		<RgsCode>WOmzNodOdg</RgsCode>
+		<ClosingBalance>-11500.5</ClosingBalance>
+		<OpeningBalance>0</OpeningBalance>
+		<ProfitLossLastYear>0</ProfitLossLastYear>
+	</Record>
+	<Record>
+		<LedgerAccountId>0510010</LedgerAccountId>
+		<LedgerDescription>Fiscale oudedagsreserve</LedgerDescription>
+		<RgsCode>WOmzNohOlg</RgsCode>
+		<ClosingBalance>-2999.5</ClosingBalance>
+		<OpeningBalance>0</OpeningBalance>
+		<ProfitLossLastYear>0</ProfitLossLastYear>
+	</Record>
+</Root>
