@@ -430,6 +430,13 @@
                     "position": "passiva",
                     "title": "Oudedagreserve",
                     "column": "Boekwaarde einde boekjaar"
+                },
+                {
+                    "refId": "ALLEEN TONEN BIJ CONTROLE MET BOEKHOUDING",
+                    "gelId": "resultaat",
+                    "position": "passiva",
+                    "title": "Nog te verwerken resultaat",
+                    "column": "Boekwaarde einde boekjaar"
                 }
             ],
             "columns": [
@@ -519,9 +526,15 @@
                     "title": "Privéonttrekkingen in geld"
                 },
                 {
+                    "gelId": "model119674",
+                    "dimension": "DB",
+                    "position": "omzet",
+                    "title": "Onttrekking privégebruik auto van de onderneming"
+                },
+                {
+                    "gelId": 108728,
                     "position": "herhaal",
-                    "title": "Overige privéontrekkingen",
-                    "gelId": 108728
+                    "title": "Overige privéontrekkingen"
                 },
                 {
                     "refId": "wpontoverigoms",
@@ -534,6 +547,23 @@
                     "gelId": 119788,
                     "position": "herhaal",
                     "column": "Niet-aftrekbaar bedrag"
+                },
+                {
+                    "gelId": 108073,
+                    "position": "herhaal",
+                    "title": "Privéonttrekkingen in natura en in goederen"
+                },
+                {
+                    "refId": "wpontnatgoedoms",
+                    "gelId": 118318,
+                    "position": "herhaal",
+                    "column": "Omschrijving"
+                },
+                {
+                    "refId": "wpontnatgoedovpaang",
+                    "gelId": 118320,
+                    "position": "herhaal",
+                    "column": "Overdrachtsprijs"
                 }
             ],
             "columns": [
@@ -543,6 +573,10 @@
                 },
                 {
                     "title": "Niet-aftrekbaar bedrag",
+                    "order": 2
+                },
+                {
+                    "title": "Overdrachtsprijs",
                     "order": 2
                 }
             ]
