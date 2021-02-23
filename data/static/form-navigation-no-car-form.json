@@ -1,12 +1,14 @@
 [
   {
     "label": "Algemene vragen en gegevens",
+    "mutationName": "Algemene vragen en gegevens",
     "form": "algemene-gegevens",
     "json": "data/forms/algemene-gegevens.json",
     "conditions": true
   },
   {
     "label": "Restwaarde materiele vaste activa",
+    "mutationName": "Restwaarde materiele vaste activa",
     "form": "materiele-vaste-activa",
     "json": "data/forms/materiele-vaste-activa.json",
     "invalidAccountancyButton": true,
@@ -31,6 +33,7 @@
   },
   {
     "label": "Specificatie schuld omzetbelasting",
+    "mutationName": "Specificatie schuld omzetbelasting",
     "form": "specificatie-schulden-omzetbelasting",
     "json": "data/forms/specificatie-schulden-omzetbelasting.json",
     "invalidAccountancyButton": true,
@@ -55,6 +58,7 @@
   },
   {
     "label": "Specificatie vordering omzetbelasting",
+    "mutationName": "Specificatie vordering omzetbelasting",
     "form": "specificatie-vorderingen-omzetbelasting",
     "json": "data/forms/specificatie-vorderingen-omzetbelasting.json",
     "invalidAccountancyButton": true,
@@ -79,6 +83,7 @@
   },
   {
     "label": "Inbreng of onttrekking overige activa",
+    "mutationName": "Inbreng of onttrekking overige activa",
     "form": "inbr-ont-overige-activa",
     "json": "data/forms/inbr-ont-overige-activa.json",
     "invalidAccountancyButton": true,
@@ -86,6 +91,7 @@
   },
   {
     "label": "Specificatie privéontrekkingen in natura en goederen",
+    "mutationName": "Specificatie privéontrekkingen in natura en goederen",
     "form": "priveonttrekkingen-natura-goederen",
     "json": "data/forms/priveonttrekkingen-natura-goederen.json",
     "conditions": [
@@ -100,6 +106,7 @@
   },
   {
     "label": "Specificatie overige privéonttrekkingen",
+    "mutationName": "Specificatie overige privéonttrekkingen",
     "form": "overige-priveonttrekkingen",
     "json": "data/forms/overige-priveonttrekkingen.json",
     "invalidAccountancyButton": true,
@@ -114,7 +121,8 @@
     ]
   },
   {
-    "label": "Research-en-developementaftrek",
+    "label": "Research-en-developmentaftrek",
+    "mutationName": "Research-en-developementaftrek",
     "form": "wrd",
     "json": "data/forms/wrd.json",
     "conditions": [
@@ -129,6 +137,7 @@
   },
   {
     "label": "Desinvesteringsbijtelling",
+    "mutationName": "Desinvesteringsbijtelling",
     "form": "wdes",
     "json": "data/forms/wdes.json",
     "conditions": [
@@ -143,8 +152,9 @@
   },
   {
     "label": "Investeringen",
+    "mutationName": "Investeringen",
     "form": "investeringen",
-    "json": "data/forms/investeringen-temp.json",
+    "json": "data/forms/investeringen.json",
     "conditions": true
   },
 
@@ -153,12 +163,14 @@
   },
   {
     "label": "Niet- of gedeeltelijk aftrekbare lasten",
+    "mutationName": "Niet- of gedeeltelijk aftrekbare lasten",
     "form": "niet-of-gedeeltelijke-aftrekbare-lasten",
     "json": "data/forms/niet-of-gedeeltelijke-aftrekbare-lasten.json",
     "conditions": true
   },
   {
     "label": "Zakelijk gebruik privéauto",
+    "mutationName": "Zakelijk gebruik privéauto",
     "form": "zakelijk-gebruik-priveauto",
     "json": "data/forms/zakelijk-gebruik-priveauto.json",
     "conditions": true
@@ -169,6 +181,7 @@
   },
   {
     "label": "Ondernemersaftrek",
+    "mutationName": "Ondernemersaftrek",
     "form": "ondernemersaftrek",
     "json": "data/forms/ondernemersaftrek.json",
     "conditions": true

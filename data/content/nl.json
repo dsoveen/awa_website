@@ -17,7 +17,8 @@
     "volgende": "Volgende",
     "vorige": "Vorige",
     "overslaan": "Overslaan",
-    "laden": "laden..."
+    "laden": "laden...",
+    "gegevens_worden_opgeslagen_een_moment_aub": "De gegevens worden opgeslagen, een moment alstublieft."
   },
   "introduction": {
     "voorbereiden_ondernemingsgegevens_voor_aangifte_inkomstenbelasting": "Voorbereiden ondernemingsgegevens voor aangifte inkomstenbelasting {year}",
@@ -43,9 +44,9 @@
     "ga_naar_omgeving_mijn_belastingdienst_via_de_onderstaande_knop": "Ga naar de speciale omgeving van Mijn Belastingdienst via de onderstaande knop.",
     "upload_het_bestand_bij_het_onderdeel_ondernemers": "Upload daar het bestand bij het onderdeel ondernemers als daar om gevraagd wordt.",
     "doe_de_inkomstenbelasting_aangifte": "Dien de aangifte inkomstenbelasting in.",
-    "naar_belastingdienst_knop_titel": "Naar belastingdienst.nl/pilotawa",
+    "naar_belastingdienst_knop_titel": "Naar belastingdienst.nl/awa",
     "naar_belastingdienst_knop_url": "https://www.belastingdienst.nl/pilotawa",
-    "naar_belastingdienst_knop_titel_footer": "Naar belastingdienst.nl/pilotawa",
+    "naar_belastingdienst_knop_titel_footer": "Naar belastingdienst.nl/awa",
     "naar_belastingdienst_knop_url_footer": "https://www.belastingdienst.nl/pilotawa"
   },
   "forms": {
@@ -55,13 +56,7 @@
     "nieuwe_waarde": "Nieuwe waarde",
     "leeg": "(leeg)",
     "fallback_titel": "Aanvullen en specificeren van gegevens",
-    "ingevulde_waardes_gaan_verloren_weet_u_het_zeker": "Ingevulde waardes in het huidige scherm gaan verloren. Weet u het zeker?",
-    "dit_klopt_niet_ga_terug_naar_boekhouden": "Dit klopt niet, ga terug naar boekhouden",
-    "opslaan_en_naar_boekhouding": "Opslaan en naar boekhouding",
-    "er_zijn_cijfers_die_niet_kloppen": "Er zijn cijfers die niet kloppen ",
-    "er_zijn_cijfers_die_niet_kloppen_tekst": "De cijfers die u niet kunt aanpassen komen uit de boekhouding. Ga terug naar uw boekhouding en pas deze daar aan. Start daarna de aangifte opnieuw.",
-    "eerder_ingevulde_gegevens_blijven_bewaard": "Uw eerder ingevulde gegevens blijven bewaard.",
-    "gegevens_worden_opgeslagen_een_moment_aub": "De gegevens worden opgeslagen, een moment alstublieft."
+    "ingevulde_waardes_gaan_verloren_weet_u_het_zeker": "Ingevulde waardes in het huidige scherm gaan verloren. Weet u het zeker?"
   },
   "year_overview": {
     "jaarcijfers": "Jaarcijfers",
@@ -81,8 +76,20 @@
     "debet": "Debet",
     "credit": "Credit",
     "saldo": "Saldo",
+    "saldo_afgerond": "Saldo (afgerond)",
     "afronden_help_tekst": "Help tekst afronden",
-    "deze_gegevens_komen_uit_uw_boekhouding": "Deze gegevens komen uit uw boekhouding"
+    "deze_gegevens_komen_uit_uw_boekhouding": "Deze gegevens komen uit uw boekhouding:",
+    "toon_afgeronde_cijfers": "Toon afgeronde cijfers",
+    "dit_klopt_niet_ga_terug_naar_boekhouden": "Dit klopt niet, ga terug naar boekhouden",
+    "er_zijn_cijfers_die_niet_kloppen": "Er zijn cijfers die niet kloppen ",
+    "er_zijn_cijfers_die_niet_kloppen_tekst": "De cijfers die u niet kunt aanpassen komen uit de boekhouding. Ga terug naar uw boekhouding en pas deze daar aan. Start daarna de aangifte opnieuw.",
+    "eerder_ingevulde_gegevens_blijven_bewaard": "Uw eerder ingevulde gegevens blijven bewaard.",
+    "opslaan_en_naar_boekhouding": "Opslaan en naar boekhouding",
+    "gemuteerde_gegevens": "Uitgevoerde correcties",
+    "waarde_uit_boekhouding": "Waarde uit de boekhouding",
+    "mutatie": "Correcties",
+    "rgs_rounding": "Afronden",
+    "process_result": "Resultaat correctie"
   },
   "check": {
     "controleren": "Controleren",

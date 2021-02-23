@@ -36,12 +36,12 @@
 		<ProfitLossLastYear>0</ProfitLossLastYear>
 	</Record>
 	<Record>
-		<LedgerAccountId/>
+		<LedgerAccountId>0210011<LedgerAccountId/>
 		<LedgerDescription>Betaalrekening (NL70RABO0115600010)</LedgerDescription>
 		<RgsCode>BLimBanRbaBg2</RgsCode>
 		<ClosingBalance>617.05</ClosingBalance>
 		<OpeningBalance>0</OpeningBalance>
-		<ProfitLossLastYear/>
+		<ProfitLossLastYear>0</ProfitLossLastYear>
 	</Record>
 	<Record>
 		<LedgerAccountId>0210020</LedgerAccountId>

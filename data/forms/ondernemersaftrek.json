@@ -19,30 +19,6 @@
                 "legend": "Ondernemersaftrek",
                 "fields": [
                     {
-                        "type": "hidden",
-                        "label": "Ondernemers vermogen excl fisc van brugstaat",
-                        "model": "ondernVermExclFiscResFiscaalEB",
-                        "doNotPost": true,
-                        "customValue": {
-                            "formula": "sumOfStatics",
-                            "parameters": {
-                                "fieldModels": ["119356-EB"]
-                            }
-                        }
-                    },
-                    {
-                        "type": "hidden",
-                        "label": "Optellen van Resultaat bij het Eigen Vermogen mutatie",
-                        "model": "119356-EB",
-                        "postKey": "119356-EB",
-                        "customValue": {
-                            "formula": "sumOfFieldAndResult",
-                            "parameters": {
-                                "fieldModels": ["ondernVermExclFiscResFiscaalEB"]
-                            }
-                        }
-                    },
-                    {
                         "label": "Werkte u minimaal 1.225 uur in de onderneming?",
                         "type": "radios",
                         "values": [
